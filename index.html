@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="instachef-admin">
+        <div class="instachef">
+          <a href="index.html">
+            <img src="assets/InstaCheflogo.png" alt="" class="logo" />
+          </a>
+          <img src="assets/Rectangle 915.png" alt="" class="middle-line" />
+          <div class="toggle-bar">
+            <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+          </div>
+        </div>
+        <!-- <div class="toggle-bar"> -->
+        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+        <!-- </div> -->
+        <div class="user-icons">
+          <a href="#">
+            <img src="assets/home.png" alt="" />
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/notification.png" alt="notification Icon" />
+            <span class="counter wishlist-counter">2</span>
+          </a>
+          <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+          <div class="admin-section">
+            <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+            <div class="admin-text">
+              <h3>LOREM ISPUM</h3>
+              <select id="super-admin">
+                <option>super-admin</option>
+                <option>admin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------------------header------------------- -->
+    <div class="admin-panel">
+      <nav class="bg-dark text-white sidebar">
+        <ul class="nav flex-column">
+          <!-- Dashboard Item -->
+          <li class="nav-item dashboard">
+            <a href="index.html" class="nav-link text-white">
+              <img src="assets/image1.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              DASHBOARD
+            </a>
+          </li>
+
+          <!-- Manage Profile Item -->
+          <li class="nav-item">
+            <a href="form.html" class="nav-link text-white">
+              <img src="assets/image2.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE PROFILE
+            </a>
+          </li>
+
+          <!-- Manage Notification Item -->
+          <li class="nav-item">
+            <a href="Manage-notification.html" class="nav-link text-white">
+              <img src="assets/image3.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE NOTIFICATION
+            </a>
+          </li>
+
+          <!-- Contact Request Item -->
+          <li class="nav-item">
+            <a href="contact-request.html" class="nav-link text-white">
+              <img src="assets/image4.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              CONTACT REQUEST
+            </a>
+          </li>
+
+          <!-- Manage Blogs Item -->
+          <li class="nav-item">
+            <a href="manageblog.html" class="nav-link text-white">
+              <img src="assets/image5.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE BLOGS
+            </a>
+          </li>
+
+          <!-- Manage SEO Item -->
+          <li class="nav-item">
+            <a href="manageseo.html" class="nav-link text-white">
+              <img src="assets/image6.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE SEO
+            </a>
+          </li>
+
+          <!-- Manage User Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image7.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE USER
+              <i class="fa fa-caret-down"></i>
+              <p>+3</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="create-user.html">
+                  <input type="radio" placeholder="" /> CREATE USER
+                </a>
+              </label>
+              <label for="user">
+                <a href="user-list.html">
+                  <input type="radio" placeholder="" /> USER LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="in-activeuser.html">
+                  <input type="radio" placeholder="" /> IN-ACTIVE USER
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Manage Booking Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image8.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE BOOKING
+              <i class="fa fa-caret-down"></i>
+              <p>+4</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="createbooking.html">
+                  <input type="radio" placeholder="" /> CREATE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="chef-booking.html">
+                  <input type="radio" placeholder="" /> BOOKINGS LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="in-activebooking.html">
+                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="Review.html">
+                  <input type="radio" placeholder="" /> REVIEW LIST
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Manage Cuisine Item -->
+          <li class="nav-item">
+            <a href="managecuisine.html" class="nav-link text-white">
+              <img src="assets/image9.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE CUISINE
+            </a>
+          </li>
+
+          <!-- Manage Package Item -->
+          <li class="nav-item">
+            <a href="mangepackage.html" class="nav-link text-white">
+              <img src="assets/image10.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE PACKAGE
+            </a>
+          </li>
+
+          <!-- Manage Chef Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image11.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE CHEF
+              <i class="fa fa-caret-down"></i>
+              <p>+2</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="create-chef.html">
+                  <input type="radio" placeholder="" /> CREATE CHEF
+                </a>
+              </label>
+              <label for="user">
+                <a href="chef-details.html">
+                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Logout Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white last-li">
+              <img src="assets/logout.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              LOGOUT
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- </div> -->
+      <!-- ======================================= -->
+      <div class="main-content">
+        <!-- <header>
+          <div class="instachef-admin">
+            <div class="toggle-bar">
+                <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+          <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+             </div>
+            <div class="user-icons">
+              <a href="#">
+                <img src="assets/home.png" alt="" />
+              </a>
+              <a href="#" class="icon-item">
+                <img src="assets/notification.png" alt="notification Icon" />
+                <span class="counter wishlist-counter">2</span>
+              </a>
+              <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+              <div class="admin-section">
+                <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+                <div class="admin-text">
+                  <h3>LOREM ISPUM</h3>
+                  <select id="super-admin">
+                    <option>super-admin</option>
+                    <option>admin</option>  
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header> -->
+        <!-- ---------------------------------------- -->
+        <div class="admin-dashboard">
+          <div class="dashboard-time">
+            <img src="assets/Group 37663.png" alt="" />
+            <p>DASHBOARD</p>
+          </div>
+
+          <div class="time-piker">
+            <div class="time">
+              <img src="assets/Group 215.png" alt="" />
+              <div class="time-pikerA">
+                <p>Date Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01-01-2023 - 01-01-2023"
+                  class="dateA"
+                />
+              </div>
+            </div>
+            <div class="time">
+              <img src="assets/Group 215.png" alt="" />
+              <div class="time-pikerA">
+                <p>Filter Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01-01-2023"
+                  class="dateA"
+                />
+              </div>
+            </div>
+            <!-- <div class="dropdown">
+              <select name="chef" id="chef"></select>
+            </div> -->
+          </div>
+        </div>
+        <!-- =================================== -->
+        <div class="admin-user">
+          <div class="stars-section">
+            <div class="card">
+              <div class="admin-card">
+                <img
+                  src="assets/Group 156237.png"
+                  alt="Icon"
+                  class="card-icon"
+                  id="user"
+                />
+                <span class="stat-value"
+                  >6.2K
+                  <p class="stat-label">Live Users</p>
+                </span>
+              </div>
+
+              <img src="assets/Group 156295.png" alt="Wave" class="wave" />
+              <div class="help-button">
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="admin-card">
+                <img
+                  src="assets/Group 156307.png"
+                  alt="Icon"
+                  class="card-icon"
+                  id="usersA"
+                />
+                <span class="stat-value"
+                  >3.5K
+                  <p class="stat-label">Total Users</p>
+                </span>
+              </div>
+              <img src="assets/Group 156294.png" alt="Wave" class="wave" />
+              <div class="help-button">
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="admin-card">
+                <img
+                  src="assets/Group 156370.png"
+                  alt="Icon"
+                  class="card-icon"
+                  id="chefA"
+                />
+                <span class="stat-value"
+                  >4.5K
+                  <p class="stat-label">Total Chef</p>
+                </span>
+              </div>
+              <img src="assets/Group 156293.png" alt="Wave" class="wave" />
+              <div class="help-button">
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="admin-card">
+                <img
+                  src="assets/Group 156252.png"
+                  alt="Icon"
+                  class="card-icon"
+                  id="booking"
+                />
+                <span class="stat-value"
+                  >1.5K
+                  <p class="stat-label">Total Booking</p>
+                </span>
+              </div>
+              <img src="assets/Group 156292.png" alt="Wave" class="wave" />
+              <div class="help-button">
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="admin-card">
+                <img
+                  src="assets/Group 156371.png"
+                  alt="Icon"
+                  class="card-icon"
+                  id="packages"
+                />
+                <span class="stat-value"
+                  >2.4K
+                  <p class="stat-label">Total Packages</p>
+                </span>
+              </div>
+              <img src="assets/Group 156291.png" alt="Wave" class="wave" />
+              <div class="help-button">
+                <i class="ri-arrow-right-up-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================= -->
+        <div class="visitors">
+          <div class="admin-visit">
+            <div class="visit">
+              <h3>TOTAL TODAY'S VISITORS</h3>
+            </div>
+            <table id="myTable" style="width: 100%">
+              <thead>
+                <tr id="check">
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Address</th>
+                  <th>Acction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /> DC01</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Plucas
+                    Wells
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td class="address">Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC02</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Carl Lane
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC03</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Isaiah
+                    Howard
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC05</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Ronald
+                    Reeves
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC03</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Bobby Holt
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC04</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Isaiah
+                    Howard
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC05</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Ronald
+                    Reeves
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC05</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Ronald
+                    Reeves
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC05</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Ronald
+                    Reeves
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /> DC03</td>
+                  <td class="car-model">
+                    <img src="assets/Group 156326 (1).png" alt="" /> Bobby Holt
+                  </td>
+                  <td>Info@gmail.com</td>
+                  <td>971508146667</td>
+                  <td>Lorem Ipsum is simply dummy</td>
+                  <td>
+                    <a href="#"
+                      ><img
+                        src="assets/Trash icon (1).png"
+                        alt=""
+                        class="delete-iconA" />
+                      <img
+                        src="assets/ic-actions-emultiple-edit (1).png"
+                        alt=""
+                        class="editA" />
+                      <img
+                        src="assets/Combined Shape (1).png"
+                        alt=""
+                        class="edit-iconA"
+                    /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- =================================== -->
+          <div class="admin-visitA">
+            <div class="visit-A">
+              <h3>NEW PACKAGE</h3>
+            </div>
+            <div class="oval">
+              <img src="assets/graph.png" alt="" />
+            </div>
+
+            <div class="packageB">
+              <table id="myTableB" style="width: 100%">
+                <thead>
+                  <tr class="package">
+                    <th class="package-date">12 Fab 2024</th>
+                    <th>Flexible Amount</th>
+                    <th class="reviews-iconB">Action</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+
+                  <tr></tr>
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="bbq-review">
+                      <img
+                        src="assets/Group 156363.png"
+                        alt=""
+                        class="bbq-party"
+                      />
+                      <p class="party">BBQ Party <span>09 Jan, 2023</span></p>
+                    </td>
+                    <td class="car-modelA">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img
+                          src="assets/Group 156347 (1).png"
+                          alt=""
+                          class="delete" />
+                        <img
+                          src="assets/Group 156348 (1).png"
+                          alt=""
+                          class="edit"
+                      /></a>
+                    </td>
+                    <td class="price">799 <span class="tbd">TBD</span></td>
+                  </tr>
+                  <!-- <tr>
+                <td  class="bbq-review">
+                  <img src="assets/Group 156363.png" alt="" class="bbq-party"><p class="party">BBQ Party <span>09 Jan, 2023</span></p></td>
+                <td class="car-modelA"><label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label></td>
+                <td><a href="#"> <img src="assets/Group 156347 (1).png" alt="" class="delete"> 
+                  <img src="assets/Group 156348 (1).png" alt="" class="edit"></a>
+              </td>
+                 <td class="price">799 <span class="tbd">TBD</span></td>
+            </tr> -->
+                  <!-- <tr>
+              <td  class="bbq-review">
+                <img src="assets/Group 156363.png" alt="" class="bbq-party"><p class="party">BBQ Party <span>09 Jan, 2023</span></p></td>
+              <td class="car-modelA"><label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label></td>
+              <td><a href="#"> <img src="assets/Group 156347 (1).png" alt="" class="delete"> 
+                <img src="assets/Group 156348 (1).png" alt="" class="edit"></a>
+            </td>
+               <td class="price">799 <span class="tbd">TBD</span></td>
+          </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- ============================= -->
+          <div class="review-visit">
+            <div class="review-views">
+              <div class="visit-B">
+                <h3>CHEF DETAILS</h3>
+              </div>
+
+              <div class="review">
+                <div class="left-A">
+                  <div class="recent-review">
+                    <img src="assets/Group 156332.png" alt="" />
+                    <div class="review-text">
+                      <span>ID: 591838, PASS: 197798</span>
+                      <h3>IRFAN EMMANUEL</h3>
+                      <p>
+                        <img
+                          src="assets/Group 156329.png"
+                          alt=""
+                          class="calander"
+                        />08 Oct, 2022
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="review-show">
+                    <img
+                      src="assets/Group 156335.png"
+                      alt=""
+                      class="showIcon"
+                    />
+                    <img src="assets/Group 156348.png" alt="" />
+                    <img src="assets/Group 156347.png" alt="" />
+                    <img
+                      src="assets/download (5).png"
+                      alt=""
+                      class="download"
+                    />
+                  </div>
+                </div>
+
+                <!-- <div class="dropdown" data-id="C"> -->
+                <!-- <div class="dropdown-header">
+                      <i class="ri-arrow-drop-down-line dropdownicon"></i>
+                  </div> -->
+                <div class="dropdown" data-id="C">
+                  <div class="dropdown-content">
+                    <img src="assets/Rectangle 15.png" alt="" />
+                    <p>
+                      Al Fahidi Street, Dubai, 1220, United Arab Emirates
+                      irfanemmanuel930@gmail.com, 0526285627
+                    </p>
+                    <img src="assets/Rectangle 15.png" alt="" />
+                  </div>
+                  <div class="dropdown-header">
+                    <i class="ri-arrow-drop-down-line dropdownicon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <div class="left-A">
+                  <div class="recent-review">
+                    <img src="assets/Group 156332 (1).png" alt="" />
+                    <div class="review-text">
+                      <span>ID: 591838, PASS: 197798</span>
+                      <h3>IRFAN EMMANUEL</h3>
+                      <p>
+                        <img
+                          src="assets/Group 156329.png"
+                          alt=""
+                          class="calander"
+                        />08 Oct, 2022
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="review-show">
+                    <img
+                      src="assets/Group 156335.png"
+                      alt=""
+                      class="showIcon"
+                    />
+                    <img src="assets/Group 156348.png" alt="" />
+                    <img src="assets/Group 156347.png" alt="" />
+                    <img
+                      src="assets/download (5).png"
+                      alt=""
+                      class="download"
+                    />
+                  </div>
+                </div>
+                <div class="dropdown" data-id="B">
+                  <!-- <div class="dropdown-header">
+                      <i class="ri-arrow-drop-down-line dropdownicon"></i>
+                  </div> -->
+                  <div class="dropdown-content">
+                    <img src="assets/Rectangle 15.png" alt="" />
+                    <p>
+                      Al Fahidi Street, Dubai, 1220, United Arab Emirates
+                      irfanemmanuel930@gmail.com, 0526285627
+                    </p>
+                    <img src="assets/Rectangle 15.png" alt="" />
+                  </div>
+                  <div class="dropdown-header">
+                    <i
+                      id="drop-icon"
+                      class="ri-arrow-drop-down-line dropdownicon"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <div class="left-A">
+                  <div class="recent-review">
+                    <img src="assets/Group 156332 (2).png" alt="" />
+                    <div class="review-text">
+                      <span>ID: 591838, PASS: 197798</span>
+                      <h3>IRFAN EMMANUEL</h3>
+                      <p>
+                        <img
+                          src="assets/Group 156329.png"
+                          alt=""
+                          class="calander"
+                        />08 Oct, 2022
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="review-show">
+                    <img
+                      src="assets/Group 156335.png"
+                      alt=""
+                      class="showIcon"
+                    />
+                    <img src="assets/Group 156348.png" alt="" />
+                    <img src="assets/Group 156347.png" alt="" />
+                    <img
+                      src="assets/download (5).png"
+                      alt=""
+                      class="download"
+                    />
+                  </div>
+                </div>
+
+                <div class="dropdown" data-id="A">
+                  <!-- <div class="dropdown-header">
+          <i class="ri-arrow-drop-down-line dropdownicon"></i>
+      </div> -->
+                  <div class="dropdown-content">
+                    <img src="assets/Rectangle 15.png" alt="" />
+                    <p>
+                      Al Fahidi Street, Dubai, 1220, United Arab Emirates
+                      irfanemmanuel930@gmail.com, 0526285627
+                    </p>
+                    <img src="assets/Rectangle 15.png" alt="" />
+                  </div>
+                  <div class="dropdown-header">
+                    <i class="ri-arrow-drop-down-line dropdownicon"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <div class="left-A">
+                  <div class="recent-review">
+                    <img src="assets/Group 156332.png" alt="" />
+                    <div class="review-text">
+                      <span>ID: 591838, PASS: 197798</span>
+                      <h3>IRFAN EMMANUEL</h3>
+                      <p>
+                        <img
+                          src="assets/Group 156329.png"
+                          alt=""
+                          class="calander"
+                        />08 Oct, 2022
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="review-show">
+                    <img
+                      src="assets/Group 156335.png"
+                      alt=""
+                      class="showIcon"
+                    />
+                    <img src="assets/Group 156348.png" alt="" />
+                    <img src="assets/Group 156347.png" alt="" />
+                    <img
+                      src="assets/download (5).png"
+                      alt=""
+                      class="download"
+                    />
+                  </div>
+                </div>
+
+                <div class="dropdown" data-id="C">
+                  <!-- <div class="dropdown-header">
+          <i class="ri-arrow-drop-down-line dropdownicon"></i>
+      </div> -->
+                  <div class="dropdown-content">
+                    <img src="assets/Rectangle 15.png" alt="" />
+                    <p>
+                      Al Fahidi Street, Dubai, 1220, United Arab Emirates
+                      irfanemmanuel930@gmail.com, 0526285627
+                    </p>
+                    <img src="assets/Rectangle 15.png" alt="" />
+                  </div>
+                  <div class="dropdown-header">
+                    <i class="ri-arrow-drop-down-line dropdownicon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recent-reviewA">
+              <div class="recent">
+                <h3>RECENT REVIEWS</h3>
+              </div>
+              <div class="view-reviews">
+                <div class="reviews">
+                  <span>4.3</span>
+                </div>
+                <!-- <div class="reviews-icon"> -->
+                <i class="ri-star-fill checked"></i>
+                <i class="ri-star-fill checked"></i>
+                <i class="ri-star-fill checked"></i>
+                <i class="ri-star-fill checked"></i>
+                <i class="ri-star-fill starA"></i>
+                <!-- </div> -->
+                <div class="reviews-fill">
+                  <p>360 reviews</p>
+                </div>
+              </div>
+              <div class="review-img">
+                <img src="assets/Rectangle 15.png" alt="" />
+              </div>
+              <div class="belle-bowen">
+                <div class="bowen">
+                  <img src="assets/Group 156305.png" alt="" />
+                  <div class="belle-reviews">
+                    <h4>Belle Bowen</h4>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-line fill"></i>
+                    <i class="ri-star-line fill"></i>
+                    <p>
+                      Now, if you are interested in being the best player,
+                      getting really good money.
+                    </p>
+
+                    <div class="reply">
+                      <i class="ri-reply-fill reply-fill"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bowen">
+                  <img src="assets/Group 156305.png" alt="" />
+                  <div class="belle-reviews">
+                    <h4>Belle Bowen</h4>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-fill checked"></i>
+                    <i class="ri-star-line fill"></i>
+                    <i class="ri-star-line fill"></i>
+                    <p>
+                      Now, if you are interested in being the best player,
+                      getting really good money.
+                    </p>
+
+                    <div class="reply">
+                      <i class="ri-reply-fill reply-fill"></i>
+                      <span>Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------script------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.toggle-bar').click(function () {
+          $('.sidebar').toggleClass('show');
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.user-select-input').hide();
+        $('.fa-caret-down').click(function (event) {
+          event.preventDefault();
+          $(this)
+            .closest('.nav-item')
+            .find('.user-select-input')
+            .fadeToggle('fast');
+        });
+      });
+    </script>
+
+    <script>
+      // Initialize DataTables for both tables
+      document.addEventListener('DOMContentLoaded', () => {
+        const table1 = new DataTable('#myTable');
+        const table2 = new DataTable('#myTableB');
+      });
+    </script>
+
+    <!----------------------- Data table------------------------->
+    <script>
+      document.querySelectorAll('.dropdown').forEach((dropdown) => {
+        dropdown.addEventListener('click', function () {
+          let content = this.querySelector('.dropdown-content');
+          let icon = this.querySelector('.dropdownicon');
+
+          // Toggle the dropdown content
+          content.style.display =
+            content.style.display === 'block' ? 'none' : 'block';
+          icon.classList.toggle('rotate');
+        });
+      });
+    </script>
+  </body>
+</html>

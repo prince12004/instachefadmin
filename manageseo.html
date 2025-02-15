@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin From</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="instachef-admin">
+        <div class="instachef">
+          <a href="index.html">
+            <img src="assets/InstaCheflogo.png" alt="" class="logo" />
+          </a>
+          <img src="assets/Rectangle 915.png" alt="" class="middle-line" />
+          <div class="toggle-bar">
+            <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+          </div>
+        </div>
+        <!-- <div class="toggle-bar"> -->
+        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+        <!-- </div> -->
+        <div class="user-icons">
+          <a href="#">
+            <img src="assets/home.png" alt="" />
+          </a>
+          <a href="#" class="icon-item">
+            <img src="assets/notification.png" alt="notification Icon" />
+            <span class="counter wishlist-counter">2</span>
+          </a>
+          <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+          <div class="admin-section">
+            <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+            <div class="admin-text">
+              <h3>LOREM ISPUM</h3>
+              <select id="super-admin">
+                <option>super-admin</option>
+                <option>admin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ===========header============== -->
+    <div class="admin-panel">
+      <!-- Sidebar -->
+      <!-- <div class="toggle-bar">
+          <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+        </div> -->
+      <nav class="bg-dark text-white sidebar">
+        <ul class="nav flex-column">
+          <!-- Dashboard Item -->
+          <li class="nav-item dashboard">
+            <a href="index.html" class="nav-link text-white">
+              <img src="assets/image1.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              DASHBOARD
+            </a>
+          </li>
+
+          <!-- Manage Profile Item -->
+          <li class="nav-item">
+            <a href="form.html" class="nav-link text-white">
+              <img src="assets/image2.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE PROFILE
+            </a>
+          </li>
+
+          <!-- Manage Notification Item -->
+          <li class="nav-item">
+            <a href="Manage-notification.html" class="nav-link text-white">
+              <img src="assets/image3.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE NOTIFICATION
+            </a>
+          </li>
+
+          <!-- Contact Request Item -->
+          <li class="nav-item">
+            <a href="contact-request.html" class="nav-link text-white">
+              <img src="assets/image4.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              CONTACT REQUEST
+            </a>
+          </li>
+
+          <!-- Manage Blogs Item -->
+          <li class="nav-item">
+            <a href="manageblog.html" class="nav-link text-white">
+              <img src="assets/image5.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE BLOGS
+            </a>
+          </li>
+
+          <!-- Manage SEO Item -->
+          <li class="nav-item">
+            <a href="manageseo.html" class="nav-link text-white">
+              <img src="assets/image6.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE SEO
+            </a>
+          </li>
+
+          <!-- Manage User Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image7.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE USER
+              <i class="fa fa-caret-down"></i>
+              <p>+3</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="create-user.html">
+                  <input type="radio" placeholder="" /> CREATE USER
+                </a>
+              </label>
+              <label for="user">
+                <a href="user-list.html">
+                  <input type="radio" placeholder="" /> USER LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="in-activeuser.html">
+                  <input type="radio" placeholder="" /> IN-ACTIVE USER
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Manage Booking Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image8.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE BOOKING
+              <i class="fa fa-caret-down"></i>
+              <p>+4</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="createbooking.html">
+                  <input type="radio" placeholder="" /> CREATE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="chef-booking.html">
+                  <input type="radio" placeholder="" /> BOOKINGS LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="in-activebooking.html">
+                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="Review.html">
+                  <input type="radio" placeholder="" /> REVIEW LIST
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Manage Cuisine Item -->
+          <li class="nav-item">
+            <a href="managecuisine.html" class="nav-link text-white">
+              <img src="assets/image9.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE CUISINE
+            </a>
+          </li>
+
+          <!-- Manage Package Item -->
+          <li class="nav-item">
+            <a href="mangepackage.html" class="nav-link text-white">
+              <img src="assets/image10.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE PACKAGE
+            </a>
+          </li>
+
+          <!-- Manage Chef Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/image11.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              MANAGE CHEF
+              <i class="fa fa-caret-down"></i>
+              <p>+2</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="create-chef.html">
+                  <input type="radio" placeholder="" /> CREATE CHEF
+                </a>
+              </label>
+              <label for="user">
+                <a href="chef-details.html">
+                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
+                </a>
+              </label>
+            </div>
+          </li>
+
+          <!-- Logout Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white last-li">
+              <img src="assets/logout.png" alt="" class="default-img" />
+              <img src="assets/icons.png" alt="" class="hover-img" />
+              LOGOUT
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===============left==================== -->
+      <div class="main-content">
+        <!-- <header>
+    <div class="instachef-admin">
+      <div class="toggle-bar">
+          <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+       </div>
+      <div class="user-icons">
+        <a href="#">
+          <img src="assets/home.png" alt="" />
+        </a>
+        <a href="#" class="icon-item">
+          <img src="assets/notification.png" alt="notification Icon" />
+          <span class="counter wishlist-counter">2</span>
+        </a>
+        <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+        <div class="admin-section">
+          <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+          <div class="admin-text">
+            <h3>LOREM ISPUM</h3>
+            <select id="super-admin">
+              <option>super-admin</option>
+              <option>admin</option>  
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> -->
+        <!-- ----------------------------------- -->
+        <div class="admin-dashboard">
+          <div class="dashboard-time">
+            <img src="assets/images/manage-seo.png" alt="" />
+            <p>Manage SEO</p>
+          </div>
+
+          <div class="time-piker">
+            <div class="time">
+              <img src="assets/Group 215.png" alt="" />
+              <div class="time-pikerA">
+                <p>Date Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
+                  class="dateA"
+                />
+              </div>
+            </div>
+            <div class="time">
+              <img src="assets/Group 215.png" alt="" />
+              <div class="time-pikerA">
+                <p>Filter Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01-01-2023"
+                  class="dateA"
+                />
+              </div>
+            </div>
+            <!-- <div class="dropdown">
+          <select name="chef" id="chef"></select>
+        </div> -->
+          </div>
+        </div>
+
+        <!-- ======================= -->
+        <div class="forms">
+          <!-- Main Content -->
+          <main class="col-md-10 bg-light right-sidebar">
+            <!-- Notification Form -->
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4 class="notification-heading">ADD SEO DETAILS</h4>
+                <div class="row Both-container">
+                  <div class="col-md-6">
+                    <div class="Add-blogs">
+                      <label for="title" class="form-label">Page Name</label>
+                      <input type="text" id="title" class="form-control" />
+                      <br />
+                      <label for="title" class="form-label-category"
+                        >Meta Tag</label
+                      >
+                      <div class="editor-container">
+                        <textarea placeholder="writing something"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------- right-container ------->
+                  <div class="col-md-6 meta-form">
+                    <form class="seo-form">
+                      <label for="title" class="form-label-category"
+                        >Meta Description</label
+                      >
+                      <div class="editor-container">
+                        <textarea placeholder="writing something"></textarea>
+                      </div>
+                      <button type="submit" class="add-deatiles p-3">
+                        ADD META DEATILES
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- footer-section -->
+            <div class="card mb-4">
+              <div class="table-top-bar">
+                <span
+                  class="d-flex justify-content-between align-items-center text-white"
+                >
+                  <h4>LIST OF SEO DETAILS</h4>
+                  <div id="myTable_filter" class="dataTables_-search-filter">
+                    <label class="d-flex align-items-center gap-3">
+                      <i
+                        class="fa-solid fa-magnifying-glass"
+                        id="notification-icon"
+                      ></i>
+                      <input
+                        type="search"
+                        class=""
+                        placeholder="Search here"
+                        aria-controls="myTable"
+                      />
+                    </label>
+                  </div>
+                </span>
+              </div>
+              <div class="seo">
+                <table id="myTabletwo" class="display seo-footer">
+                  <thead class="contact-thead">
+                    <tr>
+                      <th class="table-heading">#</th>
+                      <th class="table-heading">Page Name</th>
+                      <th class="table-heading">Meta Tag</th>
+                      <th class="table-heading">Meta Description</th>
+                      <th class="table-heading">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="table-data">01</td>
+                      <td class="table-data">Our-Story</td>
+                      <td class="table-data">
+                        Chef Service in UAE|The Ultimate Destination for Home
+                        Cooked Meals-InstaChef
+                      </td>
+                      <td class="table-data">
+                        Our experienced chefs use fresh ingredients to create
+                        tasty meals delivered right to your door.Order now and
+                        enjoy the ultimate home dining experience!
+                      </td>
+                      <td class="table-data">
+                        <img
+                          src="assets/images/custome-icon.png"
+                          alt=""
+                          class="custom-image"
+                        />
+                        <img src="assets/images/three-dot icon.png" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-data">01</td>
+                      <td class="table-data">Our-Story</td>
+                      <td class="table-data">
+                        Chef Service in UAE|The Ultimate Destination for Home
+                        Cooked Meals-InstaChef
+                      </td>
+                      <td class="table-data">
+                        Our experienced chefs use fresh ingredients to create
+                        tasty meals delivered right to your door.Order now and
+                        enjoy the ultimate home dining experience!
+                      </td>
+                      <td class="table-data">
+                        <img
+                          src="assets/images/custome-icon.png"
+                          alt=""
+                          class="custom-image"
+                        />
+                        <img src="assets/images/three-dot icon.png" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-data">01</td>
+                      <td class="table-data">Our-Story</td>
+                      <td class="table-data">
+                        Chef Service in UAE|The Ultimate Destination for Home
+                        Cooked Meals-InstaChef
+                      </td>
+                      <td class="table-data">
+                        Our experienced chefs use fresh ingredients to create
+                        tasty meals delivered right to your door.Order now and
+                        enjoy the ultimate home dining experience!
+                      </td>
+                      <td class="table-data">
+                        <img
+                          src="assets/images/custome-icon.png"
+                          alt=""
+                          class="custom-image"
+                        />
+                        <img src="assets/images/three-dot icon.png" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-data">01</td>
+                      <td class="table-data">Our-Story</td>
+                      <td class="table-data">
+                        Chef Service in UAE|The Ultimate Destination for Home
+                        Cooked Meals-InstaChef
+                      </td>
+                      <td class="table-data">
+                        Our experienced chefs use fresh ingredients to create
+                        tasty meals delivered right to your door.Order now and
+                        enjoy the ultimate home dining experience!
+                      </td>
+                      <td class="table-data">
+                        <img
+                          src="assets/images/custome-icon.png"
+                          alt=""
+                          class="custom-image"
+                        />
+                        <img src="assets/images/three-dot icon.png" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-data">01</td>
+                      <td class="table-data">Our-Story</td>
+                      <td class="table-data">
+                        Chef Service in UAE|The Ultimate Destination for Home
+                        Cooked Meals-InstaChef
+                      </td>
+                      <td class="table-data">
+                        Our experienced chefs use fresh ingredients to create
+                        tasty meals delivered right to your door.Order now and
+                        enjoy the ultimate home dining experience!
+                      </td>
+                      <td class="table-data">
+                        <img
+                          src="assets/images/custome-icon.png"
+                          alt=""
+                          class="custom-image"
+                        />
+                        <img src="assets/images/three-dot icon.png" alt="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.toggle-bar').click(function () {
+          $('.sidebar').toggleClass('show');
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.user-select-input').hide();
+        $('.fa-caret-down').click(function (event) {
+          event.preventDefault();
+          $(this)
+            .closest('.nav-item')
+            .find('.user-select-input')
+            .fadeToggle('fast');
+        });
+      });
+    </script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      const documentA = document.getElementById('uploadDocument');
+      const fileInput = document.getElementById('file1');
+
+      documentA.addEventListener('click', () => {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', (event) => {
+        const files = event.target.files;
+      });
+    </script>
+    <script>
+      let table = new DataTable('#myTable');
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('#myTabletwo').DataTable({
+          paging: true,
+          searching: false,
+          info: false,
+          pageLength: 4,
+          destroy: true,
+        });
+      });
+    </script>
+  </body>
+</html>

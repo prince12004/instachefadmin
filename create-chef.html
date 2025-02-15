@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-Chef</title>
+    <link rel="stylesheet" href="assets/css/comman.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="instachef-admin">
+      <div class="instachef">
+        <a href="index.html">
+        <img src="assets/InstaCheflogo.png" alt="" class="logo" />
+      </a>
+      <img src="assets/Rectangle 915.png" alt="" class="middle-line">
+      <div class="toggle-bar">
+        <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+      </div>
+      </div>
+      <!-- <div class="toggle-bar"> -->
+        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+      <!-- </div> -->
+      <div class="user-icons">
+        <a href="#">
+          <img src="assets/home.png" alt="" />
+        </a>
+        <a href="#" class="icon-item">
+          <img src="assets/notification.png" alt="notification Icon" />
+          <span class="counter wishlist-counter">2</span>
+        </a>
+        <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+        <div class="admin-section">
+          <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+          <div class="admin-text">
+            <h3>LOREM ISPUM</h3>
+            <select id="super-admin">
+              <option>super-admin</option>
+              <option>admin</option>  
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- --------------header------------------- -->
+      <div class="admin-panel">
+        <nav class="bg-dark text-white sidebar">
+          <ul class="nav flex-column">
+            <!-- Dashboard Item -->
+            <li class="nav-item dashboard">
+              <a href="index.html" class="nav-link text-white">
+                <img src="assets/image1.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                DASHBOARD
+              </a>
+            </li>
+  
+            <!-- Manage Profile Item -->
+            <li class="nav-item">
+              <a href="form.html" class="nav-link text-white">
+                <img src="assets/image2.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE PROFILE
+              </a>
+            </li>
+  
+            <!-- Manage Notification Item -->
+            <li class="nav-item">
+              <a href="Manage-notification.html" class="nav-link text-white">
+                <img src="assets/image3.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE NOTIFICATION
+              </a>
+            </li>
+  
+            <!-- Contact Request Item -->
+            <li class="nav-item">
+              <a href="contact-request.html" class="nav-link text-white">
+                <img src="assets/image4.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                CONTACT REQUEST
+              </a>
+            </li>
+  
+            <!-- Manage Blogs Item -->
+            <li class="nav-item">
+              <a
+                href="manageblog.html"
+                class="nav-link text-white"
+              >
+                <img src="assets/image5.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE BLOGS
+              </a>
+            </li>
+  
+            <!-- Manage SEO Item -->
+            <li class="nav-item">
+              <a
+                href="manageseo.html"
+                class="nav-link text-white"
+              >
+                <img src="assets/image6.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE SEO
+              </a>
+            </li>
+  
+            <!-- Manage User Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image7.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE USER
+                <i class="fa fa-caret-down"></i>
+                <p>+3</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="create-user.html">
+                    <input type="radio" placeholder="" /> CREATE USER
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="user-list.html">
+                    <input type="radio" placeholder="" /> USER LIST
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="in-activeuser.html">
+                    <input type="radio" placeholder="" /> IN-ACTIVE USER
+                  </a>
+                </label>
+              </div>
+            </li>
+  
+            <!-- Manage Booking Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image8.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE BOOKING
+                <i class="fa fa-caret-down"></i>
+                <p>+4</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="createbooking.html">
+                    <input type="radio" placeholder="" /> CREATE BOOKING
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="chef-booking.html">
+                    <input type="radio" placeholder="" /> BOOKINGS LIST
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="in-activebooking.html">
+                    <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="Review.html">
+                    <input type="radio" placeholder="" /> REVIEW LIST
+                  </a>
+                </label>
+              </div>
+            </li>
+  
+            <!-- Manage Cuisine Item -->
+            <li class="nav-item">
+              <a
+                href="managecuisine.html"
+                class="nav-link text-white"
+              >
+                <img src="assets/image9.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE CUISINE
+              </a>
+            </li>
+  
+            <!-- Manage Package Item -->
+            <li class="nav-item">
+              <a
+                href="mangepackage.html"
+                class="nav-link text-white"
+              >
+                <img src="assets/image10.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE PACKAGE
+              </a>
+            </li>
+  
+            <!-- Manage Chef Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image11.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                MANAGE CHEF
+                <i class="fa fa-caret-down"></i>
+                <p>+2</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="create-chef.html">
+                    <input type="radio" placeholder="" /> CREATE CHEF
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="chef-details.html">
+                    <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
+                  </a>
+                </label>
+              </div>
+            </li>
+  
+            <!-- Logout Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white last-li">
+                <img src="assets/logout.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                LOGOUT
+              </a>
+            </li>
+          </ul>
+        </nav>
+ <!-----------------------------------------sidebar------------------------------------>
+      <div class="main-content">
+     <div class="admin-dashboard">
+            <div class="dashboard-time">
+                <img src="assets/Group 156628 (2).png" alt="">
+                <p>MANAGE CHEF</p>
+            </div>
+    
+            <div class="time-piker">
+            <div class="time">
+                <img src="assets/Group 215.png" alt="">
+                <div class="time-pikerA">
+                 <p>Date Range</p>  
+                 <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+                </div>
+            </div>
+            <div class="time">
+                <img src="assets/Group 215.png" alt="">
+                <div class="time-pikerA">
+                 <p>Filter Range</p>  
+                 <input type="date" name="daterange" value="01-01-2023" class="dateA">                            
+                </div>
+            </div>
+            <!-- <div class="dropdown">
+              <select name="chef" id="chef"></select>
+            </div> -->
+        </div>
+        </div>
+<!-------------------------topbar-----------------------------> 
+<div class="create-chef mt-4">
+    <div class="admin-form">
+        <h2>CREATE CHEF</h2>
+        <img src="assets/Combined Shape.png" alt="">
+      </div>
+  <form id="createchef">
+    <div class="user-nameB new-B">
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Chef Name</label>
+            <input type="text" id="" class="user-email"  placeholder="Chef Name">
+        </div>
+        <div class="form-groupA">
+            <label for="useremal"  class="create-chefA">Email</label>
+            <input type="text" id="" class="user-email"  placeholder="Enter Chef Email">      
+        </div>
+        <div class="form-groupA">
+            <label for="usermobile"  class="create-chefA">Mobile</label>
+            <input type="text" id="" class="user-email"  placeholder="Enter Chef Mobile">     
+         </div>
+      </div>
+
+      <div class="user-nameB">
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Chef Country</label>
+            <!-- <input type="text" id="username" class="username-email"  placeholder="Select Country"> -->
+            <div class="dropdown">
+                <select name="Country" id="country" class="create-chefB">
+                    <option  class="create-chefB">Select Country</option>
+                <option  class="create-chefB">India</option>
+                <option  class="create-chefB">USA</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-groupA">
+            <label for="useremal" class="create-chefA">Join date</label>
+            <input type="text" id="" class="user-email"  placeholder="DD-MM-YYYY">      
+        </div>
+        <div class="form-groupA">
+            <label for="usermobile" class="create-chefA">End Date</label>
+            <input type="text" id="" class="user-email"  placeholder="DD-MM-YYYY">     
+         </div>
+      </div>
+
+      <div class="user-nameB">
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Chef Address</label>
+            <div class="user-emailA">
+            <textarea type="text" class="qualification" placeholder="Enter Chef Address"></textarea>
+        </div>
+        </div>
+        <div class="form-groupA">
+            <label for="useremal"  class="create-chefA">Enter Chef Address</label>
+            <div class="user-emailA">
+                <textarea type="text" class="qualification" placeholder="Enter Headlines"></textarea>
+            </div>
+            </div>
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Qualification</label>
+            <div class="user-emailA">
+            <textarea type="text" class="qualification" placeholder="Enter Qualification"></textarea>
+        </div>
+      </div>
+      </div>
+<!------------------------------------------>
+      <div class="user-nameB">
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Work Experience</label>
+            <div class="user-emailA">
+            <textarea type="text" class="qualification" placeholder="Enter Work Experience"></textarea>
+        </div>
+        </div>
+        <div class="form-groupA">
+            <label for="useremal"  class="create-chefA">Cuisines Known</label>
+            <div class="user-emailA">
+                <textarea type="text" class="qualification" placeholder="Enter Cuisines Known"></textarea>
+            </div>
+            <div class="chef-textA">
+                <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
+            </div>
+            </div>
+        <div class="form-groupA">
+            <label for="username" class="create-chefA">Ratings</label>
+            <div class="user-emailA">
+            <!-- <input type="text" placeholder="Enter Qualification"></input> -->
+            <i class="ri-star-fill stars"></i>
+            <i class="ri-star-fill stars"></i>
+            <i class="ri-star-fill stars"></i>
+            <i class="ri-star-fill stars"></i>
+            <i class="ri-star-half-line stars"></i>
+            <sapn class="rating">Enter Chef Rating 1 to 5</sapn>
+        </div>
+      </div>
+      </div>
+
+      <!------------------------------------>
+       <div class="upload-file py-4">
+        <div class="uploadDocument">
+        <div class="file">
+            <img src="assets/Group 156381.png" alt="">
+        </div>
+        <div class="choose-file">
+            <input type="file" class="uploadDocumentA">
+            <!-- <input type="file" id="file-B" class="upload-file-A" placeholder="upload file"> -->
+        </div>
+    </div>
+    
+    <div class="description">
+        <div class="gender-group">
+            <label class="gender-group">Select Gender</label>
+            <label class="gender"><input type="radio" name="gender" value="Male"> Male</label>
+            <label class="gender"><input type="radio" name="gender" value="Female"> Female</label>
+            <label class="gender"><input type="radio" name="gender" value="Other"> Other</label>
+          </div>
+          <div class="booking">
+        <div class="file-input mt-4">
+            <div id="file-input">
+           <img src="assets/Group 156381.png" alt="">
+        </div>
+      <div class="choose-file">
+            <input type="file">
+        </div>      
+        </div>
+    <div class="description-section">
+        <label for="username" class="create-chefA">Description</label>
+        <div class="user-emailB">
+        <textarea type="text" class="descriptionA" placeholder="Enter Description"></textarea>
+    </div>
+    </div>
+    <button class="icon-btn"><i class="fa fa-trash deleteA"></i></button>
+
+    <div class="form-rowA">
+      <button class="plus-btn"><i class="fa fa-plus"></i></button>
+    </div>
+</div>
+    <button class="create-btn">CREATE BOOKING</button> 
+    
+    </div>
+       </div>
+  </form>
+</div>
+
+      </div>
+    </div>
+    <!-- -------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+       <script>  
+        $(document).ready(function() {
+            $(".toggle-bar").click(function() {
+                $(".sidebar").toggleClass("show");
+            });
+        });
+    
+</script>
+
+<script>
+  $(document).ready(function(){
+   $('.user-select-input').hide();
+         $('.fa-caret-down').click(function(event){
+           event.preventDefault();
+             $(this).closest(".nav-item").find(".user-select-input").fadeToggle('fast');
+         });
+     });
+ </script>
+</body>
+</html>
