@@ -324,23 +324,23 @@
                     <div class="Add-blogs">
                       <label for="title" class="form-label">Page Name</label>
                       <input type="text" id="title" class="form-control" />
-                      <br />
+
                       <label for="title" class="form-label-category"
                         >Meta Tag</label
                       >
                       <div class="editor-container">
-                        <textarea placeholder="writing something"></textarea>
+                        <textarea></textarea>
                       </div>
                     </div>
                   </div>
                   <!--------- right-container ------->
                   <div class="col-md-6 meta-form">
                     <form class="seo-form">
-                      <label for="title" class="form-label-category"
+                      <label for="title" class="form-label-category form-cate"
                         >Meta Description</label
                       >
-                      <div class="editor-container">
-                        <textarea placeholder="writing something"></textarea>
+                      <div class="editor-container" style="height: 138px">
+                        <textarea></textarea>
                       </div>
                       <button type="submit" class="add-deatiles p-3">
                         ADD META DEATILES
@@ -544,7 +544,7 @@
         $('#myTabletwo').DataTable({
           paging: true,
           searching: false,
-          info: false,
+          info: true,
           pageLength: 4,
           destroy: true,
         });

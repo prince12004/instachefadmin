@@ -151,6 +151,9 @@ body {
   outline: none;
   background: transparent;
 }
+.dataTables_-search-filter #notification-icon {
+  color: rgba(129, 142, 148, 1);
+}
 .dataTables_filter {
   position: relative;
   right: 34px;
@@ -322,6 +325,9 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   background: white;
   border-radius: 10px;
 }
+.form-cate {
+  margin-top: 0px !important;
+}
 .form-label-category {
   display: block;
   font-family: Poppins;
@@ -329,6 +335,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
   margin-top: 17px;
+  margin-bottom: 8px;
 }
 .Add-blogs,
 #select-one {
@@ -419,11 +426,12 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   outline: none !important;
   border: none !important;
   box-shadow: 0px 1px 2px 0px #0000000d;
-  padding: 15px 10px !important;
+  padding: 21px 10px !important;
   resize: none;
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
+  color: rgba(166, 169, 183, 1);
 }
 /* -----------manage-blog---------------- */
 .form-label {
@@ -532,8 +540,9 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   background: rgba(31, 40, 105, 1);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   color: white;
-  width: 60%;
+  width: 100%;
   border-radius: 6px;
+  border: none;
 }
 /* -----------------manage-seo -----------*/
 .dataTables_wrapper {
@@ -541,7 +550,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 
 .seo {
-  padding: 10px 34px;
+  padding: 10px 16px;
 }
 .seo-footer {
   background-color: #f8f9fa;
