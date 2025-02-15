@@ -358,12 +358,11 @@ ol, ul{
     display: flex;
     justify-content: space-between;
   }
-  #packages{
+  /* #packages{
     background-color: #baf4e6;
   }
   #booking{
     background-color: #b6d2db;
-    /* border-radius: 3px solid #b6d2db; */
   }
   #chefA{
     background-color: #ccecf6;
@@ -373,17 +372,14 @@ ol, ul{
   }
   #user{
     background-color: #dfc2f6;
-  }
+  } */
 
-  .card-icon {
-    width: 37px;
-    margin-bottom: 15px;
-    background-color: #f0f0f0;
-    padding: 5px;
-    border-radius: 20px;
+  .card-icon{
+    width: 28% !important;
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
   }
 
   .card-icon img {
@@ -543,7 +539,6 @@ div.dt-container .dt-search input{
     border-radius: 25px !important;
     outline: none !important;
 }
-
 td{
     font-size: 12px;
     font-weight: 450;
@@ -551,10 +546,9 @@ td{
     line-height: 15px;
     color: #43424B;
 }
-
 .car-model{
     color: #43424B;
-    font-size: 9px !important;
+    font-size: 11px !important;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
@@ -959,7 +953,10 @@ table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order, table.dataTabl
     width: 31%;
     cursor: pointer;
   }
-  .showIcon{
+  .review-show img{
+    width: 25px;
+  }
+  /* .showIcon{
     background-color: #99e6bd66;
     padding: 6px;
     border-radius: 50%;
@@ -969,7 +966,7 @@ table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order, table.dataTabl
     background-color: #c5eaf5;
     padding: 4px;
     border-radius: 50px;
-  }
+  } */
 .review-contact p{
     font-size: 10px;
     font-weight: 400;
@@ -1296,7 +1293,7 @@ table.dataTable thead>tr>td.dt-orderable-asc, table.dataTable thead>tr>td.dt-ord
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 2px;
-  height: 62vh;
+  height: 61vh;
   overflow-y: scroll;
 }
 .review-views::-webkit-scrollbar{
@@ -1610,9 +1607,14 @@ cursor: pointer;
   font-size: 15px;
   color: #A6A9B7;
 }
-.user-emailA{
+.user-emailC{
   background-color: #FFFFFF;
   padding: 12px;
+  border-radius: 5px;
+}
+.user-emailA{
+  background-color: #FFFFFF;
+  /* padding: 12px; */
   border-radius: 5px;
 }
 .upload-file{
@@ -1669,10 +1671,10 @@ width: 17%;
 .choose-file{
   padding: 20px 25px;
 }
-.descriptionA{
+#descriptionB{
   width: 95% !important;
   border: 1px solid #D4D4D4;
-  padding: 10px;
+  padding: 15px;
 }
 #file-input{
   display: flex;
@@ -1685,16 +1687,18 @@ width: 17%;
   font-size: 16px;
   color:  #43424B;
   padding-right: 10px;
+  padding-bottom: 2px;
 }
 .gender{
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #A6A9B7;
+  margin-left: 7px;
 }
 .create-btn{
   width: 50%;
-  margin-top: 20px;
+  margin-top: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1712,7 +1716,7 @@ width: 17%;
 .icon-btn{
   width: 0px;
   position: absolute;
-  right: 9%;
+  right: 9.5%;
   margin-top: 45px;
   box-shadow: none;
   background: none;
@@ -1735,9 +1739,10 @@ width: 17%;
   box-shadow: none;
 }
 
-
 /* ======================= */
-
+#input-document{
+  width: 10% !important;
+}
 .dropdown-header{
   position: relative;
   bottom: -3px;

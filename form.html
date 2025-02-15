@@ -1,238 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin From</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/comman.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/comman.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
     <header>
-      <div class="instachef-admin">
-        <div class="instachef">
-          <a href="index.html">
+        <div class="instachef-admin">
+          <div class="instachef">
+            <a href="index.html">
             <img src="assets/InstaCheflogo.png" alt="" class="logo" />
           </a>
-          <img src="assets/Rectangle 915.png" alt="" class="middle-line" />
+          <img src="assets/Rectangle 915.png" alt="" class="middle-line">
           <div class="toggle-bar">
             <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
           </div>
-        </div>
-        <!-- <div class="toggle-bar"> -->
-        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
-        <!-- </div> -->
-        <div class="user-icons">
-          <a href="#">
-            <img src="assets/home.png" alt="" />
-          </a>
-          <a href="#" class="icon-item">
-            <img src="assets/notification.png" alt="notification Icon" />
-            <span class="counter wishlist-counter">2</span>
-          </a>
-          <img src="assets/Rectangle 915.png" alt="" class="right-border" />
-          <div class="admin-section">
-            <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
-            <div class="admin-text">
-              <h3>LOREM ISPUM</h3>
-              <select id="super-admin">
-                <option>super-admin</option>
-                <option>admin</option>
-              </select>
+          </div>
+          <!-- <div class="toggle-bar"> -->
+            <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+          <!-- </div> -->
+          <div class="user-icons">
+            <a href="#">
+              <img src="assets/home.png" alt="" />
+            </a>
+            <a href="#" class="icon-item">
+              <img src="assets/notification.png" alt="notification Icon" />
+              <span class="counter wishlist-counter">2</span>
+            </a>
+            <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+            <div class="admin-section">
+              <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+              <div class="admin-text">
+                <h3>LOREM ISPUM</h3>
+                <select id="super-admin">
+                  <option>super-admin</option>
+                  <option>admin</option>  
+                </select>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- ===========header============== -->
-    <div class="admin-panel">
-      <!-- Sidebar -->
-      <!-- <div class="toggle-bar">
+      </header>
+      <!-- ===========header============== -->
+      <div class="admin-panel">
+        <!-- Sidebar -->
+        <!-- <div class="toggle-bar">
           <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div> -->
-      <nav class="bg-dark text-white sidebar">
-        <ul class="nav flex-column">
-          <!-- Dashboard Item -->
-          <li class="nav-item dashboard">
-            <a href="index.html" class="nav-link text-white">
-              <img src="assets/image1.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              DASHBOARD
-            </a>
-          </li>
-
-          <!-- Manage Profile Item -->
-          <li class="nav-item">
-            <a href="form.html" class="nav-link text-white">
-              <img src="assets/image2.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE PROFILE
-            </a>
-          </li>
-
-          <!-- Manage Notification Item -->
-          <li class="nav-item">
-            <a href="Manage-notification.html" class="nav-link text-white">
-              <img src="assets/image3.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE NOTIFICATION
-            </a>
-          </li>
-
-          <!-- Contact Request Item -->
-          <li class="nav-item">
-            <a href="contact-request.html" class="nav-link text-white">
-              <img src="assets/image4.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              CONTACT REQUEST
-            </a>
-          </li>
-
-          <!-- Manage Blogs Item -->
-          <li class="nav-item">
-            <a href="manageblog.html" class="nav-link text-white">
-              <img src="assets/image5.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE BLOGS
-            </a>
-          </li>
-
-          <!-- Manage SEO Item -->
-          <li class="nav-item">
-            <a href="manageseo.html" class="nav-link text-white">
-              <img src="assets/image6.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE SEO
-            </a>
-          </li>
-
-          <!-- Manage User Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/image7.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE USER
-              <i class="fa fa-caret-down"></i>
-              <p>+3</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="create-user.html">
-                  <input type="radio" placeholder="" /> CREATE USER
-                </a>
-              </label>
-              <label for="user">
-                <a href="user-list.html">
-                  <input type="radio" placeholder="" /> USER LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="in-activeuser.html">
-                  <input type="radio" placeholder="" /> IN-ACTIVE USER
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Manage Booking Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/image8.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE BOOKING
-              <i class="fa fa-caret-down"></i>
-              <p>+4</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createbooking.html">
-                  <input type="radio" placeholder="" /> CREATE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="chef-booking.html">
-                  <input type="radio" placeholder="" /> BOOKINGS LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="in-activebooking.html">
-                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="Review.html">
-                  <input type="radio" placeholder="" /> REVIEW LIST
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Manage Cuisine Item -->
-          <li class="nav-item">
-            <a href="managecuisine.html" class="nav-link text-white">
-              <img src="assets/image9.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE CUISINE
-            </a>
-          </li>
-
-          <!-- Manage Package Item -->
-          <li class="nav-item">
-            <a href="mangepackage.html" class="nav-link text-white">
-              <img src="assets/image10.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE PACKAGE
-            </a>
-          </li>
-
-          <!-- Manage Chef Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/image11.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              MANAGE CHEF
-              <i class="fa fa-caret-down"></i>
-              <p>+2</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="create-chef.html">
-                  <input type="radio" placeholder="" /> CREATE CHEF
-                </a>
-              </label>
-              <label for="user">
-                <a href="chef-details.html">
-                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Logout Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white last-li">
-              <img src="assets/logout.png" alt="" class="default-img" />
-              <img src="assets/icons.png" alt="" class="hover-img" />
-              LOGOUT
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- ===============left==================== -->
-      <div class="main-content">
-        <!-- <header>
+        <nav class="bg-dark text-white sidebar">
+          <ul class="nav flex-column">
+            <!-- Dashboard Item -->
+            <li class="nav-item dashboard">
+              <a href="index.html" class="nav-link text-white">
+                <img src="assets/image1.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                DASHBOARD
+              </a>
+            </li>
+            
+            <!-- Manage Profile Item -->
+            <li class="nav-item">
+              <a href="form.html" class="nav-link text-white">
+                <img src="assets/image2.png" alt="" class="default-img" />
+                <img src="assets/imgaetwo.png" alt="" class="hover-img" />
+                MANAGE PROFILE
+              </a>
+            </li>
+            
+            <!-- Manage Notification Item -->
+            <li class="nav-item">
+              <a href="instachef/Manage-notification.html" class="nav-link text-white">
+                <img src="assets/image3.png" alt="" class="default-img" />
+                <img src="assets/imagethree.png" alt="" class="hover-img" />
+                MANAGE NOTIFICATION
+              </a>
+            </li>
+            
+            <!-- Contact Request Item -->
+            <li class="nav-item">
+              <a href="contact-request.html" class="nav-link text-white">
+                <img src="assets/image4.png" alt="" class="default-img" />
+                <img src="assets/imagefour.png" alt="" class="hover-img" />
+                CONTACT REQUEST
+              </a>
+            </li>
+            
+            <!-- Manage Blogs Item -->
+            <li class="nav-item">
+              <a href="../instachef-admin/instachef/manage-blog.html" class="nav-link text-white">
+                <img src="assets/image5.png" alt="" class="default-img" />
+                <img src="assets/imagefive.png" alt="" class="hover-img" />
+                MANAGE BLOGS
+              </a>
+            </li>
+            
+            <!-- Manage SEO Item -->
+            <li class="nav-item">
+              <a href="../instachef-admin/instachef/manage-seo.html" class="nav-link text-white">
+                <img src="assets/image6.png" alt="" class="default-img" />
+                <img src="assets/imagesix.png" alt="" class="hover-img" />
+                MANAGE SEO
+              </a>
+            </li>
+            
+            <!-- Manage User Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image7.png" alt="" class="default-img" />
+                <img src="assets/imageseven.png" alt="" class="hover-img" />
+                MANAGE USER
+                <i class="fa fa-caret-down"></i>
+                <p> +3</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="create-user.html">
+                    <input type="radio" placeholder=""> CREATE USER
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="user-list.html">
+                    <input type="radio" placeholder=""> USER LIST
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="in-activeuser.html">
+                    <input type="radio" placeholder=""> IN-ACTIVE USER
+                  </a>
+                </label>
+              </div> 
+            </li>
+            
+            <!-- Manage Booking Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image8.png" alt="" class="default-img" />
+                <img src="assets/imageeight.png" alt="" class="hover-img" />
+                MANAGE BOOKING
+                <i class="fa fa-caret-down"></i>
+                <p> +4</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="../instachef-admin/instachef/create-booking.html">
+                    <input type="radio" placeholder=""> CREATE BOOKING
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="chef-booking.html">
+                    <input type="radio" placeholder=""> BOOKINGS LIST
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="in-activebooking.html">
+                    <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="Review.html">
+                    <input type="radio" placeholder=""> REVIEW LIST
+                  </a>
+                </label>
+              </div> 
+            </li>
+            
+            <!-- Manage Cuisine Item -->
+            <li class="nav-item">
+              <a href="../instachef-admin/instachef/create-cuisine.html" class="nav-link text-white">
+                <img src="assets/image9.png" alt="" class="default-img" />
+                <img src="assets/imageeight (2).png" alt="" class="hover-img" />
+                MANAGE CUISINE
+              </a>
+            </li>
+            
+            <!-- Manage Package Item -->
+            <li class="nav-item">
+              <a href="../instachef-admin/instachef/manage-package.html" class="nav-link text-white">
+                <img src="assets/image10.png" alt="" class="default-img" />
+                <img src="assets/imagenine.png" alt="" class="hover-img" />
+                MANAGE PACKAGE
+              </a>
+            </li>
+            
+            <!-- Manage Chef Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white select-manage">
+                <img src="assets/image11.png" alt="" class="default-img" />
+                <img src="assets/imageten.png" alt="" class="hover-img" />
+                MANAGE CHEF
+                <i class="fa fa-caret-down"></i>
+                <p> +2</p>
+              </a>
+              <div class="user-select-input">
+                <label for="user">
+                  <a href="create-chef.html">
+                    <input type="radio" placeholder=""> CREATE CHEF
+                  </a>
+                </label>
+                <label for="user">
+                  <a href="chef-details.html">
+                    <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                  </a>
+                </label>
+              </div> 
+            </li>
+            
+            <!-- Logout Item -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white last-li">
+                <img src="assets/logout.png" alt="" class="default-img" />
+                <img src="assets/icons.png" alt="" class="hover-img" />
+                LOGOUT
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+<!-- ===============left==================== -->
+<div class="main-content">
+  <!-- <header>
     <div class="instachef-admin">
       <div class="toggle-bar">
           <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
@@ -259,216 +251,144 @@
       </div>
     </div>
   </header> -->
-        <!-- ----------------------------------- -->
-        <div class="admin-dashboard">
-          <div class="dashboard-time">
-            <img src="assets/Group 156379.png" alt="" />
+  <!-- ----------------------------------- -->
+    <div class="admin-dashboard">
+        <div class="dashboard-time">
+            <img src="assets/Group 156379.png" alt="">
             <p>Manage Profile</p>
-          </div>
-
-          <div class="time-piker">
-            <div class="time">
-              <img src="assets/Group 215.png" alt="" />
-              <div class="time-pikerA">
-                <p>Date Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01/01/2018 - 01/15/2018"
-                  class="dateA"
-                />
-              </div>
-            </div>
-            <div class="time">
-              <img src="assets/Group 215.png" alt="" />
-              <div class="time-pikerA">
-                <p>Filter Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01-01-2023"
-                  class="dateA"
-                />
-              </div>
-            </div>
-            <!-- <div class="dropdown">
-          <select name="chef" id="chef"></select>
-        </div> -->
-          </div>
         </div>
 
-        <!-- ======================= -->
-        <div class="forms">
-          <div class="container">
-            <div class="form-card">
-              <div class="admin-form">
-                <h2>Manage Profile</h2>
-                <img src="assets/Combined Shape.png" alt="" />
-              </div>
+        <div class="time-piker">
+        <div class="time">
+            <img src="assets/Group 215.png" alt="">
+            <div class="time-pikerA">
+             <p>Date Range</p>  
+             <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+            </div>
+        </div>
+        <div class="time">
+            <img src="assets/Group 215.png" alt="">
+            <div class="time-pikerA">
+             <p>Filter Range</p>  
+             <input type="date" name="daterange" value="01-01-2023" class="dateA">                            
+            </div>
+        </div>
+        <!-- <div class="dropdown">
+          <select name="chef" id="chef"></select>
+        </div> -->
+    </div>
+    </div>
 
-              <div class="user-login">
-                <div class="profile-section">
-                  <div class="profile-image">
-                    <img
-                      src="assets/Group 156305 (1).png"
-                      alt=""
-                      class="user-profile"
-                    />
-                    <span class="edit-icon">
-                      <form id="uploadDocument" class="documentA" action="#">
-                        <img
-                          src="assets/Group 177626.png"
-                          alt=""
-                          class="login-img"
-                        />
-                        <input
-                          id="file1"
-                          type="file"
-                          class="account-input"
-                          hidden
-                        />
-                      </form>
-                    </span>
-                  </div>
-                </div>
-
-                <form id="profileForm">
-                  <div class="form-group">
-                    <label for="username">User Name</label>
-                    <div class="user-fromB">
-                      <img
-                        src="assets/Icon User (1).png"
-                        alt=""
-                        class="user-iconA"
-                      />
-                      <input
-                        type="text"
-                        id="username"
-                        class="username-email"
-                        placeholder="Irfan Emmanuel"
-                      />
-                    </div>
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Admin Login Email</label>
-                    <div class="user-formB">
-                      <img
-                        src="assets/Group 156384 (1).png"
-                        alt=""
-                        class="user-iconA"
-                      />
-                      <input
-                        type="email"
-                        id="email"
-                        class="username-email"
-                        placeholder="IrfanEmmanuel@instachef.ae"
-                      />
-                    </div>
-                    <span class="error-message"></span>
-                  </div>
-                  <button type="button" id="updateProfileBtn">
-                    Update Profile
-                  </button>
-                </form>
+    <!-- ======================= -->
+    <div class="forms">
+      <div class="container">
+        <div class="form-card">
+          <div class="admin-form">
+            <h2>Manage Profile</h2>
+            <img src="assets/Combined Shape.png" alt="">
+          </div>
+    
+          <div class="user-login">
+            <div class="profile-section">
+              <div class="profile-image">
+                <img src="assets/Group 156305 (1).png" alt="" class="user-profile">
+                <span class="edit-icon">
+                  <form id="uploadDocument" class="documentA" action="#">
+                    <img src="assets/Group 177626.png" alt="" class="login-img">
+                   <input id="file1" type="file" class="account-input" hidden>      
+                     </form>
+                </span>
               </div>
             </div>
-
-            <div class="form-cardA">
-              <div class="admin-form">
-                <h2>Change Your Password</h2>
-                <img src="assets/Combined Shape.png" alt="" />
+    
+            <form id="profileForm">
+              <div class="form-group">
+                <label for="username">User Name</label>
+                <div class="user-fromB">
+                <img src="assets/Icon User (1).png" alt="" class="user-iconA">
+                <input type="text" id="username" class="username-email"  placeholder="Irfan Emmanuel">
               </div>
-
-              <div class="user-login">
-                <form id="passwordForm">
-                  <div class="form-group">
-                    <label for="old-password">Enter Your Old Password</label>
-                    <div class="lock">
-                      <img
-                        src="assets/Icon Lock close (1).png"
-                        alt=""
-                        class="lock-icon"
-                      />
-                      <input
-                        type="password"
-                        id="old-password"
-                        class="username-email"
-                        placeholder="Enter Your Old Password"
-                      />
-                    </div>
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="new-password">Enter Your New Password</label>
-                    <div class="lock">
-                      <img
-                        src="assets/Icon Lock close (1).png"
-                        alt=""
-                        class="lock-icon"
-                      />
-                      <input
-                        type="password"
-                        id="new-password"
-                        class="username-email"
-                        placeholder="Enter Your New Password"
-                      />
-                    </div>
-                    <span class="error-message"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="confirm-password"
-                      >Enter Your Confirm New Password</label
-                    >
-                    <div class="lock">
-                      <img
-                        src="assets/Icon Lock close (1).png"
-                        alt=""
-                        class="lock-icon"
-                      />
-                      <input
-                        type="password"
-                        id="confirm-password"
-                        class="username-email"
-                        placeholder="Enter Your Confirm New Password"
-                      />
-                    </div>
-                    <span class="error-message"></span>
-                  </div>
-                  <button type="submit" id="submit">Change Password</button>
-                </form>
+                <span class="error-message"></span>
               </div>
-            </div>
+              <div class="form-group">
+                <label for="email">Admin Login Email</label>
+                <div class="user-formB">
+                  <img src="assets/Group 156384 (1).png" alt="" class="user-iconA">
+                <input type="email" id="email" class="username-email" placeholder="IrfanEmmanuel@instachef.ae">
+              </div>
+                <span class="error-message"></span>
+              </div>
+              <button type="button" id="updateProfileBtn">Update Profile</button>
+            </form>
+          </div>
+        </div>
+    
+        <div class="form-cardA">
+          <div class="admin-form">
+            <h2>Change Your Password</h2>
+            <img src="assets/Combined Shape.png" alt="">
+          </div>
+    
+          <div class="user-login">
+            <form id="passwordForm">
+              <div class="form-group">
+                <label for="old-password">Enter Your Old Password</label>
+                <div class="lock">
+                  <img src="assets/Icon Lock close (1).png" alt="" class="lock-icon">
+                <input type="password" id="old-password" class="username-email" placeholder="Enter Your Old Password">
+              </div>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="new-password">Enter Your New Password</label>
+                <div class="lock">
+                  <img src="assets/Icon Lock close (1).png" alt="" class="lock-icon">
+                <input type="password" id="new-password" class="username-email" placeholder="Enter Your New Password">
+              </div>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Enter Your Confirm New Password</label>
+                <div class="lock">
+                  <img src="assets/Icon Lock close (1).png" alt="" class="lock-icon">
+                <input type="password" id="confirm-password" class="username-email" placeholder="Enter Your Confirm New Password">
+              </div>
+                <span class="error-message"></span>
+              </div>
+              <button type="submit" id="submit">Change Password</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+      </div>
+      </div>
+       <script src="script.js"></script> 
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $('.toggle-bar').click(function () {
-          $('.sidebar').toggleClass('show');
+       <script>
+  
+        $(document).ready(function() {
+            $(".toggle-bar").click(function() {
+                $(".sidebar").toggleClass("show");
+            });
         });
-      });
-    </script>
+    
+</script>
 
-    <script>
-      $(document).ready(function () {
-        $('.user-select-input').hide();
-        $('.fa-caret-down').click(function (event) {
-          event.preventDefault();
-          $(this)
-            .closest('.nav-item')
-            .find('.user-select-input')
-            .fadeToggle('fast');
-        });
-      });
-    </script>
-    <!----------------------- dropdown-toggle---------------------->
-
-    <!-- <script>
+<script>
+  $(document).ready(function(){
+   $('.user-select-input').hide();
+         $('.fa-caret-down').click(function(event){
+           event.preventDefault();
+             $(this).closest(".nav-item").find(".user-select-input").fadeToggle('fast');
+         });
+     });
+ </script>
+<!----------------------- dropdown-toggle---------------------->
+ 
+ <!-- <script>
           document.addEventListener("DOMContentLoaded", function () {
   function showError(input, message) {
     const errorSpan = input.parentElement.nextElementSibling;
@@ -551,19 +471,20 @@
 });
 
         </script>  -->
-    <!-----------------------validation------------------------->
+<!-----------------------validation------------------------->
 
-    <script>
-      const documentA = document.getElementById('uploadDocument');
-      const fileInput = document.getElementById('file1');
+<script>
+  const documentA = document.getElementById("uploadDocument");
+  const fileInput = document.getElementById("file1");
 
-      documentA.addEventListener('click', () => {
-        fileInput.click();
-      });
+documentA.addEventListener("click", () =>{
+        fileInput.click()
+    });
 
-      fileInput.addEventListener('change', (event) => {
-        const files = event.target.files;
-      });
-    </script>
-  </body>
+fileInput.addEventListener("change", (event) => {
+  const files = event.target.files;
+});
+
+</script>
+</body>
 </html>
