@@ -252,93 +252,94 @@
       <h2>CREATE CHEF</h2>
       <img src="assets/Combined Shape.png" alt="">
     </div>
-  <form id="createchef">
-  <div class="user-nameB new-B">
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Chef Name</label>
-          <input type="text" id="" class="user-email"  placeholder="Chef Name">
-      </div>
-      <div class="form-groupA">
-          <label for="useremal"  class="create-chefA">Email</label>
-          <input type="text" id="" class="user-email"  placeholder="Enter Chef Email">      
-      </div>
-      <div class="form-groupA">
-          <label for="usermobile"  class="create-chefA">Mobile</label>
-          <input type="text" id="" class="user-email"  placeholder="Enter Chef Mobile">     
-       </div>
-    </div>
-
-    <div class="user-nameB">
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Chef Country</label>
-          <div class="dropdown">
-              <select name="Country" id="country" class="create-chefB">
-                  <option  class="create-chefB">Select Country</option>
-              <option  class="create-chefB">India</option>
-              <option  class="create-chefB">USA</option>
-          </select>
+    <form id="createchef">
+      <div class="user-nameB new-B">
+          <div class="form-groupA">
+              <label for="username" class="create-chefA">Chef Name</label>
+              <input type="text" id="chefName" class="user-email" placeholder="Chef Name">
+              <span class="error-message"></span>
+          </div>
+          <div class="form-groupA">
+              <label for="chefEmail" class="create-chefA">Email</label>
+              <input type="text" id="chefEmail" class="user-email" placeholder="Enter Chef Email">
+              <span class="error-message"></span>
+          </div>
+          <div class="form-groupA">
+              <label for="chefMobile" class="create-chefA">Mobile</label>
+              <input type="text" id="chefMobile" class="user-email" placeholder="Enter Chef Mobile">
+              <span class="error-message"></span>
           </div>
       </div>
-      <div class="form-groupA">
-          <label for="useremal" class="create-chefA">Join date</label>
-          <input type="text" id="" class="user-email"  placeholder="DD-MM-YYYY">      
-      </div>
-      <div class="form-groupA">
-          <label for="usermobile" class="create-chefA">End Date</label>
-          <input type="text" id="" class="user-email"  placeholder="DD-MM-YYYY">     
-       </div>
-    </div>
-
-    <div class="user-nameB">
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Chef Address</label>
-          <div class="user-emailA">
-          <input type="text" class="qualification" placeholder="Enter Chef Address"></input>
-      </div>
-      </div>
-      <div class="form-groupA">
-          <label for="useremal"  class="create-chefA">Enter Chef Address</label>
-          <div class="user-emailA">
-              <input type="text" class="qualification" placeholder="Enter Headlines"></input>
+  
+      <div class="user-nameB">
+          <div class="form-groupA">
+              <label for="country" class="create-chefA">Chef Country</label>
+              <select id="country" class="create-chefB">
+                  <option value="">Select Country</option>
+                  <option value="India">India</option>
+                  <option value="USA">USA</option>
+              </select>
+              <span class="error-message"></span>
           </div>
+          <div class="form-groupA">
+              <label for="joinDate" class="create-chefA">Join Date</label>
+              <input type="text" id="joinDate" class="user-email" placeholder="DD-MM-YYYY">
+              <span class="error-message"></span>
           </div>
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Qualification</label>
-          <div class="user-emailA">
-          <input type="text" class="qualification" placeholder="Enter Qualification"></input>
-      </div>
-    </div>
-    </div>
-    <div class="user-nameB">
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Work Experience</label>
-          <div class="user-emailA">
-          <input type="text" class="qualification" placeholder="Enter Work Experience"></input>
-      </div>
-      </div>
-      <div class="form-groupA">
-          <label for="useremal"  class="create-chefA">Cuisines Known</label>
-          <div class="user-emailA">
-              <input type="text" class="qualification" placeholder="Enter Cuisines Known"></input>
+          <div class="form-groupA">
+              <label for="endDate" class="create-chefA">End Date</label>
+              <input type="text" id="endDate" class="user-email" placeholder="DD-MM-YYYY">
+              <span class="error-message"></span>
           </div>
-          <div class="chef-textA">
-              <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
-          </div>
-          </div>
-      <div class="form-groupA">
-          <label for="username" class="create-chefA">Ratings</label>
-          <div class="user-emailC">
-          <i class="ri-star-fill stars"></i>
-          <i class="ri-star-fill stars"></i>
-          <i class="ri-star-fill stars"></i>
-          <i class="ri-star-fill stars"></i>
-          <i class="ri-star-half-line stars"></i>
-          <sapn class="rating">Enter Chef Rating 1 to 5</sapn>
       </div>
-    </div>
-    </div>
-  </form>
-
+  
+      <div class="user-nameB">
+          <div class="form-groupA">
+              <label for="chefAddress" class="create-chefA">Chef Address</label>
+              <input type="text" id="chefAddress" class="qualification" placeholder="Enter Chef Address">
+              <span class="error-message"></span>
+          </div>
+          <div class="form-groupA">
+            <label for="useremal"  class="create-chefA">Headlines</label>
+            <div class="user-emailA">
+                <input type="text" class="qualification" placeholder="Enter Headlines"></input>
+            </div>
+            </div>
+          <div class="form-groupA">
+              <label for="qualification" class="create-chefA">Qualification</label>
+              <input type="text" id="qualification" class="qualification" placeholder="Enter Qualification">
+              <span class="error-message"></span>
+          </div>
+      </div>
+  
+      <div class="user-nameB">
+          <div class="form-groupA">
+              <label for="experience" class="create-chefA">Work Experience</label>
+              <input type="text" id="experience" class="qualification" placeholder="Enter Work Experience">
+              <span class="error-message"></span>
+          </div>
+          <div class="form-groupA">
+            <label for="useremal"  class="create-chefA">Cuisines Known</label>
+            <div class="user-emailA">
+                <input type="text" class="qualification" placeholder="Enter Cuisines Known"></input>
+            </div>
+            <div class="chef-textA">
+                <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
+            </div>
+            </div>
+    
+            <div class="form-groupA">
+                <label for="username" class="create-chefA">Ratings</label>
+                <div class="user-emailC">
+                <i class="ri-star-fill stars"></i>
+                <i class="ri-star-fill stars"></i>
+                <i class="ri-star-fill stars"></i>
+                <i class="ri-star-fill stars"></i>
+                <i class="ri-star-half-line stars"></i>
+                <sapn class="rating">Enter Chef Rating 1 to 5</sapn>
+            </div>
+          </div>
+      </div>
      <div class="upload-file py-4">
       <div class="uploadDocument">
       <div class="file">
@@ -381,7 +382,7 @@
   
   </div>
      </div>
-<!-- </form> -->
+</form>
 </div>
 
       </div>
@@ -407,5 +408,120 @@
          });
      });
  </script>
+
+ <!-- ------------------------------------ -->
+ <script>
+  document.getElementById("createchef").addEventListener("submit", function(event) {
+      event.preventDefault();
+      let isValid = true;
+      
+      function showError(input, message) {
+          const errorSpan = input.nextElementSibling;
+          errorSpan.textContent = message;
+          errorSpan.style.color = "red";
+      }
+  
+      function clearError(input) {
+          const errorSpan = input.nextElementSibling;
+          errorSpan.textContent = "";
+      }
+  
+      const chefName = document.getElementById("chefName");
+      if (chefName.value.trim() === "") {
+          showError(chefName, "Chef Name is required");
+          isValid = false;
+      } else {
+          clearError(chefName);
+      }
+  
+      const chefEmail = document.getElementById("chefEmail");
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(chefEmail.value)) {
+          showError(chefEmail, "Enter a valid email");
+          isValid = false;
+      } else {
+          clearError(chefEmail);
+      }
+  
+      const chefMobile = document.getElementById("chefMobile");
+      const mobilePattern = /^[0-9]{10}$/;
+      if (!mobilePattern.test(chefMobile.value)) {
+          showError(chefMobile, "Enter a valid 10-digit mobile number");
+          isValid = false;
+      } else {
+          clearError(chefMobile);
+      }
+  
+      const country = document.getElementById("country");
+      if (country.value === "") {
+          showError(country, "Please select a country");
+          isValid = false;
+      } else {
+          clearError(country);
+      }
+  
+      const joinDate = document.getElementById("joinDate");
+      const datePattern = /^\d{2}-\d{2}-\d{4}$/;
+      if (!datePattern.test(joinDate.value)) {
+          showError(joinDate, "Enter date in DD-MM-YYYY format");
+          isValid = false;
+      } else {
+          clearError(joinDate);
+      }
+  
+      const endDate = document.getElementById("endDate");
+      if (!datePattern.test(endDate.value)) {
+          showError(endDate, "Enter date in DD-MM-YYYY format");
+          isValid = false;
+      } else {
+          clearError(endDate);
+      }
+  
+      const chefAddress = document.getElementById("chefAddress");
+      if (chefAddress.value.trim() === "") {
+          showError(chefAddress, "Chef Address is required");
+          isValid = false;
+      } else {
+          clearError(chefAddress);
+      }
+  
+      const qualification = document.getElementById("qualification");
+      if (qualification.value.trim() === "") {
+          showError(qualification, "Qualification is required");
+          isValid = false;
+      } else {
+          clearError(qualification);
+      }
+  
+      const experience = document.getElementById("experience");
+      if (experience.value.trim() === "") {
+          showError(experience, "Work Experience is required");
+          isValid = false;
+      } else {
+          clearError(experience);
+      }
+  
+      const cuisines = document.getElementById("cuisines");
+      if (cuisines.value.trim() === "") {
+          showError(cuisines, "Cuisines Known is required");
+          isValid = false;
+      } else {
+          clearError(cuisines);
+      }
+  
+      const gender = document.querySelector('input[name="gender"]:checked');
+      if (!gender) {
+          showError(document.querySelector('input[name="gender"]'), "Select a gender");
+          isValid = false;
+      } else {
+          clearError(document.querySelector('input[name="gender"]'));
+      }
+  
+      if (isValid) {
+          alert("Form submitted successfully!");
+          this.submit();
+      }
+  });
+  </script>
 </body>
 </html>

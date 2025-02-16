@@ -141,15 +141,23 @@ body {
   padding: 8px 28px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  background: rgba(236, 238, 255, 1);
+  background: #F5F6FA;
+  border: 1px solid #F4F7FC;
 }
 .dataTables_-search-filter input {
-  color: rgba(129, 142, 148, 1);
+  color: #818E94;
   border-radius: 26px !important;
+  background: none;
   width: 89% !important;
   border: none;
   outline: none;
-  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+#notification-icon{
+  color: #818E94;
+  font-size: 13px;
 }
 .dataTables_filter {
   position: relative;
@@ -615,15 +623,15 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 /*----------------- create-cuisine --------------*/
 .SUBMIT-NOW {
-  background: rgba(31, 40, 105, 1);
+  background-color: #1F2869;;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: #FFFFFF;
   width: 60%;
   border-radius: 9px;
-  padding: 14px 12px;
-  font-family: Poppins;
+  padding: 11px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   margin-top: 20px;
 }
@@ -936,4 +944,23 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 .user-select-input a {
   text-decoration: none;
   color: white !important;
+}
+
+
+/* ======================== */
+.card{
+  border: none !important;
+}
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before,
+ table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_asc_disabled:before, 
+ table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting_asc:before, 
+ table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_asc_disabled:before, 
+ table.dataTable thead>tr>td.sorting_desc_disabled:before, table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after{
+display: none !important;
+}
+#title, #titleA{
+  outline: none !important;
+}
+.img-fluid{
+  width: 20% !important;
 }
