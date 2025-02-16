@@ -26,7 +26,7 @@ body {
 }
 .Both-container {
   background: rgba(245, 246, 250, 1);
-  padding: 28px 14px;
+  padding: 21px 14px;
   margin-left: 0px !important;
   border-radius: 10px;
   width: 100%;
@@ -404,6 +404,15 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 .meta-box .meta-deatiles {
   width: 50%;
 }
+.meta-deatiles textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  outline: none;
+  padding: 7px 15px;
+  height: 125px;
+  border-radius: 14px;
+}
 .meta-box .meta-keybord {
   height: 122px;
   width: 100%;
@@ -433,7 +442,15 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   font-size: 16px;
   color: rgba(166, 169, 183, 1);
 }
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+}
 /* -----------manage-blog---------------- */
+.form-booking {
+  margin-top: 15px !important;
+}
 .form-label {
   margin: 7px 2px;
   font-family: Poppins;
