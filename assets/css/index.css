@@ -17,7 +17,7 @@ body {
   width: 97%;
 }
 .manage-heading h3 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 600;
 }
@@ -40,7 +40,7 @@ body {
   border-radius: 10px;
 }
 .card-body h4 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 17px;
   font-weight: 600;
   color: rgba(67, 66, 75, 1);
@@ -69,19 +69,19 @@ body {
   padding: 20px;
 }
 .right-form label {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 500;
   color: rgba(67, 66, 75, 1);
 }
 .right-form input::placeholder {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   color: rgba(166, 169, 183, 1);
 }
 .right-form textarea::placeholder {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   color: rgba(166, 169, 183, 1);
@@ -93,7 +93,7 @@ body {
   width: 60%;
   border-radius: 9px;
   padding: 9px 12px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 18px;
   border: none;
@@ -120,14 +120,14 @@ body {
 }
 .range-picker label {
   display: block;
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 8px;
   font-weight: 400;
   color: rgba(186, 186, 186, 1);
   line-height: 2px;
 }
 .range-picker input {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 10px;
   font-weight: 600;
   border: none;
@@ -156,15 +156,16 @@ body {
 }
 .dataTables_filter {
   position: relative;
-  right: 34px;
+  right: 7px;
   bottom: 0px;
-  top: 54px;
+  top: 46px;
   border-radius: 26px;
   padding: 4px 6px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   z-index: 1000;
   background-color: white;
   width: 20%;
+  height: 43px;
 }
 .dataTables_filter input {
   background: white;
@@ -176,7 +177,7 @@ body {
 
 .dataTables_filter #notification-icon {
   background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 20px;
   color: rgba(129, 142, 148, 1);
   font-size: 19px;
@@ -185,7 +186,7 @@ body {
   padding: 18px 0px;
 }
 .table-blog-bar h4 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 20px;
   font-weight: 600;
   margin: 0px 10px;
@@ -198,7 +199,7 @@ body {
   padding: 18px 16px;
 }
 .table-top-bar h4 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 20px;
   font-weight: 600;
   margin: 0px 10px;
@@ -224,9 +225,13 @@ table th::after {
 table th::after {
   display: none;
 }
+table.dataTable thead > tr > th.sorting:before,
+table.dataTable thead > tr > th.sorting_asc:before {
+  display: none !important;
+}
 table.dataTable thead > tr > th.sorting:after,
 table.dataTable thead > tr > th.sorting_asc:after {
-  display: none;
+  display: none !important;
 }
 table.dataTable {
   border-radius: 20px;
@@ -273,19 +278,19 @@ table.dataTable {
   padding: 40px;
 }
 .table-container h4 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 20px;
   font-weight: 600;
   color: rgba(67, 66, 75, 1);
 }
 .table-heading {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 14px;
   font-weight: 500;
   color: rgba(31, 40, 105, 1);
 }
 .table-data {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 10px;
   font-weight: 500;
   color: rgba(67, 66, 75, 1);
@@ -309,13 +314,13 @@ table.dataTable {
 }
 /* ----------------manage-seo -----------*/
 table.dataTable.display > tbody > tr.odd > .sorting_1 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 13px;
   color: rgba(67, 66, 75, 1);
 }
 table.dataTable.display > tbody > tr.even > .sorting_1 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 13px;
   color: rgba(67, 66, 75, 1);
@@ -330,7 +335,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 .form-label-category {
   display: block;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
@@ -344,7 +349,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   /* border: none; */
 }
 #select-one {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 15px;
   color: rgba(166, 169, 183, 1);
@@ -352,7 +357,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   outline: none;
 }
 #select-one option {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 15px;
   color: rgba(166, 169, 183, 1);
@@ -395,7 +400,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 .meta-box .meta-label {
   display: block;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
@@ -423,7 +428,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   text-align: center;
 }
 .meta-upload p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 12px;
   color: rgba(67, 66, 75, 1);
@@ -437,7 +442,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   box-shadow: 0px 1px 2px 0px #0000000d;
   padding: 21px 10px !important;
   resize: none;
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   color: rgba(166, 169, 183, 1);
@@ -453,7 +458,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 .form-label {
   margin: 7px 2px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
@@ -546,7 +551,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   width: 50%;
 }
 .span-first p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -561,6 +566,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   border-radius: 6px;
   border: none;
 }
+
 /* -----------------manage-seo -----------*/
 .dataTables_wrapper {
   background-color: transparent;
@@ -647,7 +653,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   width: 60%;
   border-radius: 9px;
   padding: 14px 12px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 18px;
   border: none;
@@ -656,7 +662,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 .add-cuisine {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(30, 158, 90, 1);
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 12px;
   padding: 9px 9px;
@@ -684,7 +690,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 .package-label {
   display: block;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
@@ -697,7 +703,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   width: 100%;
   border-radius: 7px;
   color: rgba(166, 169, 183, 1);
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
 }
@@ -717,14 +723,14 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   gap: 10px;
 }
 .amount-container .amount-container-heading {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: rgba(67, 66, 75, 1);
 }
 .amount-container .label-text {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   line-height: 19.36px;
@@ -850,7 +856,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   cursor: pointer;
 }
 #fileName {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   padding: 10px;
@@ -860,7 +866,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   color: rgba(31, 40, 105, 1);
   padding: 14px 12px;
   border-radius: 4px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 18px;
 }
@@ -891,7 +897,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 
 #displayFile {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   padding: 10px;
@@ -902,7 +908,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   color: rgba(31, 40, 105, 1);
   padding: 6px 12px;
   border-radius: 4px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 18px;
 }
@@ -932,7 +938,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
 }
 
 #selectedImages {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 11px;
   padding: 10px;
@@ -943,7 +949,7 @@ table.dataTable.display > tbody > tr.even > .sorting_1 {
   color: rgba(31, 40, 105, 1);
   padding: 14px 12px;
   border-radius: 4px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 11px;
 }

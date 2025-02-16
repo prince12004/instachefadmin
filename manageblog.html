@@ -21,7 +21,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
-
+  <style>
+    table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before {
+  display: none;
+}
+table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after{
+ display: none;
+}
+  </style>
   </head>
   <body>
     <header>
