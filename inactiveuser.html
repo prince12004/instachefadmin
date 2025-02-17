@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review-List</title>
+  <title>Active-User</title>
   <link rel="stylesheet" href="assets/css/newstyle.css">
   <link rel="stylesheet" href="assets/css/comman.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="instachef-admin">
@@ -47,7 +48,7 @@
       </div>
     </div>
   </header>
-  <!-- -------------------header--------------- -->
+  <!-- -----------------------header------------------ -->
   <div class="admin-panel">
     <nav class="bg-dark text-white sidebar">
       <ul class="nav flex-column">
@@ -59,6 +60,7 @@
             DASHBOARD
           </a>
         </li>
+
         <!-- Manage Profile Item -->
         <li class="nav-item">
           <a href="manageprofile.html" class="nav-link text-white">
@@ -67,6 +69,7 @@
             MANAGE PROFILE
           </a>
         </li>
+
         <!-- Manage Notification Item -->
         <li class="nav-item">
           <a href="Managenotification.html" class="nav-link text-white">
@@ -75,6 +78,7 @@
             MANAGE NOTIFICATION
           </a>
         </li>
+
         <!-- Contact Request Item -->
         <li class="nav-item">
           <a href="contactrequest.html" class="nav-link text-white">
@@ -83,6 +87,7 @@
             CONTACT REQUEST
           </a>
         </li>
+
         <!-- Manage Blogs Item -->
         <li class="nav-item">
           <a href="manageblog.html" class="nav-link text-white">
@@ -91,6 +96,7 @@
             MANAGE BLOGS
           </a>
         </li>
+
         <!-- Manage SEO Item -->
         <li class="nav-item">
           <a href="manageseo.html" class="nav-link text-white">
@@ -99,6 +105,7 @@
             MANAGE SEO
           </a>
         </li>
+
         <!-- Manage User Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white select-manage">
@@ -126,6 +133,7 @@
             </label>
           </div>
         </li>
+
         <!-- Manage Booking Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white select-manage">
@@ -158,6 +166,7 @@
             </label>
           </div>
         </li>
+
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
           <a href="managecuisine.html" class="nav-link text-white">
@@ -166,6 +175,7 @@
             MANAGE CUISINE
           </a>
         </li>
+
         <!-- Manage Package Item -->
         <li class="nav-item">
           <a href="mangepackage.html" class="nav-link text-white">
@@ -174,6 +184,7 @@
             MANAGE PACKAGE
           </a>
         </li>
+
         <!-- Manage Chef Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white select-manage">
@@ -196,6 +207,7 @@
             </label>
           </div>
         </li>
+
         <!-- Logout Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white last-li">
@@ -206,13 +218,14 @@
         </li>
       </ul>
     </nav>
+
+    <!-- ================================ -->
     <div id="main-content" class="main-content">
       <div class="admin-dashboard">
         <div class="dashboard-time">
-          <img src="assets/images/manageBooking.png" alt="">
-          <p>MANAGE BOOKING</p>
+          <img src="assets/images/createUser.png" alt="">
+          <p>Manage User</p>
         </div>
-
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="">
@@ -230,11 +243,12 @@
           </div>
         </div>
       </div>
-      <!-- ----------------------------------------------------------------- -->
+      <!-- ----------------------------------------------------------- -->
       <div class="table-container">
         <table id="myTable-2" class="maintable" style="width:100%">
+          <!-- <h1 class="heading">IN-ACTIVE USER LIST</h1> -->
           <div class="user-listA">
-            <h1 class="heading">REVIEW LIST</h1>
+            <h1 class="heading">IN-ACTIVE USER LIST</h1>
             <div id="search-here">
               <label class="search"><img src="assets/images/iconSearch.png" alt=""></label>
               <input type="search" placeholder="Search here..." id="iconSearch">
@@ -243,171 +257,121 @@
           <thead>
             <tr>
               <th class="serial-number">#</th>
-              <th>User ID</th>
-              <th>Chef</th>
-              <th>Time</th>
-              <th>Clealiness</th>
-              <th id="adress">Taste</th>
-              <th id="adress">Remark</th>
+              <th>Name</th>
+              <th>Email ID</th>
+              <th>Phone</th>
+              <th id="adress-C">Address</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
             <tr>
-              <td class="number">01.</td>
+              <td class="number">1.</td>
               <td id="car-name"> <img src="assets/images/profile-photo.png" alt="car"> Tanja Vinther</td>
-              <td id="model">Kaneshk Dhomse</td>
-              <td>26 Mar 2024 11:03</td>
+              <td id="model">Tanjabruun@hotmail.com</td>
               <td>0558400708</td>
-              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
-              <td>
-                <p class="Remark">Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
-              </td>
-              <td><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"></a></td>
-              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+                industry's standard dummy text</td>
+              <td class="button-recover"><a href="#"><button type="submit">RECOVER</button></a></td>
             </tr>
           </tbody>
         </table>

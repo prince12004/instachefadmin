@@ -8,8 +8,14 @@
 body {
   font-family: Arial, sans-serif;
 }
+textarea.form-control{
+  height: 122px;
+}
+.card{
+  border: none !important;
+  border-radius: 15px !important;
+}
 /* -----manage-notification------------ */
-
 .manage-heading {
   background-color: white;
   padding: 8px 9px;
@@ -26,7 +32,7 @@ body {
 }
 .Both-container {
   background: rgba(245, 246, 250, 1);
-  padding: 21px 14px;
+  padding: 25px 14px;
   margin-left: 0px !important;
   border-radius: 10px;
   width: 100%;
@@ -52,6 +58,7 @@ body {
 }
 .file-upload {
   gap: 2rem;
+  padding: 3rem;
   border-radius: 9px;
   display: flex;
   flex-direction: column;
@@ -61,17 +68,13 @@ body {
 .file-upload input {
   width: 65%;
 }
-/* .file-upload img {
-  width: 26%;
-  height: 32%;
-} */
-.right-form {
-  padding: 20px;
-}
+
 .right-form label {
   font-family: 'Poppins';
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
+  margin: 0px;
+  margin-bottom: 5px;
   color: rgba(67, 66, 75, 1);
 }
 .right-form input::placeholder {
@@ -98,40 +101,10 @@ body {
   font-size: 18px;
   border: none;
 }
-/*------- contact-request------------ */
+
 .dataTables_length {
   display: none;
 }
-/* .second-manage-heading {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0px 0px 20px 20px;
-} */
-/* .range-picker {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-}
-.range-picker i {
-  padding: 10px 10px;
-  background: rgba(255, 157, 0, 1);
-  border-radius: 26px;
-  color: white;
-}
-.range-picker label {
-  display: block;
-  font-family: 'Inter';
-  font-size: 8px;
-  font-weight: 400;
-  color: rgba(186, 186, 186, 1);
-  line-height: 2px;
-}
-.range-picker input {
-  font-family: 'Inter';
-  font-size: 10px;
-  font-weight: 600;
-  border: none;
-} */
 .dataTables_-search-filter {
   position: relative;
   right: 0px;
@@ -204,9 +177,6 @@ body {
   color: rgba(67, 66, 75, 1);
 }
 .table-top-bar {
-  /* display: flex;
-  justify-content: space-between; */
-  /* padding: 10px 0px; */
   padding: 18px 16px;
 }
 .table-top-bar h4 {
