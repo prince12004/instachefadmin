@@ -1749,3 +1749,12 @@ width: 17%;
   position: relative;
   bottom: -3px;
 }
+#city{
+  display: flex;
+    justify-content: space-between;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+}
