@@ -848,18 +848,20 @@ table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order, table.dataTabl
   width: 50px;
   transition: transform 0.3s;
 }
-.rotate {
-  transform: rotate(180deg);
-}
 .dropdownicon{
   font-size: 20px;
   background: linear-gradient(108.8deg, #EB4131 14.42%, #FCA947 100%);
   border-radius: 51px 51px 0px 0px;
-  /* padding: 11px; */
   text-align: center;
   color: #FFFFFF;
   width: 41px;
   height: 22px;
+}
+.dropdownicon.rotated {
+  transform: rotate(180deg);
+  border-radius: 0px 0px 51px 51px;
+  height: 22px;
+  font-size: 16px;
 }
 .dropdown-content p{
     font-size: 12px;
@@ -1148,9 +1150,6 @@ table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order, table.dataTabl
 }
 .selected{
   font-weight: 400;
-}
-.rotate {
-  transform: rotate(180deg);
 }
 .number{
   font-size: 14px;
