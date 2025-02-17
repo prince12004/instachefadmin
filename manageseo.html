@@ -6,6 +6,7 @@
     <title>Admin From</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -24,37 +25,27 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css"
-    />
-    <style>
-      #myTabletwo table.dataTable thead > tr > th.sorting_asc:before {
-        display: none;
-      }
-      table.dataTable thead > tr > th.sorting:after,
-      table.dataTable thead > tr > th.sorting_asc:after {
-        display: none !important;
-      }
-    </style>
   </head>
   <body>
     <header>
       <div class="instachef-admin">
         <div class="instachef">
           <a href="index.html">
-          <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
-        </a>
-        <img src="assets/images/middleLine.png" alt="" class="middle-line">
-        <div class="toggle-bar">
-          <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
-        </div>
+            <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+          </a>
+          <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+          <div class="toggle-bar">
+            <img
+              src="assets/images/togglerBar.png"
+              alt="Toggle Sidebar"
+              id="toggle"
+            />
+          </div>
         </div>
         <!-- <div class="toggle-bar"> -->
-          <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
         <!-- </div> -->
         <div class="user-icons">
           <a href="#">
@@ -71,7 +62,7 @@
               <h3>LOREM ISPUM</h3>
               <select id="super-admin">
                 <option>super-admin</option>
-                <option>admin</option>  
+                <option>admin</option>
               </select>
             </div>
           </div>
@@ -90,7 +81,7 @@
               DASHBOARD
             </a>
           </li>
-          
+
           <!-- Manage Profile Item -->
           <li class="nav-item">
             <a href="manageprofile.html" class="nav-link text-white">
@@ -99,16 +90,20 @@
               MANAGE PROFILE
             </a>
           </li>
-          
+
           <!-- Manage Notification Item -->
           <li class="nav-item">
             <a href="Managenotification.html" class="nav-link text-white">
               <img src="assets/images/image3.png" alt="" class="default-img" />
-              <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imagethree.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE NOTIFICATION
             </a>
           </li>
-          
+
           <!-- Contact Request Item -->
           <li class="nav-item">
             <a href="contactrequest.html" class="nav-link text-white">
@@ -117,7 +112,7 @@
               CONTACT REQUEST
             </a>
           </li>
-          
+
           <!-- Manage Blogs Item -->
           <li class="nav-item">
             <a href="manageblog.html" class="nav-link text-white">
@@ -126,7 +121,7 @@
               MANAGE BLOGS
             </a>
           </li>
-          
+
           <!-- Manage SEO Item -->
           <li class="nav-item">
             <a href="manageseo.html" class="nav-link text-white">
@@ -135,68 +130,76 @@
               MANAGE SEO
             </a>
           </li>
-          
+
           <!-- Manage User Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
               <img src="assets/images/image7.png" alt="" class="default-img" />
-              <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imageseven.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE USER
               <i class="fa fa-caret-down"></i>
-              <p> +3</p>
+              <p>+3</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createuser.html">
-                  <input type="radio" placeholder=""> CREATE USER
+                  <input type="radio" placeholder="" /> CREATE USER
                 </a>
               </label>
               <label for="user">
                 <a href="userlist.html">
-                  <input type="radio" placeholder=""> USER LIST
+                  <input type="radio" placeholder="" /> USER LIST
                 </a>
               </label>
               <label for="user">
                 <a href="inactiveuser.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE USER
+                  <input type="radio" placeholder="" /> IN-ACTIVE USER
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Manage Booking Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
               <img src="assets/images/image8.png" alt="" class="default-img" />
-              <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imageeight.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE BOOKING
               <i class="fa fa-caret-down"></i>
-              <p> +4</p>
+              <p>+4</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createbooking.html">
-                  <input type="radio" placeholder=""> CREATE BOOKING
+                  <input type="radio" placeholder="" /> CREATE BOOKING
                 </a>
               </label>
               <label for="user">
                 <a href="chefbooking.html">
-                  <input type="radio" placeholder=""> BOOKINGS LIST
+                  <input type="radio" placeholder="" /> BOOKINGS LIST
                 </a>
               </label>
               <label for="user">
                 <a href="inactivebooking.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
                 </a>
               </label>
               <label for="user">
                 <a href="Review.html">
-                  <input type="radio" placeholder=""> REVIEW LIST
+                  <input type="radio" placeholder="" /> REVIEW LIST
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Manage Cuisine Item -->
           <li class="nav-item">
             <a href="managecuisine.html" class="nav-link text-white">
@@ -205,7 +208,7 @@
               MANAGE CUISINE
             </a>
           </li>
-          
+
           <!-- Manage Package Item -->
           <li class="nav-item">
             <a href="mangepackage.html" class="nav-link text-white">
@@ -214,7 +217,7 @@
               MANAGE PACKAGE
             </a>
           </li>
-          
+
           <!-- Manage Chef Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
@@ -222,22 +225,22 @@
               <img src="assets/images/imageten.png" alt="" class="hover-img" />
               MANAGE CHEF
               <i class="fa fa-caret-down"></i>
-              <p> +2</p>
+              <p>+2</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createchef.html">
-                  <input type="radio" placeholder=""> CREATE CHEF
+                  <input type="radio" placeholder="" /> CREATE CHEF
                 </a>
               </label>
               <label for="user">
                 <a href="chefdetails.html">
-                  <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Logout Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white last-li">
@@ -248,7 +251,7 @@
           </li>
         </ul>
       </nav>
-      
+
       <!-- ===============left==================== -->
       <div class="main-content">
         <!-- <header>
@@ -287,23 +290,33 @@
 
           <div class="time-piker">
             <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Date Range</p>  
-                 <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
-                </div>
+              <img src="assets/images/calender.png" alt="" />
+              <div class="time-pikerA">
+                <p>Date Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
+                  class="dateA"
+                />
+              </div>
             </div>
             <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Filter Range</p>  
-                 <input type="date" name="daterange" value="01-01-2023" class="dateA">                            
-                </div>
+              <img src="assets/images/calender.png" alt="" />
+              <div class="time-pikerA">
+                <p>Filter Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01-01-2023"
+                  class="dateA"
+                />
+              </div>
             </div>
             <!-- <div class="dropdown">
               <select name="chef" id="chef"></select>
             </div> -->
-        </div>
+          </div>
         </div>
 
         <!-- ======================= -->
@@ -348,141 +361,107 @@
 
             <!-- footer-section -->
             <div class="card mb-4">
-              <div class="table-top-bar">
-                <span
-                  class="d-flex justify-content-between align-items-center text-white"
-                >
-                  <h4>LIST OF SEO DETAILS</h4>
-                  <div id="myTable_filter" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-3">
-                      <i
-                        class="fa-solid fa-magnifying-glass"
-                        id="notification-icon"
-                      ></i>
-                      <input
-                        type="search"
-                        class=""
-                        placeholder="Search here"
-                        aria-controls="myTable"
-                      />
-                    </label>
-                  </div>
-                </span>
-              </div>
               <div class="seo">
-                <table id="myTabletwo" class="display seo-footer">
-                  <thead class="contact-thead">
-                    <tr>
-                      <th class="table-heading">#</th>
-                      <th class="table-heading">Page Name</th>
-                      <th class="table-heading">Meta Tag</th>
-                      <th class="table-heading">Meta Description</th>
-                      <th class="table-heading">Action</th>
+                <table id="myTable-2" class="maintable" style="width: 100%">
+                  <div class="table-blog-bar">
+                    <span
+                      class="d-flex justify-content-between align-items-center text-white table-blog-span"
+                    >
+                      <h4>LIST OF SEO DETAILS</h4>
+                      <div
+                        id="myTable_filter"
+                        class="dataTables_-search-filter"
+                      >
+                        <label class="d-flex align-items-center gap-3">
+                          <i
+                            class="fa-solid fa-magnifying-glass"
+                            id="notification-icon"
+                          ></i>
+                          <input
+                            type="search"
+                            class=""
+                            placeholder="Search here"
+                            aria-controls="myTable"
+                          />
+                        </label>
+                      </div>
+                    </span>
+                  </div>
+                  <thead>
+                    <tr class="header-table">
+                      <th class="serial-number">#</th>
+                      <th>PageName</th>
+                      <th>Meta Tag</th>
+                      <th>Meta description</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="table-data">01</td>
-                      <td class="table-data">Our-Story</td>
-                      <td class="table-data">
+                      <td>01.</td>
+                      <td>Our-story</td>
+                      <td>
                         Chef Service in UAE|The Ultimate Destination for Home
                         Cooked Meals-InstaChef
                       </td>
-                      <td class="table-data">
+                      <td>
                         Our experienced chefs use fresh ingredients to create
-                        tasty meals delivered right to your door.Order now and
+                        tasty meals delivered right to your door. Order now and
                         enjoy the ultimate home dining experience!
                       </td>
-                      <td class="table-data">
-                        <img
-                          src="assets/images/custome-icon.png"
-                          alt=""
-                          class="custom-image"
-                        />
+                      <td>
+                        <img src="assets/images/custome-icon.png" alt="" />
                         <img src="assets/images/three-dot icon.png" alt="" />
                       </td>
                     </tr>
                     <tr>
-                      <td class="table-data">01</td>
-                      <td class="table-data">Our-Story</td>
-                      <td class="table-data">
+                      <td>01.</td>
+                      <td>Our-story</td>
+                      <td>
                         Chef Service in UAE|The Ultimate Destination for Home
                         Cooked Meals-InstaChef
                       </td>
-                      <td class="table-data">
+                      <td>
                         Our experienced chefs use fresh ingredients to create
-                        tasty meals delivered right to your door.Order now and
+                        tasty meals delivered right to your door. Order now and
                         enjoy the ultimate home dining experience!
                       </td>
-                      <td class="table-data">
-                        <img
-                          src="assets/images/custome-icon.png"
-                          alt=""
-                          class="custom-image"
-                        />
+                      <td>
+                        <img src="assets/images/custome-icon.png" alt="" />
                         <img src="assets/images/three-dot icon.png" alt="" />
                       </td>
                     </tr>
                     <tr>
-                      <td class="table-data">01</td>
-                      <td class="table-data">Our-Story</td>
-                      <td class="table-data">
+                      <td>01.</td>
+                      <td>Our-story</td>
+                      <td>
                         Chef Service in UAE|The Ultimate Destination for Home
                         Cooked Meals-InstaChef
                       </td>
-                      <td class="table-data">
+                      <td>
                         Our experienced chefs use fresh ingredients to create
-                        tasty meals delivered right to your door.Order now and
+                        tasty meals delivered right to your door. Order now and
                         enjoy the ultimate home dining experience!
                       </td>
-                      <td class="table-data">
-                        <img
-                          src="assets/images/custome-icon.png"
-                          alt=""
-                          class="custom-image"
-                        />
+                      <td>
+                        <img src="assets/images/custome-icon.png" alt="" />
                         <img src="assets/images/three-dot icon.png" alt="" />
                       </td>
                     </tr>
                     <tr>
-                      <td class="table-data">01</td>
-                      <td class="table-data">Our-Story</td>
-                      <td class="table-data">
+                      <td>01.</td>
+                      <td>Our-story</td>
+                      <td>
                         Chef Service in UAE|The Ultimate Destination for Home
                         Cooked Meals-InstaChef
                       </td>
-                      <td class="table-data">
+                      <td>
                         Our experienced chefs use fresh ingredients to create
-                        tasty meals delivered right to your door.Order now and
+                        tasty meals delivered right to your door. Order now and
                         enjoy the ultimate home dining experience!
                       </td>
-                      <td class="table-data">
-                        <img
-                          src="assets/images/custome-icon.png"
-                          alt=""
-                          class="custom-image"
-                        />
-                        <img src="assets/images/three-dot icon.png" alt="" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-data">01</td>
-                      <td class="table-data">Our-Story</td>
-                      <td class="table-data">
-                        Chef Service in UAE|The Ultimate Destination for Home
-                        Cooked Meals-InstaChef
-                      </td>
-                      <td class="table-data">
-                        Our experienced chefs use fresh ingredients to create
-                        tasty meals delivered right to your door.Order now and
-                        enjoy the ultimate home dining experience!
-                      </td>
-                      <td class="table-data">
-                        <img
-                          src="assets/images/custome-icon.png"
-                          alt=""
-                          class="custom-image"
-                        />
+                      <td>
+                        <img src="assets/images/custome-icon.png" alt="" />
                         <img src="assets/images/three-dot icon.png" alt="" />
                       </td>
                     </tr>
@@ -496,6 +475,8 @@
     </div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -517,7 +498,7 @@
         });
       });
     </script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
 
     <script>
       const documentA = document.getElementById('uploadDocument');
@@ -532,16 +513,17 @@
       });
     </script>
     <script>
-      let table = new DataTable('#myTable');
+      let table = new DataTable('#myTable-2');
     </script>
     <script>
       $(document).ready(function () {
-        $('#myTabletwo').DataTable({
+        $('#myTable-2').DataTable({
           paging: true,
           searching: false,
           info: true,
           pageLength: 4,
           destroy: true,
+          lengthChange: false,
         });
       });
     </script>

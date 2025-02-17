@@ -6,6 +6,7 @@
     <title>Admin From</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -22,14 +23,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
     />
   </head>
   <body>
@@ -37,15 +34,19 @@
       <div class="instachef-admin">
         <div class="instachef">
           <a href="index.html">
-          <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
-        </a>
-        <img src="assets/images/middleLine.png" alt="" class="middle-line">
-        <div class="toggle-bar">
-          <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
-        </div>
+            <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+          </a>
+          <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+          <div class="toggle-bar">
+            <img
+              src="assets/images/togglerBar.png"
+              alt="Toggle Sidebar"
+              id="toggle"
+            />
+          </div>
         </div>
         <!-- <div class="toggle-bar"> -->
-          <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
+        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
         <!-- </div> -->
         <div class="user-icons">
           <a href="#">
@@ -62,7 +63,7 @@
               <h3>LOREM ISPUM</h3>
               <select id="super-admin">
                 <option>super-admin</option>
-                <option>admin</option>  
+                <option>admin</option>
               </select>
             </div>
           </div>
@@ -81,7 +82,7 @@
               DASHBOARD
             </a>
           </li>
-          
+
           <!-- Manage Profile Item -->
           <li class="nav-item">
             <a href="manageprofile.html" class="nav-link text-white">
@@ -90,16 +91,20 @@
               MANAGE PROFILE
             </a>
           </li>
-          
+
           <!-- Manage Notification Item -->
           <li class="nav-item">
             <a href="Managenotification.html" class="nav-link text-white">
               <img src="assets/images/image3.png" alt="" class="default-img" />
-              <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imagethree.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE NOTIFICATION
             </a>
           </li>
-          
+
           <!-- Contact Request Item -->
           <li class="nav-item">
             <a href="contactrequest.html" class="nav-link text-white">
@@ -108,7 +113,7 @@
               CONTACT REQUEST
             </a>
           </li>
-          
+
           <!-- Manage Blogs Item -->
           <li class="nav-item">
             <a href="manageblog.html" class="nav-link text-white">
@@ -117,7 +122,7 @@
               MANAGE BLOGS
             </a>
           </li>
-          
+
           <!-- Manage SEO Item -->
           <li class="nav-item">
             <a href="manageseo.html" class="nav-link text-white">
@@ -126,68 +131,76 @@
               MANAGE SEO
             </a>
           </li>
-          
+
           <!-- Manage User Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
               <img src="assets/images/image7.png" alt="" class="default-img" />
-              <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imageseven.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE USER
               <i class="fa fa-caret-down"></i>
-              <p> +3</p>
+              <p>+3</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createuser.html">
-                  <input type="radio" placeholder=""> CREATE USER
+                  <input type="radio" placeholder="" /> CREATE USER
                 </a>
               </label>
               <label for="user">
                 <a href="userlist.html">
-                  <input type="radio" placeholder=""> USER LIST
+                  <input type="radio" placeholder="" /> USER LIST
                 </a>
               </label>
               <label for="user">
                 <a href="inactiveuser.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE USER
+                  <input type="radio" placeholder="" /> IN-ACTIVE USER
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Manage Booking Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
               <img src="assets/images/image8.png" alt="" class="default-img" />
-              <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+              <img
+                src="assets/images/imageeight.png"
+                alt=""
+                class="hover-img"
+              />
               MANAGE BOOKING
               <i class="fa fa-caret-down"></i>
-              <p> +4</p>
+              <p>+4</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createbooking.html">
-                  <input type="radio" placeholder=""> CREATE BOOKING
+                  <input type="radio" placeholder="" /> CREATE BOOKING
                 </a>
               </label>
               <label for="user">
                 <a href="chefbooking.html">
-                  <input type="radio" placeholder=""> BOOKINGS LIST
+                  <input type="radio" placeholder="" /> BOOKINGS LIST
                 </a>
               </label>
               <label for="user">
                 <a href="inactivebooking.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
                 </a>
               </label>
               <label for="user">
                 <a href="Review.html">
-                  <input type="radio" placeholder=""> REVIEW LIST
+                  <input type="radio" placeholder="" /> REVIEW LIST
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Manage Cuisine Item -->
           <li class="nav-item">
             <a href="managecuisine.html" class="nav-link text-white">
@@ -196,7 +209,7 @@
               MANAGE CUISINE
             </a>
           </li>
-          
+
           <!-- Manage Package Item -->
           <li class="nav-item">
             <a href="mangepackage.html" class="nav-link text-white">
@@ -205,7 +218,7 @@
               MANAGE PACKAGE
             </a>
           </li>
-          
+
           <!-- Manage Chef Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white select-manage">
@@ -213,22 +226,22 @@
               <img src="assets/images/imageten.png" alt="" class="hover-img" />
               MANAGE CHEF
               <i class="fa fa-caret-down"></i>
-              <p> +2</p>
+              <p>+2</p>
             </a>
             <div class="user-select-input">
               <label for="user">
                 <a href="createchef.html">
-                  <input type="radio" placeholder=""> CREATE CHEF
+                  <input type="radio" placeholder="" /> CREATE CHEF
                 </a>
               </label>
               <label for="user">
                 <a href="chefdetails.html">
-                  <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
                 </a>
               </label>
-            </div> 
+            </div>
           </li>
-          
+
           <!-- Logout Item -->
           <li class="nav-item">
             <a href="#" class="nav-link text-white last-li">
@@ -239,7 +252,6 @@
           </li>
         </ul>
       </nav>
-      
 
       <!-- ===============left==================== -->
       <div class="main-content">
@@ -279,23 +291,33 @@
 
           <div class="time-piker">
             <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Date Range</p>  
-                 <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
-                </div>
+              <img src="assets/images/calender.png" alt="" />
+              <div class="time-pikerA">
+                <p>Date Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
+                  class="dateA"
+                />
+              </div>
             </div>
             <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Filter Range</p>  
-                 <input type="date" name="daterange" value="01-01-2023" class="dateA">                            
-                </div>
+              <img src="assets/images/calender.png" alt="" />
+              <div class="time-pikerA">
+                <p>Filter Range</p>
+                <input
+                  type="date"
+                  name="daterange"
+                  value="01-01-2023"
+                  class="dateA"
+                />
+              </div>
             </div>
             <!-- <div class="dropdown">
               <select name="chef" id="chef"></select>
             </div> -->
-        </div>
+          </div>
         </div>
 
         <!-- ======================= -->
@@ -310,7 +332,7 @@
                 <h4 class="notification-heading">CREATE CUISINE</h4>
                 <div class="row Both-container">
                   <div class="col-md-6 text-center manage-notification-left">
-                    <div class="file-upload p-5">
+                    <div class="file-upload p-3">
                       <img
                         src="assets/images/upload-image.png"
                         alt="Upload"
@@ -359,42 +381,43 @@
 
             <!-- footer-section -->
             <div class="blog-seo">
-              <div class="table-top-bar">
-                <span
-                  class="d-flex justify-content-between align-items-center text-white"
-                >
-                  <h4>LIST OF SEO DETAILS</h4>
-
-                  <div class="d-flex gap-2">
-                    <div id="myTable_filter" class="dataTables_-search-filter">
-                      <label class="d-flex align-items-center gap-1">
-                        <i
-                          class="fa-solid fa-magnifying-glass"
-                          id="notification-icon"
-                        ></i>
-                        <input
-                          type="search"
-                          class=""
-                          placeholder="Search here"
-                          aria-controls="myTable"
-                        />
-                      </label>
+              <table id="myTable-2" class="maintable" style="width: 100%">
+                <div class="table-blog-bar">
+                  <span
+                    class="d-flex justify-content-between align-items-center text-white table-blog-span"
+                  >
+                    <h4>LIST OF SEO DETAILS</h4>
+                    <div class="d-flex gap-2">
+                      <div
+                        id="myTable_filter"
+                        class="dataTables_-search-filter"
+                        style="display: flex"
+                      >
+                        <label class="d-flex align-items-center gap-3">
+                          <i
+                            class="fa-solid fa-magnifying-glass"
+                            id="notification-icon"
+                          ></i>
+                          <input
+                            type="search"
+                            class=""
+                            placeholder="Search here"
+                            aria-controls="myTable"
+                          />
+                        </label>
+                      </div>
+                      <button class="add-cuisine">
+                        <img src="assets/images/pulsu-two.png" alt="" />ADD
+                        CUISINE
+                      </button>
                     </div>
-                    <button class="add-cuisine">
-                      <img src="assets/images/pulsu-two.png" alt="" />ADD
-                      CUISINE
-                    </button>
-                  </div>
-                </span>
-              </div>
-
-              <table id="myTable" class="display table-cuisine">
+                  </span>
+                </div>
                 <thead>
-                  <tr>
-                    <th>#</th>
+                  <tr class="header-table">
+                    <th class="serial-number">SNO</th>
                     <th>Image</th>
-                    <th>cuisine</th>
-
+                    <th>Cuisine</th>
                     <th>Parent</th>
                     <th>Date</th>
                     <th>Action</th>
@@ -402,45 +425,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>01</td>
+                    <td>01.</td>
                     <td>
                       <img src="assets/images/footer-image-one.png" alt="" />
                     </td>
                     <td>Multi Cuisine</td>
                     <td>Arabic</td>
-                    <td>Date</td>
-
-                    <td>
-                      <a href="#">
-                      <img src="assets/images/delete.png" alt="" />
-                      <img src="assets/images/custome-icon.png" alt="" /></a>
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>
-                      <img src="assets/images/footer-image-one.png" alt="" />
-                    </td>
-                    <td>Multi Cuisine</td>
-                    <td>Arabic</td>
-                    <td>Date</td>
-                    <td>
-                      <a href="#">
-                        <img src="assets/images/delete.png" alt="" />
-                        <img src="assets/images/custome-icon.png" alt="" /></a>
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>
-                      <img src="assets/images/footer-image-one.png" alt="" />
-                    </td>
-                    <td>Multi Cuisine</td>
-                    <td>Arabic</td>
-                    <td>Date</td>
-
+                    <td>01 Apr, 2024</td>
                     <td>
                       <img src="assets/images/delete.png" alt="" />
                       <img src="assets/images/custome-icon.png" alt="" />
@@ -448,14 +439,27 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>01</td>
+                    <td>01.</td>
                     <td>
                       <img src="assets/images/footer-image-one.png" alt="" />
                     </td>
                     <td>Multi Cuisine</td>
                     <td>Arabic</td>
-                    <td>Date</td>
-
+                    <td>01 Apr, 2024</td>
+                    <td>
+                      <img src="assets/images/delete.png" alt="" />
+                      <img src="assets/images/custome-icon.png" alt="" />
+                      <img src="assets/images/three-dot icon.png" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01.</td>
+                    <td>
+                      <img src="assets/images/footer-image-one.png" alt="" />
+                    </td>
+                    <td>Multi Cuisine</td>
+                    <td>Arabic</td>
+                    <td>01 Apr, 2024</td>
                     <td>
                       <img src="assets/images/delete.png" alt="" />
                       <img src="assets/images/custome-icon.png" alt="" />
@@ -471,6 +475,8 @@
     </div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -492,7 +498,7 @@
         });
       });
     </script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
 
     <script>
       const documentA = document.getElementById('uploadDocument');
@@ -507,16 +513,17 @@
       });
     </script>
     <script>
-      let table = new DataTable('#myTable');
+      let table = new DataTable('#myTable-2');
     </script>
     <script>
       $(document).ready(function () {
-        $('#myTable').DataTable({
+        $('#myTable-2').DataTable({
           paging: true,
           searching: false,
           info: true,
-          pageLength: 3,
+          pageLength: 2,
           destroy: true,
+          lengthChange: false,
         });
       });
     </script>

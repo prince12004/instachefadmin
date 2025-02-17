@@ -6,6 +6,7 @@
     <title>Admin From</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="assets/css/newstyle.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -19,16 +20,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
-  <style>
-    table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before {
-  display: none;
-}
-table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after{
- display: none;
-}
-  </style>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  
   </head>
   <body>
     <header>
@@ -298,9 +292,8 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
         <!-- ======================= -->
         <div class="forms">
 
-            <main class="col-md-10 bg-light right-sidebar">
+            <main class="col-md-10  right-sidebar" style="background-color: white;">
                 <div class="main-form">
-              
                   <div class="card mb-4">
                     <div class="card-body">
                       <h4 class="notification-heading">ADD BLOG</h4>
@@ -423,9 +416,11 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
                   </div>
       
         <!-- footer-section -->
-        <div class="blog-seo">
+        
+                    <table id="myTable-2" class="maintable" style="width:100%">
+                    
                       <div class="table-blog-bar">
-                        <span  class="d-flex justify-content-between align-items-center text-white">
+                        <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
                     <h4>LIST OF SEO DETAILS</h4>
                     <div id="myTable_filter" class="dataTables_-search-filter">
                     <label class="d-flex align-items-center gap-3">
@@ -435,53 +430,55 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
                     </div>
                       </span>
                     </div>
-                    
-                      <table id="myTable" class="display table-blog"> 
-          <thead>
-              <tr>
-                  <th>#</th>
-                  <th>Image</th>
-                  <th>Title</th>
-                  <th>Action</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>01</td>
-                  <td><img src="assets/images/footer-image-one.png" alt=""></td>
-                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste labore. Rem sint in ipsa? Lorem ipsum dolor, sit amet </td>
-                  <td><img src="assets/images/delete.png" alt="">
-                  <img src="assets/images/custome-icon.png" alt="">
-                <img src="assets/images/three-dot icon.png" alt=""></td>
-              </tr>
-              <tr>
-                  <td>02</td>
-                  <td><img src="assets/images/footer-image-four.png" alt=""></td>
-                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste labore. Rem sint in ipsa? Lorem ipsum dolor, sit amet </td>
-                  <td><img src="assets/images/delete.png" alt="">
-                  <img src="assets/images/custome-icon.png" alt="">
-                  <img src="assets/images/three-dot icon.png" alt=""></td>
-              </tr>
-              <tr>
-                  <td>03</td>
-                  <td><img src="assets/images/footer-image-six.png" alt=""></td>
-                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste labore. Rem sint in ipsa? Lorem ipsum dolor, sit amet </td>
-                  <td><img src="assets/images/delete.png" alt="">
-                  <img src="assets/images/custome-icon.png" alt="">
-                  <img src="assets/images/three-dot icon.png" alt=""></td>
-              </tr>
-              <tr>
-                  <td>03</td>
-                  <td><img src="assets/images/footer-image-six.png" alt=""></td>
-                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iste labore. Rem sint in ipsa? Lorem ipsum dolor, sit amet </td>
-                  <td><img src="assets/images/delete.png" alt="">
-                  <img src="assets/images/custome-icon.png" alt="">
-                  <img src="assets/images/three-dot icon.png" alt=""></td>
-              </tr>
-          </tbody>
-      
+                      <thead >
+                        <tr class="header-table">
+                          <th class="serial-number">#</th>
+                          <th>Image</th>
+                          <th>Tittle</th>
+                          <th>Action</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01.</td>
+                          <td > <img src="assets/images/footer-image-one.png" alt=""></td>
+                          <td >Lorem Ipsum is simply dummy text of the printing.</td>
+                          <td><img src="assets/images/delete.png" alt="">
+                          <img src="assets/images/custome-icon.png" alt="">
+                          <img src="assets/images/three-dot icon.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>01.</td>
+                          <td > <img src="assets/images/footer-image-five.png" alt=""></td>
+                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                          <td><img src="assets/images/delete.png" alt="">
+                          <img src="assets/images/custome-icon.png" alt="">
+                          <img src="assets/images/three-dot icon.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>01.</td>
+                          <td > <img src="assets/images/footer-image-six.png" alt=""></td>
+                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                          <td><img src="assets/images/delete.png" alt="">
+                          <img src="assets/images/custome-icon.png" alt="">
+                          <img src="assets/images/three-dot icon.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>01.</td>
+                          <td > <img src="assets/images/footer-image-one.png" alt=""></td>
+                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                          <td><img src="assets/images/delete.png" alt="">
+                          <img src="assets/images/custome-icon.png" alt="">
+                          <img src="assets/images/three-dot icon.png" alt="">
+                          </td>
+                        </tr>
+
+                      </tbody>
                     </table>
-                    </div>
+                     
               </main>
         </div>
       </div>
@@ -509,8 +506,9 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
         });
       });
     </script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <script>
       const documentA = document.getElementById('uploadDocument');
       const fileInput = document.getElementById('file1');
@@ -525,15 +523,16 @@ table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_a
     </script>
 
 <script>
-    let table = new DataTable('#myTable');</script>
+    let table = new DataTable('#myTable-2');</script>
     <script>
        $(document).ready(function () {
-        $('#myTable').DataTable({
+        $('#myTable-2').DataTable({
                 "paging": true,         
                 "searching": false,      
                 "info": true  ,         
                 "pageLength": 2, 
-                "destroy": true
+                "destroy": true,
+                "lengthChange": false
         });
     });
     
