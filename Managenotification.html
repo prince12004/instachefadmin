@@ -256,7 +256,7 @@
               <div class="row Both-container">
                 <div class="col-md-6 text-center manage-notification-left">
                   <div class="file-upload">
-                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" />
+                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" id="uploadTrigger"/>
                     <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
                     <div class="inputfile-upload">
                       <input type="file" id="fileInput" />
@@ -373,5 +373,53 @@
     fileInput.addEventListener('change', (event) => {
       const files = event.target.files;
     });
-  </script></body>
+  </script>
+  <script>
+    // ------------------file-upload----------------
+    document.addEventListener("DOMContentLoaded", function () {
+  
+    const fileInput = document.getElementById("fileInput");
+    const fileNameDisplay = document.getElementById("fileName");
+
+    fileInput.addEventListener("change", function () {
+        if (fileInput.files.length > 0) {
+            fileNameDisplay.textContent = fileInput.files[0].name;
+        } else {
+            fileNameDisplay.textContent = "No File Chosen";
+        }
+    });
+
+    
+    const galleryUploader = document.getElementById("galleryUploader");
+    const selectedImages = document.getElementById("selectedImages");
+
+    if (galleryUploader) {
+        galleryUploader.addEventListener("change", function () {
+            if (galleryUploader.files.length > 0) {
+                let fileNames = [];
+                for (let i = 0; i < galleryUploader.files.length; i++) {
+                    fileNames.push(galleryUploader.files[i].name);
+                }
+                selectedImages.textContent = fileNames.join(", ");
+            } else {
+                selectedImages.textContent = "No file chosen";
+            }
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const fileInput = document.getElementById("fileInput");
+    const uploadTrigger = document.getElementById("uploadTrigger");
+
+
+    uploadTrigger.addEventListener("click", function () {
+        fileInput.click();
+    });
+});
+
+
+  </script>
+  
+</body>
 </html>
