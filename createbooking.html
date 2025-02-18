@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin From</title>
+    <title>Create-Booking</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/comman.css" />
     <link
@@ -309,21 +309,20 @@
                       <div class="row Both-container">
                         <div class="col-md-6 manage-notification-left">
                           <form>
-                          <label for="title" class="form-label form-booking">User Name</label>
-                              <input
-                                type="text"
-                                id="title"
-                                class="form-control"
-                                placeholder="Enter User Name"
-                              />
+                          <label for="title" class="form-label form-bookingA">User Name</label>
+                              <select id="title" class="form-control">
+                                <option>Enter User Name</option>
+                                <option>user Name</option>
+                                <option>Name</option>
+                              </select>
                             
                           <label for="title" class="form-label form-booking">User Address</label>
-                              <input
-                                type="text"
-                                id="title"
-                                class="form-control"
-                                placeholder="Enter Address"
-                              />
+                              <select id="title"
+                              class="form-control">
+                              <option>Enter Address</option>
+                             <option> Address 2</option>
+                             <option>Address 1</option>
+                            </select>
                             
                           <label for="title" class="form-label form-booking">Booking Start</label>
                           <span class="booking-input">    
@@ -338,15 +337,15 @@
                           <label for="title" class="form-label form-booking" style="display: block;">Package Name</label>
                            <select  id="title" class="form-control" >
                             <option value="package">Select package</option>
-                            <option value="package">Select package</option>
-                            <option value="package">Select package</option>
+                            <option value="package">package 1</option>
+                            <option value="package">package 2</option>
                            </select>  
                           </form>                  
                         </div>
                         <div class="col-md-6 right-form-deatiles">
                           <form>
                             <div class="mb-3">
-                              <label for="title" class="form-label form-booking">Email</label>
+                              <label for="title" class="form-label form-bookingA">Email</label>
                               <input
                                 type="text"
                                 id="title"
@@ -362,12 +361,12 @@
                                 placeholder="Enter Contact Number"
                               />
                               <label for="title" class="form-label form-booking">Cuisine</label>
-                              <input
-                                type="text"
-                                id="title"
-                                class="form-control"
-                                placeholder="Select cuisine"
-                              />
+                              <select  id="title"
+                              class="form-control">
+                            <option>Select cuisine</option>
+                            <option>cuisine 1</option>
+                            <option>cuisine 2</option>
+                          </select>
                               <label for="title" class="form-label form-booking">Package Price</label>
                               <input
                                 type="text"
@@ -385,7 +384,7 @@
                         rows="4"
                         placeholder="Add Comment"
                       ></textarea>
-                      <button type="submit" class="creating-booking w-90 p-3">
+                      <button type="submit" class="creating-booking w-90">
                         CREATING BOOKING
                       </button>
                       </div>

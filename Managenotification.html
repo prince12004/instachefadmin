@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin From</title>
+  <title>Manage-Notification</title>
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/comman.css" />
-  <link rel="stylesheet" href="assets/css/newstyle.css" />
+  <!-- <link rel="stylesheet" href="assets/css/newstyle.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
@@ -286,13 +286,15 @@
             </div>
           </div>
           <!-- <div class="table-container"> -->
-            <div class="blog-seo">
-            <table id="myTable-2" class="maintable" style="width:100%">
+            <div class="blog-seoA">
+              <h4>LIST OF NOTIFICATIONS</h4>
+
+            <table id="myTable-A" class="maintable details-heading" style="width:100%">
                     
               <div class="table-blog-bar">
                 <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
-            <h4>LIST OF SEO DETAILS</h4>
-            <div id="myTable_filter" class="dataTables_filter">
+            <!-- <h4>LIST OF SEO DETAILS</h4> -->
+            <div id="myTable_filter" class="dataTables_filter table-seo">
             <label class="d-flex align-items-center gap-3">
               <input type="search" class="" placeholder="Search here" aria-controls="myTable">
               <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
@@ -300,11 +302,11 @@
             </div>
               </span>
             </div>
-              <thead >
+              <thead>
                 <tr class="header-table">
                   <th class="serial-number">SNO.</th>
                   <th></th>
-                  <th>Tittle</th>
+                  <th id="title-seo">Tittle</th>
                   <th>Body</th> 
                 </tr>
               </thead>
@@ -313,20 +315,16 @@
                   <td>01.</td>
                   <td > <img src="assets/images/user-one (1).png" alt=""></td>
                   <td >Catering service now available!</td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti provident.>
-                  
-                  </td>
+                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
                 </tr>
                 <tr>
                   <td>01.</td>
                   <td > <img src="assets/images/user-one (1).png" alt=""></td>
                   <td >Catering service now available!</td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti provident.>
-                  
-                  </td>
+                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
                 </tr>
                 <tr>
-                  <td>01.</td>
+                  <td>02.</td>
                   <td > <img src="assets/images/user-one (1).png" alt=""></td>
                   <td >Catering service now available!</td>
                   <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti provident.>
@@ -349,11 +347,11 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script>
-    let table = new DataTable('#myTable-2');
+    let table = new DataTable('#myTable-A');
     </script>
     <script>
        $(document).ready(function () {
-        $('#myTable-2').DataTable({
+        $('#myTable-A').DataTable({
                 "paging": true,         
                 "searching": false,      
                 "info": true  ,         

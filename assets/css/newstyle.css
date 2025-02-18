@@ -164,7 +164,7 @@ width: ;
     text-align: left;
     color: #43424B;
     position: relative;
-    top: 54px;
+    top: 60px;
     left: 20px;
     /* right: 64%; */
     z-index: 1;
@@ -208,6 +208,9 @@ table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td{
     font-weight: 500;
     text-align: left;
     color: #43424B;
+}
+#request-date{
+  width: 11%;
 }
 #package{
   width: 14%;
@@ -371,7 +374,7 @@ div.dt-container{
     color: #fff;
     border-radius: 25px;
     position: relative;
-    top: 83px;
+    top: 60px;
     right: 15px;
     z-index: 1;
   }
@@ -443,7 +446,7 @@ div.dt-container{
     text-align: left;
     color: rgb(67, 66, 75);
     position: relative;
-    top: 90px;
+    top: 65px;
     /* right: 64%; */
     left: 20px;
     z-index: 1;
@@ -456,7 +459,7 @@ div.dt-container{
     text-align: left;
     color: #43424B;
     position: relative;
-    top: 90px;
+    top: 60px;
     left: 2%;
     z-index: 1;
     width: 30%;
@@ -543,7 +546,7 @@ div.dt-container{
 }
   #search-hereA{
     position: relative;
-    top: 83px;
+    top: 60px;
     left: 17%;
     z-index: 1;
     /* color: #818E94; */

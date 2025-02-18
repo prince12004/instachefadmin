@@ -43,7 +43,7 @@ textarea.form-control {
   border: none;
 }
 .card-body {
-  padding: 25px 34px !important;
+  padding: 20px 20px !important;
   border-radius: 10px;
 }
 .card-body h4 {
@@ -58,7 +58,7 @@ textarea.form-control {
   padding: 0px 21px;
 }
 .file-upload {
-  gap: 2rem;
+  gap: 45px;
   padding: 3rem;
   border-radius: 9px;
   display: flex;
@@ -72,7 +72,7 @@ textarea.form-control {
 
 .right-form label {
   font-family: 'Poppins';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0px;
   margin-bottom: 5px;
@@ -80,7 +80,7 @@ textarea.form-control {
 }
 .right-form input::placeholder {
   font-family: 'Inter';
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(166, 169, 183, 1);
 }
@@ -96,10 +96,10 @@ textarea.form-control {
   color: white;
   width: 63%;
   border-radius: 6px;
-  padding: 13px 15px;
+  padding: 12px 15px;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
 }
 
@@ -107,8 +107,10 @@ textarea.form-control {
   display: none;
 } */
 .table-blog-bar {
-  padding: 0px 14px;
+  /* padding: 0px 14px; */
   position: relative;
+  padding: 0px 34px !important;
+  border-radius: 10px;
 }
 .table-blog-span {
   position: relative;
@@ -118,11 +120,11 @@ textarea.form-control {
   top: 0px;
   width: 96%;
 }
-.table-blog-bar h4 {
+.blog-seoA h4 {
   font-family: 'Inter';
   font-size: 20px;
   font-weight: 600;
-  margin: 0px 10px;
+  margin: 5px 10px;
   color: rgba(67, 66, 75, 1);
 }
 .table-top-bar {
@@ -256,10 +258,29 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border-radius: 26px;
   padding: 8px 28px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  background: #f5f6fa;
+  border: 1px solid #f4f7fc;
+  position: absolute;
+  right: 26px;
+}
+#myTable_filterA{
+  top: -8px;
+}
+#myTable_filterB{
+  top: -8px;
+  right: 15%;
+}
+/* .dataTables_-search-filterA{
+  border-radius: 26px;
+  padding: 8px 28px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   z-index: 1000;
   background: #f5f6fa;
   border: 1px solid #f4f7fc;
-}
+  position: absolute;
+  right: 26px;
+  top: -8px;
+} */
 .dataTables_-search-filter input {
   color: #818e94;
   border-radius: 26px !important;
@@ -285,7 +306,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: 1px solid #f4f7fc;
 }
 .dataTables_filter input {
-  color: #818e94;
+  color: #A6A9B7;
   border-radius: 26px !important;
   background: none;
   width: 89% !important;
@@ -297,11 +318,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-size: 15px;
 }
 .dataTables_filter #notification-blog-icon {
-  background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
+  background: linear-gradient(180deg, #00C6FF 0%, #0072FF 100%);
   border: 2px solid rgba(255, 255, 255, 1);
-  color: white;
+  color: #fff;
   padding: 10px 10px;
   border-radius: 20px;
+  position: relative;
+  margin-right: -20px;
 }
 /* .dataTables_filter #notification-icon {
   background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
@@ -376,10 +399,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 }
 .form-label-category {
   display: block;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  color: rgba(67, 66, 75, 1);
+  font-size: 16px;
+  color: #43424B;
   margin-top: 17px;
   margin-bottom: 8px;
 }
@@ -390,10 +413,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   /* border: none; */
 }
 #select-one {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  color: rgba(166, 169, 183, 1);
+  font-size: 14px;
+  color: #4D4F5C;
   border: none;
   outline: none;
 }
@@ -431,9 +454,9 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   outline: none;
   padding: 7px 15px;
 }
-.meta-form {
+/* .meta-form {
   padding: 10px 0px;
-}
+} */
 .meta-box {
   display: flex;
   justify-content: space-between;
@@ -445,8 +468,11 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 500;
   font-size: 14px;
   color: rgba(67, 66, 75, 1);
+  margin: 5px 0px;
 }
-
+.description-img{
+  height: 25px !important;
+}
 .meta-box .meta-deatiles {
   width: 50%;
 }
@@ -483,12 +509,12 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   outline: none !important;
   border: none !important;
   box-shadow: 0px 1px 2px 0px #0000000d;
-  padding: 17px 10px !important;
+  padding: 13px 10px !important;
   resize: none;
   font-family: 'Inter';
   font-weight: 400 !important;
-  font-size: 16px !important;
-  color: rgba(166, 169, 183, 1);
+  font-size: 14px !important;
+  color: #A6A9B7 !important;
 }
 .form-control:focus {
   outline: none !important;
@@ -500,11 +526,12 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   margin-top: 15px !important;
 } */
 .form-label {
-  margin: 7px 2px;
-  font-family: 'Poppins';
+  /* margin: 8px 2px; */
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  color: rgba(67, 66, 75, 1);
+  font-size: 16px;
+  color: #43424B;
+  /* padding-top: 11px; */
 }
 .form-label-category {
   display: block;
@@ -588,7 +615,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .meta-description-second {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
 }
 .meta-upload-second {
   width: 50%;
@@ -609,7 +636,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-family: 'Poppins';
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 17px;
   color: rgba(191, 191, 191, 1);
   width: 33%;
 }
@@ -620,6 +647,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   width: 100%;
   border-radius: 6px;
   border: none;
+  padding: 12px 15px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /* -----------------manage-seo -----------*/
@@ -643,7 +674,12 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   width: 100%;
   margin-top: 4%;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+
 }
 .icon-item {
   /* position: relative; */
@@ -697,8 +733,12 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: white;
   width: 47% !important;
   margin: 28px 14px !important;
-  border-radius: 3px;
+  border-radius: 8px;
   border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 12px;
 }
 /*----------------- create-cuisine --------------*/
 .SUBMIT-NOW {
@@ -719,14 +759,17 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: 1px solid rgba(30, 158, 90, 1);
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 12px;
-  padding: 9px 9px;
+  font-size: 13px;
+  padding: 9px 16px;
   border-radius: 32px;
   display: flex;
-  gap: 1rem;
-  background-color: transparent;
-  width: 40%;
+  gap: 5px;
+  /* width: 40%; */
+  position: absolute;
   color: green;
+  top: -8px;
+  right: 38px;
+  background: none;
 }
 /*------add-package-------- */
 .package-upload {
@@ -749,6 +792,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 600;
   font-size: 16px;
   color: rgba(67, 66, 75, 1);
+  margin-bottom: 5px;
 }
 .package-one .package-control {
   outline: none !important;
@@ -760,22 +804,28 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: rgba(166, 169, 183, 1);
   font-family: 'Inter';
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 .package-submit-now {
-  background: rgba(31, 40, 105, 1);
+  background-color: #1F2869;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   color: white;
   width: 45%;
   border-radius: 9px;
   padding: 10px 12px;
-  margin: 10px 0px;
+  margin-top: 20px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px;
 }
 .amount-container {
   padding: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  margin-top: 10px;
 }
 .amount-container .amount-container-heading {
   font-family: 'Poppins';
@@ -833,8 +883,8 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 25px;
 }
 .switch .round-button {
   opacity: 0;
@@ -864,10 +914,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
-  bottom: 4px;
+  bottom: 3px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -997,13 +1047,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 11px;
-  padding: 10px;
+  padding: 7px 7px;
 }
 
 .upload-btn {
   background: #d2d4e1;
   color: rgba(31, 40, 105, 1);
-  padding: 14px 12px;
+  padding: 12px 12px;
   border-radius: 4px;
   font-family: 'Poppins';
   font-weight: 500;
@@ -1025,7 +1075,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   text-decoration: none;
   color: white !important;
 }
-/* ---------new-class */
+/* -------------------------------new-class------------------------------------- */
 /* .table-blog thead {
   border-radius: 18px 18px 0px 0px;
   background-color: white;
@@ -1035,3 +1085,180 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .table-cuisine tbody tr:nth-child(odd) {
   background-color: white;
 } */
+
+.blog-seoA{
+  background-color: #fff;
+  padding: 13px;
+  border-radius: 15px;
+}
+table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order:after,
+table.dataTable thead>tr>th.dt-ordering-asc span.dt-column-order:before,table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order, 
+table.dataTable thead>tr>th.dt-orderable-desc span.dt-column-order{
+  display: none !important;
+}
+#myTable-A>thead>tr{
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+#myTable-A>tbody>tr>td{
+background-color: white !important;
+border-bottom: 10px solid #F5F6FA !important;
+outline: none !important;
+font-family: "Poppins", sans-serif;
+font-size: 13px;
+font-weight: 500;
+text-align: left;
+color: #43424B;
+}
+#myTable-A>tbody>tr{
+  border-radius: 30px !important;
+}
+#myTable-A_wrapper{
+  background-color:#F5F6FA;
+  padding: 25px 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+th{
+  outline: none !important;
+  border: none !important;
+}
+#title-seo{
+  width: 20%;
+}
+.table-seo{
+  position: absolute;
+  right: 2px;
+  top: 25px;
+  background-color: #fff !important;
+}
+div.dt-container div.dt-layout-row{
+  background-color: #F5F6FA;
+  margin-top: 0px !important;
+}
+.form-booking{
+  margin-top: 15px;
+}
+
+/* ---------------------manage-blog------------------- */
+.right-sidebar{
+  background-color: #fff;
+  padding-top: 10px;
+  border-radius: 12px;
+  /* opacity: 0; */
+  --bs-bg-opacity: 0 !important;
+}
+.table-blog-bar h4{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #43424B;
+  margin-top: 20px;
+}
+table.dataTable thead th, table.dataTable tfoot th{
+  color: #1F2869;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+#myTable-B_wrapper{
+  padding: 0px 34px !important;
+  border-radius: 10px;
+}
+tbody{
+  background-color: #F5F6FA;
+}
+#myTable-B>thead>tr{
+background-color: #fff !important;
+border: 1px solid #DBDFFF !important;
+box-shadow: 0px 2px 4px 0px #0000001A;
+border-radius: 20px 20px 0px 0px !important;
+}
+#myTable-B>tbody>tr>td{
+  border-bottom: 3px solid #fff;
+  box-shadow: 0px 0px 44px 0px #31389608;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  color: #43424B;
+}
+div.dt-container div.dt-layout-row {
+background: none;
+}
+.dt-info{
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-size: 14px;
+color: #333333;
+}
+
+#meta-title{
+  padding-top: 10px;
+}
+.bg-light{
+  --bs-bg-opacity: 0 !important;
+}
+/* --------------------------manage-blog---------------- */
+.blog-seo-A{
+  background-color: #FFFF;
+  padding: 10px;
+  border-radius: 12px;
+}
+.table-blog-barA h4{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #43424B;
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+}
+table.dataTable th.dt-type-numeric{
+  text-align: left !important;
+}
+.table-blog-barA{
+  display: flex;
+  justify-content: space-between;
+}
+.dataTables_-search-filterA{
+  border-radius: 26px;
+  padding: 8px 28px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  background: #f5f6fa;
+  border: 1px solid #f4f7fc;
+}
+.searchA{
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #818E94;
+}
+#notification-icon{
+  /* font-weight: 400; */
+  font-size: 16px;
+  color: #818E94 ;
+}
+.img-fluid{
+  height: 90px !important;
+  margin-top: 15px;
+}
+.blog-seo{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+}
+.dt-paging-button.current {
+  background-color: #13B9E1 !important;
+  border-radius: 50px !important;
+}
+.dt-paging-button.current:hover{
+  background-color: #13B9E1;
+}
+
+
+

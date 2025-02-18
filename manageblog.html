@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin From</title>
+    <title>Manage-Blog</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/comman.css" />
-    <link rel="stylesheet" href="assets/css/newstyle.css">
+    <!-- <link rel="stylesheet" href="assets/css/newstyle.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -333,7 +333,7 @@
                                   </div> -->
                                   <textarea placeholder="Write something"></textarea>
                               </div>
-                              <label for="title"  class="form-label-category">Meta Title</label> 
+                              <label for="title" id="meta-title" class="form-label-category">Meta Title</label> 
                               <input
                                 type="text"
                                 class="form-control"
@@ -380,8 +380,8 @@
                                    </div>
                                 <div class="meta-upload-second">
                                 <div class="meta-description-second">
-                                       <label for="title" class="meta-label">Meta description</label>
-                                       <img src="assets/images/plus-image.png" alt="">
+                                       <label for="title" class="meta-label">Enter description</label>
+                                       <img src="assets/images/plus-image.png" alt="" class="description-img">
                                 </div>
                                        <!-- <input
                                        type="text"
@@ -406,7 +406,7 @@
                           </div>
                           </div>
                             
-                            <button type="submit" class=" ADD-button  p-3">
+                            <button type="submit" class="ADD-button">
                               ADD BLOG
                             </button>
                           </form>
@@ -417,13 +417,13 @@
       
         <!-- footer-section -->
         
-                    <table id="myTable-2" class="maintable" style="width:100%">
-                    
+                    <table id="myTable-B" class="maintable details-table" style="width:100%">
                       <div class="table-blog-bar">
+                        <h4>LIST OF ALL BLOGS</h4>
                         <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
-                    <h4>LIST OF SEO DETAILS</h4>
+                    <!-- <h4>LIST OF SEO DETAILS</h4> -->
                     <div id="myTable_filter" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-3">
+                    <label class="d-flex align-items-center gap-2">
                       <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
                       <input type="search" class="" placeholder="Search here" aria-controls="myTable">
                     </label>
@@ -443,36 +443,44 @@
                           <td>01.</td>
                           <td > <img src="assets/images/footer-image-one.png" alt=""></td>
                           <td >Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td><img src="assets/images/delete.png" alt="">
+                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                            <a href="#">
                           <img src="assets/images/custome-icon.png" alt="">
-                          <img src="assets/images/three-dot icon.png" alt="">
+                        </a>
+                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                           </td>
                         </tr>
                         <tr>
                           <td>01.</td>
                           <td > <img src="assets/images/footer-image-five.png" alt=""></td>
                           <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td><img src="assets/images/delete.png" alt="">
+                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                            <a href="#">
                           <img src="assets/images/custome-icon.png" alt="">
-                          <img src="assets/images/three-dot icon.png" alt="">
+                        </a>
+                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                           </td>
                         </tr>
                         <tr>
                           <td>01.</td>
                           <td > <img src="assets/images/footer-image-six.png" alt=""></td>
                           <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td><img src="assets/images/delete.png" alt="">
+                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                            <a href="#">
                           <img src="assets/images/custome-icon.png" alt="">
-                          <img src="assets/images/three-dot icon.png" alt="">
+                        </a>
+                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                           </td>
                         </tr>
                         <tr>
                           <td>01.</td>
                           <td > <img src="assets/images/footer-image-one.png" alt=""></td>
                           <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td><img src="assets/images/delete.png" alt="">
+                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                            <a href="#">
                           <img src="assets/images/custome-icon.png" alt="">
-                          <img src="assets/images/three-dot icon.png" alt="">
+                        </a>
+                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                           </td>
                         </tr>
 
@@ -509,7 +517,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <script>
+<script>
       const documentA = document.getElementById('uploadDocument');
       const fileInput = document.getElementById('file1');
 
@@ -523,10 +531,10 @@
     </script>
 
 <script>
-    let table = new DataTable('#myTable-2');</script>
+    let table = new DataTable('#myTable-B');</script>
     <script>
        $(document).ready(function () {
-        $('#myTable-2').DataTable({
+        $('#myTable-B').DataTable({
                 "paging": true,         
                 "searching": false,      
                 "info": true  ,         
