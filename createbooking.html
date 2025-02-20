@@ -233,7 +233,7 @@
           <li class="nav-item">
             <a href="#" class="nav-link text-white last-li">
               <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
               LOGOUT
             </a>
           </li>
@@ -308,7 +308,7 @@
                       <h4 class="notification-heading">CREATE BOOKING</h4>
                       <div class="row Both-container">
                         <div class="col-md-6 manage-notification-left">
-                          <form>
+                          <form id="createBookingA">
                           <label for="title" class="form-label form-bookingA">User Name</label>
                               <select id="title" class="form-control">
                                 <option>Enter User Name</option>
@@ -332,6 +332,7 @@
                                 class="form-control"
                                 placeholder="04-03-2024" 
                               />
+                              <span class="error-message"></span>
                               <img src="assets/images/booking-start.png" alt="">
                             </span>
                           <label for="title" class="form-label form-booking" style="display: block;">Package Name</label>
@@ -340,10 +341,10 @@
                             <option value="package">package 1</option>
                             <option value="package">package 2</option>
                            </select>  
-                          </form>                  
+                          <!-- </form>                   -->
                         </div>
                         <div class="col-md-6 right-form-deatiles">
-                          <form>
+                          <!-- <form id="createBookingA"> -->
                             <div class="mb-3">
                               <label for="title" class="form-label form-bookingA">Email</label>
                               <input
@@ -352,7 +353,7 @@
                                 class="form-control"
                                 placeholder="Enter Email Address"
                               />
-                              
+                              <span class="error-message"></span>
                               <label for="title" class="form-label form-booking">Contact Number</label>
                               <input
                                 type="text"
@@ -360,6 +361,7 @@
                                 class="form-control"
                                 placeholder="Enter Contact Number"
                               />
+                              <span class="error-message"></span>
                               <label for="title" class="form-label form-booking">Cuisine</label>
                               <select  id="title"
                               class="form-control">
@@ -374,8 +376,9 @@
                                 class="form-control"
                                 placeholder="Package Price"
                               />
+                              <span class="error-message"></span>
                             </div>
-                          </form>
+                          <!-- </form> -->
                         </div>
                         <label for="title" class="form-label form-booking" style="padding-left: 23px;">Any Comment</label>
                         <textarea
@@ -384,9 +387,11 @@
                         rows="4"
                         placeholder="Add Comment"
                       ></textarea>
-                      <button type="submit" class="creating-booking w-90">
+                      <span class="error-message"></span>
+                      <button type="submit" class="creating-booking w-90" id="createBooking">
                         CREATING BOOKING
                       </button>
+                    </form>
                       </div>
                     </div>
                   </div>

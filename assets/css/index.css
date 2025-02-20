@@ -1180,7 +1180,7 @@ table.dataTable thead th, table.dataTable tfoot th{
   font-size: 14px;
 }
 #myTable-B_wrapper{
-  padding: 0px 34px !important;
+  padding: 4px 34px !important;
   border-radius: 10px;
 }
 tbody{
@@ -1284,5 +1284,11 @@ border-radius: 20px 20px 0px 0px !important;
 }
 .blog-SEOImg img{
   width: 65px;
+}
+.error-message{
+  color: red;
+  font-size: 14px;
+  font-family: "Inteer", sans-serif;
+  font-weight: 500;
 }
 

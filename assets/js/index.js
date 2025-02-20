@@ -23,7 +23,7 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
       icon.classList.toggle("rotated");
     });
   });
-// validation in managaeprfile form 
+// ----------------------validation in managaeprfile form 
 document.addEventListener("DOMContentLoaded", function () {
     function showError(input, message) {
       const errorSpan = input.parentElement.nextElementSibling;
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// manage profile inpit upload 
+//---------------------- manage profile inpit upload 
 const documentA = document.getElementById("uploadDocument");
 const fileInput = document.getElementById("file1");
 
@@ -117,72 +117,4 @@ fileInput.addEventListener("change", (event) => {
   const files = event.target.files;
 });
 
-// create user list validation 
-document
-.getElementById('profileForm')
-.addEventListener('submit', function (event) {
-  event.preventDefault();
-});
 
-document
-.getElementById('updateProfileBtnA')
-.addEventListener('click', function () {
-  let isValid = true;
-
-  document
-    .querySelectorAll('#profileForm .error-message')
-    .forEach((el) => (el.textContent = ''));
-
-  const username = document.getElementById('username');
-  const email = document.getElementById('email');
-
-  if (!username.value.trim()) {
-    showError(username, ' Please Enter your name.');
-    isValid = false;
-  }
-
-  if (!email.value.trim() || !validateEmail(email.value)) {
-    showError(email, 'Please enter a valid email.');
-    isValid = false;
-  }
-
-  if (!lastname.value.trim() || !validateEmail(email.value)) {
-    showError(lastname, 'Please enter your last name.');
-    isValid = false;
-  }
-
-  if (!contact.value.trim()) {
-    showError(contact, 'Please enter your your phone number.');
-    isValid = false;
-  }
-
-  if (!address.value.trim()) {
-    showError(address, 'Please enter your address');
-    isValid = false;
-  }
-
-  if (!building.value.trim()) {
-    showError(building, 'Please enter your building.');
-    isValid = false;
-  }
-  if (!area.value.trim()) {
-    showError(area, 'Please enter your area');
-    isValid = flase;
-  }
-  if (!usernameA.value.trim()) {
-    showError(usernameA, 'Fill the latitude.');
-    isValid = false;
-  }
-  if (!usernameA.value.trim()) {
-    showError(usernameA, 'Fill the section.');
-    isValid = false;
-  }
-});
-
-function showError(input, message) {
-const errorSpan = input.nextElementSibling;
-if (errorSpan) {
-  errorSpan.textContent = message;
-  errorSpan.style.color = 'red';
-}
-}

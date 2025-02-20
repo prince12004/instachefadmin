@@ -269,18 +269,18 @@
                   </div>
                 </div>
                 <div class="col-md-6 right-form">
-                  <form>
+                  <form id="Notificationform">
                     <div class="mb-3">
                       <label for="title" class="form-label">Title</label>
                       <input type="text" id="title" class="form-control" placeholder="Add Title" />
+                      <span class="error-message"></span>
                     </div>
                     <div class="mb-3">
                       <label for="message" class="form-label">Message</label>
-                      <textarea id="message" class="form-control" rows="4" placeholder="Add Message"></textarea>
+                      <textarea id="Addmessage" class="form-control" rows="4" placeholder="Add Message"></textarea>
+                      <span class="error-message"></span>
                     </div>
-                    <button type="submit" class="send-button">
-                      SEND NOTIFICATION
-                    </button>
+                    <button type="submit" class="send-button" id="sendnotification">SEND NOTIFICATION</button>
                   </form>
                 </div>
               </div>
@@ -342,11 +342,12 @@
     </div>
   </div>
   </div>
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <!-- -------------datatable-------------- -->
   <script>
     let table = new DataTable('#myTable-A');
     </script>
@@ -363,6 +364,7 @@
     });
     </script>
   <script src="assets/js/index.js"></script>
+  <!-- -------------image-upload-------------------- -->
   <script>
     const documentA = document.getElementById('uploadDocument');
     const fileInput = document.getElementById('file1');
@@ -374,5 +376,45 @@
     fileInput.addEventListener('change', (event) => {
       const files = event.target.files;
     });
-  </script></body>
+  </script>
+  <!-- ---------------------validation------------------- -->
+  <script>
+   document.getElementById('Notificationform')
+      .addEventListener('click', function (event) {
+      event.preventDefault();
+});
+
+document.getElementById('sendnotification')
+.addEventListener('click', function () {
+  let isValid = true;
+
+  document.querySelectorAll('#Notificationform .error-message')
+    .forEach((el) => (el.textContent = ''));
+
+  const title = document.getElementById('title');
+  const Addmessage = document.getElementById('Addmessage');
+
+  if (!title.value.trim()) {
+    showError(title, ' Please Enter your title.');
+    isValid = false;
+  }
+
+  if (!Addmessage.value.trim() || !validateAddmessage(Addmessage.value)) {
+    showError(Addmessage, 'Please enter a message.');
+    isValid = false;
+  }
+  if (valid) {
+        alert("form is submited successfully!");
+      }
+});
+
+function showError(input, message) {
+const errorSpan = input.nextElementSibling;
+if (errorSpan) {
+  errorSpan.textContent = message;
+  errorSpan.style.color = 'red';
+}
+}
+  </script>
+  </body>
 </html>
