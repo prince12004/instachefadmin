@@ -225,7 +225,7 @@
           <li class="nav-item">
             <a href="#" class="nav-link text-white last-li">
               <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/logout.png" alt="" class="hover-img" />
+              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
               LOGOUT
             </a>
           </li>
@@ -300,13 +300,15 @@
                       <div class="row Both-container">
                         <div class="col-md-6 ">
                           <div class="Add-blogs">
+                            <form id="ManageBlog">
                               <label for="title" class="form-label">Title   </label>
                               <input
                                 type="text"
-                                id="title"
+                                id="titleA"
                                 class="form-control"
                               />
-                              
+                              <span class="error-message"></span>
+
                               <label for="title" class="form-label-category">Category </label>
                                 <select id="select-one">
                                     <option value="">Select Category</option>
@@ -331,18 +333,22 @@
                                       <button class="toolbar-button"><s>S</s></button>
                                       <button class="toolbar-button"><b>"</b></button>
                                   </div> -->
-                                  <textarea placeholder="Write something"></textarea>
-                              </div>
+                                  <textarea id="somethingMsssage" placeholder="Write something"></textarea>
+                                  <span class="error-message"></span>
+                                </div>
                               <label for="title" id="meta-title" class="form-label-category">Meta Title</label> 
                               <input
                                 type="text"
                                 class="form-control"
+                                id="metaTitle"
                               />   
+                              <span class="error-message"></span>
+
                           </div>
                         </div>
+                        
                         <!--------- right-container ------->
                         <div class="col-md-6 meta-form ">
-                          <form>
                             <div class="mb-3 meta-box">
                                 <div class="meta-deatiles">
                                       <label for="title" class="meta-label">Meta Keywords </label>
@@ -350,7 +356,9 @@
                                         type="text"
                                         class="meta-keybord"
                                       /> -->
-                                      <textarea ></textarea>
+                                      <textarea id="someKeywords"></textarea>
+                                      <span class="error-message"></span>
+
                               </div>
                            <div class="meta-deatiles">
                                          <label for="title" class="meta-label">Meta description</label>
@@ -358,7 +366,8 @@
                                            type="text"
                                            class="meta-keybord"
                                          /> -->
-                                         <textarea ></textarea>
+                                         <textarea id="descriptionA"></textarea>
+                                         <span class="error-message"></span>
                            </div>
                             </div>
                             <div class="clone-container">
@@ -389,7 +398,8 @@
                                        type="text"
                                        class="meta-keybord"
                                        /> -->
-                                       <textarea ></textarea>
+                                       <textarea id="descriptionB"></textarea>
+                                       <span class="error-message"></span>
                                        <label for="" class="meta-label">Photo Gallery</label>
                                        <span class="d-flex span-first" >
                                        <!-- <input
@@ -407,9 +417,14 @@
                                     </span>
                           </div>
                           </div>
+<<<<<<< HEAD
                           <!-- <i class="fa-solid fa-xmark cancel-clon" ></i> -->
                         </div>
                             <button type="submit" class="ADD-button">
+=======
+                            
+                            <button type="submit" class="ADD-button" id="addBlog">
+>>>>>>> 85eb4c8b76c851d67e9f114539e9062548ac9ea6
                               ADD BLOG
                             </button>
                           </form>
@@ -425,7 +440,7 @@
                         <h4>LIST OF ALL BLOGS</h4>
                         <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
                     <!-- <h4>LIST OF SEO DETAILS</h4> -->
-                    <div id="myTable_filter" class="dataTables_-search-filter">
+                    <div id="myTable_filter1" class="dataTables_-search-filter">
                     <label class="d-flex align-items-center gap-2">
                       <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
                       <input type="search" class="" placeholder="Search here" aria-controls="myTable">
@@ -444,7 +459,7 @@
                       <tbody>
                         <tr>
                           <td>01.</td>
-                          <td > <img src="assets/images/footer-image-one.png" alt=""></td>
+                          <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
                           <td >Lorem Ipsum is simply dummy text of the printing.</td>
                           <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
                             <a href="#">
@@ -455,7 +470,7 @@
                         </tr>
                         <tr>
                           <td>01.</td>
-                          <td > <img src="assets/images/footer-image-five.png" alt=""></td>
+                          <td class="blog-foodImg"> <img src="assets/images/footer-image-five.png" alt=""></td>
                           <td>Lorem Ipsum is simply dummy text of the printing.</td>
                           <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
                             <a href="#">
@@ -477,7 +492,7 @@
                         </tr>
                         <tr>
                           <td>01.</td>
-                          <td > <img src="assets/images/footer-image-one.png" alt=""></td>
+                          <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
                           <td>Lorem Ipsum is simply dummy text of the printing.</td>
                           <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
                             <a href="#">
@@ -494,6 +509,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     <!--------------------------------- modal--------------------------->
     <!-- Modal for confirmation -->
 <div id="deleteModal" class="modal">
@@ -509,8 +525,11 @@
 </div>
 
     <script src="script.js"></script>
+=======
+    <!-- <script src="script.js"></script> -->
+>>>>>>> 85eb4c8b76c851d67e9f114539e9062548ac9ea6
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<!-- ------------------sidebar-toggle-------------- -->
     <script>
       $(document).ready(function () {
         $('.toggle-bar').click(function () {
@@ -518,7 +537,7 @@
         });
       });
     </script>
-
+<!-- ------------------------sidebarIcon-dropdown-------------- -->
     <script>
       $(document).ready(function () {
         $('.user-select-input').hide();
@@ -534,6 +553,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<!-- -----------------------uploadImage---------------------- -->
 <script>
       const documentA = document.getElementById('uploadDocument');
       const fileInput = document.getElementById('file1');
@@ -546,9 +566,10 @@
         const files = event.target.files;
       });
     </script>
-
+<!-- -----------------------datatable------------------ -->
 <script>
-    let table = new DataTable('#myTable-B');</script>
+    let table = new DataTable('#myTable-B');
+    </script>
     <script>
        $(document).ready(function () {
         $('#myTable-B').DataTable({
@@ -579,6 +600,7 @@
     });
     
     </script>
+<<<<<<< HEAD
     <script>
 document.addEventListener("DOMContentLoaded", function () {
     const parentContainer = document.querySelector(".clone-container").parentNode;
@@ -709,5 +731,89 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </script>
     
+=======
+<!-- ------------------------validation----------------------- -->
+  <script>
+document.getElementById('ManageBlog')
+  .addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+
+document.getElementById('addBlog')
+  .addEventListener('click', function () {
+    let isValid = true;
+
+    document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+    const titleA = document.getElementById('titleA');
+    const somethingMsssage = document.getElementById('somethingMsssage');
+    const metaTitle = document.getElementById('metaTitle');
+    const someKeywords = document.getElementById('someKeywords');
+    const descriptionA = document.getElementById('descriptionA');
+    const descriptionB = document.getElementById('descriptionB');
+
+
+    if (!titleA.value.trim()) {
+      showError(titleA, 'Please enter your title.');
+      isValid = false;
+    }
+
+    if (!somethingMsssage.value.trim() || !validateSomethingMsssage(somethingMsssage.value)) {
+      showError(somethingMsssage, 'Please enter a valid message.');
+      isValid = false;
+    }
+
+    if (!metaTitle.value.trim()) {
+      showError(metaTitle, 'Please enter your meta title.');
+      isValid = false;
+    }
+
+    if (!someKeywords.value.trim() || !validateSomeKeywords(someKeywords.value)) {
+      showError(someKeywords, 'Please enter valid keywords.');
+      isValid = false;
+    }
+
+    if (!descriptionA.value.trim()) {
+      showError(descriptionA, 'Please enter your description.');
+      isValid = false;
+    }
+
+    if (!descriptionB.value.trim() || !validateDescriptionB(descriptionB.value)) {
+      showError(descriptionB, 'Please enter a valid description.');
+      isValid = false;
+    }
+
+    if (isValid) {
+      console.log("Form submitted successfully!");
+    }
+  });
+
+function showError(input, message) {
+  let errorSpan = input.nextElementSibling;
+
+  if (!errorSpan || !errorSpan.classList.contains('error-message')) {
+    errorSpan = document.createElement('span');
+    errorSpan.classList.add('error-message');
+    input.parentNode.appendChild(errorSpan);
+  }
+
+  errorSpan.textContent = message;
+  errorSpan.style.color = 'red';
+}
+
+// Placeholder validation functions
+function validateSomethingMsssage(value) {
+  return value.length > 5; // Example condition
+}
+
+function validateSomeKeywords(value) {
+  return value.split(',').length > 0; // Example condition
+}
+
+function validateDescriptionB(value) {
+  return value.length > 10; // Example condition
+}
+
+  </script>
+>>>>>>> 85eb4c8b76c851d67e9f114539e9062548ac9ea6
   </body>
 </html>

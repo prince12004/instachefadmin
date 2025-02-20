@@ -19,7 +19,6 @@ body{
     font-family: "Inter", sans-serif;
     background-color: #F5F6FA !important;
 }
-/* =========left========= */
 .dt-column-title{
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -51,12 +50,10 @@ table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td{
     border-bottom: 2px solid #fff !important;
     background-color: #F5F6FA;
     border-top: none!important;
-    /* border-bottom:3px solid #F8F9FA!important; */
     box-shadow: 0px 0px 0px 0px !important;
 }
 
 table.dataTable>thead>tr{
-    /* border: 2px solid #DBDFFF !important; */
     padding-top: 30px !important;
     outline: none !important;
     box-shadow: 0px 2px 4px 0px #0000001A;
@@ -69,8 +66,6 @@ table.dataTable>thead>tr>th, table.dataTable>thead>tr>td{
 
 td img{
     vertical-align: middle;
-    /* margin-right: 2px; */
-    /* width: 30px; */
 }
 .assign-chef{
   background-color: #1E9E5A;
@@ -105,9 +100,6 @@ td img{
   text-align: left;
   gap: 3px;
 }
-/* .assignchefA{
-width: ;
-} */
 
 .assign-action{
   display: flex;
@@ -128,8 +120,6 @@ width: ;
     width: 36px;
 }
 #dt-search-0{
-    /* width: 95px;
-    height: 35px; */
     outline: none;
     border-radius: 20px;
     font-size: 12px;
@@ -146,7 +136,6 @@ width: ;
     border: none;
     color: white !important;
 }
-/* #myTable-2  */
 .dt-paging-button:hover{
   background-color: #13B9E1 !important;
   border-radius: 50px !important;
@@ -166,7 +155,6 @@ width: ;
     position: relative;
     top: 60px;
     left: 20px;
-    /* right: 64%; */
     z-index: 1;
     width: 30%;
 }
@@ -236,7 +224,6 @@ table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order, table.dataTab
 div.dt-container{
     background-color: #FFF;
     padding: 20px;
-    /* margin-top:20px;  */
     border-radius: 10px;
     box-shadow: 0px 10px 25px 0px #00000008;
 
@@ -264,19 +251,22 @@ div.dt-container{
     padding: 8px 15px;
     border-radius: 40px;
 }
+.button-recover img{
+  width: 15px;
+  height: 14px;
+}
 
 .Review-btn button{
     border: none;
-    background-color: #00D5F1;
+    background-color: #00D5F1 !important;
     color: #FFF;
     padding: 8px 15px;
     border-radius: 40px;
     font-family: "Poppins", sans-serif;
-    font-size: 10px;
+    font-size: 11px !important;
     font-weight: 500;
     text-align: left;
 }
-/* =============================== */
 .admin-dashboard{
     width: 93%;
     margin-left: 20px !important;
@@ -295,14 +285,12 @@ div.dt-container{
     margin: 0px auto;
 }
 
-/* ============================ */
 .menu {
     display: none;
   }
   
   .menu.show {
     display: block;
-    /* background-color: #343A40; */
   }
   
   .selected img{
@@ -447,7 +435,6 @@ div.dt-container{
     color: rgb(67, 66, 75);
     position: relative;
     top: 65px;
-    /* right: 64%; */
     left: 20px;
     z-index: 1;
     width: 30%;
@@ -467,8 +454,6 @@ div.dt-container{
   .number{
     font-size: 12px;
     padding: 0px 6px;
-    /* border-radius: 10px;
-    border: 1px solid #fff; */
   }
   table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, 
   table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date{
@@ -520,13 +505,11 @@ div.dt-container{
     font-size: 26px !important;
   }
 
-  /* -------------------------------- */
 #search-here{
   position: relative;
   top: 53px;
   right: 2%;
   z-index: 1;
-  /* color: #818E94; */
   background-color: #F5F6FA;
   width: 21%;
   padding: 6px 10px;
@@ -549,11 +532,24 @@ div.dt-container{
     top: 60px;
     left: 17%;
     z-index: 1;
-    /* color: #818E94; */
     background-color: #F5F6FA;
     width: 21%;
     padding: 6px 10px;
     border-radius: 15px;
   }
-    
+   .Review-btnA{
+    border: none;
+    background-color: #1E9E5A;
+    padding: 8px 15px;
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: left;
+   }
+   .icons-image button{
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    font-size: 11px;
+   }
 

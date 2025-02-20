@@ -210,7 +210,7 @@
         <li class="nav-item">
           <a href="#" class="nav-link text-white last-li">
             <img src="assets/images/logout.png" alt="" class="default-img" />
-            <img src="assets/images/logout.png" alt="" class="hover-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
             LOGOUT
           </a>
         </li>
@@ -340,8 +340,13 @@
               <div class="file">
                 <img src="assets/images/docProfile.png" alt="">
               </div>
-              <div class="choose-file">
+              <div class="choose-fileA">
                 <input type="file" class="uploadDocumentA">
+                <input type="file" id="fileSelector">
+                <label for="fileSelector" class="upload-label">
+                  <span id="displayFileA">No File Chosen</span>
+                  <span id="select-btnA">CHOOSE FILE</span>
+                </label>
               </div>
             </div>
 
@@ -358,7 +363,11 @@
                     <img src="assets/images/docProfile.png" alt="">
                   </div>
                   <div class="choose-file">
-                    <input type="file">
+                    <input type="file" id="fileSelector">
+                      <label for="fileSelector" class="upload-label">
+                        <span id="displayFile">No File Chosen</span>
+                        <span class="select-btn">CHOOSE FILE</span>
+                      </label>
                   </div>
                 </div>
                 <div class="description-section">
@@ -370,10 +379,10 @@
                 <button class="icon-btn"><i class="fa fa-trash deleteA"></i></button>
 
                 <div class="form-rowA">
-                  <button class="plus-btn"><i class="fa fa-plus"></i></button>
+                  <button class="plus-btn" id="addclone"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
-              <button class="create-btn">CREATE BOOKING</button>
+              <button class="create-btn" id="createBooking">CREATE BOOKING</button>
 
             </div>
           </div>
@@ -384,8 +393,123 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/index.js"></script>
+  <!-- -------------------validation---------------------- -->
+  <script>
+    document.getElementById("createBooking").addEventListener("click", function (event) {
+    event.preventDefault(); 
+    let isValid = true;
+
+    function showError(input, message) {
+        let errorSpan = input.parentNode.querySelector(".error-message");
+        errorSpan.textContent = message;
+        errorSpan.style.color = "red";
+    }
+
+    function clearError(input) {
+        let errorSpan = input.parentNode.querySelector(".error-message");
+        errorSpan.textContent = "";
+    }
+
+    const chefName = document.getElementById("chefName");
+    if (chefName.value.trim() === "") {
+        showError(chefName, "Chef Name is required");
+        isValid = false;
+    } else {
+        clearError(chefName);
+    }
+
+    const chefEmail = document.getElementById("chefEmail");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(chefEmail.value.trim())) {
+        showError(chefEmail, "Enter a valid email");
+        isValid = false;
+    } else {
+        clearError(chefEmail);
+    }
+
+    const chefMobile = document.getElementById("chefMobile");
+    const mobilePattern = /^[0-9]{10}$/;
+    if (!mobilePattern.test(chefMobile.value.trim())) {
+        showError(chefMobile, "Enter a valid 10-digit mobile number");
+        isValid = false;
+    } else {
+        clearError(chefMobile);
+    }
+
+    const country = document.getElementById("country");
+    if (country.value === "") {
+        showError(country, "Please select a country");
+        isValid = false;
+    } else {
+        clearError(country);
+    }
+
+    const joinDate = document.getElementById("joinDate");
+    const datePattern = /^\d{2}-\d{2}-\d{4}$/;
+    if (!datePattern.test(joinDate.value.trim())) {
+        showError(joinDate, "Enter date in DD-MM-YYYY format");
+        isValid = false;
+    } else {
+        clearError(joinDate);
+    }
+
+    const endDate = document.getElementById("endDate");
+    if (!datePattern.test(endDate.value.trim())) {
+        showError(endDate, "Enter date in DD-MM-YYYY format");
+        isValid = false;
+    } else {
+        clearError(endDate);
+    }
+
+    const chefAddress = document.getElementById("chefAddress");
+    if (chefAddress.value.trim() === "") {
+        showError(chefAddress, "Chef Address is required");
+        isValid = false;
+    } else {
+        clearError(chefAddress);
+    }
+
+    const qualification = document.getElementById("qualification");
+    if (qualification.value.trim() === "") {
+        showError(qualification, "Qualification is required");
+        isValid = false;
+    } else {
+        clearError(qualification);
+    }
+
+    const experience = document.getElementById("experience");
+    if (experience.value.trim() === "") {
+        showError(experience, "Work Experience is required");
+        isValid = false;
+    } else {
+        clearError(experience);
+    }
+
+    const cuisines = document.getElementById("cuisines");
+    if (cuisines.value.trim() === "") {
+        showError(cuisines, "Cuisines Known is required");
+        isValid = false;
+    } else {
+        clearError(cuisines);
+    }
+
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const genderField = document.querySelector('input[name="gender"]').parentNode;
+    if (!gender) {
+        showError(genderField, "Select a gender");
+        isValid = false;
+    } else {
+        clearError(genderField);
+    }
+
+    // If all validations pass, submit the form
+    if (isValid) {
+        document.getElementById("createchef").submit();
+    }
+});
+
+</script>
 
 
-</body>
-
+  </body>
 </html>
