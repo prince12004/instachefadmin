@@ -1016,7 +1016,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .upload-label {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
   width: 100%;
   padding: 0px 2px;
   border: 1px solid rgba(31, 40, 105, 1);

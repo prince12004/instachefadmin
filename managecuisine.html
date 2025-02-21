@@ -45,9 +45,7 @@
             />
           </div>
         </div>
-        <!-- <div class="toggle-bar"> -->
-        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
-        <!-- </div> -->
+       
         <div class="user-icons">
           <a href="#">
             <img src="assets/images/home.png" alt="" />
@@ -255,33 +253,7 @@
 
       <!-- ===============left==================== -->
       <div class="main-content">
-        <!-- <header>
-    <div class="instachef-admin">
-      <div class="toggle-bar">
-          <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
-       </div>
-      <div class="user-icons">
-        <a href="#">
-          <img src="assets/home.png" alt="" />
-        </a>
-        <a href="#" class="icon-item">
-          <img src="assets/notification.png" alt="notification Icon" />
-          <span class="counter wishlist-counter">2</span>
-        </a>
-        <img src="assets/Rectangle 915.png" alt="" class="right-border" />
-        <div class="admin-section">
-          <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
-          <div class="admin-text">
-            <h3>LOREM ISPUM</h3>
-            <select id="super-admin">
-              <option>super-admin</option>
-              <option>admin</option>  
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header> -->
+       
         <!-- ----------------------------------- -->
         <div class="admin-dashboard">
           <div class="dashboard-time">
@@ -333,13 +305,15 @@
                 <div class="row Both-container">
                   <div class="col-md-6 text-center manage-notification-left">
                     <div class="file-upload p-3">
-                      <img
-                        src="assets/images/upload-image.png"
-                        alt="Upload"
-                        class="img-fluid"
-                        
-                      />
-                      <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
+                      <div id="cuisone-imag">
+                        <img
+                          src="assets/images/upload-image.png"
+                          alt="Upload"
+                          class="img-fluid"
+                          
+                        />
+                      </div>
+                      
                       <div class="inputfile-upload">
                         <input type="file" id="fileInput" />
                         <label for="fileInput" class="custom-file-label" >
@@ -439,7 +413,7 @@
                       <img src="assets/images/delete.png" alt="" /></a>
                       <a href="#">
                       <img src="assets/images/custome-icon.png" alt="" /></a>
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                   
                     </td>
                   </tr>
                   <tr>
@@ -455,7 +429,7 @@
                       <img src="assets/images/delete.png" alt="" /></a>
                       <a href="#">
                       <img src="assets/images/custome-icon.png" alt="" /></a>
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                    
                     </td>
                   </tr>
                   <tr>
@@ -471,7 +445,7 @@
                       <img src="assets/images/delete.png" alt="" /></a>
                       <a href="#">
                       <img src="assets/images/custome-icon.png" alt="" /></a>
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                      
                     </td>
                   </tr>
                 </tbody>
@@ -536,27 +510,37 @@
       });
     </script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
   const fileInput = document.getElementById("fileInput");
   const fileNameDisplay = document.getElementById("fileName");
-  const uploadTrigger = document.querySelector(".img-fluid"); // ✅ First image with class "img-fluid"
-
-  // ✅ File select hone par naam update kare
+  const uploadTrigger = document.querySelector(".img-fluid"); 
   fileInput.addEventListener("change", function () {
-    fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : "No File Chosen";
+    if (fileInput.files.length > 0) {
+      let fileName = fileInput.files[0].name;
+
+      
+      fileNameDisplay.textContent = fileName;
+
+     
+      const fileReader = new FileReader();
+      fileReader.onload = function (event) {
+        uploadTrigger.src = event.target.result; 
+      };
+      fileReader.readAsDataURL(fileInput.files[0]); 
+    } else {
+      fileNameDisplay.textContent = "No File Chosen";
+      uploadTrigger.src = "assets/images/upload-image.png"; 
+    }
   });
 
-  // ✅ Image pe click kare to file picker open ho
+  
   if (uploadTrigger) {
     uploadTrigger.addEventListener("click", function () {
       fileInput.click();
     });
   }
-}
-);
+});
 
-
-
-    </script>
+  </script>
   </body>
 </html>

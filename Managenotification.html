@@ -257,7 +257,9 @@
               <div class="row Both-container">
                 <div class="col-md-6 text-center manage-notification-left">
                   <div class="file-upload">
-                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" id="uploadTrigger"/>
+                    <div id="uploadTrigger">
+                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" />
+                  </div>
                     <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
                     <div class="inputfile-upload">
                       <input type="file" id="fileInput" />
@@ -377,52 +379,54 @@
       const files = event.target.files;
     });
   </script>
-<!-- <<<<<<< HEAD -->
+
   <script>
     // ------------------file-upload----------------
-    document.addEventListener("DOMContentLoaded", function () {
+
   
-    const fileInput = document.getElementById("fileInput");
-    const fileNameDisplay = document.getElementById("fileName");
+document.addEventListener("DOMContentLoaded", function () {
+  
+  function handleFileUpload(fileInput) {
+    const parentDiv = fileInput.closest(".file-upload"); 
+    const fileLabel = parentDiv.querySelector("#fileName"); 
+    const uploadTrigger = parentDiv.querySelector("img");
 
     fileInput.addEventListener("change", function () {
+      if (fileLabel) {
         if (fileInput.files.length > 0) {
-            fileNameDisplay.textContent = fileInput.files[0].name;
+          let fileName = fileInput.files[0].name;
+
+          if (fileName.length > 15) {
+            fileName = fileName.substring(0, 10) + "...";
+          }
+
+          fileLabel.textContent = fileName;
+
+          
+          const fileReader = new FileReader();
+          fileReader.onload = function (event) {
+            if (uploadTrigger) {
+              uploadTrigger.src = event.target.result;
+            }
+          };
+          fileReader.readAsDataURL(fileInput.files[0]);
         } else {
-            fileNameDisplay.textContent = "No File Chosen";
+          fileLabel.textContent = "No File Chosen";
         }
+      }
     });
 
     
-    const galleryUploader = document.getElementById("galleryUploader");
-    const selectedImages = document.getElementById("selectedImages");
-
-    if (galleryUploader) {
-        galleryUploader.addEventListener("change", function () {
-            if (galleryUploader.files.length > 0) {
-                let fileNames = [];
-                for (let i = 0; i < galleryUploader.files.length; i++) {
-                    fileNames.push(galleryUploader.files[i].name);
-                }
-                selectedImages.textContent = fileNames.join(", ");
-            } else {
-                selectedImages.textContent = "No file chosen";
-            }
-        });
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const fileInput = document.getElementById("fileInput");
-    const uploadTrigger = document.getElementById("uploadTrigger");
-
-
-    uploadTrigger.addEventListener("click", function () {
+    if (uploadTrigger) {
+      uploadTrigger.addEventListener("click", function () {
         fileInput.click();
-    });
+      });
+    }
+  }
+
+  
+  document.querySelectorAll("input[type='file']").forEach(handleFileUpload);
 });
-
-
   </script>
   
 </body>

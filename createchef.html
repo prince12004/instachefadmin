@@ -342,7 +342,7 @@
               </div>
               <div class="choose-fileA">
                 <input type="file" class="uploadDocumentA">
-                <input type="file" id="fileSelector">
+                <input type="file" id="fileSelectorone">
                 <label for="fileSelector" class="upload-label">
                   <span id="displayFileA">No File Chosen</span>
                   <span id="select-btnA">CHOOSE FILE</span>
@@ -363,7 +363,7 @@
                     <img src="assets/images/docProfile.png" alt="">
                   </div>
                   <div class="choose-file">
-                    <input type="file" id="fileSelector">
+                    <input type="file" id="fileSelectortwo">
                       <label for="fileSelector" class="upload-label">
                         <span id="displayFile">No File Chosen</span>
                         <span class="select-btn">CHOOSE FILE</span>
@@ -506,6 +506,63 @@
     if (isValid) {
         document.getElementById("createchef").submit();
     }
+});
+
+</script>
+
+<!---------image-upload-js ----------- -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const fileInputs = document.querySelectorAll("input[type='file']");
+
+  fileInputs.forEach((fileInput) => {
+    const parentDiv = fileInput.closest(".uploadDocument, .file-input");
+    const fileLabel = parentDiv.querySelector("span[id^='displayFile']");
+    const uploadTrigger = parentDiv.querySelector("img");
+    const label = parentDiv.querySelector("label.upload-label");
+
+
+    if (label) {
+      label.addEventListener("click", function () {
+        fileInput.click();
+      });
+    }
+
+    fileInput.addEventListener("change", function () {
+      if (fileLabel) {
+        if (fileInput.files.length > 0) {
+          let fileName = fileInput.files[0].name;
+          
+          if (fileName.length > 15) {
+            fileName = fileName.substring(0, 10) + "...";
+          }
+
+          fileLabel.textContent = fileName;
+
+         
+          const fileReader = new FileReader();
+          fileReader.onload = function (event) {
+            if (uploadTrigger) {
+              uploadTrigger.src = event.target.result;
+            }
+          };
+          fileReader.readAsDataURL(fileInput.files[0]);
+        } else {
+          fileLabel.textContent = "No File Chosen";
+          if (uploadTrigger) {
+            uploadTrigger.src = "assets/images/docProfile.png"; 
+          }
+        }
+      }
+    });
+
+    
+    if (uploadTrigger) {
+      uploadTrigger.addEventListener("click", function () {
+        fileInput.click();
+      });
+    }
+  });
 });
 
 </script>
