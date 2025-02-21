@@ -310,7 +310,7 @@
                         <div class="col-md-6 manage-notification-left">
                           <form id="createBookingA">
                           <label for="title" class="form-label form-bookingA">User Name</label>
-                              <select id="title" class="form-control">
+                              <select id="title" class="form-control" required>
                                 <option>Enter User Name</option>
                                 <option>user Name</option>
                                 <option>Name</option>
@@ -331,6 +331,7 @@
                                 id="title"
                                 class="form-control"
                                 placeholder="04-03-2024" 
+                                required
                               />
                               <span class="error-message"></span>
                               <img src="assets/images/booking-start.png" alt="">
@@ -437,5 +438,60 @@
         const files = event.target.files;
       });
     </script>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- // --------------form-validation----------- -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script>
+  $(document).ready(function () {
+    $("#createBooking").click(function (event) {
+      let isValid = true;
+
+      $("#createBookingA select, #createBookingA input, #createBookingA textarea").each(function () {
+        let value = $(this).val().trim();
+        let fieldType = $(this).attr("id");
+
+        
+        $(this).next(".error-message").remove();
+
+        
+        if (value === "" || value === "Enter User Name" || value === "Enter Address" || value === "Select package" || value === "Select cuisine") {
+          showError($(this), "This field is required!");
+          isValid = false;
+        } 
+        
+        else if (fieldType === "email" && !isValidEmail(value)) {
+          showError($(this), "Enter a valid email (e.g. user@example.com)!");
+          isValid = false;
+        } 
+      
+        else if (fieldType === "contact-number" && !/^\d{10}$/.test(value)) {
+          showError($(this), "Enter a valid 10-digit phone number!");
+          isValid = false;
+        }
+      });
+
+     
+      if (!isValid) {
+        event.preventDefault();
+      }
+    });
+
+    
+    function showError(input, message) {
+      let error = $("<span>").addClass("error-message").text(message);
+      input.after(error); // 
+    }
+
+    
+    function isValidEmail(email) {
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  });
+</script> -->
   </body>
 </html>
