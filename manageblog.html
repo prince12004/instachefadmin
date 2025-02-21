@@ -1,821 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage-Blog</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/comman.css" />
-    <!-- <link rel="stylesheet" href="assets/css/newstyle.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
-  
-  </head>
-  <body>
-    <header>
-      <div class="instachef-admin">
-        <div class="instachef">
-          <a href="index.html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage-Blog</title>
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/comman.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="instachef-admin">
+      <div class="instachef">
+        <a href="index.html">
           <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
         </a>
         <img src="assets/images/middleLine.png" alt="" class="middle-line">
         <div class="toggle-bar">
           <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div>
-        </div>
-        <!-- <div class="toggle-bar"> -->
-          <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
-        <!-- </div> -->
-        <div class="user-icons">
-          <a href="#">
-            <img src="assets/images/home.png" alt="" />
-          </a>
-          <a href="#" class="icon-item">
-            <img src="assets/images/notification.png" alt="notification Icon" />
-            <span class="counter wishlist-counter">2</span>
-          </a>
-          <img src="assets/images/middleLine.png" alt="" class="right-border" />
-          <div class="admin-section">
-            <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
-            <div class="admin-text">
-              <h3>LOREM ISPUM</h3>
-              <select id="super-admin">
-                <option>super-admin</option>
-                <option>admin</option>  
-              </select>
-            </div>
-          </div>
-        </div>
       </div>
-    </header>
-    <!-- ===========header============== -->
-    <div class="admin-panel">
-      <nav class="bg-dark text-white sidebar">
-        <ul class="nav flex-column">
-          <!-- Dashboard Item -->
-          <li class="nav-item dashboard">
-            <a href="index.html" class="nav-link text-white">
-              <img src="assets/images/image1.png" alt="" class="default-img" />
-              <img src="assets/images/icons.png" alt="" class="hover-img" />
-              DASHBOARD
-            </a>
-          </li>
-          
-          <!-- Manage Profile Item -->
-          <li class="nav-item">
-            <a href="manageprofile.html" class="nav-link text-white">
-              <img src="assets/images/image2.png" alt="" class="default-img" />
-              <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
-              MANAGE PROFILE
-            </a>
-          </li>
-          
-          <!-- Manage Notification Item -->
-          <li class="nav-item">
-            <a href="Managenotification.html" class="nav-link text-white">
-              <img src="assets/images/image3.png" alt="" class="default-img" />
-              <img src="assets/images/imagethree.png" alt="" class="hover-img" />
-              MANAGE NOTIFICATION
-            </a>
-          </li>
-          
-          <!-- Contact Request Item -->
-          <li class="nav-item">
-            <a href="contactrequest.html" class="nav-link text-white">
-              <img src="assets/images/image4.png" alt="" class="default-img" />
-              <img src="assets/images/imageFour.png" alt="" class="hover-img" />
-              CONTACT REQUEST
-            </a>
-          </li>
-          
-          <!-- Manage Blogs Item -->
-          <li class="nav-item">
-            <a href="manageblog.html" class="nav-link text-white">
-              <img src="assets/images/image5.png" alt="" class="default-img" />
-              <img src="assets/images/imageFive.png" alt="" class="hover-img" />
-              MANAGE BLOGS
-            </a>
-          </li>
-          
-          <!-- Manage SEO Item -->
-          <li class="nav-item">
-            <a href="manageseo.html" class="nav-link text-white">
-              <img src="assets/images/image6.png" alt="" class="default-img" />
-              <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-              MANAGE SEO
-            </a>
-          </li>
-          
-          <!-- Manage User Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image7.png" alt="" class="default-img" />
-              <img src="assets/images/imageseven.png" alt="" class="hover-img" />
-              MANAGE USER
-              <i class="fa fa-caret-down"></i>
-              <p> +3</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createuser.html">
-                  <input type="radio" placeholder=""> CREATE USER
-                </a>
-              </label>
-              <label for="user">
-                <a href="userlist.html">
-                  <input type="radio" placeholder=""> USER LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="inactiveuser.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE USER
-                </a>
-              </label>
-            </div> 
-          </li>
-          
-          <!-- Manage Booking Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image8.png" alt="" class="default-img" />
-              <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-              MANAGE BOOKING
-              <i class="fa fa-caret-down"></i>
-              <p> +4</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createbooking.html">
-                  <input type="radio" placeholder=""> CREATE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefbooking.html">
-                  <input type="radio" placeholder=""> BOOKINGS LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="inactivebooking.html">
-                  <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="Review.html">
-                  <input type="radio" placeholder=""> REVIEW LIST
-                </a>
-              </label>
-            </div> 
-          </li>
-          
-          <!-- Manage Cuisine Item -->
-          <li class="nav-item">
-            <a href="managecuisine.html" class="nav-link text-white">
-              <img src="assets/images/image9.png" alt="" class="default-img" />
-              <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-              MANAGE CUISINE
-            </a>
-          </li>
-          
-          <!-- Manage Package Item -->
-          <li class="nav-item">
-            <a href="mangepackage.html" class="nav-link text-white">
-              <img src="assets/images/image10.png" alt="" class="default-img" />
-              <img src="assets/images/imagten.png" alt="" class="hover-img" />
-              MANAGE PACKAGE
-            </a>
-          </li>
-          
-          <!-- Manage Chef Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image11.png" alt="" class="default-img" />
-              <img src="assets/images/imageten.png" alt="" class="hover-img" />
-              MANAGE CHEF
-              <i class="fa fa-caret-down"></i>
-              <p> +2</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createchef.html">
-                  <input type="radio" placeholder=""> CREATE CHEF
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefdetails.html">
-                  <input type="radio" placeholder=""> LIST OF CHEF DETAIL
-                </a>
-              </label>
-            </div> 
-          </li>
-          
-          <!-- Logout Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white last-li">
-              <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
-              LOGOUT
-            </a>
-          </li>
-        </ul>
-      </nav>
-      
-      <!-- ===============left==================== -->
-      <div class="main-content">
-        <!-- <header>
-    <div class="instachef-admin">
-      <div class="toggle-bar">
-          <img src="assets/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
-       </div>
       <div class="user-icons">
         <a href="#">
-          <img src="assets/home.png" alt="" />
+          <img src="assets/images/home.png" alt="" />
         </a>
         <a href="#" class="icon-item">
-          <img src="assets/notification.png" alt="notification Icon" />
+          <img src="assets/images/notification.png" alt="notification Icon" />
           <span class="counter wishlist-counter">2</span>
         </a>
-        <img src="assets/Rectangle 915.png" alt="" class="right-border" />
+        <img src="assets/images/middleLine.png" alt="" class="right-border" />
         <div class="admin-section">
-          <img src="assets/Rectangle 19.png" alt="" class="adminimg" />
+          <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
           <div class="admin-text">
             <h3>LOREM ISPUM</h3>
             <select id="super-admin">
               <option>super-admin</option>
-              <option>admin</option>  
+              <option>admin</option>
             </select>
           </div>
         </div>
       </div>
     </div>
-  </header> -->
-        <!-- ----------------------------------- -->
-        <div class="admin-dashboard">
-          <div class="dashboard-time">
-            <img src="assets/images/BLOG-IMAGE.png" alt="" />
-            <p>MANAGE BLOGS</p>
+  </header>
+  <!-- ===========header============== -->
+  <div class="admin-panel">
+    <nav class="bg-dark text-white sidebar">
+      <ul class="nav flex-column">
+        <!-- Dashboard Item -->
+        <li class="nav-item dashboard">
+          <a href="index.html" class="nav-link text-white">
+            <img src="assets/images/image1.png" alt="" class="default-img" />
+            <img src="assets/images/icons.png" alt="" class="hover-img" />
+            DASHBOARD
+          </a>
+        </li>
+
+        <!-- Manage Profile Item -->
+        <li class="nav-item">
+          <a href="manageprofile.html" class="nav-link text-white">
+            <img src="assets/images/image2.png" alt="" class="default-img" />
+            <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+            MANAGE PROFILE
+          </a>
+        </li>
+
+        <!-- Manage Notification Item -->
+        <li class="nav-item">
+          <a href="Managenotification.html" class="nav-link text-white">
+            <img src="assets/images/image3.png" alt="" class="default-img" />
+            <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+            MANAGE NOTIFICATION
+          </a>
+        </li>
+
+        <!-- Contact Request Item -->
+        <li class="nav-item">
+          <a href="contactrequest.html" class="nav-link text-white">
+            <img src="assets/images/image4.png" alt="" class="default-img" />
+            <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+            CONTACT REQUEST
+          </a>
+        </li>
+
+        <!-- Manage Blogs Item -->
+        <li class="nav-item">
+          <a href="manageblog.html" class="nav-link text-white">
+            <img src="assets/images/image5.png" alt="" class="default-img" />
+            <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+            MANAGE BLOGS
+          </a>
+        </li>
+
+        <!-- Manage SEO Item -->
+        <li class="nav-item">
+          <a href="manageseo.html" class="nav-link text-white">
+            <img src="assets/images/image6.png" alt="" class="default-img" />
+            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+            MANAGE SEO
+          </a>
+        </li>
+
+        <!-- Manage User Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image7.png" alt="" class="default-img" />
+            <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+            MANAGE USER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createuser.html">
+                <input type="radio" placeholder=""> CREATE USER
+              </a>
+            </label>
+            <label for="user">
+              <a href="userlist.html">
+                <input type="radio" placeholder=""> USER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="inactiveuser.html">
+                <input type="radio" placeholder=""> IN-ACTIVE USER
+              </a>
+            </label>
           </div>
+        </li>
 
-          <div class="time-piker">
-            <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Date Range</p>  
-                 <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
-                </div>
-            </div>
-            <div class="time">
-                <img src="assets/images/calender.png" alt="">
-                <div class="time-pikerA">
-                 <p>Filter Range</p>  
-                 <input type="date" name="daterange" value="01-01-2023" class="dateA">                            
-                </div>
-            </div>
-            <!-- <div class="dropdown">
-              <select name="chef" id="chef"></select>
-            </div> -->
+        <!-- Manage Booking Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE BOOKING
+            <i class="fa fa-caret-down"></i>
+            <p> +4</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createbooking.html">
+                <input type="radio" placeholder=""> CREATE BOOKING
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefbooking.html">
+                <input type="radio" placeholder=""> BOOKINGS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="inactivebooking.html">
+                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+              </a>
+            </label>
+            <label for="user">
+              <a href="Review.html">
+                <input type="radio" placeholder=""> REVIEW LIST
+              </a>
+            </label>
+          </div>
+        </li>
+
+        <!-- Manage Cuisine Item -->
+        <li class="nav-item">
+          <a href="managecuisine.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            MANAGE CUISINE
+          </a>
+        </li>
+
+        <!-- Manage Package Item -->
+        <li class="nav-item">
+          <a href="mangepackage.html" class="nav-link text-white">
+            <img src="assets/images/image10.png" alt="" class="default-img" />
+            <img src="assets/images/imagten.png" alt="" class="hover-img" />
+            MANAGE PACKAGE
+          </a>
+        </li>
+
+        <!-- Manage Chef Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image11.png" alt="" class="default-img" />
+            <img src="assets/images/imageten.png" alt="" class="hover-img" />
+            MANAGE CHEF
+            <i class="fa fa-caret-down"></i>
+            <p> +2</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createchef.html">
+                <input type="radio" placeholder=""> CREATE CHEF
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefdetails.html">
+                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+              </a>
+            </label>
+          </div>
+        </li>
+
+        <!-- Logout Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white last-li">
+            <img src="assets/images/logout.png" alt="" class="default-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+            LOGOUT
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===============left==================== -->
+    <div class="main-content">
+      <!-- ----------------------------------- -->
+      <div class="admin-dashboard">
+        <div class="dashboard-time">
+          <img src="assets/images/BLOG-IMAGE.png" alt="" />
+          <p>MANAGE BLOGS</p>
         </div>
-        </div>
 
-        <!-- ======================= -->
-        <div class="forms">
-
-            <main class="col-md-10  right-sidebar" style="background-color: white;">
-                <div class="main-form">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <h4 class="notification-heading">ADD BLOG</h4>
-                      <div class="row Both-container">
-                        <div class="col-md-6 ">
-                          <div class="Add-blogs">
-                            <form id="ManageBlog">
-                              <label for="title" class="form-label">Title   </label>
-                              <input
-                                type="text"
-                                id="titleA"
-                                class="form-control"
-                              />
-                              <span class="error-message"></span>
-
-                              <label for="title" class="form-label-category">Category </label>
-                                <select id="select-one">
-                                    <option value="">Select Category</option>
-                                    <option value="">Select Category</option>
-                                    <option value="">Select Category</option>
-                                </select>
-                              
-                              <label for="title" class="form-label-category">Title</label>
-                              <div class="editor-container">
-                                  <!-- <div class="toolbar">
-                                      <select id="formatBlock">
-                                          <option value="p">Normal</option>
-                                          <option value="h1">Heading 1</option>
-                                          <option value="h2">Heading 2</option>
-                                      </select>
-                                      <select id="fontFamily">
-                                          <option value="Arial">Sans Serif</option>
-                                          <option value="Times New Roman">Serif</option>
-                                          <option value="Courier New">Monospace</option>
-                                      </select>
-                                      <button class="toolbar-button"><b>B</b></button>
-                                      <button class="toolbar-button"><i>I</i></button>
-                                      <button class="toolbar-button"><u>U</u></button>
-                                      <button class="toolbar-button"><s>S</s></button>
-                                      <button class="toolbar-button"><b>"</b></button>
-                                  </div> -->
-                                  <textarea id="somethingMsssage" placeholder="Write something"></textarea>
-                                  <span class="error-message"></span>
-                                </div>
-                              <label for="title" id="meta-title" class="form-label-category">Meta Title</label> 
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="metaTitle"
-                              />   
-                              <span class="error-message"></span>
-
-                          </div>
-                        </div>
-                        
-                        <!--------- right-container ------->
-                        <div class="col-md-6 meta-form ">
-                            <div class="mb-3 meta-box">
-                                <div class="meta-deatiles">
-                                      <label for="title" class="meta-label">Meta Keywords </label>
-                                      <!-- <input
-                                        type="text"
-                                        class="meta-keybord"
-                                      /> -->
-                                      <textarea id="someKeywords"></textarea>
-                                      <span class="error-message"></span>
-
-                              </div>
-                           <div class="meta-deatiles">
-                                         <label for="title" class="meta-label">Meta description</label>
-                                         <!-- <input
-                                           type="text"
-                                           class="meta-keybord"
-                                         /> -->
-                                         <textarea id="descriptionA"></textarea>
-                                         <span class="error-message"></span>
-                           </div>
-                            </div>
-                            <div class="clone-container">
-                            <div class="mb-3 meta-box" style="height: 200px;">
-                                <div class="meta-upload">
-                                       <img src="assets/images/upload-image.png" alt="" class="meta-image-upload" id="load-image">
-                                       <p>image</p>
-                                       <!-- <input
-                                        type="file"
-                                        class="meta-input"
-                                       />-->
-                                       <div class="upload-box">
-                                        <input type="file" id="fileSelector">
-                                        <label for="fileSelector" class="upload-label">
-                                          <span id="displayFile">No File Chosen</span>
-                                          <span class="select-btn">CHOSE FILE</span>
-                                        </label>
-                                      </div>
-                                      
-                                   </div>
-                                <div class="meta-upload-second">
-                                <div class="meta-description-second">
-                                       <label for="title" class="meta-label">Enter description</label>
-                                       <img src="assets/images/plus-image.png" alt="" class="description-img">
-                                      
-                                </div>
-                                       <!-- <input
-                                       type="text"
-                                       class="meta-keybord"
-                                       /> -->
-                                       <textarea id="descriptionB"></textarea>
-                                       <span class="error-message"></span>
-                                       <label for="" class="meta-label">Photo Gallery</label>
-                                       <span class="d-flex span-first" >
-                                       <!-- <input
-                                       type="file"
-                                       class="meta-input"
-                                      />  -->
-                                      <div class="gallery-container">
-                                        <input type="file" id="galleryUploader" multiple>
-                                        <label for="galleryUploader" class="gallery-label">
-                                          <span id="selectedImages">No file chose</span>
-                                          <span class="upload-btn">CHOOSE FILE</span>
-                                        </label>
-                                      </div>
-                                      <p>Size(Width: 360px,Height: 320px)</p>
-                                    </span>
-                          </div>
-                          </div>
-
-                          <!-- <i class="fa-solid fa-xmark cancel-clon" ></i> -->
-                        </div>
-                            <!-- <button type="submit" class="ADD-button"> -->
-
-                            
-                            <button type="submit" class="ADD-button" id="addBlog">
-
-                              ADD BLOG
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-        <!-- footer-section -->
-        
-                    <table id="myTable-B" class="maintable details-table" style="width:100%">
-                      <div class="table-blog-bar">
-                        <h4>LIST OF ALL BLOGS</h4>
-                        <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
-                    <!-- <h4>LIST OF SEO DETAILS</h4> -->
-                    <div id="myTable_filter1" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" placeholder="Search here" aria-controls="myTable">
-                    </label>
-                    </div>
-                      </span>
-                    </div>
-                      <thead >
-                        <tr class="header-table">
-                          <th class="serial-number">#</th>
-                          <th>Image</th>
-                          <th>Tittle</th>
-                          <th>Action</th> 
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>01.</td>
-                          <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
-                          <td >Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
-                            <a href="#">
-                          <img src="assets/images/custome-icon.png" alt="">
-                        </a>
-                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>01.</td>
-                          <td class="blog-foodImg"> <img src="assets/images/footer-image-five.png" alt=""></td>
-                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
-                            <a href="#">
-                          <img src="assets/images/custome-icon.png" alt="">
-                        </a>
-                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>01.</td>
-                          <td > <img src="assets/images/footer-image-six.png" alt=""></td>
-                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
-                            <a href="#">
-                          <img src="assets/images/custome-icon.png" alt="">
-                        </a>
-                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>01.</td>
-                          <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
-                          <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                          <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
-                            <a href="#">
-                          <img src="assets/images/custome-icon.png" alt="">
-                        </a>
-                          <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                          </td>
-                        </tr>
-
-                      </tbody>
-                    </table>
-                     
-              </main>
+        <div class="time-piker">
+          <div class="time">
+            <img src="assets/images/calender.png" alt="">
+            <div class="time-pikerA">
+              <p>Date Range</p>
+              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+            </div>
+          </div>
+          <div class="time">
+            <img src="assets/images/calender.png" alt="">
+            <div class="time-pikerA">
+              <p>Filter Range</p>
+              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!--------------------------------- modal--------------------------->
-    <!-- Modal for confirmation -->
-<div id="deleteModal" class="modal">
-  <div class="modal-content">
-    <img src="assets/images/InstaCheflogo.png" alt="" class="modal-image">
-    <div class="modal-cancel">
-      <p>Do you want to delete this clone?</p>
-      <span class="close">&times;</span>
+      <!-- ======================= -->
+      <div class="forms">
+
+        <main class="col-md-10  right-sidebar" style="background-color: white;">
+          <div class="main-form">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4 class="notification-heading">ADD BLOG</h4>
+                <div class="row Both-container">
+                  <div class="col-md-6 ">
+                    <div class="Add-blogs">
+                      <form id="ManageBlog">
+                        <label for="title" class="form-label">Title </label>
+                        <input type="text" id="titleA" class="form-control" />
+                        <span class="error-message"></span>
+
+                        <label for="title" class="form-label-category">Category </label>
+                        <select id="select-one">
+                          <option value="">Select Category</option>
+                          <option value="">Select Category</option>
+                          <option value="">Select Category</option>
+                        </select>
+
+                        <label for="title" class="form-label-category">Title</label>
+                        <div class="editor-container">
+                          <textarea id="somethingMsssage" placeholder="Write something"></textarea>
+                          <span class="error-message"></span>
+                        </div>
+                        <label for="title" id="meta-title" class="form-label-category">Meta Title</label>
+                        <input type="text" class="form-control" id="metaTitle" />
+                        <span class="error-message"></span>
+
+                    </div>
+                  </div>
+
+                  <!--------- right-container ------->
+                  <div class="col-md-6 meta-form ">
+                    <div class="mb-3 meta-box">
+                      <div class="meta-deatiles">
+                        <label for="title" class="meta-label">Meta Keywords </label>
+                        <textarea id="someKeywords"></textarea>
+                        <span class="error-message"></span>
+
+                      </div>
+                      <div class="meta-deatiles">
+                        <label for="title" class="meta-label">Meta description</label>
+                        <textarea id="descriptionA"></textarea>
+                        <span class="error-message"></span>
+                      </div>
+                    </div>
+                    <div class="clone-container">
+                      <div class="mb-3 meta-box" style="height: 220px;">
+                        <div class="meta-upload">
+                          <img src="assets/images/upload-image.png" alt="" class="meta-image-upload" id="load-image">
+                          <p>image</p>
+                          <div class="upload-boxes">
+                            <div class="mains-files">
+                              <input type="file">
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="meta-upload-second" id="product-info-section">
+                        <div class="meta-description-second">
+                          <div class="mains-uploads quantity-size-row">
+                            <label for="" class="meta-label">Photo Gallery</label>
+                            <span class="d-flex span-first">
+                              <div class="choose-files">
+                                <div class="mains-files">
+                                  <input type="file">
+                                </div>
+                              </div>
+                            </span>
+                            <p class="mains-sizes">Size(Width: 360px, Height: 320px)</p>
+                          </div>
+
+                          <div class="mains-uploads">
+                            <div class="mains-plus">
+                              <label for="title" class="meta-label">Enter description</label>
+                              <img src="assets/images/plus-image.png" alt="" class="description-img field-add-btn">
+                            </div>
+
+                            <textarea id="descriptionB" required></textarea>
+                            <span class="error-message"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="ADD-button" id="addBlog">
+
+                        ADD BLOG
+                      </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- footer-section -->
+
+              <table id="myTable-B" class="maintable details-table" style="width:100%">
+                <div class="table-blog-bar">
+                  <h4>LIST OF ALL BLOGS</h4>
+                  <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
+                    <!-- <h4>LIST OF SEO DETAILS</h4> -->
+                    <div id="myTable_filter1" class="dataTables_-search-filter">
+                      <label class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                        <input type="search" class="" placeholder="Search here" aria-controls="myTable">
+                      </label>
+                    </div>
+                  </span>
+                </div>
+                <thead>
+                  <tr class="header-table">
+                    <th class="serial-number">#</th>
+                    <th>Image</th>
+                    <th>Tittle</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01.</td>
+                    <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
+                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                    <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                      <a href="#">
+                        <img src="assets/images/custome-icon.png" alt="">
+                      </a>
+                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01.</td>
+                    <td class="blog-foodImg"> <img src="assets/images/footer-image-five.png" alt=""></td>
+                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                    <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                      <a href="#">
+                        <img src="assets/images/custome-icon.png" alt="">
+                      </a>
+                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01.</td>
+                    <td> <img src="assets/images/footer-image-six.png" alt=""></td>
+                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                    <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                      <a href="#">
+                        <img src="assets/images/custome-icon.png" alt="">
+                      </a>
+                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01.</td>
+                    <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
+                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                    <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
+                      <a href="#">
+                        <img src="assets/images/custome-icon.png" alt="">
+                      </a>
+                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+        </main>
+      </div>
     </div>
-      <button id="confirmDelete">Yes, delete</button>
-      <button id="cancelDelete">No, cancel</button>
   </div>
-</div>
+  <!-- Modal for Validation Messages -->
+  <div id="validationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p id="modalMessage"></p>
+      <div class="mains-modals">
+        <button type="button" class="close-modal">OK</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="assets/js/index.js"></script>
 
-    <script src="script.js"></script>
-
-    <!-- <script src="script.js"></script> -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- ------------------sidebar-toggle-------------- -->
-    <script>
-      $(document).ready(function () {
-        $('.toggle-bar').click(function () {
-          $('.sidebar').toggleClass('show');
-        });
-      });
-    </script>
-<!-- ------------------------sidebarIcon-dropdown-------------- -->
-    <script>
-      $(document).ready(function () {
-        $('.user-select-input').hide();
-        $('.fa-caret-down').click(function (event) {
-          event.preventDefault();
-          $(this)
-            .closest('.nav-item')
-            .find('.user-select-input')
-            .fadeToggle('fast');
-        });
-      });
-    </script>
-
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-<!-- -----------------------uploadImage---------------------- -->
-<script>
-      const documentA = document.getElementById('uploadDocument');
-      const fileInput = document.getElementById('file1');
-
-      documentA.addEventListener('click', () => {
-        fileInput.click();
-      });
-
-      fileInput.addEventListener('change', (event) => {
-        const files = event.target.files;
-      });
-    </script>
-<!-- -----------------------datatable------------------ -->
-<script>
-    let table = new DataTable('#myTable-B');
-    </script>
-    <script>
-       $(document).ready(function () {
-        $('#myTable-B').DataTable({
-                "paging": true,         
-                "searching": false,      
-                "info": true  ,         
-                "pageLength": 2, 
-                "destroy": true,
-                "lengthChange": false
-        });
-    });
-    
-    $(document).ready(function(){
-       $('.user-select-input').hide();
-             $('.fa-caret-down').click(function(event){
-               event.preventDefault();
-                 $(this).closest(".nav-item").find(".user-select-input").fadeToggle('fast');
-             });
-         });
-    
-         $(document).ready(function(){
-     $(".delete-icon").click(function(){
-         let confirmDelete = confirm("Are you sure you want to delete this row?");
-         if (confirmDelete) {
-             $(this).closest("tr").remove();
-         }
-     });
-    });
-    
-    </script>
-
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const parentContainer = document.querySelector(".clone-container").parentNode;
-    const button = document.querySelector(".ADD-button");
-    const modal = document.getElementById("deleteModal");
-    const closeModal = modal.querySelector(".close");
-    const confirmDelete = modal.querySelector("#confirmDelete");
-    const cancelDelete = modal.querySelector("#cancelDelete");
-    const modalMessage = modal.querySelector(".modal-cancel p");
-
-    function validateForm(container) {
-        const textarea = container.querySelector("textarea");
-        if (textarea.value.trim() === "") {
-            alert("Please enter a description before adding the clone.");
-            return false;
-        }
-        return true;
-    }
-
-    function resetFileInput(fileInput) {
-        let newInput = document.createElement("input");
-        newInput.type = "file";
-        newInput.className = fileInput.className;
-        newInput.name = fileInput.name;
-        newInput.accept = fileInput.accept;
-
-        fileInput.parentNode.replaceChild(newInput, fileInput);
-
-        let label = newInput.closest("label").querySelector("span#displayFile") || 
-                    newInput.closest("label").querySelector("span#selectedImages");
-        if (label) {
-            label.textContent = "No File Chosen";
-        }
-    }
-
-    function handleDeleteClick(clone) {
-        modal.style.display = "block";
-        modalMessage.textContent = "Do you want to delete this clone?";
-
-        confirmDelete.onclick = function () {
-            clone.remove();
-            modal.style.display = "none";
-        };
-
-        cancelDelete.onclick = function () {
-            modal.style.display = "none";
-        };
-    }
-
-    document.querySelector(".description-img").addEventListener("click", function (event) {
-        const currentContainer = event.target.closest(".clone-container");
-
-        if (!validateForm(currentContainer)) {
-            return;
-        }
-
-        let clone = currentContainer.cloneNode(true);
-        parentContainer.insertBefore(clone, button);
-
-        clone.querySelector("textarea").value = ""; 
-
-        let fileInputs = clone.querySelectorAll('input[type="file"]');
-        fileInputs.forEach(input => resetFileInput(input));
-
-        
-        const clonedPlusImage = clone.querySelector(".description-img");
-        clonedPlusImage.src = "assets/images/FILTER-ICON.png"; 
-
-        clonedPlusImage.onclick = function () {
-            handleDeleteClick(clone);
-        };
-    });
-
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
-
-    </script>
-
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-   
-    const fileSelector = document.getElementById("fileSelector");
-    const displayFile = document.getElementById("displayFile");
-
-    fileSelector.addEventListener("change", function () {
-        if (fileSelector.files.length > 0) {
-            displayFile.textContent = fileSelector.files[0].name;
-        } else {
-            displayFile.textContent = "No File Chosen";
-        }
-    });
-
- 
-    const galleryUploader = document.getElementById("galleryUploader");
-    const selectedImages = document.getElementById("selectedImages");
-
-    galleryUploader.addEventListener("change", function () {
-        if (galleryUploader.files.length > 0) {
-            let fileNames = [];
-            for (let i = 0; i < galleryUploader.files.length; i++) {
-                fileNames.push(galleryUploader.files[i].name);
-            }
-            selectedImages.textContent = fileNames.join(", "); 
-        } else {
-            selectedImages.textContent = "No file chosen";
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const fileInput = document.getElementById("fileSelector");
-    const uploadTrigger = document.getElementById("load-image");
-
-
-    uploadTrigger.addEventListener("click", function () {
-        fileInput.click();
-    });
-});
-
-    </script>
-    
-
-<!-- ------------------------validation----------------------- -->
   <script>
-document.getElementById('ManageBlog')
-  .addEventListener('click', function (event) {
-    event.preventDefault();
-  });
+    let table = new DataTable('#myTable-B');
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document).on('click', '.field-add-btn', function (event) {
+        event.preventDefault();
 
-document.getElementById('addBlog')
-  .addEventListener('click', function () {
-    let isValid = true;
+        var $originalRow = $(this).closest('.meta-description-second');
 
-    document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-    const titleA = document.getElementById('titleA');
-    const somethingMsssage = document.getElementById('somethingMsssage');
-    const metaTitle = document.getElementById('metaTitle');
-    const someKeywords = document.getElementById('someKeywords');
-    const descriptionA = document.getElementById('descriptionA');
-    const descriptionB = document.getElementById('descriptionB');
+        if ($originalRow.hasClass('cloned')) {
+          $originalRow.remove();
+        } else {
+          var fileInput = $originalRow.find('input[type="file"]');
+          var descriptionText = $originalRow.find('#descriptionB').val().trim();
 
+          if (fileInput[0].files.length === 0) {
+            showModal('Please choose a file.');
+            return;
+          }
 
-    if (!titleA.value.trim()) {
-      showError(titleA, 'Please enter your title.');
-      isValid = false;
-    }
+          if (descriptionText === '') {
+            showModal('Please fill in the description.');
+            return;
+          }
 
-    if (!somethingMsssage.value.trim() || !validateSomethingMsssage(somethingMsssage.value)) {
-      showError(somethingMsssage, 'Please enter a valid message.');
-      isValid = false;
-    }
+          var $clone = $originalRow.clone();
+          $clone.addClass('cloned');
 
-    if (!metaTitle.value.trim()) {
-      showError(metaTitle, 'Please enter your meta title.');
-      isValid = false;
-    }
+          $clone.find('input[type="file"]').val('');
+          $clone.find('#descriptionB').val('');
+          $clone.find('#selectedImages').text('No file chosen');
 
-    if (!someKeywords.value.trim() || !validateSomeKeywords(someKeywords.value)) {
-      showError(someKeywords, 'Please enter valid keywords.');
-      isValid = false;
-    }
+          $clone.find('.field-add-btn').attr('src', 'assets/images/minus.png');
 
-    if (!descriptionA.value.trim()) {
-      showError(descriptionA, 'Please enter your description.');
-      isValid = false;
-    }
-
-    if (!descriptionB.value.trim() || !validateDescriptionB(descriptionB.value)) {
-      showError(descriptionB, 'Please enter a valid description.');
-      isValid = false;
-    }
-
-    if (isValid) {
-      console.log("Form submitted successfully!");
-    }
-  });
-
-function showError(input, message) {
-  let errorSpan = input.nextElementSibling;
-
-  if (!errorSpan || !errorSpan.classList.contains('error-message')) {
-    errorSpan = document.createElement('span');
-    errorSpan.classList.add('error-message');
-    input.parentNode.appendChild(errorSpan);
-  }
-
-  errorSpan.textContent = message;
-  errorSpan.style.color = 'red';
-}
-
-// Placeholder validation functions
-function validateSomethingMsssage(value) {
-  return value.length > 5; // Example condition
-}
-
-function validateSomeKeywords(value) {
-  return value.split(',').length > 0; // Example condition
-}
-
-function validateDescriptionB(value) {
-  return value.length > 10; // Example condition
-}
+          $clone.find('.field-add-btn').on('click', function (event) {
+            event.preventDefault();
+            $clone.remove();
+          });
+          $('#product-info-section').append($clone);
+        }
+      });
+      function showModal(message) {
+        $('#modalMessage').text(message);
+        $('#validationModal').css('display', 'block');
+      }
+      $(document).on('click', '.close-btn', function () {
+        $('#validationModal').css('display', 'none');
+      });
+      $(document).on('click', '.close-modal', function () {
+        $('#validationModal').css('display', 'none');
+      });
+    });
 
   </script>
 
-  </body>
+</body>
+
 </html>

@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
 }
+
 textarea.form-control {
   height: 122px;
 }
+
 .card {
   border: none !important;
   border-radius: 15px !important;
 }
+
 /* -----manage-notification------------ */
 .manage-heading {
   background-color: white;
@@ -22,14 +27,17 @@ textarea.form-control {
   border-radius: 0px 0px 11px 11px;
   width: 97%;
 }
+
 .manage-heading h3 {
   font-family: 'Inter';
   font-size: 16px;
   font-weight: 600;
 }
+
 .manage-heading img {
   margin-right: 10px;
 }
+
 .Both-container {
   background: rgba(245, 246, 250, 1);
   padding: 25px 14px;
@@ -38,14 +46,17 @@ textarea.form-control {
   width: 100%;
   margin-top: 15px !important;
 }
+
 .card {
   background-color: white;
   border: none;
 }
+
 .card-body {
   padding: 20px 20px !important;
   border-radius: 10px;
 }
+
 .card-body h4 {
   font-family: 'Inter';
   font-size: 17px;
@@ -54,9 +65,11 @@ textarea.form-control {
   background-color: white !important;
   margin-bottom: 20px;
 }
+
 .manage-notification-left {
   padding: 0px 21px;
 }
+
 .file-upload {
   gap: 45px;
   padding: 3rem;
@@ -66,6 +79,7 @@ textarea.form-control {
   align-items: center;
   background-color: white;
 }
+
 .file-upload input {
   width: 65%;
 }
@@ -78,18 +92,21 @@ textarea.form-control {
   margin-bottom: 5px;
   color: rgba(67, 66, 75, 1);
 }
+
 .right-form input::placeholder {
   font-family: 'Inter';
   font-size: 14px;
   font-weight: 400;
   color: rgba(166, 169, 183, 1);
 }
+
 .right-form textarea::placeholder {
   font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   color: rgba(166, 169, 183, 1);
 }
+
 .send-button {
   background: rgba(31, 40, 105, 1);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
@@ -112,6 +129,7 @@ textarea.form-control {
   padding: 0px 34px !important;
   border-radius: 10px;
 }
+
 .table-blog-span {
   position: relative;
   position: absolute;
@@ -120,6 +138,7 @@ textarea.form-control {
   top: 0px;
   width: 96%;
 }
+
 .blog-seoA h4 {
   font-family: 'Inter';
   font-size: 20px;
@@ -127,9 +146,11 @@ textarea.form-control {
   margin: 5px 10px;
   color: rgba(67, 66, 75, 1);
 }
+
 .table-top-bar {
   padding: 18px 0px;
 }
+
 .table-top-bar h4 {
   font-family: 'Inter';
   font-size: 20px;
@@ -137,6 +158,7 @@ textarea.form-control {
   margin: 0px 10px;
   color: rgba(67, 66, 75, 1);
 }
+
 .filter-button {
   background: rgba(31, 40, 105, 1);
   padding: 6px 22px;
@@ -145,116 +167,7 @@ textarea.form-control {
   color: white;
   font-size: 15px;
 }
-/* ---------"table"-------- */
-/* table.dataTable.no-footer {
-  background-color: #f5f6fa;
-  border-bottom: none !important;
-}
-table th::before,
-table th::after {
-  display: none;
-}
-table th::after {
-  display: none;
-}
-table.dataTable thead > tr > th.sorting:before,
-table.dataTable thead > tr > th.sorting_asc:before {
-  display: none !important;
-}
-table.dataTable thead > tr > th.sorting:after,
-table.dataTable thead > tr > th.sorting_asc:after {
-  display: none !important;
-}
-table.dataTable {
-  border-radius: 20px;
-}
-#myTable.dataTable thead > tr > th.sorting,
-#myTable.dataTable thead > tr > th.sorting_asc,
-#myTable.dataTable thead > tr > th.sorting_desc,
-#myTable.dataTable thead > tr > th.sorting_asc_disabled,
-#myTable.dataTable thead > tr > th.sorting_desc_disabled,
-#myTable.dataTable thead > tr > td.sorting,
-#myTable.dataTable thead > tr > td.sorting_asc,
-#myTable.dataTable thead > tr > td.sorting_desc,
-#myTable.dataTable thead > tr > td.sorting_asc_disabled,
-#myTable.dataTable thead > tr > td.sorting_desc_disabled {
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(31, 40, 105, 1);
-}
-#myTable.dataTable thead > tr > th.sorting {
-  width: 30%;
-}
-#myTable tbody tr:nth-child(odd) {
-  background-color: #f5f6fa;
- 
-}
-
-#myTable tbody tr:nth-child(even) {
-  background-color: #f5f6fa;
-}
-
-.dataTables_wrapper {
-  background: rgba(245, 246, 250, 1);
-  
-  border-radius: 8px;
-} */
-/* ----------------table-deatiles------------------ */
-
-/* #myTable tbody tr {
-  background-color: white !important;
-}
-#myTable
-  table.dataTable
-  thead
-  > tr
-  > th.dt-orderable-asc
-  span.dt-column-order:before {
-  display: none;
-}
-div.dt-container {
-  background: rgba(245, 246, 250, 1);
-  padding: 10px 41px;
-  border-radius: 8px;
-}
-#myTable table.dataTable thead > tr > th.dt-orderable-asc,
-table.dataTable thead > tr > th.dt-orderable-desc {
-  color: rgba(31, 40, 105, 1);
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0%;
-}
-div.dt-container .dt-info {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 16px;
-  color: rgba(51, 51, 51, 1);
-}
-div.dt-container .dt-paging .dt-paging-button:hover {
-  background-color: rgba(31, 40, 105, 1) !important;
-}
-#myTable .table-dddd {
-  background-color: white !important ; 
-  border-radius: 10px; 
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-#myTable-2 .header-table {
-  background-color: white;
-  border-radius: 20px;
-  outline: none !important;
-  box-shadow: 0px 2px 4px 0px #0000001a;
-  border-radius: 20px 20px 0px 0px;
-} */
 .dataTables_-search-filter {
-  /* position: relative;
-  right: 0px;
-  bottom: 0px;
-  top: 0px; */
   border-radius: 26px;
   padding: 8px 28px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
@@ -262,27 +175,17 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: 1px solid #f4f7fc;
   position: absolute;
   right: 26px;
+  top: 0px;
 }
+
 #myTable_filterA {
   top: -8px;
 }
+
 #myTable_filterB {
   top: -8px;
   right: 15%;
 }
-
-
-/* .dataTables_-search-filterA{
-  border-radius: 26px;
-  padding: 8px 28px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  z-index: 1000;
-  background: #f5f6fa;
-  border: 1px solid #f4f7fc;
-  position: absolute;
-  right: 26px;
-  top: -8px;
-} */
 .dataTables_-search-filter input {
   color: #818e94;
   border-radius: 26px !important;
@@ -295,10 +198,14 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 400;
   font-size: 15px;
 }
+
 .dataTables_-search-filter #notification-icon {
   color: rgba(129, 142, 148, 1);
   font-size: 15px;
+  position: absolute;
+  left: 11px;
 }
+
 .dataTables_filter {
   border-radius: 26px;
   padding: 1px 17px;
@@ -307,6 +214,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   background: #f5f6fa;
   border: 1px solid #f4f7fc;
 }
+
 .dataTables_filter input {
   color: #a6a9b7;
   border-radius: 26px !important;
@@ -319,6 +227,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 400;
   font-size: 15px;
 }
+
 .dataTables_filter #notification-blog-icon {
   background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -328,6 +237,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   position: relative;
   margin-right: -20px;
 }
+
 /* .dataTables_filter #notification-icon {
   background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
   padding: 8px 8px;
@@ -349,12 +259,14 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 600;
   color: rgba(67, 66, 75, 1);
 }
+
 .table-heading {
   font-family: 'Poppins';
   font-size: 14px;
   font-weight: 500;
   color: rgba(31, 40, 105, 1);
 }
+
 .table-data {
   font-family: 'Poppins';
   font-size: 10px;
@@ -362,6 +274,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: rgba(67, 66, 75, 1);
   /* border: 1px solid rgba(235, 235, 235, 1); */
 }
+
 .delete-icon {
   margin-right: 10px;
   padding: 5px 15px;
@@ -369,15 +282,18 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: white;
   border: none;
 }
+
 .contact-thead {
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(219, 223, 255, 1);
   border-radius: 19px 20px 0px 0px;
   background-color: white;
 }
+
 .delete-icon {
   cursor: pointer;
 }
+
 /* ----------------manage-seo -----------*/
 /* table.dataTable.display > tbody > tr.odd > .sorting_1 {
   font-family: 'Poppins';
@@ -399,6 +315,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .form-cate {
   margin-top: 0px !important;
 }
+
 .form-label-category {
   display: block;
   font-family: 'Poppins', sans-serif;
@@ -408,12 +325,14 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   margin-top: 17px;
   margin-bottom: 8px;
 }
+
 .Add-blogs,
 #select-one {
   width: 100%;
   padding: 14px 0px;
   /* border: none; */
 }
+
 #select-one {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -422,12 +341,14 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: none;
   outline: none;
 }
+
 #select-one option {
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 15px;
   color: rgba(166, 169, 183, 1);
 }
+
 .toolbar-button {
   border: none;
   background: transparent;
@@ -437,11 +358,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 #fontFamily {
   border: none;
 }
+
 .toolbar {
   border: 1px solid rgba(238, 238, 238, 1);
   padding: 8px 7px;
   margin: 0px 14px;
 }
+
 .editor-container {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   background-color: white;
@@ -449,6 +372,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border-radius: 5px;
   height: 110px;
 }
+
 .editor-container textarea {
   border: none;
   resize: none;
@@ -456,6 +380,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   outline: none;
   padding: 7px 15px;
 }
+
 /* .meta-form {
   padding: 10px 0px;
 } */
@@ -464,6 +389,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   justify-content: space-between;
   gap: 1rem !important;
 }
+
 .meta-box .meta-label {
   display: block;
   font-family: 'Poppins';
@@ -472,12 +398,16 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: rgba(67, 66, 75, 1);
   margin: 5px 0px;
 }
+
 .description-img {
   height: 25px !important;
+  cursor: pointer;
 }
+
 .meta-box .meta-deatiles {
   width: 50%;
 }
+
 .meta-deatiles textarea {
   border: none;
   resize: none;
@@ -487,15 +417,18 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   height: 125px;
   border-radius: 7px;
 }
+
 .meta-box .meta-keybord {
   height: 122px;
   width: 100%;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   border: none;
 }
+
 .meta-upload {
   text-align: center;
 }
+
 .meta-upload p {
   font-family: 'Poppins';
   font-weight: 500;
@@ -504,9 +437,11 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   margin-top: 9px;
   margin-bottom: 0px;
 }
+
 .meta-upload .meta-input {
   border: 1px solid rgba(31, 40, 105, 1);
 }
+
 .form-control {
   outline: none !important;
   border: none !important;
@@ -518,11 +453,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-size: 14px !important;
   color: #a6a9b7 !important;
 }
+
 .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
   border-color: #ccc !important;
 }
+
 /* -----------manage-blog---------------- */
 /* .form-booking {
   margin-top: 15px !important;
@@ -535,13 +472,16 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: #43424b;
   /* padding-top: 11px; */
 }
+
 .form-label-category {
   display: block;
 }
+
 .Add-blogs {
   width: 100%;
   padding: 0px 0px;
 }
+
 #select-one {
   width: 100%;
   padding: 14px 14px;
@@ -562,16 +502,19 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 #fontFamily {
   border: none;
 }
+
 .toolbar {
   border: 1px solid rgba(238, 238, 238, 1);
   padding: 8px 7px;
   margin: 0px 14px;
 }
+
 .editor-container {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   background-color: white;
   padding: 11px 0px;
 }
+
 .editor-container textarea {
   border: none;
   resize: none;
@@ -583,11 +526,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-size: 14px !important;
   color: #A6A9B7 !important;
 }
+
 .meta-box {
   display: flex;
   /* justify-content: space-between; */
   gap: 2rem;
 }
+
 .meta-box .meta-label {
   display: block;
 }
@@ -595,6 +540,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .meta-box .meta-deatiles {
   width: 50%;
 }
+
 .meta-box .meta-keybord {
   height: 122px;
   width: 100%;
@@ -602,19 +548,24 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: none;
   border-radius: 10px;
 }
+
 .meta-upload {
   text-align: center;
   background-color: white;
-  padding: 35px 9px;
+  padding: 20px 9px;
   border-radius: 10px;
+  width: 100%;
 }
+
 .meta-upload .meta-image-upload {
-  width: 25%;
+  width: 80px;
 }
+
 .meta-upload .meta-input {
   border: 1px solid rgba(31, 40, 105, 1);
   width: 80%;
 }
+
 .meta-input {
   border: 1px solid rgba(31, 40, 105, 1);
   width: 90%;
@@ -622,14 +573,36 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   height: 29%;
   border-radius: 6px;
 }
+
 .meta-description-second {
   display: flex;
   justify-content: space-between;
   /* padding-bottom: 12px; */
+  width: 100%;
+  gap: 5px;
+}
+.mains-plus{
+  display: flex;
+  justify-content: space-between;
 }
 .meta-upload-second {
-  width: 50%;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 10px;
 }
+.mains-sizes{
+  font-size: 14px;
+  margin: 0px;
+  color: #ccc;
+}
+.mains-uploads{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
 .meta-upload-second textarea {
   border: none;
   resize: none;
@@ -639,9 +612,11 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   height: 88px;
   border-radius: 7px;
 }
+
 .span-first {
   gap: 8px;
 }
+
 .span-first p {
   font-family: 'Poppins';
   font-size: 12px;
@@ -650,6 +625,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: rgba(191, 191, 191, 1);
   width: 33%;
 }
+
 .ADD-button {
   background: rgba(31, 40, 105, 1);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
@@ -674,9 +650,11 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .seo-footer {
   background-color: #f8f9fa;
 }
+
 .seo-form {
   margin-top: 0%;
 }
+
 .add-deatiles {
   background: rgba(31, 40, 105, 1);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
@@ -690,11 +668,13 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 500;
   font-size: 16px;
 }
+
 .icon-item {
   /* position: relative; */
   text-decoration: none;
   display: inline;
 }
+
 /* .counter {
   position: absolute;
   top: 21px;
@@ -718,24 +698,29 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .custom-image {
   margin-right: 10px;
 }
+
 /* ---------------creating-booking ------------- */
 .booking-input {
   position: relative;
   display: flex;
 }
+
 .booking-input img {
   position: absolute;
   right: 7px;
   top: 13px;
 }
+
 .right-form-deatiles {
   padding: 0px;
 }
+
 .form-textarea {
   width: 98% !important;
   margin: 0 auto;
   resize: none;
 }
+
 .creating-booking {
   background: rgba(31, 40, 105, 1);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
@@ -749,6 +734,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-size: 18px;
   padding: 12px;
 }
+
 /*----------------- create-cuisine --------------*/
 .SUBMIT-NOW {
   background-color: #1f2869;
@@ -763,6 +749,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border: none;
   margin-top: 8px;
 }
+
 .add-cuisine {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(30, 158, 90, 1);
@@ -780,17 +767,21 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   right: 31px;
   background: none;
 }
-#myTable_filter{
+
+#myTable_filter {
   position: absolute;
   right: 185px;
 }
-#myTable_filterB{
+
+#myTable_filterB {
   top: -8px;
   right: 15%;
 }
-#add-cuisinepackage{
+
+#add-cuisinepackage {
   top: -9px;
 }
+
 /*------add-package-------- */
 .package-upload {
   height: 100%;
@@ -798,14 +789,17 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   gap: 2rem;
   border-radius: 9px;
 }
+
 .package-form {
   display: flex;
   width: 100%;
   gap: 1rem;
 }
+
 .package-one {
   width: 33%;
 }
+
 .package-label {
   display: block;
   font-family: 'Poppins';
@@ -814,6 +808,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: rgba(67, 66, 75, 1);
   margin-bottom: 5px;
 }
+
 .package-one .package-control {
   outline: none !important;
   border: none !important;
@@ -826,6 +821,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 400;
   font-size: 14px;
 }
+
 .package-submit-now {
   background-color: #1f2869;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
@@ -840,6 +836,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-size: 16px;
   padding: 12px;
 }
+
 .amount-container {
   padding: 20px;
   display: flex;
@@ -847,6 +844,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   gap: 25px;
   margin-top: 10px;
 }
+
 .amount-container .amount-container-heading {
   font-family: 'Poppins';
   font-weight: 500;
@@ -854,6 +852,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   line-height: 24px;
   color: rgba(67, 66, 75, 1);
 }
+
 .amount-container .label-text {
   font-family: 'Inter';
   font-weight: 400;
@@ -861,6 +860,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   line-height: 19.36px;
   color: rgba(166, 169, 183, 1);
 }
+
 .amount-container label {
   display: flex;
   align-items: center;
@@ -869,6 +869,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: bold;
   color: rgba(67, 66, 75, 1);
 }
+
 .amount-container input[type='radio'] {
   appearance: none;
   -webkit-appearance: none;
@@ -880,6 +881,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   position: relative;
   cursor: pointer;
 }
+
 .amount-container input[type='radio']:checked::before {
   content: '';
   width: 10px;
@@ -891,27 +893,32 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .package-table {
   margin-top: 30px !important;
 }
+
 .package-table thead {
   background-color: white;
   border: 1px solid rgba(219, 223, 255, 1);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
+
 .switch {
   position: relative;
   display: inline-block;
   width: 50px;
   height: 25px;
 }
+
 .switch .round-button {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
+
 .slider.round {
   border-radius: 34px;
 }
@@ -919,6 +926,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .slider.round:before {
   border-radius: 50%;
 }
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -942,19 +950,21 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.round-button:checked + .slider {
+
+.round-button:checked+.slider {
   background-color: #2196f3;
 }
 
-.round-button:focus + .slider {
+.round-button:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-.round-button:checked + .slider:before {
+.round-button:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
 /* ------------------------------------ choosen-file*/
 .inputfile-upload {
   position: relative;
@@ -981,6 +991,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   color: #aaa;
   cursor: pointer;
 }
+
 #fileName {
   font-family: 'Inter';
   font-weight: 400;
@@ -991,6 +1002,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   text-overflow: ellipsis;
   max-width: 120px;
 }
+
 .choose-file-btn {
   background: #d2d4e1;
   color: rgba(31, 40, 105, 1);
@@ -1000,6 +1012,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 500;
   font-size: 18px;
 }
+
 /* ------------------------- */
 .upload-box {
   position: relative;
@@ -1047,13 +1060,14 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 500;
   font-size: 13px;
 }
+
 /* ---------- */
 .gallery-container {
   position: relative;
   /* display: inline-block; */
   display: inline-flex;
   align-items: center;
-  width: 200px;
+  width: 95%;
 }
 
 .gallery-container input[type='file'] {
@@ -1094,22 +1108,27 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   font-weight: 500;
   font-size: 11px;
 }
+
 .col-md-10 {
-  width: 93% !important ;
+  width: 93% !important;
   margin: 20px;
 }
+
 /*-------- notification-table */
 .notification-table thead {
   height: 50px;
 }
-.notification-table table > tbody > tr {
+
+.notification-table table>tbody>tr {
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.09);
   background-color: white !important;
 }
+
 .user-select-input a {
   text-decoration: none;
   color: white !important;
 }
+
 /* -------------------------------new-class------------------------------------- */
 /* .table-blog thead {
   border-radius: 18px 18px 0px 0px;
@@ -1126,18 +1145,21 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   padding: 13px;
   border-radius: 15px;
 }
-table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order:after,
-table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order:before,
-table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order,
-table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order {
+
+table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order:after,
+table.dataTable thead>tr>th.dt-ordering-asc span.dt-column-order:before,
+table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order,
+table.dataTable thead>tr>th.dt-orderable-desc span.dt-column-order {
   display: none !important;
 }
-#myTable-A > thead > tr {
+
+#myTable-A>thead>tr {
   background: none !important;
   box-shadow: none !important;
   border: none !important;
 }
-#myTable-A > tbody > tr > td {
+
+#myTable-A>tbody>tr>td {
   background-color: white !important;
   border-bottom: 10px solid #f5f6fa !important;
   outline: none !important;
@@ -1147,32 +1169,39 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order {
   text-align: left;
   color: #43424b;
 }
-#myTable-A > tbody > tr {
+
+#myTable-A>tbody>tr {
   border-radius: 30px !important;
 }
+
 #myTable-A_wrapper {
   background-color: #f5f6fa;
   padding: 25px 12px;
   margin-top: 15px;
   border-radius: 10px;
 }
+
 th {
   outline: none !important;
   border: none !important;
 }
+
 #title-seo {
   width: 20%;
 }
+
 .table-seo {
   position: absolute;
   right: 2px;
   top: 25px;
   background-color: #fff !important;
 }
+
 div.dt-container div.dt-layout-row {
   background-color: #f5f6fa;
   margin-top: 0px !important;
 }
+
 .form-booking {
   margin-top: 15px;
 }
@@ -1185,6 +1214,7 @@ div.dt-container div.dt-layout-row {
   /* opacity: 0; */
   --bs-bg-opacity: 0 !important;
 }
+
 .table-blog-bar h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -1192,6 +1222,7 @@ div.dt-container div.dt-layout-row {
   color: #43424b;
   margin-top: 20px;
 }
+
 table.dataTable thead th,
 table.dataTable tfoot th {
   color: #1f2869;
@@ -1199,117 +1230,169 @@ table.dataTable tfoot th {
   font-weight: 500;
   font-size: 14px;
 }
+
 #myTable-B_wrapper {
   padding: 0px 34px !important;
-#myTable-B_wrapper{
-  padding: 4px 34px !important;
-  border-radius: 10px;
 }
-tbody {
-  background-color: #f5f6fa;
-}
-#myTable-B > thead > tr {
-  background-color: #fff !important;
-  border: 1px solid #dbdfff !important;
-  box-shadow: 0px 2px 4px 0px #0000001a;
-  border-radius: 20px 20px 0px 0px !important;
-}
-#myTable-B > tbody > tr > td {
-  border-bottom: 3px solid #fff;
-  box-shadow: 0px 0px 44px 0px #31389608;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  text-align: left;
-  color: #43424b;
-}
-div.dt-container div.dt-layout-row {
-  background: none;
-}
-.dt-info {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #333333;
-}
+  #myTable-B_wrapper {
+    padding: 4px 34px !important;
+    border-radius: 10px;
+  }
 
-#meta-title {
-  padding-top: 10px;
+  tbody {
+    background-color: #f5f6fa;
+  }
+
+  #myTable-B>thead>tr {
+    background-color: #fff !important;
+    border: 1px solid #dbdfff !important;
+    box-shadow: 0px 2px 4px 0px #0000001a;
+    border-radius: 20px 20px 0px 0px !important;
+  }
+
+  #myTable-B>tbody>tr>td {
+    border-bottom: 3px solid #fff;
+    box-shadow: 0px 0px 44px 0px #31389608;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    color: #43424b;
+  }
+
+  div.dt-container div.dt-layout-row {
+    background: none;
+  }
+
+  .dt-info {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  #meta-title {
+    padding-top: 10px;
+  }
+
+  .bg-light {
+    --bs-bg-opacity: 0 !important;
+  }
+
+  /* --------------------------manage-blog---------------- */
+  .blog-seo-A {
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .table-blog-barA h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #43424b;
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+  }
+
+  table.dataTable th.dt-type-numeric {
+    text-align: left !important;
+  }
+
+  .table-blog-barA {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dataTables_-search-filterA {
+    border-radius: 26px;
+    padding: 8px 30px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    background: #f5f6fa;
+    border: 1px solid #f4f7fc;
+  }
+#myTable-A tbody tr{
+  border-radius: 10px !important;
 }
-.bg-light {
-  --bs-bg-opacity: 0 !important;
-}
-/* --------------------------manage-blog---------------- */
-.blog-seo-A {
-  background-color: #ffff;
-  padding: 10px;
-  border-radius: 12px;
-}
-.table-blog-barA h4 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: #43424b;
-  margin-bottom: 0px !important;
-  margin-top: 10px;
-}
-table.dataTable th.dt-type-numeric {
-  text-align: left !important;
-}
-.table-blog-barA {
-  display: flex;
-  justify-content: space-between;
-}
-.dataTables_-search-filterA {
-  border-radius: 26px;
-  padding: 8px 28px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  z-index: 1000;
-  background: #f5f6fa;
-  border: 1px solid #f4f7fc;
-}
-.searchA {
-  border: none;
-  outline: none;
-  background: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #818e94;
-}
-#notification-icon {
-  /* font-weight: 400; */
-  font-size: 16px;
-  color: #818e94;
-}
-.img-fluid {
-  height: 90px !important;
-  margin-top: 15px;
-}
-.blog-seo {
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 12px;
-}
-.dt-paging-button.current {
-  background-color: #13b9e1 !important;
-  border-radius: 50px !important;
-}
-.dt-paging-button.current:hover {
-  background-color: #13b9e1;
-}
-table.dataTable>thead>tr{
-border-radius: 20px 20px 0px 0px !important;
-}
-.blog-foodImg img{
-  width: 75px;
-}
-.blog-SEOImg img{
-  width: 65px;
-}
-.error-message{
-  color: red;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-}
+  .searchA {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #818e94;
+  }
+
+  #notification-icon {
+    /* font-weight: 400; */
+    font-size: 16px;
+    color: #818e94;
+  }
+
+  .img-fluid {
+    height: 90px !important;
+    margin-top: 15px;
+  }
+
+  .blog-seo {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 12px;
+  }
+
+  .dt-paging-button.current {
+    background-color: #13b9e1 !important;
+    border-radius: 50px !important;
+  }
+
+  .dt-paging-button.current:hover {
+    background-color: #13b9e1;
+  }
+
+  table.dataTable>thead>tr {
+    border-radius: 20px 20px 0px 0px !important;
+  }
+
+  .blog-foodImg img {
+    width: 75px;
+  }
+
+  .blog-SEOImg img {
+    width: 65px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover{
+    border-radius: 50px;
+  }
+  div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button:hover{
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00c6ff 0%, #0072ff 100%);
+  }
+  div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end{
+    display: none;
+  }
+  div.dt-container .dt-length{
+    display: none;
+  }
+  .mains-files{
+    border: 1px solid rgba(31, 40, 105, 1);
+    width: 85%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .upload-boxes{
+    width: 60%;
+    margin: 15px auto;
+    margin-bottom: 10px;
+  }
+  .upload-boxes .mains-files{
+    width: 100%;
+  }

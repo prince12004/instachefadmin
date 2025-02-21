@@ -27,6 +27,7 @@ p {
 a {
   text-decoration: none !important;
 }
+
 header {
   width: 100%;
   background-color: #ffffff;
@@ -35,17 +36,20 @@ header {
   position: fixed;
   z-index: 2;
 }
+
 .instachef-admin {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .instachef {
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
+
 .instachef img {
   width: 100%;
   text-align: center;
@@ -53,35 +57,42 @@ header {
   margin-left: 8px;
   height: 75px;
 }
+
 .middle-line {
   width: 14px !important;
   height: 58px !important;
   margin-left: 25px !important;
 }
+
 .toggle-bar img {
   height: 40px;
   padding: 10px 0px;
   margin-top: 10px;
   width: 30px;
 }
+
 .logo {
   width: 100%;
 }
+
 .nav-item img.default-img {
   display: block;
   transition: all 0.3s ease;
 }
+
 .sidebar .nav-link:hover {
   background-color: #000000;
   border-radius: 38px 0px 0px 38px;
   padding: 10px 0px 10px 10px;
 }
+
 .select:hover {
   background-color: #000000;
   box-shadow: 0px 1px 2px 0px #0000001a;
   border-radius: 10px;
   padding: 3px;
 }
+
 .nav-item img.hover-img {
   display: none;
 }
@@ -94,6 +105,7 @@ header {
   display: block;
   width: 40px;
 }
+
 .user-icons {
   display: flex;
   gap: 10px;
@@ -101,15 +113,18 @@ header {
   padding-right: 25px;
   align-items: center;
 }
+
 .admin-section {
   display: flex;
   gap: 5px;
   align-items: center;
 }
+
 .icon-item {
   text-decoration: none;
   display: inline;
 }
+
 #super-admin {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -118,9 +133,11 @@ header {
   border: none;
   outline: none;
 }
+
 .sidebar .expanded {
   width: 20%;
 }
+
 .counter {
   position: absolute;
   top: 25px;
@@ -131,22 +148,27 @@ header {
   font-size: 11px;
   font-weight: bold;
 }
+
 ol,
 ul {
   padding-left: 5px !important;
 }
+
 .wishlist-counter {
   background-color: #ff9d00;
 }
+
 .right-border {
   width: 22px !important;
   height: 55px;
   border: none !important;
 }
+
 .admin-section {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .user-icons img {
   /* height: 20px; */
   border: 1px solid #efeeee;
@@ -154,6 +176,7 @@ ul {
   padding: 10px;
   box-shadow: 0px 1.85px 6.3px 0px #29489803;
 }
+
 .admin-text h3 {
   font-size: 15px;
   font-family: 'Inter', sans-serif;
@@ -162,9 +185,11 @@ ul {
   margin-bottom: 0px !important;
   color: #414141;
 }
+
 .adminimg {
   border: none !important;
 }
+
 /* ============header================ */
 .nav {
   list-style: none;
@@ -174,19 +199,23 @@ ul {
   height: 92vh;
   display: block !important;
 }
+
 .nav::-webkit-scrollbar {
   display: none;
 }
+
 .nav-link {
   color: white;
   text-decoration: none;
 }
+
 .sidebar h4 {
   font-size: 21px;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
   color: #43424b;
 }
+
 .sidebar .nav-link {
   /* margin: 0px 0; */
   display: flex;
@@ -197,17 +226,20 @@ ul {
   font-weight: 400;
   height: 60px;
 }
+
 .sidebar .nav-link.active,
 .sidebar .nav-linkA.active {
   background-color: #6c757d;
   border-radius: 5px;
 }
+
 .nav-item p {
   border: 1px solid #fff;
   padding: 4px 5px !important;
   border-radius: 10px;
   margin-bottom: 0px !important;
 }
+
 .sidebar {
   width: 60px;
   position: fixed;
@@ -225,9 +257,10 @@ ul {
   width: 274px;
 }
 
-.sidebar.show ~ .main-content {
+.sidebar.show~.main-content {
   margin-left: 270px;
 }
+
 .sidebar.show .nav-link {
   gap: 11px;
 }
@@ -241,10 +274,12 @@ ul {
   z-index: 2;
   border-radius: 5px;
 }
+
 .nav {
   list-style: none;
   padding: 20px 0px 20px 10px;
 }
+
 .nav-link {
   display: block;
   padding: 10px;
@@ -256,19 +291,22 @@ ul {
   border: none;
   outline: none;
 }
+
 .user-select-input {
   display: flex;
   flex-direction: column;
   padding: 8px 18px;
 }
+
 .user-select-input label {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
   padding: 15px 2px;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
   border-bottom: 1px solid #fff;
 }
+
 .admin-panel {
   display: flex;
   width: 100%;
@@ -299,9 +337,10 @@ ul {
   width: 274px;
 }
 
-.sidebar.show ~ .main-content {
+.sidebar.show~.main-content {
   margin-left: 270px;
 }
+
 .sidebar.show .nav-link {
   gap: 11px;
 }
@@ -315,31 +354,39 @@ ul {
   z-index: 2;
   border-radius: 5px;
 }
+
 .nav {
   list-style: none;
   padding: 20px 0px 20px 10px;
 }
+
 .nav-link {
   display: block;
   padding: 10px;
   color: white;
   text-decoration: none;
 }
+
 .date {
   border: none;
   outline: none;
 }
+.top-users{
+  border-top: 1px solid #FFFFFF;
+}
+
 .user-select-input {
   display: flex;
   flex-direction: column;
   padding: 8px 18px;
 }
+
 .user-select-input label {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
   padding: 15px 2px;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
   border-bottom: 1px solid #fff;
 }
 
@@ -354,31 +401,37 @@ ul {
   padding: 10px 12px;
   margin-top: 70px;
 }
+
 .time-piker {
   margin-top: 5px;
 }
+
 .dashboard-time,
 .time {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 .dashboard-time img {
   width: 25px;
   height: 25px;
   vertical-align: middle;
 }
+
 .time-piker {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .time img {
   height: 35px;
   background-color: #ff9d00;
   padding: 6px 8px;
   border-radius: 50px;
 }
+
 .time-pikerA p {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
@@ -387,6 +440,7 @@ ul {
   margin-bottom: 0px !important;
   line-height: 14px;
 }
+
 .dateA {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
@@ -405,4 +459,62 @@ ul {
   text-align: left;
   color: #3a3a3a;
   margin-bottom: 0px !important;
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 32% !important;
+}
+.modal-content p{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  top: 5px;
+  right: 14px;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+}
+.close-modal{
+  background-color: #1F2869;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 400;
+  width: 75px;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+}
+.mains-modals{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.close-btn:hover{
+  color: black;
+  cursor: pointer;
 }
