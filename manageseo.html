@@ -27,6 +27,15 @@
       rel="stylesheet"
       href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
     />
+    <style>
+      .error-message {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+    </style>
   </head>
   <body>
     <header>
@@ -536,5 +545,72 @@
         });
       });
     </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".seo-form"); 
+      const titleInput = document.getElementById("title"); 
+      const metaTag = document.querySelector(".Add-blogs textarea"); 
+      const metaDesc = document.querySelector(".meta-form textarea"); 
+      const submitButton = document.querySelector(".add-deatiles"); 
+  
+      submitButton.addEventListener("click", function (event) {
+        let isValid = true;
+  
+       
+        if (titleInput.value.trim() === "") {
+          showError(titleInput, "Page Name is required!");
+          isValid = false;
+        } else {
+          removeError(titleInput);
+        }
+  
+        
+        if (metaTag.value.trim() === "") {
+          showError(metaTag, "Meta Tag is required!", true);
+          isValid = false;
+        } else {
+          removeError(metaTag);
+        }
+  
+        
+        if (metaDesc.value.trim() === "") {
+          showError(metaDesc, "Meta Description is required!", true);
+          isValid = false;
+        } else {
+          removeError(metaDesc);
+        }
+  
+        
+        if (!isValid) {
+          event.preventDefault();
+        }
+      });
+  
+      
+      function showError(input, message, isTextarea = false) {
+        removeError(input); 
+  
+        const error = document.createElement("span");
+        error.classList.add("error-message");
+        error.textContent = message;
+  
+       
+        if (isTextarea) {
+          input.parentElement.insertAdjacentElement("afterend", error);
+        } else {
+          input.insertAdjacentElement("afterend", error);
+        }
+      }
+  
+    
+      function removeError(input) {
+        const existingError = input.parentElement.nextElementSibling;
+        if (existingError && existingError.classList.contains("error-message")) {
+          existingError.remove();
+        }
+      }
+    });
+  </script>
+  
   </body>
 </html>

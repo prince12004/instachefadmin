@@ -337,11 +337,12 @@
                         src="assets/images/upload-image.png"
                         alt="Upload"
                         class="img-fluid"
+                        
                       />
                       <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
                       <div class="inputfile-upload">
                         <input type="file" id="fileInput" />
-                        <label for="fileInput" class="custom-file-label">
+                        <label for="fileInput" class="custom-file-label" >
                           <span id="fileName">No File Chosen</span>
                           <span class="choose-file-btn">CHOOSE FILE</span>
                         </label>
@@ -533,6 +534,29 @@
           lengthChange: false,
         });
       });
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const fileInput = document.getElementById("fileInput");
+  const fileNameDisplay = document.getElementById("fileName");
+  const uploadTrigger = document.querySelector(".img-fluid"); // ✅ First image with class "img-fluid"
+
+  // ✅ File select hone par naam update kare
+  fileInput.addEventListener("change", function () {
+    fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : "No File Chosen";
+  });
+
+  // ✅ Image pe click kare to file picker open ho
+  if (uploadTrigger) {
+    uploadTrigger.addEventListener("click", function () {
+      fileInput.click();
+    });
+  }
+}
+);
+
+
+
     </script>
   </body>
 </html>
