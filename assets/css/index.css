@@ -266,10 +266,8 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 #myTable_filterA{
   top: -8px;
 }
-#myTable_filterB{
-  top: -8px;
-  right: 15%;
-}
+
+
 /* .dataTables_-search-filterA{
   border-radius: 26px;
   padding: 8px 28px;
@@ -545,6 +543,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   padding: 14px 14px;
   border: none;
   border-radius: 7px;
+  font-family: 'Inter';
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #A6A9B7 !important;
 }
 
 .toolbar-button {
@@ -572,6 +574,10 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   width: 100%;
   outline: none;
   padding: 7px 15px;
+  font-family: 'Inter';
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #A6A9B7 !important;
 }
 .meta-box {
   display: flex;
@@ -767,9 +773,20 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   /* width: 40%; */
   position: absolute;
   color: green;
-  top: -8px;
-  right: 38px;
+  /* top: -8px; */
+  right: 31px;
   background: none;
+}
+#myTable_filter{
+  position: absolute;
+  right: 185px;
+}
+#myTable_filterB{
+  top: -8px;
+  right: 15%;
+}
+#add-cuisinepackage{
+  top: -9px;
 }
 /*------add-package-------- */
 .package-upload {
@@ -991,7 +1008,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 .upload-label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 22px;
   width: 100%;
   padding: 0px 2px;
   border: 1px solid rgba(31, 40, 105, 1);
@@ -1005,7 +1022,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
 #displayFile {
   font-family: 'Inter';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   padding: 8px;
 }
 
@@ -1016,7 +1033,7 @@ div.dt-container .dt-paging .dt-paging-button:hover {
   border-radius: 4px;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
 }
 /* ---------- */
 .gallery-container {
@@ -1163,7 +1180,7 @@ table.dataTable thead th, table.dataTable tfoot th{
   font-size: 14px;
 }
 #myTable-B_wrapper{
-  padding: 0px 34px !important;
+  padding: 4px 34px !important;
   border-radius: 10px;
 }
 tbody{
@@ -1259,6 +1276,19 @@ table.dataTable th.dt-type-numeric{
 .dt-paging-button.current:hover{
   background-color: #13B9E1;
 }
-
-
+table.dataTable>thead>tr{
+border-radius: 20px 20px 0px 0px !important;
+}
+.blog-foodImg img{
+  width: 75px;
+}
+.blog-SEOImg img{
+  width: 65px;
+}
+.error-message{
+  color: red;
+  font-size: 14px;
+  font-family: "Inteer", sans-serif;
+  font-weight: 500;
+}
 
