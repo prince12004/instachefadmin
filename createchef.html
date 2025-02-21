@@ -510,7 +510,7 @@
 
 </script>
 
-<!---------image-upload-js ----------- -->
+<!------------------------------image-upload-js --------------------------------------- -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const fileInputs = document.querySelectorAll("input[type='file']");
@@ -566,7 +566,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+<!--------------------clone-box--------------------------------->
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const addCloneBtn = document.getElementById("addclone");
+    const createBookingBtn = document.getElementById("createBooking");
 
+    addCloneBtn.addEventListener("click", function (event) {
+        event.preventDefault(); 
+
+        let originalBooking = document.querySelector(".booking");
+        let clonedSection = originalBooking.cloneNode(true); 
+
+        
+        clonedSection.querySelector("#fileSelectortwo").value = "";
+        clonedSection.querySelector("#displayFile").textContent = "No File Chosen";
+        clonedSection.querySelector("#descriptionB").value = "";
+
+       
+        clonedSection.querySelector("#fileSelectortwo").id = "fileSelectortwo_" + Date.now();
+        clonedSection.querySelector("#descriptionB").id = "descriptionB_" + Date.now();
+
+       
+        let deleteBtn = clonedSection.querySelector(".deleteA");
+        deleteBtn.addEventListener("click", function () {
+            clonedSection.remove();
+        });
+
+        
+        createBookingBtn.insertAdjacentElement("beforebegin", clonedSection);
+    });
+});
+
+</script>
 
   </body>
 </html>
