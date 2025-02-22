@@ -250,7 +250,7 @@ table.dataTable>tbody>tr>td {
 }
 
 #adress {
-  width: 17%;
+  width: 11%;
 }
 
 .material-icons {
@@ -314,7 +314,29 @@ div.dt-container {
   font-weight: 500;
   text-align: left;
 }
-
+.hold-button{
+  background-color: orange;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 5px;
+  border: none;
+  padding: 7px 14px !important;
+  border-radius: 30px;
+}
+#address{
+  width: 20%;
+}
+.hold-inactive{
+  background-color: #ffe1b0;
+  color: rgb(107, 79, 28) !important;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 5px;
+  border: none;
+  padding: 7px 14px !important;
+  border-radius: 30px;
+}
 .admin-dashboard {
   width: 93%;
   margin-left: 20px !important;

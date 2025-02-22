@@ -7,7 +7,7 @@ $(document).ready(function () {
 // sidebar icon toggle 
 $(document).ready(function () {
   $('.user-select-input').hide();
-  $('.fa-caret-down').click(function (event) {
+  $('.select-manage').click(function (event) {
     event.preventDefault();
     $(this).closest(".nav-item").find(".user-select-input").fadeToggle('fast');
   });
