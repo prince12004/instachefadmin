@@ -250,7 +250,7 @@ table.dataTable>tbody>tr>td {
 }
 
 #adress {
-  width: 18%;
+  width: 17%;
 }
 
 .material-icons {
@@ -590,8 +590,8 @@ table.dataTable td.dt-type-date {
 
 #search-here {
   position: relative;
-  top: 53px;
-  right: 2%;
+  top: 56px;
+  right: 5%;
   z-index: 1;
   background-color: #F5F6FA;
   width: 21%;

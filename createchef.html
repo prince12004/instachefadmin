@@ -205,7 +205,14 @@
             </label>
           </div>
         </li>
-
+        <!--  Delete Chef Item -->
+        <li class="nav-item">
+          <a href="deletechef.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            DELETE CHEF
+          </a>
+        </li>
         <!-- Logout Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white last-li">
@@ -277,13 +284,17 @@
               <span class="error-message"></span>
             </div>
             <div class="form-groupA">
-              <label for="joinDate" class="create-chefA">Join Date</label>
+              <label for="joinDate" class="create-chefA">Joining Date</label>
               <input type="text" id="joinDate" class="user-email" placeholder="DD-MM-YYYY">
               <span class="error-message"></span>
             </div>
             <div class="form-groupA">
-              <label for="endDate" class="create-chefA">End Date</label>
-              <input type="text" id="endDate" class="user-email" placeholder="DD-MM-YYYY">
+              <label for="country" class="create-chefA">Select Gender</label>
+              <select id="country" class="create-chefB">
+                <option value="">Select Gender</option>
+                <option value="India">Male</option>
+                <option value="USA">Female</option>
+              </select>
               <span class="error-message"></span>
             </div>
           </div>
@@ -314,10 +325,13 @@
               <span class="error-message"></span>
             </div>
             <div class="form-groupA">
-              <label for="useremal" class="create-chefA">Cuisines Known</label>
-              <div class="user-emailA">
-                <input type="text" class="qualification" placeholder="Enter Cuisines Known"></input>
-              </div>
+              <label for="country" class="create-chefA">Cuisines Known</label>
+              <select id="country" class="create-chefB">
+                <option value="">Cuisines Known</option>
+                <option value="India">new</option>
+                <option value="USA">new</option>
+              </select>
+              <span class="error-message"></span>
               <div class="chef-textA">
                 <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
               </div>
@@ -349,12 +363,6 @@
 
             <div class="mains-toggle">
               <div class="description">
-                <div class="gender-group">
-                  <label class="gender-groups">Select Gender</label>
-                  <label class="gender"><input type="radio" name="gender" value="Male"> Male</label>
-                  <label class="gender"><input type="radio" name="gender" value="Female"> Female</label>
-                  <label class="gender"><input type="radio" name="gender" value="Other"> Other</label>
-                </div>
                 <div class="main-top-section">
                   <div class="booking">
                     <div class="file-input mt-4">
