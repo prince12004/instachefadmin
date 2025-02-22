@@ -207,7 +207,14 @@
             </label>
           </div>
         </li>
-
+        <!--  Delete Chef Item -->
+        <li class="nav-item">
+          <a href="deletechef.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            Delete Chef
+          </a>
+        </li>
         <!-- Logout Item -->
         <li class="nav-item">
           <a href="#" class="nav-link text-white last-li">
@@ -246,7 +253,7 @@
       </div>
       <!-- --------------------------------------------------------------------- -->
       <div class="table-container">
-        <table id="myTable-2" class="maintable" style="width:100%">
+        <table id="myTable-lists" class="maintable" style="width:100%">
           <div class="user-listA">
             <h1 class="headingC">USERS LIST</h1>
             <div id="search-hereA">
@@ -259,8 +266,8 @@
           </div>
           <thead>
             <tr>
-              <th class="serial-number">#</th>
-              <th>Name</th>
+              <th class="serial-number">S.No</th>
+              <th>User Name</th>
               <th>Email ID</th>
               <th>Phone</th>
               <th id="adress-C">Address</th>
@@ -473,7 +480,7 @@
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
   <script>
-    let table = new DataTable('#myTable-2');
+    let table = new DataTable('#myTable-lists');
   </script>
 </body>
 

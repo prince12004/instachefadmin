@@ -1231,10 +1231,14 @@ table.dataTable tfoot th {
   font-size: 14px;
 }
 
-#myTable-B_wrapper {
+#myTable-B_wrapper,
+#myTable-C_wrapper,
+#myTable-package_wrapper{
   padding: 0px 34px !important;
 }
-  #myTable-B_wrapper {
+  #myTable-B_wrapper,
+  #myTable-C_wrapper,
+  #myTable-package_wrapper {
     padding: 4px 34px !important;
     border-radius: 10px;
   }
@@ -1243,14 +1247,18 @@ table.dataTable tfoot th {
     background-color: #f5f6fa;
   }
 
-  #myTable-B>thead>tr {
+  #myTable-B>thead>tr,
+  #myTable-C>thead>tr,
+  #myTable-package>thead>tr {
     background-color: #fff !important;
     border: 1px solid #dbdfff !important;
     box-shadow: 0px 2px 4px 0px #0000001a;
     border-radius: 20px 20px 0px 0px !important;
   }
 
-  #myTable-B>tbody>tr>td {
+  #myTable-B>tbody>tr>td,
+  #myTable-C>tbody>tr>td,
+  #myTable-package>tbody>tr>td {
     border-bottom: 3px solid #fff;
     box-shadow: 0px 0px 44px 0px #31389608;
     font-family: 'Poppins', sans-serif;
@@ -1259,6 +1267,7 @@ table.dataTable tfoot th {
     text-align: left;
     color: #43424b;
   }
+  
 
   div.dt-container div.dt-layout-row {
     background: none;
