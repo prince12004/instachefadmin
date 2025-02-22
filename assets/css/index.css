@@ -1254,8 +1254,8 @@ tbody {
 #myTable-B > thead > tr,
 #myTable-C > thead > tr,
 #myTable-package > thead > tr {
-  background-color: #fff !important;
-  border: 1px solid #dbdfff !important;
+  /* background-color: #fff !important;
+  border: 1px solid #dbdfff !important; */
   box-shadow: 0px 2px 4px 0px #0000001a;
   border-radius: 20px 20px 0px 0px !important;
 }
@@ -1506,4 +1506,22 @@ tbody {
 }
 table.dataTable td.dt-type-numeric {
   text-align: left !important;
+}
+/* -------new-table------ */
+
+#myTable-8_wrapper {
+  background: rgba(245, 246, 250, 1);
+  padding: 21px !important;
+  margin-top: 19px !important;
+  border-radius: 9px !important;
+}
+#myTable-8 > tbody > tr > td {
+  background-color: white !important;
+  border-bottom: 10px solid #f5f6fa !important;
+  outline: none !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  color: #43424b;
 }
