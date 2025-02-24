@@ -235,20 +235,19 @@
           <p>MANAGE NOTIFICATION
           </p>
         </div>
-
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -264,9 +263,7 @@
               <div class="row Both-container">
                 <div class="col-md-6 text-center manage-notification-left">
                   <div class="file-upload">
-                    <div id="uploadTrigger">
-                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" />
-                  </div>
+                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" id="uploadTrigger" />
                     <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
                     <div class="inputfile-upload">
                       <input type="file" id="fileInput" />
@@ -296,22 +293,21 @@
             </div>
           </div>
           <!-- <div class="table-container"> -->
-            <div class="blog-seoA">
-              <h4>LIST OF NOTIFICATIONS</h4>
-
+          <div class="blog-seoA">
+            <h4>LIST OF NOTIFICATIONS</h4>
             <table id="myTable-A" class="maintable details-heading" style="width:100%">
-                    
               <div class="table-blog-bar">
-                <span  class="d-flex justify-content-between align-items-center text-white table-blog-span">
-            <!-- <h4>LIST OF SEO DETAILS</h4> -->
-            <div id="myTable_filter2" class="dataTables_filter table-seo">
-            <label class="d-flex align-items-center gap-3">
-              <input type="search" class="" placeholder="Search here" aria-controls="myTable">
-              <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
-            </label>
-            </div>
-              </span>
-            </div>
+                <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
+                  <!-- <h4>LIST OF SEO DETAILS</h4> -->
+                  <div id="myTable_filter2" class="dataTables_filter table-seo">
+                    <label class="d-flex align-items-center gap-3">
+                      <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
+                        onkeyup="filterTable()">
+                      <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
+                    </label>
+                  </div>
+                </span>
+              </div>
               <thead>
                 <tr class="header-table">
                   <th class="serial-number">S.No</th>
@@ -336,18 +332,16 @@
                 <tr>
                   <td>02.</td>
                   <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td >Catering service now available!</td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti provident.>
-                  
+                  <td>Catering service now available!</td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti
+                    provident.>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-         
         </main>
       </div>
-     
     </div>
   </div>
   </div>
@@ -359,81 +353,53 @@
   <!-- -------------datatable-------------- -->
   <script>
     let table = new DataTable('#myTable-A');
-    </script>
-    <script>
-       $(document).ready(function () {
-        $('#myTable-A').DataTable({
-                "paging": true,         
-                "searching": false,      
-                "info": true  ,         
-                "pageLength": 2, 
-                "destroy": true,
-                "lengthChange": false
-        });
-    });
-    </script>
-  <script src="assets/js/index.js"></script>
-  <!-- -------------image-upload-------------------- -->
-  <script>
-    const documentA = document.getElementById('uploadDocument');
-    const fileInput = document.getElementById('file1');
-
-    documentA.addEventListener('click', () => {
-      fileInput.click();
-    });
-
-    fileInput.addEventListener('change', (event) => {
-      const files = event.target.files;
-    });
   </script>
-
+  <script src="assets/js/index.js"></script>
   <script>
     // ------------------file-upload----------------
+    document.addEventListener("DOMContentLoaded", function () {
 
-  
-document.addEventListener("DOMContentLoaded", function () {
-  
-  function handleFileUpload(fileInput) {
-    const parentDiv = fileInput.closest(".file-upload"); 
-    const fileLabel = parentDiv.querySelector("#fileName"); 
-    const uploadTrigger = parentDiv.querySelector("img");
+      const fileInput = document.getElementById("fileInput");
+      const fileNameDisplay = document.getElementById("fileName");
 
-    fileInput.addEventListener("change", function () {
-      if (fileLabel) {
+      fileInput.addEventListener("change", function () {
         if (fileInput.files.length > 0) {
-          let fileName = fileInput.files[0].name;
-
-          if (fileName.length > 15) {
-            fileName = fileName.substring(0, 10) + "...";
-          }
-
-          fileLabel.textContent = fileName;
-
-          
-          const fileReader = new FileReader();
-          fileReader.onload = function (event) {
-            if (uploadTrigger) {
-              uploadTrigger.src = event.target.result;
-            }
-          };
-          fileReader.readAsDataURL(fileInput.files[0]);
+          fileNameDisplay.textContent = fileInput.files[0].name;
         } else {
-          fileLabel.textContent = "No File Chosen";
+          fileNameDisplay.textContent = "No File Chosen";
         }
+      });
+
+
+      const galleryUploader = document.getElementById("galleryUploader");
+      const selectedImages = document.getElementById("selectedImages");
+
+      if (galleryUploader) {
+        galleryUploader.addEventListener("change", function () {
+          if (galleryUploader.files.length > 0) {
+            let fileNames = [];
+            for (let i = 0; i < galleryUploader.files.length; i++) {
+              fileNames.push(galleryUploader.files[i].name);
+            }
+            selectedImages.textContent = fileNames.join(", ");
+          } else {
+            selectedImages.textContent = "No file chosen";
+          }
+        });
       }
     });
 
-    
-    if (uploadTrigger) {
+    document.addEventListener("DOMContentLoaded", function () {
+      const fileInput = document.getElementById("fileInput");
+      const uploadTrigger = document.getElementById("uploadTrigger");
+
+
       uploadTrigger.addEventListener("click", function () {
         fileInput.click();
       });
-    }
-  }
+    });
 
-  
-  document.querySelectorAll("input[type='file']").forEach(handleFileUpload);
-});
+
   </script>
   
 </body>
@@ -469,14 +435,39 @@ document.getElementById('sendnotification')
       }
 });
 
-function showError(input, message) {
-const errorSpan = input.nextElementSibling;
-if (errorSpan) {
-  errorSpan.textContent = message;
-  errorSpan.style.color = 'red';
-}
-}
-  </script>
-  </body>
+  function showError(input, message) {
+    const errorSpan = input.nextElementSibling;
+    if (errorSpan) {
+      errorSpan.textContent = message;
+      errorSpan.style.color = 'red';
+    }
+  }
+  // data table searchs 
+
+  function filterTable() {
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toLowerCase();
+    const tables = [
+      document.getElementById('myTable-A')
+    ];
+
+    tables.forEach(table => {
+      let rows = table.getElementsByTagName('tr');
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let titleCell = cells[2];
+        if (titleCell) {
+          let titleText = titleCell.textContent || titleCell.innerText;
+          if (titleText.toLowerCase().indexOf(filter) > -1) {
+            rows[i].style.display = "";
+          } else {
+            rows[i].style.display = "none";
+          }
+        }
+      }
+    });
+  }
+</script>
+</body>
 
 </html>

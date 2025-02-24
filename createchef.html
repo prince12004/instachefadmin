@@ -237,14 +237,14 @@
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -350,17 +350,14 @@
             </div>
           </div>
           <div class="upload-file py-4">
-            <div class="uploadDocument">
-              <div class="file">
-                <img src="assets/images/docProfile.png" alt="">
-              </div>
-              <div class="choose-fileA">
-                <input type="file" class="uploadDocumentA">
-                <input type="file" id="fileSelectorone">
-                <label for="fileSelector" class="upload-label">
-                  <span id="displayFileA">No File Chosen</span>
-                  <span id="select-btnA">CHOOSE FILE</span>
-                </label>
+            <div class="uploadings">
+              <div class="uploadDocument">
+                <div class="file">
+                  <img src="assets/images/docProfile.png" alt="">
+                </div>
+                <div class="choose-files new-choose">
+                  <input type="file">
+                </div>
               </div>
             </div>
 
@@ -412,210 +409,57 @@
   <script src="assets/js/index.js"></script>
   <!-- -------------------validation---------------------- -->
   <script>
-    document.getElementById("createBooking").addEventListener("click", function (event) {
-    event.preventDefault(); 
-    let isValid = true;
+    $(document).ready(function () {
+      $(document).on('click', '.plus-btn', function (event) {
+        event.preventDefault();
 
-    function showError(input, message) {
-        let errorSpan = input.parentNode.querySelector(".error-message");
-        errorSpan.textContent = message;
-        errorSpan.style.color = "red";
-    }
+        var $originalSection = $(this).closest('.main-top-section');
+        var fileInput = $originalSection.find('input[type="file"]');
+        var descriptionText = $originalSection.find('#descriptionB').val().trim();
 
-    function clearError(input) {
-        let errorSpan = input.parentNode.querySelector(".error-message");
-        errorSpan.textContent = "";
-    }
-
-    const chefName = document.getElementById("chefName");
-    if (chefName.value.trim() === "") {
-        showError(chefName, "Chef Name is required");
-        isValid = false;
-    } else {
-        clearError(chefName);
-    }
-
-    const chefEmail = document.getElementById("chefEmail");
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(chefEmail.value.trim())) {
-        showError(chefEmail, "Enter a valid email");
-        isValid = false;
-    } else {
-        clearError(chefEmail);
-    }
-
-    const chefMobile = document.getElementById("chefMobile");
-    const mobilePattern = /^[0-9]{10}$/;
-    if (!mobilePattern.test(chefMobile.value.trim())) {
-        showError(chefMobile, "Enter a valid 10-digit mobile number");
-        isValid = false;
-    } else {
-        clearError(chefMobile);
-    }
-
-    const country = document.getElementById("country");
-    if (country.value === "") {
-        showError(country, "Please select a country");
-        isValid = false;
-    } else {
-        clearError(country);
-    }
-
-    const joinDate = document.getElementById("joinDate");
-    const datePattern = /^\d{2}-\d{2}-\d{4}$/;
-    if (!datePattern.test(joinDate.value.trim())) {
-        showError(joinDate, "Enter date in DD-MM-YYYY format");
-        isValid = false;
-    } else {
-        clearError(joinDate);
-    }
-
-    const endDate = document.getElementById("endDate");
-    if (!datePattern.test(endDate.value.trim())) {
-        showError(endDate, "Enter date in DD-MM-YYYY format");
-        isValid = false;
-    } else {
-        clearError(endDate);
-    }
-
-    const chefAddress = document.getElementById("chefAddress");
-    if (chefAddress.value.trim() === "") {
-        showError(chefAddress, "Chef Address is required");
-        isValid = false;
-    } else {
-        clearError(chefAddress);
-    }
-
-    const qualification = document.getElementById("qualification");
-    if (qualification.value.trim() === "") {
-        showError(qualification, "Qualification is required");
-        isValid = false;
-    } else {
-        clearError(qualification);
-    }
-
-    const experience = document.getElementById("experience");
-    if (experience.value.trim() === "") {
-        showError(experience, "Work Experience is required");
-        isValid = false;
-    } else {
-        clearError(experience);
-    }
-
-    const cuisines = document.getElementById("cuisines");
-    if (cuisines.value.trim() === "") {
-        showError(cuisines, "Cuisines Known is required");
-        isValid = false;
-    } else {
-        clearError(cuisines);
-    }
-
-    const gender = document.querySelector('input[name="gender"]:checked');
-    const genderField = document.querySelector('input[name="gender"]').parentNode;
-    if (!gender) {
-        showError(genderField, "Select a gender");
-        isValid = false;
-    } else {
-        clearError(genderField);
-    }
-
-    // If all validations pass, submit the form
-    if (isValid) {
-        document.getElementById("createchef").submit();
-    }
-});
-
-</script>
-
-<!------------------------------image-upload-js --------------------------------------- -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const fileInputs = document.querySelectorAll("input[type='file']");
-
-  fileInputs.forEach((fileInput) => {
-    const parentDiv = fileInput.closest(".uploadDocument, .file-input");
-    const fileLabel = parentDiv.querySelector("span[id^='displayFile']");
-    const uploadTrigger = parentDiv.querySelector("img");
-    const label = parentDiv.querySelector("label.upload-label");
-
-
-    if (label) {
-      label.addEventListener("click", function () {
-        fileInput.click();
-      });
-    }
-
-    fileInput.addEventListener("change", function () {
-      if (fileLabel) {
-        if (fileInput.files.length > 0) {
-          let fileName = fileInput.files[0].name;
-          
-          if (fileName.length > 15) {
-            fileName = fileName.substring(0, 10) + "...";
-          }
-
-          fileLabel.textContent = fileName;
-
-         
-          const fileReader = new FileReader();
-          fileReader.onload = function (event) {
-            if (uploadTrigger) {
-              uploadTrigger.src = event.target.result;
-            }
-          };
-          fileReader.readAsDataURL(fileInput.files[0]);
-        } else {
-          fileLabel.textContent = "No File Chosen";
-          if (uploadTrigger) {
-            uploadTrigger.src = "assets/images/docProfile.png"; 
-          }
+        if (fileInput[0].files.length === 0) {
+          showModal('Please choose a file.');
+          return;
         }
-      }
-    });
 
-    
-    if (uploadTrigger) {
-      uploadTrigger.addEventListener("click", function () {
-        fileInput.click();
-      });
-    }
-  });
-});
+        if (descriptionText === '') {
+          showModal('Please fill in the description.');
+          return;
+        }
 
-</script>
-<!--------------------clone-box--------------------------------->
-<script>
- document.addEventListener("DOMContentLoaded", function () {
-    const addCloneBtn = document.getElementById("addclone");
-    const createBookingBtn = document.getElementById("createBooking");
+        var $clone = $originalSection.clone();
 
-    addCloneBtn.addEventListener("click", function (event) {
-        event.preventDefault(); 
+        $clone.find('input[type="file"]').val('');
+        $clone.find('#descriptionB').val('');
+        $clone.find('#displayFile').text('No File Chosen');
 
-        let originalBooking = document.querySelector(".booking");
-        let clonedSection = originalBooking.cloneNode(true); 
+        $clone.find('.plus-btn').attr('src', 'assets/images/plussection.png');
+        $clone.find('.mains-delete').show();
 
-        
-        clonedSection.querySelector("#fileSelectortwo").value = "";
-        clonedSection.querySelector("#displayFile").textContent = "No File Chosen";
-        clonedSection.querySelector("#descriptionB").value = "";
-
-       
-        clonedSection.querySelector("#fileSelectortwo").id = "fileSelectortwo_" + Date.now();
-        clonedSection.querySelector("#descriptionB").id = "descriptionB_" + Date.now();
-
-       
-        let deleteBtn = clonedSection.querySelector(".deleteA");
-        deleteBtn.addEventListener("click", function () {
-            clonedSection.remove();
+        $clone.find('.delete-btn').on('click', function (event) {
+          event.preventDefault();
+          $clone.remove();
         });
 
-        
-        createBookingBtn.insertAdjacentElement("beforebegin", clonedSection);
+        $(this).closest('.main-top-section').after($clone);
+      });
+
+      function showModal(message) {
+        $('#modalMessage').text(message);
+        $('#validationModal').css('display', 'block');
+      }
+
+      $(document).on('click', '.close-btn', function () {
+        $('#validationModal').css('display', 'none');
+      });
+
+      $(document).on('click', '.close-modal', function () {
+        $('#validationModal').css('display', 'none');
+      });
     });
-});
 
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>

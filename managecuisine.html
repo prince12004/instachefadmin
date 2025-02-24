@@ -1,203 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage-Cuisine</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/comman.css" />
-    <!-- <link rel="stylesheet" href="assets/css/newstyle.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="instachef-admin">
-        <div class="instachef">
-          <a href="index.html">
-            <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
-          </a>
-          <img src="assets/images/middleLine.png" alt="" class="middle-line" />
-          <div class="toggle-bar">
-            <img
-              src="assets/images/togglerBar.png"
-              alt="Toggle Sidebar"
-              id="toggle"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage-Cuisine</title>
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/comman.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="instachef-admin">
+      <div class="instachef">
+        <a href="index.html">
+          <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+        </a>
+        <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+        <div class="toggle-bar">
+          <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div>
-       
-        <div class="user-icons">
-          <a href="#">
-            <img src="assets/images/home.png" alt="" />
-          </a>
-          <a href="#" class="icon-item">
-            <img src="assets/images/notification.png" alt="notification Icon" />
-            <span class="counter wishlist-counter">2</span>
-          </a>
-          <img src="assets/images/middleLine.png" alt="" class="right-border" />
-          <div class="admin-section">
-            <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
-            <div class="admin-text">
-              <h3>LOREM ISPUM</h3>
-              <select id="super-admin">
-                <option>super-admin</option>
-                <option>admin</option>
-              </select>
-            </div>
+      </div>
+      <div class="user-icons">
+        <a href="#">
+          <img src="assets/images/home.png" alt="" />
+        </a>
+        <a href="#" class="icon-item">
+          <img src="assets/images/notification.png" alt="notification Icon" />
+          <span class="counter wishlist-counter">2</span>
+        </a>
+        <img src="assets/images/middleLine.png" alt="" class="right-border" />
+        <div class="admin-section">
+          <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
+          <div class="admin-text">
+            <h3>LOREM ISPUM</h3>
+            <select id="super-admin">
+              <option>super-admin</option>
+              <option>admin</option>
+            </select>
           </div>
         </div>
       </div>
-    </header>
-    <!-- ===========header============== -->
-    <div class="admin-panel">
-      <nav class="bg-dark text-white sidebar">
-        <ul class="nav flex-column">
-          <!-- Dashboard Item -->
-          <li class="nav-item dashboard">
-            <a href="index.html" class="nav-link text-white">
-              <img src="assets/images/image1.png" alt="" class="default-img" />
-              <img src="assets/images/icons.png" alt="" class="hover-img" />
-              DASHBOARD
-            </a>
-          </li>
+    </div>
+  </header>
+  <!-- ===========header============== -->
+  <div class="admin-panel">
+    <nav class="bg-dark text-white sidebar">
+      <ul class="nav flex-column">
+        <!-- Dashboard Item -->
+        <li class="nav-item dashboard">
+          <a href="index.html" class="nav-link text-white">
+            <img src="assets/images/image1.png" alt="" class="default-img" />
+            <img src="assets/images/icons.png" alt="" class="hover-img" />
+            DASHBOARD
+          </a>
+        </li>
 
-          <!-- Manage Profile Item -->
-          <li class="nav-item">
-            <a href="manageprofile.html" class="nav-link text-white">
-              <img src="assets/images/image2.png" alt="" class="default-img" />
-              <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
-              MANAGE PROFILE
-            </a>
-          </li>
+        <!-- Manage Profile Item -->
+        <li class="nav-item">
+          <a href="manageprofile.html" class="nav-link text-white">
+            <img src="assets/images/image2.png" alt="" class="default-img" />
+            <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+            MANAGE PROFILE
+          </a>
+        </li>
 
-          <!-- Manage Notification Item -->
-          <li class="nav-item">
-            <a href="Managenotification.html" class="nav-link text-white">
-              <img src="assets/images/image3.png" alt="" class="default-img" />
-              <img
-                src="assets/images/imagethree.png"
-                alt=""
-                class="hover-img"
-              />
-              MANAGE NOTIFICATION
-            </a>
-          </li>
+        <!-- Manage Notification Item -->
+        <li class="nav-item">
+          <a href="Managenotification.html" class="nav-link text-white">
+            <img src="assets/images/image3.png" alt="" class="default-img" />
+            <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+            MANAGE NOTIFICATION
+          </a>
+        </li>
 
-          <!-- Contact Request Item -->
-          <li class="nav-item">
-            <a href="contactrequest.html" class="nav-link text-white">
-              <img src="assets/images/image4.png" alt="" class="default-img" />
-              <img src="assets/images/imageFour.png" alt="" class="hover-img" />
-              CONTACT REQUEST
-            </a>
-          </li>
+        <!-- Contact Request Item -->
+        <li class="nav-item">
+          <a href="contactrequest.html" class="nav-link text-white">
+            <img src="assets/images/image4.png" alt="" class="default-img" />
+            <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+            CONTACT REQUEST
+          </a>
+        </li>
 
-          <!-- Manage Blogs Item -->
-          <li class="nav-item">
-            <a href="manageblog.html" class="nav-link text-white">
-              <img src="assets/images/image5.png" alt="" class="default-img" />
-              <img src="assets/images/imageFive.png" alt="" class="hover-img" />
-              MANAGE BLOGS
-            </a>
-          </li>
+        <!-- Manage Blogs Item -->
+        <li class="nav-item">
+          <a href="manageblog.html" class="nav-link text-white">
+            <img src="assets/images/image5.png" alt="" class="default-img" />
+            <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+            MANAGE BLOGS
+          </a>
+        </li>
 
-          <!-- Manage SEO Item -->
-          <li class="nav-item">
-            <a href="manageseo.html" class="nav-link text-white">
-              <img src="assets/images/image6.png" alt="" class="default-img" />
-              <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-              MANAGE SEO
-            </a>
-          </li>
+        <!-- Manage SEO Item -->
+        <li class="nav-item">
+          <a href="manageseo.html" class="nav-link text-white">
+            <img src="assets/images/image6.png" alt="" class="default-img" />
+            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+            MANAGE SEO
+          </a>
+        </li>
 
-          <!-- Manage User Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image7.png" alt="" class="default-img" />
-              <img
-                src="assets/images/imageseven.png"
-                alt=""
-                class="hover-img"
-              />
-              MANAGE USER
-              <i class="fa fa-caret-down"></i>
-              <p>+3</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createuser.html">
-                  <input type="radio" placeholder="" /> CREATE USER
-                </a>
-              </label>
-              <label for="user">
-                <a href="userlist.html">
-                  <input type="radio" placeholder="" /> USER LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="inactiveuser.html">
-                  <input type="radio" placeholder="" /> IN-ACTIVE USER
-                </a>
-              </label>
-            </div>
-          </li>
+        <!-- Manage User Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image7.png" alt="" class="default-img" />
+            <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+            MANAGE USER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createuser.html">
+                <input type="radio" placeholder=""> CREATE USER
+              </a>
+            </label>
+            <label for="user">
+              <a href="userlist.html">
+                <input type="radio" placeholder=""> USER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="inactiveuser.html">
+                <input type="radio" placeholder=""> IN-ACTIVE USER
+              </a>
+            </label>
+          </div>
+        </li>
 
-          <!-- Manage Booking Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image8.png" alt="" class="default-img" />
-              <img
-                src="assets/images/imageeight.png"
-                alt=""
-                class="hover-img"
-              />
-              MANAGE BOOKING
-              <i class="fa fa-caret-down"></i>
-              <p>+4</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createbooking.html">
-                  <input type="radio" placeholder="" /> CREATE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefbooking.html">
-                  <input type="radio" placeholder="" /> BOOKINGS LIST
-                </a>
-              </label>
-              <label for="user">
-                <a href="inactivebooking.html">
-                  <input type="radio" placeholder="" /> IN-ACTIVE BOOKING
-                </a>
-              </label>
-              <label for="user">
-                <a href="Review.html">
-                  <input type="radio" placeholder="" /> REVIEW LIST
-                </a>
-              </label>
-            </div>
-          </li>
+        <!-- Manage Booking Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE BOOKING
+            <i class="fa fa-caret-down"></i>
+            <p> +4</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createbooking.html">
+                <input type="radio" placeholder=""> CREATE BOOKING
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefbooking.html">
+                <input type="radio" placeholder=""> BOOKINGS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="inactivebooking.html">
+                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+              </a>
+            </label>
+            <label for="user">
+              <a href="Review.html">
+                <input type="radio" placeholder=""> REVIEW LIST
+              </a>
+            </label>
+          </div>
+        </li>
 
           <!-- Manage Cuisine Item -->
           <li class="nav-item">
@@ -268,98 +237,62 @@
             <p>MANAGE CUISINE</p>
           </div>
 
-          <div class="time-piker">
-            <div class="time">
-              <img src="assets/images/calender.png" alt="" />
-              <div class="time-pikerA">
-                <p>Date Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01/01/2018 - 01/15/2018"
-                  class="dateA"
-                />
-              </div>
+        <div class="time-piker">
+          <div class="time">
+            <img src="assets/images/calender.png" alt="">
+            <div class="time-pikerA">
+              <p>Date Range</p>
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
-            <div class="time">
-              <img src="assets/images/calender.png" alt="" />
-              <div class="time-pikerA">
-                <p>Filter Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01-01-2023"
-                  class="dateA"
-                />
-              </div>
+          </div>
+          <div class="time">
+            <img src="assets/images/calender.png" alt="">
+            <div class="time-pikerA">
+              <p>Filter Range</p>
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
-            <!-- <div class="dropdown">
-              <select name="chef" id="chef"></select>
-            </div> -->
           </div>
         </div>
+      </div>
 
-        <!-- ======================= -->
-        <div class="forms">
-          <!-- Main Content -->
-
-          <!-- Main Content -->
-          <main class="col-md-10 bg-light right-sidebar">
-            <!-- Notification Form -->
-            <div class="card mb-4">
-              <div class="card-body">
-                <h4 class="notification-heading">CREATE CUISINE</h4>
-                <div class="row Both-container">
-                  <div class="col-md-6 text-center manage-notification-left">
-                    <div class="file-upload p-3">
-                      <div id="cuisone-imag">
-                        <img
-                          src="assets/images/upload-image.png"
-                          alt="Upload"
-                          class="img-fluid"
-                          
-                        />
-                      </div>
-                      
-                      <div class="inputfile-upload">
-                        <input type="file" id="fileInput" />
-                        <label for="fileInput" class="custom-file-label" >
-                          <span id="fileName">No File Chosen</span>
-                          <span class="choose-file-btn">CHOOSE FILE</span>
-                        </label>
-                      </div>
+      <!-- ======================= -->
+      <div class="forms">
+        <main class="col-md-10 bg-light right-sidebar">
+          <!-- Notification Form -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="notification-heading">CREATE CUISINE</h4>
+              <div class="row Both-container">
+                <div class="col-md-6 text-center manage-notification-left">
+                  <div class="file-upload p-3">
+                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid" />
+                    <div class="inputfile-upload">
+                      <input type="file" id="fileInput" />
+                      <label for="fileInput" class="custom-file-label">
+                        <span id="fileName">No File Chosen</span>
+                        <span class="choose-file-btn">CHOOSE FILE</span>
+                      </label>
                     </div>
                   </div>
-                  <div class="col-md-6 right-form">
-                    <form>
-                      <div class="mb-3">
-                        <label for="title" class="form-label"
-                          >Name of Cuisine</label
-                        >
-                        <input
-                          type="text"
-                          id="title"
-                          class="form-control"
-                          placeholder="Create Food Category"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="message" class="form-label">Parent</label>
-                        <input
-                          type="text"
-                          id="titleA"
-                          class="form-control"
-                          placeholder="self"
-                        />
-                      </div>
-                      <button type="submit" class="SUBMIT-NOW">
-                        SUBMIT-NOW
-                      </button>
-                    </form>
-                  </div>
+                </div>
+                <div class="col-md-6 right-form">
+                  <form>
+                    <div class="mb-3">
+                      <label for="title" class="form-label">Name of Cuisine</label>
+                      <input type="text" id="title" class="form-control" placeholder="Create Food Category" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Parent</label>
+                      <input type="text" id="titleA" class="form-control" placeholder="self" />
+                    </div>
+                    <button type="submit" class="SUBMIT-NOW">
+                      SUBMIT-NOW
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
+          </div>
 
           <!-- footer-section -->
           <div class="blog-seo-A">
@@ -370,7 +303,8 @@
                   <div id="myTable_filter" class="dataTables_-search-filterA" style="display: flex">
                     <label class="d-flex align-items-center gap-2">
                       <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="searchA" placeholder="Search here" aria-controls="myTable" />
+                      <input type="search" class="searchA" placeholder="Search here" id="searchInput"
+                        aria-controls="myTable" onkeyup="filterTable()" />
                     </label>
                   </div>
                   <button class="add-cuisine">
@@ -402,40 +336,46 @@
                   <td>
                     <a href="#">
                       <img src="assets/images/delete.png" alt="" /></a>
-                      <a href="#">
-                      <img src="assets/images/custome-icon.png" alt="" /></a>
-                   
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg">
-                      <img src="assets/images/footer-image-one.png" alt="" />
-                    </td>
-                    <td>Multi Cuisine</td>
-                    <td>Arabic</td>
-                    <td>01 Apr, 2024</td>
-                    <td>
-                      <a href="#">
+                    <a href="#">
+                      <img src="assets/images/custome-icon.png" alt="" />
+                    </a>
+
+                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg">
+                    <img src="assets/images/footer-image-one.png" alt="" />
+                  </td>
+                  <td>Multi Cuisine</td>
+                  <td>Arabic</td>
+                  <td>01 Apr, 2024</td>
+                  <td>
+                    <a href="#">
                       <img src="assets/images/delete.png" alt="" /></a>
-                      <a href="#">
-                      <img src="assets/images/custome-icon.png" alt="" /></a>
-                    
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg">
-                      <img src="assets/images/footer-image-one.png" alt="" />
-                    </td>
-                    <td>Multi Cuisine</td>
-                    <td>Arabic</td>
-                    <td>01 Apr, 2024</td>
-                    <td>
-                      <a href="#">
+                    <a href="#">
+                      <img src="assets/images/custome-icon.png" alt="" />
+                    </a>
+
+                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg">
+                    <img src="assets/images/footer-image-one.png" alt="" />
+                  </td>
+                  <td>Multi Cuisine</td>
+                  <td>Arabic</td>
+                  <td>01 Apr, 2024</td>
+                  <td>
+                    <a href="#">
                       <img src="assets/images/delete.png" alt="" /></a>
-                      <a href="#">
-                      <img src="assets/images/custome-icon.png" alt="" /></a>
+                    <a href="#">
+                      <img src="assets/images/custome-icon.png" alt="" />
+                    </a>
+
                     <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
                   </td>
                 </tr>
@@ -470,7 +410,32 @@
       }
     }
     );
+    // datatable searchs
 
+    function filterTable() {
+      let input = document.getElementById('searchInput');
+      let filter = input.value.toLowerCase();
+      const tables = [
+        document.getElementById('myTable-8'),
+      ];
+
+      tables.forEach(table => {
+        let rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let titleCell = cells[2];
+          if (titleCell) {
+            let titleText = titleCell.textContent || titleCell.innerText;
+            if (titleText.toLowerCase().indexOf(filter) > -1) {
+              rows[i].style.display = "";
+            } else {
+              rows[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
   </script>
-  </body>
+</body>
+
 </html>
