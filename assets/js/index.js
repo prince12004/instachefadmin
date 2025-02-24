@@ -13,7 +13,8 @@ $(document).ready(function () {
   });
 });
 
-// previous date disabled 
+// previous date disabled all pages 
+
 function setMinDate() {
   const today = new Date();
   const day = String(today.getDate()).padStart(2, '0'); 
@@ -462,5 +463,3 @@ function showError(input, message) {
     errorSpan.style.color = 'red';
   }
 }
-
-// prevoius date disabled all pages 
