@@ -217,39 +217,46 @@
             </a>
           </li>
 
-          <!-- Manage Chef Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image11.png" alt="" class="default-img" />
-              <img src="assets/images/imageten.png" alt="" class="hover-img" />
-              MANAGE CHEF
-              <i class="fa fa-caret-down"></i>
-              <p>+2</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createchef.html">
-                  <input type="radio" placeholder="" /> CREATE CHEF
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefdetails.html">
-                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Logout Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white last-li">
-              <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
-              LOGOUT
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <!-- Manage Chef Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image11.png" alt="" class="default-img" />
+            <img src="assets/images/imageten.png" alt="" class="hover-img" />
+            MANAGE CHEF
+            <i class="fa fa-caret-down"></i>
+            <p> +2</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createchef.html">
+                <input type="radio" placeholder=""> CREATE CHEF
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefdetails.html">
+                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+              </a>
+            </label>
+          </div>
+        </li>
+        <!--  Delete Chef Item -->
+        <li class="nav-item">
+          <a href="deletechef.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            DELETE CHEF
+          </a>
+        </li>
+        <!-- Logout Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white last-li">
+            <img src="assets/images/logout.png" alt="" class="default-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+            LOGOUT
+          </a>
+        </li>
+      </ul>
+    </nav>
 
       <!-- ===============left==================== -->
       <div class="main-content">
@@ -354,62 +361,46 @@
               </div>
             </div>
 
-            <!-- footer-section -->
-            <div class="blog-seo-A">
-              <table id="myTable-A" class="maintable" style="width: 100%">
-                <div class="table-blog-barA">
-                  <h4>LIST OF CUISINE</h4>
-                  <!-- <span
-                    class="d-flex justify-content-between align-items-center text-white table-blog-span"
-                  > -->
-                    <!-- <h4>LIST OF CUISINE</h4> -->
-                    <div class="d-flex gap-2">
-                      <div
-                        id="myTable_filter"
-                        class="dataTables_-search-filterA"
-                        style="display: flex"
-                      >
-                        <label class="d-flex align-items-center gap-2">
-                          <i
-                            class="fa-solid fa-magnifying-glass"
-                            id="notification-icon"
-                          ></i>
-                          <input
-                            type="search"
-                            class="searchA"
-                            placeholder="Search here"
-                            aria-controls="myTable"
-                          />
-                        </label>
-                      </div>
-                      <button class="add-cuisine">
-                        <img src="assets/images/pulsu-two.png" alt="" />ADD
-                        CUISINE
-                      </button>
-                    </div>
-                  </span>
+          <!-- footer-section -->
+          <div class="blog-seo-A">
+            <table id="myTable-8" class="maintable" style="width: 100%">
+              <div class="table-blog-barA">
+                <h4>LIST OF CUISINE</h4>
+                <div class="d-flex gap-2">
+                  <div id="myTable_filter" class="dataTables_-search-filterA" style="display: flex">
+                    <label class="d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                      <input type="search" class="searchA" placeholder="Search here" aria-controls="myTable" />
+                    </label>
+                  </div>
+                  <button class="add-cuisine">
+                    <img src="assets/images/pulsu-two.png" alt="" />ADD
+                    CUISINE
+                  </button>
                 </div>
-                <thead>
-                  <tr class="header-table">
-                    <th class="serial-number">#</th>
-                    <th>Image</th>
-                    <th>Cuisine</th>
-                    <th>Parent</th>
-                    <th>Date</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg">
-                      <img src="assets/images/footer-image-one.png" alt="" />
-                    </td>
-                    <td>Multi Cuisine</td>
-                    <td>Arabic</td>
-                    <td>01 Apr, 2024</td>
-                    <td>
-                      <a href="#">
+                </span>
+              </div>
+              <thead>
+                <tr class="header-table">
+                  <th class="serial-number">S.No</th>
+                  <th>Image</th>
+                  <th>Cuisine</th>
+                  <th>Parent</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg">
+                    <img src="assets/images/footer-image-one.png" alt="" />
+                  </td>
+                  <td>Multi Cuisine</td>
+                  <td>Arabic</td>
+                  <td>01 Apr, 2024</td>
+                  <td>
+                    <a href="#">
                       <img src="assets/images/delete.png" alt="" /></a>
                       <a href="#">
                       <img src="assets/images/custome-icon.png" alt="" /></a>
@@ -445,101 +436,40 @@
                       <img src="assets/images/delete.png" alt="" /></a>
                       <a href="#">
                       <img src="assets/images/custome-icon.png" alt="" /></a>
-                      
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </main>
-        </div>
+                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
       </div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script>
+    let table = new DataTable('#myTable-8');
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fileInput = document.getElementById("fileInput");
+      const fileNameDisplay = document.getElementById("fileName");
+      const uploadTrigger = document.querySelector(".img-fluid");
 
-    <script>
-      $(document).ready(function () {
-        $('.toggle-bar').click(function () {
-          $('.sidebar').toggleClass('show');
+      fileInput.addEventListener("change", function () {
+        fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : "No File Chosen";
+      });
+
+      if (uploadTrigger) {
+        uploadTrigger.addEventListener("click", function () {
+          fileInput.click();
         });
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $('.user-select-input').hide();
-        $('.fa-caret-down').click(function (event) {
-          event.preventDefault();
-          $(this)
-            .closest('.nav-item')
-            .find('.user-select-input')
-            .fadeToggle('fast');
-        });
-      });
-    </script>
-    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
-
-    <script>
-      const documentA = document.getElementById('uploadDocument');
-      const fileInput = document.getElementById('file1');
-
-      documentA.addEventListener('click', () => {
-        fileInput.click();
-      });
-
-      fileInput.addEventListener('change', (event) => {
-        const files = event.target.files;
-      });
-    </script>
-    <script>
-      let table = new DataTable('#myTable-A');
-    </script>
-    <script>
-      $(document).ready(function () {
-        $('#myTable-A').DataTable({
-          paging: true,
-          searching: false,
-          info: true,
-          pageLength: 2,
-          destroy: true,
-          lengthChange: false,
-        });
-      });
-    </script>
-    <script>
- document.addEventListener("DOMContentLoaded", function () {
-  const fileInput = document.getElementById("fileInput");
-  const fileNameDisplay = document.getElementById("fileName");
-  const uploadTrigger = document.querySelector(".img-fluid"); 
-  fileInput.addEventListener("change", function () {
-    if (fileInput.files.length > 0) {
-      let fileName = fileInput.files[0].name;
-
-      
-      fileNameDisplay.textContent = fileName;
-
-     
-      const fileReader = new FileReader();
-      fileReader.onload = function (event) {
-        uploadTrigger.src = event.target.result; 
-      };
-      fileReader.readAsDataURL(fileInput.files[0]); 
-    } else {
-      fileNameDisplay.textContent = "No File Chosen";
-      uploadTrigger.src = "assets/images/upload-image.png"; 
+      }
     }
-  });
-
-  
-  if (uploadTrigger) {
-    uploadTrigger.addEventListener("click", function () {
-      fileInput.click();
-    });
-  }
-});
+    );
 
   </script>
   </body>

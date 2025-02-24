@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef-Detail</title>
+    <link rel="stylesheet" href="assets/css/newstyle.css" />
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="instachef-admin">
+            <div class="instachef">
+                <a href="index.html">
+                    <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+                <div class="toggle-bar">
+                    <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+                </div>
+            </div>
+            <div class="user-icons">
+                <a href="#">
+                    <img src="assets/images/home.png" alt="" />
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="assets/images/notification.png" alt="notification Icon" />
+                    <span class="counter wishlist-counter">2</span>
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="right-border" />
+                <div class="admin-section">
+                    <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
+                    <div class="admin-text">
+                        <h3>LOREM ISPUM</h3>
+                        <select id="super-admin">
+                            <option>super-admin</option>
+                            <option>admin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ----------------header-------------------- -->
+    <div class="admin-panel">
+        <nav class="bg-dark text-white sidebar">
+            <ul class="nav flex-column">
+                <!-- Dashboard Item -->
+                <li class="nav-item dashboard">
+                    <a href="index.html" class="nav-link text-white">
+                        <img src="assets/images/image1.png" alt="" class="default-img" />
+                        <img src="assets/images/icons.png" alt="" class="hover-img" />
+                        DASHBOARD
+                    </a>
+                </li>
+
+                <!-- Manage Profile Item -->
+                <li class="nav-item">
+                    <a href="manageprofile.html" class="nav-link text-white">
+                        <img src="assets/images/image2.png" alt="" class="default-img" />
+                        <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+                        MANAGE PROFILE
+                    </a>
+                </li>
+
+                <!-- Manage Notification Item -->
+                <li class="nav-item">
+                    <a href="Managenotification.html" class="nav-link text-white">
+                        <img src="assets/images/image3.png" alt="" class="default-img" />
+                        <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+                        MANAGE NOTIFICATION
+                    </a>
+                </li>
+
+                <!-- Contact Request Item -->
+                <li class="nav-item">
+                    <a href="contactrequest.html" class="nav-link text-white">
+                        <img src="assets/images/image4.png" alt="" class="default-img" />
+                        <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+                        CONTACT REQUEST
+                    </a>
+                </li>
+
+                <!-- Manage Blogs Item -->
+                <li class="nav-item">
+                    <a href="manageblog.html" class="nav-link text-white">
+                        <img src="assets/images/image5.png" alt="" class="default-img" />
+                        <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+                        MANAGE BLOGS
+                    </a>
+                </li>
+
+                <!-- Manage SEO Item -->
+                <li class="nav-item">
+                    <a href="manageseo.html" class="nav-link text-white">
+                        <img src="assets/images/image6.png" alt="" class="default-img" />
+                        <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+                        MANAGE SEO
+                    </a>
+                </li>
+
+                <!-- Manage User Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image7.png" alt="" class="default-img" />
+                        <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+                        MANAGE USER
+                        <i class="fa fa-caret-down"></i>
+                        <p> +3</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user" class="top-users">
+                            <a href="createuser.html">
+                                <input type="radio" placeholder=""> CREATE USER
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="userlist.html">
+                                <input type="radio" placeholder=""> USER LIST
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="inactiveuser.html">
+                                <input type="radio" placeholder=""> IN-ACTIVE USER
+                            </a>
+                        </label>
+                    </div>
+                </li>
+
+                <!-- Manage Booking Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image8.png" alt="" class="default-img" />
+                        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                        MANAGE BOOKING
+                        <i class="fa fa-caret-down"></i>
+                        <p> +4</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user" class="top-users">
+                            <a href="createbooking.html">
+                                <input type="radio" placeholder=""> CREATE BOOKING
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="chefbooking.html">
+                                <input type="radio" placeholder=""> BOOKINGS LIST
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="inactivebooking.html">
+                                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="Review.html">
+                                <input type="radio" placeholder=""> REVIEW LIST
+                            </a>
+                        </label>
+                    </div>
+                </li>
+
+                <!-- Manage Cuisine Item -->
+                <li class="nav-item">
+                    <a href="managecuisine.html" class="nav-link text-white">
+                        <img src="assets/images/image9.png" alt="" class="default-img" />
+                        <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+                        MANAGE CUISINE
+                    </a>
+                </li>
+
+                <!-- Manage Package Item -->
+                <li class="nav-item">
+                    <a href="mangepackage.html" class="nav-link text-white">
+                        <img src="assets/images/image10.png" alt="" class="default-img" />
+                        <img src="assets/images/imagten.png" alt="" class="hover-img" />
+                        MANAGE PACKAGE
+                    </a>
+                </li>
+
+                <!-- Manage Chef Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image11.png" alt="" class="default-img" />
+                        <img src="assets/images/imageten.png" alt="" class="hover-img" />
+                        MANAGE CHEF
+                        <i class="fa fa-caret-down"></i>
+                        <p> +2</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user" class="top-users">
+                            <a href="createchef.html">
+                                <input type="radio" placeholder=""> CREATE CHEF
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="chefdetails.html">
+                                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                            </a>
+                        </label>
+                    </div>
+                </li>
+
+                <!--  Delete Chef Item -->
+                <li class="nav-item">
+                    <a href="deletechef.html" class="nav-link text-white">
+                        <img src="assets/images/image9.png" alt="" class="default-img" />
+                        <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+                        DELETE CHEF
+                    </a>
+                </li>
+                <!-- Logout Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white last-li">
+                        <img src="assets/images/logout.png" alt="" class="default-img" />
+                        <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+                        LOGOUT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ==================================== -->
+
+        <div id="main-content" class="main-content">
+            <div class="admin-dashboard">
+                <div class="dashboard-time">
+                    <img src="assets/images/chefDetails.png" alt="" />
+                    <p>DELETE CHEF </p>
+                </div>
+
+                <div class="time-piker">
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="" />
+                        <div class="time-pikerA">
+                            <p>Date Range</p>
+                            <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+                        </div>
+                    </div>
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="" />
+                        <div class="time-pikerA">
+                            <p>Filter Range</p>
+                            <input type="date" name="daterange" value="01-01-2023" class="dateA" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-------------------------------------->
+            <div class="table-container">
+                <table id="myTable-deletechef" class="maintable" style="width: 100%">
+                    <div class="user-listA">
+                        <h1 class="heading" id="heading-B">LIST OF DELETE CHEF DETAIL</h1>
+                        <div id="search-here" style="right: -12px;">
+                            <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
+                            <input type="search" placeholder="Search here..." id="iconSearch" />
+                        </div>
+                        <select id="select" style="right: 1%;">
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <select id="cuisine">
+                            <option>Select Cuisine</option>
+                            <option>Cuisine 1</option>
+                            <option>Cuisine 2</option>
+                        </select>
+                    </div>
+                    <thead>
+                        <tr>
+                            <th class="serial-number">S.No</th>
+                            <th>Create Chef</th>
+                            <th>Gender</th>
+                            <th id="user-id">User ID</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                            <th>Created on</th>
+                            <th id="adress">Address</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="number">01</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">02</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">03</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">04</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">05</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">06</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn">
+                                    <button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW</button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">07</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">08</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+
+                        <tr>
+                            <td class="number">10</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">1.</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">1.</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                        <tr>
+                            <td class="number">1.</td>
+                            <td id="car-name">
+                                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                                Vinther
+                            </td>
+                            <td id="model">Male</td>
+                            <td>Id: 591838 Pass: 197798</td>
+                            <td>Tanjabruun@hotmail.com</td>
+                            <td>0558400708</td>
+                            <td>08 Oct, 2022</td>
+                            <td>Vadodara, Gujarat, India</td>
+                            <td class="icons-image">
+                                <a href="#" class="Review-btn"><button type="submit">
+                                        <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                                        REVIEW
+                                    </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                                        class="material-icons" />
+                                    <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+                            </td>
+                            <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================script=============== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        let table = new DataTable("#myTable-deletechef");
+    </script>
+</body>
+
+</html>

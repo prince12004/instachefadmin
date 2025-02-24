@@ -206,8 +206,9 @@ table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td{
 #address{
     width: 26%;
 }
-#adress{
-  width: 23%;
+
+#adress {
+  width: 17%;
 }
 .material-icons{
   width: 11%;
@@ -507,8 +508,8 @@ div.dt-container{
 
 #search-here{
   position: relative;
-  top: 53px;
-  right: 2%;
+  top: 56px;
+  right: 5%;
   z-index: 1;
   background-color: #F5F6FA;
   width: 21%;

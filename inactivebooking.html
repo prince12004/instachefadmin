@@ -215,39 +215,46 @@
             </a>
           </li>
 
-          <!-- Manage Chef Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image11.png" alt="" class="default-img" />
-              <img src="assets/images/imageten.png" alt="" class="hover-img" />
-              MANAGE CHEF
-              <i class="fa fa-caret-down"></i>
-              <p>+2</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createchef.html">
-                  <input type="radio" placeholder="" /> CREATE CHEF
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefdetails.html">
-                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Logout Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white last-li">
-              <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
-              LOGOUT
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <!-- Manage Chef Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image11.png" alt="" class="default-img" />
+            <img src="assets/images/imageten.png" alt="" class="hover-img" />
+            MANAGE CHEF
+            <i class="fa fa-caret-down"></i>
+            <p> +2</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createchef.html">
+                <input type="radio" placeholder=""> CREATE CHEF
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefdetails.html">
+                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+              </a>
+            </label>
+          </div>
+        </li>
+        <!--  Delete Chef Item -->
+        <li class="nav-item">
+          <a href="deletechef.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            DELETE CHEF
+          </a>
+        </li>
+        <!-- Logout Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white last-li">
+            <img src="assets/images/logout.png" alt="" class="default-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+            LOGOUT
+          </a>
+        </li>
+      </ul>
+    </nav>
 
       <!-- ============================================ -->
       <div id="main-content" class="main-content">
@@ -257,79 +264,63 @@
             <p>MANAGE BOOKING</p>
           </div>
 
-          <div class="time-piker">
-            <div class="time">
-              <img src="assets/images/calender.png" alt="" />
-              <div class="time-pikerA">
-                <p>Date Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01/01/2018 - 01/15/2018"
-                  class="dateA"
-                />
-              </div>
+        <div class="time-piker">
+          <div class="time">
+            <img src="assets/images/calender.png" alt="" />
+            <div class="time-pikerA">
+              <p>Date Range</p>
+              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
             </div>
-            <div class="time">
-              <img src="assets/images/calender.png" alt="" />
-              <div class="time-pikerA">
-                <p>Filter Range</p>
-                <input
-                  type="date"
-                  name="daterange"
-                  value="01-01-2023"
-                  class="dateA"
-                />
-              </div>
+          </div>
+          <div class="time">
+            <img src="assets/images/calender.png" alt="" />
+            <div class="time-pikerA">
+              <p>Filter Range</p>
+              <input type="date" name="daterange" value="01-01-2023" class="dateA" />
             </div>
           </div>
         </div>
-        <!-- ------------------------------------------------------- -->
-        <div class="table-container">
-          <table id="myTable-2" class="maintable" style="width: 100%">
-            <div class="user-listA">
-              <h1 class="heading" id="heading-B">IN-ACTIVE BOOKING</h1>
-              <div id="search-here">
-                <label class="search"
-                  ><img src="assets/images/iconSearch.png" alt=""
-                /></label>
-                <input
-                  type="search"
-                  placeholder="Search here..."
-                  id="iconSearch"
-                />
-              </div>
+      </div>
+      <!-- ------------------------------------------------------- -->
+      <div class="table-container">
+        <table id="myTable-inactives" class="maintable" style="width: 100%">
+          <div class="user-listA">
+            <h1 class="heading" id="heading-B">IN-ACTIVE BOOKING</h1>
+            <div id="search-here">
+              <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
+              <input type="search" placeholder="Search here..." id="iconSearch" />
             </div>
-            <thead>
-              <tr>
-                <th class="serial-number">#</th>
-                <th>User ID</th>
-                <th>Cuisine</th>
-                <th id="package">Package</th>
-                <th>Chef</th>
-                <th>Phone</th>
-                <th>Start</th>
-                <th id="adress">Booking Address</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="number">1.</td>
-                <td id="car-name">
-                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Arabic</td>
-                <td>1 time a week (Total 4 visits per month)</td>
-                <td>Kaneshk Dhomse</td>
-                <td>0558400708</td>
-                <td>01 Apr, 2024</td>
-                <td>
-                  Testing Testing Testing, Al Furjan State: Dubai Landmark:
-                  Testing
-                </td>
-                <td class="icons-image"><a href="#" class="Review-btnA"><button type="submit">Revover</button> 
+          </div>
+          <thead>
+            <tr>
+              <th class="serial-number">S.No</th>
+              <th>User ID</th>
+              <th>Cuisine</th>
+              <th id="package">Package</th>
+              <th>Chef</th>
+              <th>Phone</th>
+              <th>Start</th>
+              <th id="adress">Booking Address</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="number">1.</td>
+              <td id="car-name">
+                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Arabic</td>
+              <td>1 time a week (Total 4 visits per month)</td>
+              <td>Kaneshk Dhomse</td>
+              <td>0558400708</td>
+              <td>01 Apr, 2024</td>
+              <td>
+                Testing Testing Testing, Al Furjan State: Dubai Landmark:
+                Testing
+              </td>
+              <td class="icons-image"><a href="#" class="Review-btnA"><button type="submit">Revover</button>
                   <!-- <a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"/></a> -->
                   <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
                 </td>
@@ -612,19 +603,20 @@
                 <td class="icons-image"><a href="#" class="Review-btnA"><button type="submit">Revover</button> 
                   <!-- <a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-iconsB"/></a> -->
                   <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <!-- =================script=============== -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script>
-      let table = new DataTable("#myTable-2");
-    </script>
-  </body>
+  </div>
+  <!-- =================script=============== -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script>
+    let table = new DataTable("#myTable-inactives");
+  </script>
+</body>
+
 </html>

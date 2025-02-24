@@ -215,39 +215,46 @@
             </a>
           </li>
 
-          <!-- Manage Chef Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white select-manage">
-              <img src="assets/images/image11.png" alt="" class="default-img" />
-              <img src="assets/images/imageten.png" alt="" class="hover-img" />
-              MANAGE CHEF
-              <i class="fa fa-caret-down"></i>
-              <p>+2</p>
-            </a>
-            <div class="user-select-input">
-              <label for="user">
-                <a href="createchef.html">
-                  <input type="radio" placeholder="" /> CREATE CHEF
-                </a>
-              </label>
-              <label for="user">
-                <a href="chefdetails.html">
-                  <input type="radio" placeholder="" /> LIST OF CHEF DETAIL
-                </a>
-              </label>
-            </div>
-          </li>
-
-          <!-- Logout Item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white last-li">
-              <img src="assets/images/logout.png" alt="" class="default-img" />
-              <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
-              LOGOUT
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <!-- Manage Chef Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image11.png" alt="" class="default-img" />
+            <img src="assets/images/imageten.png" alt="" class="hover-img" />
+            MANAGE CHEF
+            <i class="fa fa-caret-down"></i>
+            <p> +2</p>
+          </a>
+          <div class="user-select-input">
+            <label for="user" class="top-users">
+              <a href="createchef.html">
+                <input type="radio" placeholder=""> CREATE CHEF
+              </a>
+            </label>
+            <label for="user">
+              <a href="chefdetails.html">
+                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+              </a>
+            </label>
+          </div>
+        </li>
+        <!--  Delete Chef Item -->
+        <li class="nav-item">
+          <a href="deletechef.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            DELETE CHEF
+          </a>
+        </li>
+        <!-- Logout Item -->
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white last-li">
+            <img src="assets/images/logout.png" alt="" class="default-img" />
+            <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+            LOGOUT
+          </a>
+        </li>
+      </ul>
+    </nav>
 
       <!-- ==================================== -->
 
@@ -286,475 +293,310 @@
           </div>
         </div>
 
-        <!-------------------------------------->
-        <div class="table-container">
-          <table id="myTable-2" class="maintable" style="width: 100%">
-            <div class="user-listA">
-              <h1 class="heading" id="heading-B">LIST OF CHEF DETAIL</h1>
-              <select id="select">
-                <option>Select Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-              </select>
-              <select id="cuisine">
-                <option>Select Cuisine</option>
-                <option>Cuisine 1</option>
-                <option>Cuisine 2</option>
-              </select>
-              <div id="search-here">
-                <label class="search"
-                  ><img src="assets/images/iconSearch.png" alt=""
-                /></label>
-                <input
-                  type="search"
-                  placeholder="Search here..."
-                  id="iconSearch"
-                />
-              </div>
-              <button class="by-admin">
-                <img src="assets/images/plusImg.png" alt="" /> ADD CHEF
-              </button>
+      <!-------------------------------------->
+      <div class="table-container">
+        <table id="myTable-7" class="maintable" style="width: 100%">
+          <div class="user-listA">
+            <h1 class="heading" id="heading-B">LIST OF CHEF DETAIL</h1>
+            <div id="search-here">
+              <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
+              <input type="search" placeholder="Search here..." id="iconSearch" />
             </div>
-            <thead>
-              <tr>
-                <th class="serial-number">#</th>
-                <th>User</th>
-                <th>Gender</th>
-                <th id="user-id">User ID</th>
-                <th>Email ID</th>
-                <th>Phone</th>
-                <th>Register At</th>
-                <th id="adress">Address</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="number">01</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">02</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">03</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">04</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">05</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">06</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">REVIEW</button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">07</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">08</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-            
-              <tr>
-                <td class="number">10</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">1.</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">1.</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-              <tr>
-                <td class="number">1.</td>
-                <td id="car-name">
-                  <img src="assets/images/chef-image.png" alt="car" /> Tanja
-                  Vinther
-                </td>
-                <td id="model">Male</td>
-                <td>Id: 591838 Pass: 197798</td>
-                <td>Tanjabruun@hotmail.com</td>
-                <td>0558400708</td>
-                <td>08 Oct, 2022</td>
-                <td>Vadodara, Gujarat, India</td>
-                <td class="icons-image">
-                  <a href="#" class="Review-btn"
-                    ><button type="submit">
-                      <img
-                        src="assets/images/reviewImg.png"
-                        alt=""
-                        class="review-imgA"
-                      />
-                      REVIEW
-                    </button> </a
-                  ><a href="#"
-                    ><img
-                      src="assets/images/Trashicon.png"
-                      alt=""
-                      class="material-icons" />
-                    <img
-                      src="assets/images/emultipleEdit.png"
-                      alt=""
-                      class="material-icons"
-                  /></a>
-                </td>
-                <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <select id="select">
+              <option>Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <select id="cuisine">
+              <option>Select Cuisine</option>
+              <option>Cuisine 1</option>
+              <option>Cuisine 2</option>
+            </select>
+            <button class="by-admin">
+              <img src="assets/images/plusImg.png" alt="" /> ADD CHEF
+            </button>
+          </div>
+          <thead>
+            <tr>
+              <th class="serial-number">S.No</th>
+              <th>Create Chef</th>
+              <th>Gender</th>
+              <th id="user-id">User ID</th>
+              <th>Email ID</th>
+              <th>Phone</th>
+              <th>Created on</th>
+              <th id="adress">Address</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="number">01</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">02</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">03</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">04</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">05</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">06</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn">
+                  <button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW</button> </a><a href="#"><img src="assets/images/Trashicon.png" alt=""
+                    class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">07</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">08</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+
+            <tr>
+              <td class="number">10</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">1.</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">1.</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+            <tr>
+              <td class="number">1.</td>
+              <td id="car-name">
+                <img src="assets/images/chef-image.png" alt="car" /> Tanja
+                Vinther
+              </td>
+              <td id="model">Male</td>
+              <td>Id: 591838 Pass: 197798</td>
+              <td>Tanjabruun@hotmail.com</td>
+              <td>0558400708</td>
+              <td>08 Oct, 2022</td>
+              <td>Vadodara, Gujarat, India</td>
+              <td class="icons-image">
+                <a href="#" class="Review-btn"><button type="submit">
+                    <img src="assets/images/reviewImg.png" alt="" class="review-imgA" />
+                    REVIEW
+                  </button> </a><a href="#"><img src="assets/images/Trashicon.png" alt="" class="material-icons" />
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-icons" /></a>
+              </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt="" class="combined-shape "> -->
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+  </div>
 
-    <!-- =================script=============== -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script>
-      let table = new DataTable("#myTable-2");
-    </script>
-  </body>
+  <!-- =================script=============== -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script>
+    let table = new DataTable("#myTable-7");
+  </script>
+</body>
+
 </html>
