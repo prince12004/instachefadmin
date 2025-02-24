@@ -212,7 +212,7 @@
           <a href="deletechef.html" class="nav-link text-white">
             <img src="assets/images/image9.png" alt="" class="default-img" />
             <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-             DELETE CHEF
+            DELETE CHEF
           </a>
         </li>
         <!-- Logout Item -->
@@ -233,20 +233,19 @@
           <img src="assets/images/createUser.png" alt="">
           <p>Manage User</p>
         </div>
-
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -258,7 +257,7 @@
             <h1 class="headingC">USERS LIST</h1>
             <div id="search-hereA">
               <label class="search"><img src="assets/images/iconSearch.png" alt=""></label>
-              <input type="search" placeholder="Search here..." id="iconSearch">
+              <input type="search" placeholder="Search here..." id="iconSearch" onkeyup="filterTable()">
             </div>
             <div id="admin-review">
               <button class="by-admin"><img src="assets/images/admin.png" alt=""> BY ADMIN</button>
@@ -283,13 +282,13 @@
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
               <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -299,14 +298,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -316,14 +315,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -333,14 +332,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -350,14 +349,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -367,14 +366,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -384,14 +383,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -401,14 +400,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -418,14 +417,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -435,14 +434,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -452,14 +451,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -469,14 +468,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
             <tr>
@@ -486,14 +485,14 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-                <td class="icons-new">
-                  <a href="">
-                    <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
-                    <a href="">
-                      <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
-                    <a href="#">
-                      <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
-                    </a>
+              <td class="icons-new">
+                <a href="">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA"></a>
+                <a href="">
+                  <img src="assets/images/emultipleEdit.png" alt="" class="material-iconsA"></a>
+                <a href="#">
+                  <img src="assets/images/Trashicon.png" alt="" class="material-iconsA">
+                </a>
               </td>
             </tr>
           </tbody>
@@ -507,6 +506,33 @@
   <script src="assets/js/index.js"></script>
   <script>
     let table = new DataTable('#myTable-lists');
+  </script>
+  <script>
+    // datatable searchs
+
+    function filterTable() {
+      let input = document.getElementById('iconSearch');
+      let filter = input.value.toLowerCase();
+      const tables = [
+        document.getElementById('myTable-lists')
+      ];
+
+      tables.forEach(table => {
+        let rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let titleCell = cells[1];
+          if (titleCell) {
+            let titleText = titleCell.textContent || titleCell.innerText;
+            if (titleText.toLowerCase().indexOf(filter) > -1) {
+              rows[i].style.display = "";
+            } else {
+              rows[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
   </script>
 </body>
 

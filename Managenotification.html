@@ -232,20 +232,19 @@
           <p>MANAGE NOTIFICATION
           </p>
         </div>
-
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -441,6 +440,31 @@
       errorSpan.textContent = message;
       errorSpan.style.color = 'red';
     }
+  }
+  // data table searchs 
+
+  function filterTable() {
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toLowerCase();
+    const tables = [
+      document.getElementById('myTable-A')
+    ];
+
+    tables.forEach(table => {
+      let rows = table.getElementsByTagName('tr');
+      for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let titleCell = cells[2];
+        if (titleCell) {
+          let titleText = titleCell.textContent || titleCell.innerText;
+          if (titleText.toLowerCase().indexOf(filter) > -1) {
+            rows[i].style.display = "";
+          } else {
+            rows[i].style.display = "none";
+          }
+        }
+      }
+    });
   }
 </script>
 </body>

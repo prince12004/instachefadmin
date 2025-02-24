@@ -234,20 +234,19 @@
           <img src="assets/images/chefDetails.png" alt="" />
           <p>MANAGE CHEF</p>
         </div>
-
         <div class="time-piker">
           <div class="time">
-            <img src="assets/images/calender.png" alt="" />
+            <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
-            <img src="assets/images/calender.png" alt="" />
+            <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -258,9 +257,9 @@
         <table id="myTable-7" class="maintable" style="width: 100%">
           <div class="user-listA">
             <h1 class="heading" id="heading-B">LIST OF CHEF DETAIL</h1>
-            <div id="search-here">
+            <div id="search-here" class="search-B">
               <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
-              <input type="search" placeholder="Search here..." id="iconSearch" />
+              <input type="search" placeholder="Search here..." id="iconSearch" onkeyup="filterTable()" />
             </div>
             <select id="select">
               <option>Select Gender</option>
@@ -286,7 +285,7 @@
               <th>Phone</th>
               <th>Created on</th>
               <th id="adress">Address</th>
-              <th>Action</th>
+              <th id="addres">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -592,6 +591,33 @@
   <script src="assets/js/index.js"></script>
   <script>
     let table = new DataTable("#myTable-7");
+  </script>
+  <script>
+    // datatable searchs
+
+    function filterTable() {
+      let input = document.getElementById('iconSearch');
+      let filter = input.value.toLowerCase();
+      const tables = [
+        document.getElementById('myTable-7')
+      ];
+
+      tables.forEach(table => {
+        let rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let titleCell = cells[1];
+          if (titleCell) {
+            let titleText = titleCell.textContent || titleCell.innerText;
+            if (titleText.toLowerCase().indexOf(filter) > -1) {
+              rows[i].style.display = "";
+            } else {
+              rows[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
   </script>
 </body>
 

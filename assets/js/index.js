@@ -12,6 +12,20 @@ $(document).ready(function () {
     $(this).closest(".nav-item").find(".user-select-input").fadeToggle('fast');
   });
 });
+
+// previous date disabled 
+function setMinDate() {
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0'); 
+  const month = String(today.getMonth() + 1).padStart(2, '0'); 
+  const year = today.getFullYear();
+
+  const formattedDate = `${year}-${month}-${day}`; 
+  document.getElementById('dateRange').setAttribute('min', formattedDate);
+  document.getElementById('filterRange').setAttribute('min', formattedDate);
+}
+window.onload = setMinDate;
+
 // dahboard review icon toggle 
 document.querySelectorAll('.dropdown').forEach(dropdown => {
   dropdown.addEventListener('click', function () {
@@ -449,37 +463,4 @@ function showError(input, message) {
   }
 }
 
-// previous date disabled 
-function disablePreviousDates(dateInputId) {
-  const today = new Date();
-  const formattedDate = today.toISOString().split('T')[0];
-  document.getElementById(dateInputId).setAttribute('min', formattedDate);
-}
-
-
-// data table searchs 
-
-function filterTable() {
-  let input = document.getElementById('searchInput');
-  let filter = input.value.toLowerCase();
-  const tables = [
-    document.getElementById('myTable-A'),
-    document.getElementById('myTable-B')
-  ];
-
-  tables.forEach(table => {
-    let rows = table.getElementsByTagName('tr');
-    for (let i = 1; i < rows.length; i++) {
-      let cells = rows[i].getElementsByTagName('td');
-      let titleCell = cells[2]; 
-      if (titleCell) {
-        let titleText = titleCell.textContent || titleCell.innerText;
-        if (titleText.toLowerCase().indexOf(filter) > -1) {
-          rows[i].style.display = "";
-        } else {
-          rows[i].style.display = "none";
-        }
-      }
-    }
-  });
-}
+// prevoius date disabled all pages 

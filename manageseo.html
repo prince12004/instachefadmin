@@ -241,20 +241,19 @@
           <img src="assets/images/manage-seo.png" alt="" />
           <p>Manage SEO</p>
         </div>
-
         <div class="time-piker">
           <div class="time">
-            <img src="assets/images/calender.png" alt="" />
+            <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
-            <img src="assets/images/calender.png" alt="" />
+            <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -305,7 +304,8 @@
                   <div id="myTable_filterA" class="dataTables_-search-filter">
                     <label class="d-flex align-items-center gap-2">
                       <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" placeholder="Search here" aria-controls="myTable" />
+                      <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
+                        onkeyup="filterTable()" />
                     </label>
                   </div>
                   </span>
@@ -336,7 +336,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="" />
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
                     </td>
                   </tr>
@@ -356,7 +356,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="" />
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
                     </td>
                   </tr>
@@ -376,7 +376,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="" />
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
                     </td>
                   </tr>
@@ -396,7 +396,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="" />
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
                     </td>
                   </tr>
@@ -414,18 +414,6 @@
 
   <script>
     let table = new DataTable('#myTable-C');
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('#myTable-C').DataTable({
-        paging: true,
-        searching: false,
-        info: true,
-        pageLength: 4,
-        destroy: true,
-        lengthChange: false,
-      });
-    });
   </script>
   <script>
     $(document).ready(function () {
@@ -504,7 +492,34 @@
         }
       }
     });
+
+    // datatable searchs
+
+    function filterTable() {
+      let input = document.getElementById('searchs');
+      let filter = input.value.toLowerCase();
+      const tables = [
+        document.getElementById('myTable-C')
+      ];
+
+      tables.forEach(table => {
+        let rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let titleCell = cells[1];
+          if (titleCell) {
+            let titleText = titleCell.textContent || titleCell.innerText;
+            if (titleText.toLowerCase().indexOf(filter) > -1) {
+              rows[i].style.display = "";
+            } else {
+              rows[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
   </script>
+
 
 </body>
 

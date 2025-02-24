@@ -242,14 +242,14 @@
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Date Range</p>
-              <input type="date" name="daterange" value="01/01/2018 - 01/15/2018" class="dateA" />
+              <input type="date" name="daterange" class="dateA" id="dateRange" />
             </div>
           </div>
           <div class="time">
             <img src="assets/images/calender.png" alt="">
             <div class="time-pikerA">
               <p>Filter Range</p>
-              <input type="date" name="daterange" value="01-01-2023" class="dateA">
+              <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
           </div>
         </div>
@@ -364,7 +364,8 @@
                     <div id="myTable_filter1" class="dataTables_-search-filter">
                       <label class="d-flex align-items-center gap-2">
                         <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                        <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"  onkeyup="filterTable()">
+                        <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
+                          onkeyup="filterTable()">
                       </label>
                     </div>
                   </span>
@@ -386,7 +387,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="">
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                     </td>
                   </tr>
@@ -398,7 +399,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="">
                       </a>
-                      
+
                       <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                     </td>
                   </tr>
@@ -410,7 +411,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="">
                       </a>
-                     
+
                       <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                     </td>
                   </tr>
@@ -422,7 +423,7 @@
                       <a href="#">
                         <img src="assets/images/custome-icon.png" alt="">
                       </a>
-                     
+
                       <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
                     </td>
                   </tr>
@@ -501,7 +502,31 @@
         $('#validationModal').css('display', 'none');
       });
     });
+    // datatable searchs
 
+    function filterTable() {
+      let input = document.getElementById('searchInput');
+      let filter = input.value.toLowerCase();
+      const tables = [
+        document.getElementById('myTable-B')
+      ];
+
+      tables.forEach(table => {
+        let rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let titleCell = cells[2];
+          if (titleCell) {
+            let titleText = titleCell.textContent || titleCell.innerText;
+            if (titleText.toLowerCase().indexOf(filter) > -1) {
+              rows[i].style.display = "";
+            } else {
+              rows[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
   </script>
 
 </body>

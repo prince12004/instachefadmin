@@ -618,14 +618,16 @@ table.dataTable td.dt-type-date {
 #search-here {
   position: relative;
   top: 56px;
-  right: 5%;
+  right: 2%;
   z-index: 1;
   background-color: #F5F6FA;
   width: 21%;
   padding: 6px 10px;
   border-radius: 15px;
 }
-
+#addres{
+  width: 19%;
+}
 #iconSearch {
   outline: none;
   border: none;
@@ -639,7 +641,9 @@ table.dataTable td.dt-type-date {
 #search-here img {
   width: 17px;
 }
-
+.search-B{
+  right: 5% !important;
+}
 #search-hereA {
   position: relative;
   top: 60px;
