@@ -252,7 +252,12 @@ table.dataTable>tbody>tr>td {
 #adress {
   width: 11%;
 }
-
+#remarks{
+  width: 22%;
+}
+#messages{
+  width: 22%;
+}
 .material-icons {
   width: 11%;
 }

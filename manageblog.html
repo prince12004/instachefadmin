@@ -364,7 +364,7 @@
                     <div id="myTable_filter1" class="dataTables_-search-filter">
                       <label class="d-flex align-items-center gap-2">
                         <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                        <input type="search" class="" placeholder="Search here" aria-controls="myTable">
+                        <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"  onkeyup="filterTable()">
                       </label>
                     </div>
                   </span>
@@ -404,7 +404,7 @@
                   </tr>
                   <tr>
                     <td>01.</td>
-                    <td> <img src="assets/images/footer-image-six.png" alt=""></td>
+                    <td class="blog-foodImg"> <img src="assets/images/footer-image-six.png" alt=""></td>
                     <td>Lorem Ipsum is simply dummy text of the printing.</td>
                     <td> <a href="#"><img src="assets/images/delete.png" alt=""></a>
                       <a href="#">
