@@ -267,7 +267,7 @@
               <th>Email ID</th>
               <th>Phone</th>
               <th id="adress-C">Address</th>
-              <th>Action</th>
+              <th id="address-new">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -278,7 +278,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -288,7 +288,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -298,7 +298,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -308,7 +308,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -318,7 +318,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -328,7 +328,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -338,7 +338,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -348,7 +348,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -358,7 +358,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -368,7 +368,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -378,7 +378,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
             <tr>
@@ -388,7 +388,7 @@
               <td>0558400708</td>
               <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
                 industry's standard dummy text</td>
-              <td class="button-recover"><a href="#"><button type="submit">
+              <td class="button-recover"><a href="#"><button type="submit" onclick="openrecovermodal()">
                     <img src="assets/images/recoverImg.png" alt=""> RECOVER</button></a></td>
             </tr>
           </tbody>
@@ -396,6 +396,18 @@
       </div>
     </div>
   </div>
+
+  <!-- Recover Modal -->
+<div id="recovermoal" class="delete-modal">
+  <div class="delete-modal-content">
+    <span class="delete-close" onclick="closerecovermodal()">&times;</span>
+    <h3>Are you sure you want to recover this User  ?</h3>
+    <div class="delete-modal-buttons">
+      <button class="delete-yes" onclick="recoverAction()">Yes</button>
+      <button class="delete-cancel" onclick="closerecovermodal()">Cancel</button>
+    </div>
+  </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>

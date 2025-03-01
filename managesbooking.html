@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage-Notification</title>
+  <title>Create-Booking</title>
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/comman.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
 </head>
 
 <body>
@@ -224,13 +226,12 @@
         </li>
       </ul>
     </nav>
-    <!-- ------------------------------------------- -->
+    <!-- ===============left==================== -->
     <div class="main-content">
       <div class="admin-dashboard">
         <div class="dashboard-time">
-          <img src="assets/images/image-three.png" alt="" />
-          <p>MANAGE NOTIFICATION
-          </p>
+          <img src="assets/images/manage-booking.png" alt="" />
+          <p>MANAGE BOOKING</p>
         </div>
         <div class="time-piker">
           <div class="time">
@@ -249,233 +250,101 @@
           </div>
         </div>
       </div>
-
-      <!-- ======================= -->
       <div class="forms">
         <main class="col-md-10 bg-light right-sidebar">
-          <!-- Notification Form -->
           <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="notification-heading">MANAGE NOTIFICATIONS</h4>
+            <div class="card-body ">
+              <h4 class="notification-heading">CREATE BOOKING</h4>
               <div class="row Both-container">
-                <div class="col-md-6 text-center manage-notification-left">
-                  <div class="file-upload">
-                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid mb-3" id="uploadTrigger" />
-                    <!-- <input type="file" class="form-control" id="file-uploadA"/> -->
-                    <div class="inputfile-upload">
-                      <input type="file" id="fileInput" />
-                      <label for="fileInput" class="custom-file-label">
-                        <span id="fileName">No File Chosen</span>
-                        <span class="choose-file-btn">CHOOSE FILE</span>
-                      </label>
+                <div class="col-md-6 manage-notification-left">
+                  <form id="createBookingA">
+                    <label for="title" class="form-label form-bookingA">User Name</label>
+                    <span id="title" class="newtittle">
+                        New Booking 
+                    </span>
+                    <label for="title" class="form-label form-booking">Booking Address</label>
+                    <span id="title" class="newtittle">
+                         Address new 
+                    </span>
+
+                    <label for="title" class="form-label form-booking">Booking Start</label>
+                    <span id="title" class="newtittle">
+                         24/02/2025  
+                    </span>
+                      <!-- <img src="assets/images/booking-start.png" alt=""> -->
+                    </span>
+                    <label for="title" class="form-label form-booking" style="display: block;">Package</label>
+                    <span id="title" class="newtittle">
+                        5 times a week (Total 20 visits per month)  
+                    </span>
+                    <label for="title" class="form-label form-booking">Select Chef</label>
+                    <select id="title" class="newtittle mb-3">
+                      <option>Select cuisine</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                    </select>
+                    <label for="title" class="form-label form-booking" style="display: block;">Discount</label>
+                    <div id="title" class="newtittles mb-3">
+                        <select>
+                            <option>Discount Type</option>
+                            <option>Percentage</option>
+                            <option>Amount</option>
+                        </select>
+                    <input type="text" id="title" placeholder="Enter your Discount" />
                     </div>
+
+                    <!-- </form>   -->
+                </div>
+                <div class="col-md-6 right-form-deatiles">
+                  <!-- <form id="createBookingA"> -->
+                  <div class="mb-3">
+                    <label for="title" class="form-label form-bookingA">User Email</label>
+                    <span id="title" class="newtittle">
+                        new@gmail.com  
+                    </span>
+                    <span class="error-message"></span>
+                    <label for="title" class="form-label form-booking">Booking Contact</label>
+                    <span id="title" class="newtittle">
+                        Contact Number   
+                    </span>
+                    <label for="title" class="form-label form-booking">Category</label>
+                    <span id="title" class="newtittle">
+                        Continental  
+                    </span>
+                    <label for="title" class="form-label form-booking">Base Price</label>
+                    <span id="title" class="newtittle">
+                        TBD   
+                    </span>
+                    <span class="error-message"></span>
+                    <label for="title" class="form-label form-booking">Assign Date</label>
+                    <span class="booking-input">
+                      <input type="date" id="title" class="form-control" placeholder="04-03-2024" required />
                   </div>
+                  <label for="title" class="form-label form-booking" style="display: block;">Set your price</label>
+                  <input type="text" id="title" class="form-control" placeholder="Enter your price" />
+                  <!-- </form> -->
                 </div>
-                <div class="col-md-6 right-form">
-                  <form id="Notificationform">
-                    <div class="mb-3">
-                      <label for="title" class="form-label">Title</label>
-                      <input type="text" id="title" class="form-control" placeholder="Add Title" />
-                      <span class="error-message"></span>
-                    </div>
-                    <div class="mb-3">
-                      <label for="title" class="form-label">Title Suggestion</label>
-                      <select class="newtittle">
-                        <option>New</option>
-                        <option>New2</option>
-                        <option>New3</option>
-                      </select>
-                      <span class="error-message"></span>
-                    </div>
-                    <div class="mb-3">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea id="Addmessage" class="form-control" rows="4" placeholder="Add Message"></textarea>
-                      <span class="error-message"></span>
-                    </div>
-                    <button type="submit" class="send-button" id="sendnotification">SEND NOTIFICATION</button>
-                  </form>
-                </div>
+                <label for="title" class="form-label form-booking" style="padding-left: 23px;">Any Comment</label>
+                <textarea id="message" class="form-control form-textarea" rows="4" placeholder="Add Comment"></textarea>
+                <span class="error-message"></span>
+                <button type="submit" class="creating-booking w-90" id="createBooking">
+                  CREATING BOOKING
+                </button>
+                </form>
               </div>
             </div>
           </div>
-          <!-- <div class="table-container"> -->
-          <div class="blog-seoA">
-            <h4>LIST OF NOTIFICATIONS</h4>
-            <table id="myTable-A" class="maintable details-heading" style="width:100%">
-              <div class="table-blog-bar">
-                <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
-                  <!-- <h4>LIST OF SEO DETAILS</h4> -->
-                  <div id="myTable_filter2" class="dataTables_filter table-seo">
-                    <label class="d-flex align-items-center gap-3">
-                      <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
-                        onkeyup="filterTable()">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
-                    </label>
-                  </div>
-                </span>
-              </div>
-              <thead>
-                <tr class="header-table">
-                  <th class="serial-number">S.No</th>
-                  <th></th>
-                  <th id="title-seo">Tittle</th>
-                  <th>Body</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>01.</td>
-                  <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td>Catering service now available!</td>
-                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified
-                    chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
-                </tr>
-                <tr>
-                  <td>01.</td>
-                  <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td>Catering service now available!</td>
-                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified
-                    chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
-                </tr>
-                <tr>
-                  <td>02.</td>
-                  <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td>Catering service now available!</td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio fugiat et ut corrupti
-                    provident.>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
       </div>
+      </main>
     </div>
   </div>
   </div>
-  <!-- <script src="script.js"></script> -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-  <!-- -------------datatable-------------- -->
-  <script>
-    let table = new DataTable('#myTable-A');
-  </script>
   <script src="assets/js/index.js"></script>
-  <script>
-    // ------------------file-upload----------------
-    document.addEventListener("DOMContentLoaded", function () {
 
-      const fileInput = document.getElementById("fileInput");
-      const fileNameDisplay = document.getElementById("fileName");
-
-      fileInput.addEventListener("change", function () {
-        if (fileInput.files.length > 0) {
-          fileNameDisplay.textContent = fileInput.files[0].name;
-        } else {
-          fileNameDisplay.textContent = "No File Chosen";
-        }
-      });
-
-
-      const galleryUploader = document.getElementById("galleryUploader");
-      const selectedImages = document.getElementById("selectedImages");
-
-      if (galleryUploader) {
-        galleryUploader.addEventListener("change", function () {
-          if (galleryUploader.files.length > 0) {
-            let fileNames = [];
-            for (let i = 0; i < galleryUploader.files.length; i++) {
-              fileNames.push(galleryUploader.files[i].name);
-            }
-            selectedImages.textContent = fileNames.join(", ");
-          } else {
-            selectedImages.textContent = "No file chosen";
-          }
-        });
-      }
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const fileInput = document.getElementById("fileInput");
-      const uploadTrigger = document.getElementById("uploadTrigger");
-
-
-      uploadTrigger.addEventListener("click", function () {
-        fileInput.click();
-      });
-    });
-
-
-  </script>
-
-</body>
-
-<!-- ---------------------validation------------------- -->
-<script>
-  document.getElementById('Notificationform')
-    .addEventListener('click', function (event) {
-      event.preventDefault();
-    });
-
-  document.getElementById('sendnotification')
-    .addEventListener('click', function () {
-      let isValid = true;
-
-      document.querySelectorAll('#Notificationform .error-message')
-        .forEach((el) => (el.textContent = ''));
-
-      const title = document.getElementById('title');
-      const Addmessage = document.getElementById('Addmessage');
-
-      if (!title.value.trim()) {
-        showError(title, ' Please Enter your title.');
-        isValid = false;
-      }
-
-      if (!Addmessage.value.trim() || !validateAddmessage(Addmessage.value)) {
-        showError(Addmessage, 'Please enter a message.');
-        isValid = false;
-      }
-      if (valid) {
-        alert("form is submited successfully!");
-      }
-    });
-
-  function showError(input, message) {
-    const errorSpan = input.nextElementSibling;
-    if (errorSpan) {
-      errorSpan.textContent = message;
-      errorSpan.style.color = 'red';
-    }
-  }
-  // data table searchs 
-
-  function filterTable() {
-    let input = document.getElementById('searchInput');
-    let filter = input.value.toLowerCase();
-    const tables = [
-      document.getElementById('myTable-A')
-    ];
-
-    tables.forEach(table => {
-      let rows = table.getElementsByTagName('tr');
-      for (let i = 1; i < rows.length; i++) {
-        let cells = rows[i].getElementsByTagName('td');
-        let titleCell = cells[2];
-        if (titleCell) {
-          let titleText = titleCell.textContent || titleCell.innerText;
-          if (titleText.toLowerCase().indexOf(filter) > -1) {
-            rows[i].style.display = "";
-          } else {
-            rows[i].style.display = "none";
-          }
-        }
-      }
-    });
-  }
-</script>
 </body>
 
 </html>
