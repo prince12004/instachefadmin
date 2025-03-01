@@ -1,80 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage-SEO</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/comman.css" />
-    <!-- <link rel="stylesheet" href="assets/css/newstyle.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
-    />
-    <style>
-      .error-message {
-  color: red;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 5px;
-}
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="instachef-admin">
-        <div class="instachef">
-          <a href="index.html">
-            <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
-          </a>
-          <img src="assets/images/middleLine.png" alt="" class="middle-line" />
-          <div class="toggle-bar">
-            <img
-              src="assets/images/togglerBar.png"
-              alt="Toggle Sidebar"
-              id="toggle"
-            />
-          </div>
-        </div>
-        <!-- <div class="toggle-bar"> -->
-        <!-- <img src="assets/togglerBar.png" alt="Toggle Sidebar"  class="toggle-bar" id="toggle" /> -->
-        <!-- </div> -->
-        <div class="user-icons">
-          <a href="#">
-            <img src="assets/images/home.png" alt="" />
-          </a>
-          <a href="#" class="icon-item">
-            <img src="assets/images/notification.png" alt="notification Icon" />
-            <span class="counter wishlist-counter">2</span>
-          </a>
-          <img src="assets/images/middleLine.png" alt="" class="right-border" />
-          <div class="admin-section">
-            <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
-            <div class="admin-text">
-              <h3>LOREM ISPUM</h3>
-              <select id="super-admin">
-                <option>super-admin</option>
-                <option>admin</option>
-              </select>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage-SEO</title>
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/comman.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
+  <style>
+    .error-message {
+      color: red;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="instachef-admin">
+      <div class="instachef">
+        <a href="index.html">
+          <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+        </a>
+        <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+        <div class="toggle-bar">
+          <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div>
       </div>
       <div class="user-icons">
@@ -279,7 +237,7 @@
     <!-- ===============left==================== -->
     <div class="main-content">
       <!-- ----------------------------------- -->
-      <div class="admin-dashboard">
+      <!-- <div class="admin-dashboard"> -->
         <div class="dashboard-time">
           <img src="assets/images/manage-seo.png" alt="" />
           <p>Manage SEO</p>
@@ -340,21 +298,21 @@
             </div>
           </div>
 
-          <!-- footer-section -->
+          <!--=====================table-section =======================-->
           <div class="card mb-4">
+            <div class="table-blog-bar">
+              <h4>LIST OF SEO DETAILS</h4>
+              <div id="myTable_filterA" class="dataTables_-search-filter">
+                <label class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                  <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
+                    onkeyup="filterTable()" />
+                </label>
+              </div>
+              </span>
+            </div>
             <div class="seo">
-              <table id="myTable-C" class="maintable" style="width: 100%">
-                <div class="table-blog-bar">
-                  <h4>LIST OF SEO DETAILS</h4>
-                  <div id="myTable_filterA" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
-                        onkeyup="filterTable()" />
-                    </label>
-                  </div>
-                  </span>
-                </div>
+              <table id="myTable-C" class="maintable" style="width: 100%">                
                 <thead>
                   <tr class="header-table">
                     <th class="serial-number">S.No</th>

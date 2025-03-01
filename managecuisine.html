@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Cuisine</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -300,26 +301,27 @@
             </div>
           </div>
 
-          <!-- footer-section -->
+          <!--======================== table-section ==========================-->
           <div class="blog-seo-A">
-            <table id="myTable-8" class="maintable" style="width: 100%">
-              <div class="table-blog-barA">
-                <h4>LIST OF CUISINE</h4>
-                <div class="d-flex gap-2">
-                  <div id="myTable_filter" class="dataTables_-search-filterA" style="display: flex">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="searchA" placeholder="Search here" id="searchInput"
-                        aria-controls="myTable" onkeyup="filterTable()" />
-                    </label>
-                  </div>
-                  <button class="add-cuisine">
-                    <img src="assets/images/pulsu-two.png" alt="" />ADD
-                    CUISINE
-                  </button>
+            <div class="table-blog-barA">
+              <h4>LIST OF CUISINE</h4>
+              <div class="right-search">
+                <div id="myTable_filter" class="dataTables_-search-filterA" style="display: flex">
+                  <label class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                    <input type="search" class="searchA" placeholder="Search here" id="searchInput"
+                      aria-controls="myTable" onkeyup="filterTable()" />
+                  </label>
                 </div>
-                </span>
+                <button class="add-cuisine">
+                  <img src="assets/images/pulsu-two.png" alt="" />ADD
+                  CUISINE
+                </button>
               </div>
+              </span>
+            </div>
+            <table id="myTable-8" class="maintable" style="width: 100%">
+              
               <thead>
                 <tr class="header-table">
                   <th class="serial-number">S.No</th>

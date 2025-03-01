@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Package</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <!-- <link rel="stylesheet" href="assets/css/newstyle.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
@@ -305,23 +306,23 @@
 
           <!-- data-table -->
           <div class="blog-seo">
-            <table id="myTable-package" class="maintable" style="width: 100%">
-              <div class="table-blog-bar">
-                <h4>LIST OF PACKAGE</h4>
-                <div class="d-flex gap-2">
-                  <div id="myTable_filterB" class="dataTables_-search-filter" style="display: flex">
-                    <label class="d-flex align-items-center gap-3">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" placeholder="Search here" aria-controls="myTable" />
-                    </label>
-                  </div>
-                  <button class="add-cuisine" id="add-cuisinepackage">
-                    <img src="assets/images/pulsu-two.png" alt="" />ADD
-                    CUISINE
-                  </button>
+            <div class="table-blog-bar">
+              <h4>LIST OF PACKAGE</h4>
+              <div class="d-flex gap-2">
+                <div id="myTable_filterB" class="dataTables_-search-filter" style="display: flex">
+                  <label class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                    <input type="search" class="" placeholder="Search here" aria-controls="myTable" />
+                  </label>
                 </div>
-                </span>
+                <button class="add-package " id="add-cuisinepackage">
+                  <img src="assets/images/pulsu-two.png" alt="" />ADD
+                  CUISINE
+                </button>
               </div>
+              </span>
+            </div>
+            <table id="myTable-package" class="maintable" style="width: 100%">             
               <thead>
                 <tr class="header-table">
                   <th class="serial-number">S.No</th>
