@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Notification</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
@@ -298,22 +299,22 @@
               </div>
             </div>
           </div>
-          <!-- <div class="table-container"> -->
+          <!--==========================table-section============================-->
           <div class="blog-seoA">
             <h4>LIST OF NOTIFICATIONS</h4>
-            <table id="myTable-A" class="maintable details-heading" style="width:100%">
-              <div class="table-blog-bar">
-                <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
-                  <!-- <h4>LIST OF SEO DETAILS</h4> -->
-                  <div id="myTable_filter2" class="dataTables_filter table-seo">
-                    <label class="d-flex align-items-center gap-3">
-                      <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
-                        onkeyup="filterTable()">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
-                    </label>
-                  </div>
-                </span>
-              </div>
+            <div class="table-blog-bar">
+              <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
+                <!-- <h4>LIST OF SEO DETAILS</h4> -->
+                <div id="myTable_filter2" class="dataTables_filter table-seo">
+                  <label class="d-flex align-items-center gap-3">
+                    <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
+                      onkeyup="filterTable()">
+                    <i class="fa-solid fa-magnifying-glass" id="notification-blog-icon"></i>
+                  </label>
+                </div>
+              </span>
+            </div>
+            <table id="myTable-A" class="maintable details-heading" style="width:100%">              
               <thead>
                 <tr class="header-table">
                   <th class="serial-number">S.No</th>

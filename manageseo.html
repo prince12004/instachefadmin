@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-SEO</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -295,21 +296,21 @@
             </div>
           </div>
 
-          <!-- footer-section -->
+          <!--=====================table-section =======================-->
           <div class="card mb-4">
+            <div class="table-blog-bar">
+              <h4>LIST OF SEO DETAILS</h4>
+              <div id="myTable_filterA" class="dataTables_-search-filter">
+                <label class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                  <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
+                    onkeyup="filterTable()" />
+                </label>
+              </div>
+              </span>
+            </div>
             <div class="seo">
-              <table id="myTable-C" class="maintable" style="width: 100%">
-                <div class="table-blog-bar">
-                  <h4>LIST OF SEO DETAILS</h4>
-                  <div id="myTable_filterA" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
-                        onkeyup="filterTable()" />
-                    </label>
-                  </div>
-                  </span>
-                </div>
+              <table id="myTable-C" class="maintable" style="width: 100%">                
                 <thead>
                   <tr class="header-table">
                     <th class="serial-number">S.No</th>

@@ -1526,11 +1526,11 @@ table.dataTable td.dt-type-numeric {
   text-align: left;
   color: #43424b;
 }
-.newtittle{
+.newtittle {
   display: block;
   outline: none;
   width: 100%;
-  padding: .70rem .70rem;
+  padding: 0.7rem 0.7rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1538,15 +1538,15 @@ table.dataTable td.dt-type-numeric {
   background-clip: padding-box;
   border: none;
   border-radius: var(--bs-border-radius);
-  transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+  transition: border-color 0.15sease-in-out, box-shadow 0.15sease-in-out;
   color: #a6a9b7;
 }
 #title::-webkit-outer-spin-button,
 #title::-webkit-inner-spin-button {
-  -webkit-appearance: none; 
-  margin: 0;                
+  -webkit-appearance: none;
+  margin: 0;
 }
-.newtittles{
+.newtittles {
   display: block;
   outline: none;
   width: 100%;
@@ -1558,13 +1558,13 @@ table.dataTable td.dt-type-numeric {
   background-clip: padding-box;
   border: none;
   border-radius: var(--bs-border-radius);
-  transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+  transition: border-color 0.15sease-in-out, box-shadow 0.15sease-in-out;
   color: #a6a9b7;
 }
-.newtittles select{
+.newtittles select {
   width: 35%;
   outline: none;
-  padding: .70rem .70rem;
+  padding: 0.7rem 0.7rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1572,12 +1572,12 @@ table.dataTable td.dt-type-numeric {
   background-clip: padding-box;
   border: none;
   border-radius: var(--bs-border-radius);
-  transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+  transition: border-color 0.15sease-in-out, box-shadow 0.15sease-in-out;
   color: #a6a9b7;
 }
-.newtittles input{
+.newtittles input {
   width: 60%;
-  padding: .70rem .70rem;
+  padding: 0.7rem 0.7rem;
   outline: none;
   font-size: 1rem;
   font-weight: 400;
@@ -1586,6 +1586,6 @@ table.dataTable td.dt-type-numeric {
   background-clip: padding-box;
   border: none;
   border-radius: var(--bs-border-radius);
-  transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+  transition: border-color 0.15sease-in-out, box-shadow 0.15sease-in-out;
   color: #a6a9b7;
 }
