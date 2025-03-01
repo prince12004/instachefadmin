@@ -266,7 +266,7 @@ ul {
   font-size: 15px;
   font-weight: 500;
   padding: 15px 2px;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
   border-bottom: 1px solid #fff;
 }
 .admin-panel {
@@ -339,7 +339,7 @@ ul {
   font-size: 15px;
   font-weight: 500;
   padding: 15px 2px;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
   border-bottom: 1px solid #fff;
 }
 
@@ -410,15 +410,15 @@ ul {
 /* Modal Background */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; 
+  position: fixed;
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
@@ -429,7 +429,7 @@ ul {
   border: 1px solid #888;
   width: 32% !important;
 }
-.modal-content p{
+.modal-content p {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -444,9 +444,9 @@ ul {
   font-weight: bold;
   position: absolute;
 }
-.close-modal{
-  background-color: #1F2869;
-  color: #FFFFFF;
+.close-modal {
+  background-color: #1f2869;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   width: 75px;
@@ -454,13 +454,13 @@ ul {
   height: 40px;
   border: none;
 }
-.mains-modals{
+.mains-modals {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.close-btn:hover{
+.close-btn:hover {
   color: black;
   cursor: pointer;
 }
@@ -487,7 +487,7 @@ ul {
   text-align: center;
   position: relative;
 }
-.delete-modal-content h3{
+.delete-modal-content h3 {
   font-size: 19px;
 }
 
@@ -521,13 +521,13 @@ ul {
 
 .delete-modal-buttons .delete-yes {
   background-color: #d9534f;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .delete-modal-buttons .delete-cancel {
   background-color: #5bc0de;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.deletes{
+.deletes {
   cursor: pointer;
 }

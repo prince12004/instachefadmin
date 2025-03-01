@@ -369,7 +369,7 @@
                       <div id="file-input">
                         <img src="assets/images/docProfile.png" alt="">
                       </div>
-                      <div class="choose-files">
+                      <div class="choose-files new-choose ">
                         <input type="file" required>
                       </div>
                     </div>
@@ -390,19 +390,30 @@
                     <img src="assets/images/plussection.png" class="plus-btn" alt="Add more">
                   </div>
                 </div>
-                <button class="icon-btn"><i class="fa fa-trash deleteA"></i></button>
+                <!-- <button class="icon-btn"><i class="fa fa-trash deleteA"></i></button> -->
 
-                <div class="form-rowA">
+                <!-- <div class="form-rowA">
                   <button class="plus-btn" id="addclone"><i class="fa fa-plus"></i></button>
-                </div>
+                </div> -->
               </div>
               <button class="create-btn" id="createBooking">CREATE BOOKING</button>
-
-            </div>
+           </div>
           </div>
+          
+      </div>
         </form>
       </div>
 
+    </div>
+  </div>
+  <!-- Modal for Validation Messages -->
+  <div id="validationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p id="modalMessage"></p>
+      <div class="mains-modals">
+        <button type="button" class="close-modal">OK</button>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -459,7 +470,7 @@
     });
 
   </script>
-
+ 
 </body>
 
 </html>
