@@ -33,11 +33,29 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
       let content = this.querySelector('.dropdown-content');
       let icon = this.querySelector('.dropdownicon');
 
-      // Toggle the dropdown content
-      content.style.display = content.style.display === "block" ? "none" : "block";
-      icon.classList.toggle("rotated");
-    });
+    // Toggle the dropdown content
+    content.style.display = content.style.display === "block" ? "none" : "block";
+    icon.classList.toggle("rotated");
   });
+});
+
+// delete modal 
+function openDeleteModal() {
+  document.getElementById('deleteModal').style.display = 'block';
+}
+function closeDeleteModal() {
+  document.getElementById('deleteModal').style.display = 'none';
+}
+
+//recover modal 
+function openrecovermodal() {
+  document.getElementById("recovermoal").style.display = "block";
+}
+
+function closerecovermodal() {
+  document.getElementById("recovermoal").style.display = "none";
+}
+
 // ----------------------validation in managaeprfile form 
 document.addEventListener("DOMContentLoaded", function () {
     function showError(input, message) {

@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage-Cuisine</title>
+  <title>Create-Booking</title>
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <a href="index.html">
           <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
         </a>
-        <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+        <img src="assets/images/middleLine.png" alt="" class="middle-line">
         <div class="toggle-bar">
           <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div>
@@ -168,23 +168,23 @@
           </div>
         </li>
 
-          <!-- Manage Cuisine Item -->
-          <li class="nav-item">
-            <a href="managecuisine.html" class="nav-link text-white">
-              <img src="assets/images/image9.png" alt="" class="default-img" />
-              <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-              MANAGE CUISINE
-            </a>
-          </li>
+        <!-- Manage Cuisine Item -->
+        <li class="nav-item">
+          <a href="managecuisine.html" class="nav-link text-white">
+            <img src="assets/images/image9.png" alt="" class="default-img" />
+            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+            MANAGE CUISINE
+          </a>
+        </li>
 
-          <!-- Manage Package Item -->
-          <li class="nav-item">
-            <a href="mangepackage.html" class="nav-link text-white">
-              <img src="assets/images/image10.png" alt="" class="default-img" />
-              <img src="assets/images/imagten.png" alt="" class="hover-img" />
-              MANAGE PACKAGE
-            </a>
-          </li>
+        <!-- Manage Package Item -->
+        <li class="nav-item">
+          <a href="mangepackage.html" class="nav-link text-white">
+            <img src="assets/images/image10.png" alt="" class="default-img" />
+            <img src="assets/images/imagten.png" alt="" class="hover-img" />
+            MANAGE PACKAGE
+          </a>
+        </li>
 
         <!-- Manage Chef Item -->
         <li class="nav-item">
@@ -226,17 +226,13 @@
         </li>
       </ul>
     </nav>
-
-      <!-- ===============left==================== -->
-      <div class="main-content">
-       
-        <!-- ----------------------------------- -->
-        <div class="admin-dashboard">
-          <div class="dashboard-time">
-            <img src="assets/images/manage-cuisione.png" alt="" />
-            <p>MANAGE CUISINE</p>
-          </div>
-
+    <!-- ===============left==================== -->
+    <div class="main-content">
+      <div class="admin-dashboard">
+        <div class="dashboard-time">
+          <img src="assets/images/manage-booking.png" alt="" />
+          <p>MANAGE BOOKING</p>
+        </div>
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="">
@@ -254,205 +250,101 @@
           </div>
         </div>
       </div>
-
-      <!-- ======================= -->
       <div class="forms">
         <main class="col-md-10 bg-light right-sidebar">
-          <!-- Notification Form -->
           <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="notification-heading">CREATE CUISINE</h4>
+            <div class="card-body ">
+              <h4 class="notification-heading">CREATE BOOKING</h4>
               <div class="row Both-container">
-                <div class="col-md-6 text-center manage-notification-left">
-                  <div class="file-upload p-3">
-                    <img src="assets/images/upload-image.png" alt="Upload" class="img-fluid" />
-                    <div class="inputfile-upload">
-                      <input type="file" id="fileInput" />
-                      <label for="fileInput" class="custom-file-label">
-                        <span id="fileName">No File Chosen</span>
-                        <span class="choose-file-btn">CHOOSE FILE</span>
-                      </label>
+                <div class="col-md-6 manage-notification-left">
+                  <form id="createBookingA">
+                    <label for="title" class="form-label form-bookingA">User Name</label>
+                    <span id="title" class="newtittle">
+                        New Booking 
+                    </span>
+                    <label for="title" class="form-label form-booking">Booking Address</label>
+                    <span id="title" class="newtittle">
+                         Address new 
+                    </span>
+
+                    <label for="title" class="form-label form-booking">Booking Start</label>
+                    <span id="title" class="newtittle">
+                         24/02/2025  
+                    </span>
+                      <!-- <img src="assets/images/booking-start.png" alt=""> -->
+                    </span>
+                    <label for="title" class="form-label form-booking" style="display: block;">Package</label>
+                    <span id="title" class="newtittle">
+                        5 times a week (Total 20 visits per month)  
+                    </span>
+                    <label for="title" class="form-label form-booking">Select Chef</label>
+                    <select id="title" class="newtittle mb-3">
+                      <option>Select cuisine</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                      <option>Ganesh Rai</option>
+                    </select>
+                    <label for="title" class="form-label form-booking" style="display: block;">Discount</label>
+                    <div id="title" class="newtittles mb-3">
+                        <select>
+                            <option>Discount Type</option>
+                            <option>Percentage</option>
+                            <option>Amount</option>
+                        </select>
+                    <input type="text" id="title" placeholder="Enter your Discount" />
                     </div>
+
+                    <!-- </form>   -->
+                </div>
+                <div class="col-md-6 right-form-deatiles">
+                  <!-- <form id="createBookingA"> -->
+                  <div class="mb-3">
+                    <label for="title" class="form-label form-bookingA">User Email</label>
+                    <span id="title" class="newtittle">
+                        new@gmail.com  
+                    </span>
+                    <span class="error-message"></span>
+                    <label for="title" class="form-label form-booking">Booking Contact</label>
+                    <span id="title" class="newtittle">
+                        Contact Number   
+                    </span>
+                    <label for="title" class="form-label form-booking">Category</label>
+                    <span id="title" class="newtittle">
+                        Continental  
+                    </span>
+                    <label for="title" class="form-label form-booking">Base Price</label>
+                    <span id="title" class="newtittle">
+                        TBD   
+                    </span>
+                    <span class="error-message"></span>
+                    <label for="title" class="form-label form-booking">Assign Date</label>
+                    <span class="booking-input">
+                      <input type="date" id="title" class="form-control" placeholder="04-03-2024" required />
                   </div>
+                  <label for="title" class="form-label form-booking" style="display: block;">Set your price</label>
+                  <input type="text" id="title" class="form-control" placeholder="Enter your price" />
+                  <!-- </form> -->
                 </div>
-                <div class="col-md-6 right-form">
-                  <form>
-                    <div class="mb-3">
-                      <label for="title" class="form-label">Name of Cuisine</label>
-                      <input type="text" id="title" class="form-control" placeholder="Create Food Category" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="message" class="form-label">Parent</label>
-                      <select id="title" class="newtittle">
-                        <option value="package">Select Parent</option>
-                        <option value="package">Self</option>
-                        <option value="package">Arabic</option>
-                        <option>Pakistani</option>
-                        <option>Russian </option>
-                      </select> 
-                    </div>
-                    <button type="submit" class="SUBMIT-NOW">
-                      SUBMIT-NOW
-                    </button>
-                  </form>
-                </div>
+                <label for="title" class="form-label form-booking" style="padding-left: 23px;">Any Comment</label>
+                <textarea id="message" class="form-control form-textarea" rows="4" placeholder="Add Comment"></textarea>
+                <span class="error-message"></span>
+                <button type="submit" class="creating-booking w-90" id="createBooking">
+                  CREATING BOOKING
+                </button>
+                </form>
               </div>
             </div>
           </div>
-
-          <!-- footer-section -->
-          <div class="blog-seo-A">
-            <table id="myTable-8" class="maintable" style="width: 100%">
-              <div class="table-blog-barA">
-                <h4>LIST OF CUISINE</h4>
-                <div class="d-flex gap-2">
-                  <div id="myTable_filter" class="dataTables_-search-filterA" style="display: flex">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="searchA" placeholder="Search here" id="searchInput"
-                        aria-controls="myTable" onkeyup="filterTable()" />
-                    </label>
-                  </div>
-                  <button class="add-cuisine">
-                    <img src="assets/images/pulsu-two.png" alt="" />ADD
-                    CUISINE
-                  </button>
-                </div>
-                </span>
-              </div>
-              <thead>
-                <tr class="header-table">
-                  <th class="serial-number">S.No</th>
-                  <th>Image</th>
-                  <th>Cuisine</th>
-                  <th>Parent</th>
-                  <th>Date</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>01.</td>
-                  <td class="blog-foodImg">
-                    <img src="assets/images/footer-image-one.png" alt="" />
-                  </td>
-                  <td>Multi Cuisine</td>
-                  <td>Arabic</td>
-                  <td>01 Apr, 2024</td>
-                  <td>
-                    <span class="deletes"  onclick="openDeleteModal()">
-                      <img src="assets/images/delete.png" alt="" /></span>
-                    <a href="managecuisine.html">
-                      <img src="assets/images/custome-icon.png" alt="" />
-                    </a>
-
-                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
-                  </td>
-                </tr>
-                <tr>
-                  <td>01.</td>
-                  <td class="blog-foodImg">
-                    <img src="assets/images/footer-image-one.png" alt="" />
-                  </td>
-                  <td>Multi Cuisine</td>
-                  <td>Arabic</td>
-                  <td>01 Apr, 2024</td>
-                  <td>
-                    <span class="deletes"  onclick="openDeleteModal()">
-                      <img src="assets/images/delete.png" alt="" /></span>
-                    <a href="managecuisine.html">
-                      <img src="assets/images/custome-icon.png" alt="" />
-                    </a>
-                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
-                  </td>
-                </tr>
-                <tr>
-                  <td>01.</td>
-                  <td class="blog-foodImg">
-                    <img src="assets/images/footer-image-one.png" alt="" />
-                  </td>
-                  <td>Multi Cuisine</td>
-                  <td>Arabic</td>
-                  <td>01 Apr, 2024</td>
-                  <td>
-                    <span class="deletes"  onclick="openDeleteModal()">
-                      <img src="assets/images/delete.png" alt="" /></span>
-                    <a href="managecuisine.html">
-                      <img src="assets/images/custome-icon.png" alt="" />
-                    </a>
-
-                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
       </div>
+      </main>
     </div>
   </div>
-
-    <!-- Delete Modal -->
-<div id="deleteModal" class="delete-modal">
-  <div class="delete-modal-content">
-    <span class="delete-close" onclick="closeDeleteModal()">&times;</span>
-    <h3>Are you sure you want to delete this item?</h3>
-    <div class="delete-modal-buttons">
-      <button class="delete-yes" onclick="deleteItem()">Yes</button>
-      <button class="delete-cancel" onclick="closeDeleteModal()">Cancel</button>
-    </div>
   </div>
-</div>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
-  <script>
-    let table = new DataTable('#myTable-8');
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const fileInput = document.getElementById("fileInput");
-      const fileNameDisplay = document.getElementById("fileName");
-      const uploadTrigger = document.querySelector(".img-fluid");
 
-      fileInput.addEventListener("change", function () {
-        fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : "No File Chosen";
-      });
-
-      if (uploadTrigger) {
-        uploadTrigger.addEventListener("click", function () {
-          fileInput.click();
-        });
-      }
-    }
-    );
-    // datatable searchs
-
-    function filterTable() {
-      let input = document.getElementById('searchInput');
-      let filter = input.value.toLowerCase();
-      const tables = [
-        document.getElementById('myTable-8'),
-      ];
-
-      tables.forEach(table => {
-        let rows = table.getElementsByTagName('tr');
-        for (let i = 1; i < rows.length; i++) {
-          let cells = rows[i].getElementsByTagName('td');
-          let titleCell = cells[2];
-          if (titleCell) {
-            let titleText = titleCell.textContent || titleCell.innerText;
-            if (titleText.toLowerCase().indexOf(filter) > -1) {
-              rows[i].style.display = "";
-            } else {
-              rows[i].style.display = "none";
-            }
-          }
-        }
-      });
-    }
-  </script>
 </body>
 
 </html>
