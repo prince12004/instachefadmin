@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-SEO</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -175,23 +176,23 @@
           </div>
         </li>
 
-        <!-- Manage Cuisine Item -->
-        <li class="nav-item">
-          <a href="managecuisine.html" class="nav-link text-white">
-            <img src="assets/images/image9.png" alt="" class="default-img" />
-            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-            MANAGE CUISINE
-          </a>
-        </li>
+          <!-- Manage Cuisine Item -->
+          <li class="nav-item">
+            <a href="managecuisine.html" class="nav-link text-white">
+              <img src="assets/images/image9.png" alt="" class="default-img" />
+              <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+              MANAGE CUISINE
+            </a>
+          </li>
 
-        <!-- Manage Package Item -->
-        <li class="nav-item">
-          <a href="mangepackage.html" class="nav-link text-white">
-            <img src="assets/images/image10.png" alt="" class="default-img" />
-            <img src="assets/images/imagten.png" alt="" class="hover-img" />
-            MANAGE PACKAGE
-          </a>
-        </li>
+          <!-- Manage Package Item -->
+          <li class="nav-item">
+            <a href="mangepackage.html" class="nav-link text-white">
+              <img src="assets/images/image10.png" alt="" class="default-img" />
+              <img src="assets/images/imagten.png" alt="" class="hover-img" />
+              MANAGE PACKAGE
+            </a>
+          </li>
 
         <!-- Manage Chef Item -->
         <li class="nav-item">
@@ -236,7 +237,7 @@
     <!-- ===============left==================== -->
     <div class="main-content">
       <!-- ----------------------------------- -->
-      <div class="admin-dashboard">
+      <!-- <div class="admin-dashboard"> -->
         <div class="dashboard-time">
           <img src="assets/images/manage-seo.png" alt="" />
           <p>Manage SEO</p>
@@ -255,9 +256,11 @@
               <p>Filter Range</p>
               <input type="date" name="daterange" class="dateA" id="filterRange">
             </div>
+            <!-- <div class="dropdown">
+              <select name="chef" id="chef"></select>
+            </div> -->
           </div>
         </div>
-      </div>
 
       <!-- ======================= -->
       <div class="forms">
@@ -295,21 +298,21 @@
             </div>
           </div>
 
-          <!-- footer-section -->
+          <!--=====================table-section =======================-->
           <div class="card mb-4">
+            <div class="table-blog-bar">
+              <h4>LIST OF SEO DETAILS</h4>
+              <div id="myTable_filterA" class="dataTables_-search-filter">
+                <label class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                  <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
+                    onkeyup="filterTable()" />
+                </label>
+              </div>
+              </span>
+            </div>
             <div class="seo">
-              <table id="myTable-C" class="maintable" style="width: 100%">
-                <div class="table-blog-bar">
-                  <h4>LIST OF SEO DETAILS</h4>
-                  <div id="myTable_filterA" class="dataTables_-search-filter">
-                    <label class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                      <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
-                        onkeyup="filterTable()" />
-                    </label>
-                  </div>
-                  </span>
-                </div>
+              <table id="myTable-C" class="maintable main-dts-table" style="width: 100%">                
                 <thead>
                   <tr class="header-table">
                     <th class="serial-number">S.No</th>
@@ -429,62 +432,62 @@
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector(".seo-form");
-      const titleInput = document.getElementById("title");
-      const metaTag = document.querySelector(".Add-blogs textarea");
-      const metaDesc = document.querySelector(".meta-form textarea");
-      const submitButton = document.querySelector(".add-deatiles");
-
+      const form = document.querySelector(".seo-form"); 
+      const titleInput = document.getElementById("title"); 
+      const metaTag = document.querySelector(".Add-blogs textarea"); 
+      const metaDesc = document.querySelector(".meta-form textarea"); 
+      const submitButton = document.querySelector(".add-deatiles"); 
+  
       submitButton.addEventListener("click", function (event) {
         let isValid = true;
-
-
+  
+       
         if (titleInput.value.trim() === "") {
           showError(titleInput, "Page Name is required!");
           isValid = false;
         } else {
           removeError(titleInput);
         }
-
-
+  
+        
         if (metaTag.value.trim() === "") {
           showError(metaTag, "Meta Tag is required!", true);
           isValid = false;
         } else {
           removeError(metaTag);
         }
-
-
+  
+        
         if (metaDesc.value.trim() === "") {
           showError(metaDesc, "Meta Description is required!", true);
           isValid = false;
         } else {
           removeError(metaDesc);
         }
-
-
+  
+        
         if (!isValid) {
           event.preventDefault();
         }
       });
-
-
+  
+      
       function showError(input, message, isTextarea = false) {
-        removeError(input);
-
+        removeError(input); 
+  
         const error = document.createElement("span");
         error.classList.add("error-message");
         error.textContent = message;
-
-
+  
+       
         if (isTextarea) {
           input.parentElement.insertAdjacentElement("afterend", error);
         } else {
           input.insertAdjacentElement("afterend", error);
         }
       }
-
-
+  
+    
       function removeError(input) {
         const existingError = input.parentElement.nextElementSibling;
         if (existingError && existingError.classList.contains("error-message")) {

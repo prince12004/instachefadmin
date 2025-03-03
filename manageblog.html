@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Blog</title>
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
+   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -229,7 +230,6 @@
 
     <!-- ===============left==================== -->
     <div class="main-content">
-      <!-- ----------------------------------- -->
       <div class="admin-dashboard">
         <div class="dashboard-time">
           <img src="assets/images/BLOG-IMAGE.png" alt="" />
@@ -318,8 +318,8 @@
                         </div>
 
                       </div>
-                      <div class="meta-upload-second" id="product-info-section">
-                        <div class="meta-description-second">
+                      <div class="meta-upload-second" >
+                        <div class="meta-description-second" id="product-info-section">
                           <div class="mains-uploads quantity-size-row">
                             <label for="" class="meta-label">Photo Gallery</label>
                             <span class="d-flex span-first">
@@ -352,88 +352,88 @@
                   </div>
                 </div>
               </div>
-
-              <!-- footer-section -->
-
-              <table id="myTable-B" class="maintable details-table" style="width:100%">
-                <div class="table-blog-bar">
-                  <h4>LIST OF ALL BLOGS</h4>
-                  <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
-                    <!-- <h4>LIST OF SEO DETAILS</h4> -->
-                    <div id="myTable_filter1" class="dataTables_-search-filter">
-                      <label class="d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                        <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
-                          onkeyup="filterTable()">
-                      </label>
-                    </div>
-                  </span>
+            </div>
+            <!--============================== table-section ================================-->
+            <div class="table-blog-bar">
+              <h4>LIST OF ALL BLOGS</h4>
+              <span class="d-flex justify-content-between align-items-center text-white table-blog-span">
+                <div id="myTable_filter1" class="dataTables_-search-filter">
+                  <label class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
+                    <input type="search" id="searchInput" class="" placeholder="Search here" aria-controls="myTable"
+                      onkeyup="filterTable()">
+                  </label>
                 </div>
-                <thead>
-                  <tr class="header-table">
-                    <th class="serial-number">S.No</th>
-                    <th>Image</th>
-                    <th>Tittle</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
-                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                    <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
-                      <a href="manageblog.html">
-                        <img src="assets/images/custome-icon.png" alt="">
-                      </a>
+              </span>
+            </div>
+            <table id="myTable-B" class="maintable details-table main-dts-table" style="width:100%">
+              <thead>
+                <tr class="header-table">
+                  <th class="serial-number">S.No</th>
+                  <th>Image</th>
+                  <th>Title</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
+                  <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                  <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    <a href="manageblog.html">
+                      <img src="assets/images/custome-icon.png" alt="">
+                    </a>
 
-                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg"> <img src="assets/images/footer-image-five.png" alt=""></td>
-                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                    <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
-                      <a href="manageblog.html">
-                        <img src="assets/images/custome-icon.png" alt="">
-                      </a>
+                    <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg"> <img src="assets/images/footer-image-five.png" alt=""></td>
+                  <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                  <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    <a href="manageblog.html">
+                      <img src="assets/images/custome-icon.png" alt="">
+                    </a>
 
-                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg"> <img src="assets/images/footer-image-six.png" alt=""></td>
-                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                    <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
-                      <a href="manageblog.html">
-                        <img src="assets/images/custome-icon.png" alt="">
-                      </a>
+                    <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg"> <img src="assets/images/footer-image-six.png" alt=""></td>
+                  <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                  <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    <a href="manageblog.html">
+                      <img src="assets/images/custome-icon.png" alt="">
+                    </a>
 
-                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01.</td>
-                    <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
-                    <td>Lorem Ipsum is simply dummy text of the printing.</td>
-                    <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
-                      <a href="manageblog.html">
-                        <img src="assets/images/custome-icon.png" alt="">
-                      </a>
+                    <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>01.</td>
+                  <td class="blog-foodImg"> <img src="assets/images/footer-image-one.png" alt=""></td>
+                  <td>Lorem Ipsum is simply dummy text of the printing.</td>
+                  <td> <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    <a href="manageblog.html">
+                      <img src="assets/images/custome-icon.png" alt="">
+                    </a>
 
-                      <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
-                    </td>
-                  </tr>
+                    <!-- <img src="assets/images/three-dot icon.png" alt=""> -->
+                  </td>
+                </tr>
 
-                </tbody>
-              </table>
-
+              </tbody>
+            </table>
+          </div>
         </main>
       </div>
     </div>
   </div>
+
+  <!--------------------------------- modal--------------------------->
   <!-- Modal for Validation Messages -->
   <div id="validationModal" class="modal">
     <div class="modal-content">
@@ -444,7 +444,18 @@
       </div>
     </div>
   </div>
-
+  <!-- Modal for confirmation -->
+  <div id="deleteModal" class="modal">
+    <div class="modal-content">
+      <img src="assets/images/InstaCheflogo.png" alt="" class="modal-image">
+      <div class="modal-cancel">
+        <p>Do you want to delete this clone?</p>
+        <span class="close">&times;</span>
+      </div>
+      <button id="confirmDelete">Yes, delete</button>
+      <button id="cancelDelete">No, cancel</button>
+    </div>
+  </div>
   <!-- Delete Modal -->
   <div id="deleteModal" class="delete-modal">
     <div class="delete-modal-content">
@@ -539,7 +550,5 @@
       });
     }
   </script>
-
 </body>
-
 </html>

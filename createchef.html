@@ -114,7 +114,7 @@
             <p> +3</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createuser.html">
                 <input type="radio" placeholder=""> CREATE USER
               </a>
@@ -142,7 +142,7 @@
             <p> +4</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createbooking.html">
                 <input type="radio" placeholder=""> CREATE BOOKING
               </a>
@@ -193,7 +193,7 @@
             <p> +2</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createchef.html">
                 <input type="radio" placeholder=""> CREATE CHEF
               </a>
@@ -369,7 +369,7 @@
                       <div id="file-input">
                         <img src="assets/images/docProfile.png" alt="">
                       </div>
-                      <div class="choose-files">
+                      <div class="choose-files new-choose ">
                         <input type="file" required>
                       </div>
                     </div>
@@ -390,20 +390,22 @@
                     <img src="assets/images/plussection.png" class="plus-btn" alt="Add more">
                   </div>
                 </div>
+                <!-- <button class="icon-btn"><i class="fa fa-trash deleteA"></i></button> -->
 
-
+                <!-- <div class="form-rowA">
+                  <button class="plus-btn" id="addclone"><i class="fa fa-plus"></i></button>
+                </div> -->
               </div>
               <button class="create-btn" id="createBooking">CREATE BOOKING</button>
-            </div>
-
+           </div>
           </div>
+          
       </div>
-      </form>
+        </form>
+      </div>
+
     </div>
-
   </div>
-  </div>
-
   <!-- Modal for Validation Messages -->
   <div id="validationModal" class="modal">
     <div class="modal-content">
@@ -416,7 +418,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/index.js"></script>
-
+  <!-- -------------------validation---------------------- -->
   <script>
     $(document).ready(function () {
       $(document).on('click', '.plus-btn', function (event) {
@@ -468,7 +470,7 @@
     });
 
   </script>
-
+ 
 </body>
 
 </html>
