@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Blog</title>
-  <!-- <link rel="stylesheet" href="assets/css/index.css" /> -->
    <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
@@ -118,7 +117,7 @@
             <p> +3</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createuser.html">
                 <input type="radio" placeholder=""> CREATE USER
               </a>
@@ -146,7 +145,7 @@
             <p> +4</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createbooking.html">
                 <input type="radio" placeholder=""> CREATE BOOKING
               </a>
@@ -197,7 +196,7 @@
             <p> +2</p>
           </a>
           <div class="user-select-input">
-            <label for="user" class="top-users">
+            <label for="user">
               <a href="createchef.html">
                 <input type="radio" placeholder=""> CREATE CHEF
               </a>
@@ -215,6 +214,22 @@
             <img src="assets/images/image9.png" alt="" class="default-img" />
             <img src="assets/images/imagenine.png" alt="" class="hover-img" />
             DELETE CHEF
+          </a>
+        </li>
+        <!--  Driver Create Item -->
+        <li class="nav-item">
+          <a href="./createdriver.html" class="nav-link text-white">
+            <img src="assets/images/image6.png" alt="" class="default-img" />
+            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+            CREATE DRIVER
+          </a>
+        </li>
+        <!--  Driver list Item -->
+        <li class="nav-item">
+          <a href="./driverlists.html" class="nav-link text-white">
+            <img src="assets/images/image5.png" alt="" class="default-img" />
+            <img src="assets/images/imagefive.png" alt="" class="hover-img" />
+            DIRVER LIST
           </a>
         </li>
         <!-- Logout Item -->
@@ -318,8 +333,8 @@
                         </div>
 
                       </div>
-                      <div class="meta-upload-second" >
-                        <div class="meta-description-second" id="product-info-section">
+                      <div class="meta-upload-second" id="product-info-section">
+                        <div class="meta-description-second" >
                           <div class="mains-uploads quantity-size-row">
                             <label for="" class="meta-label">Photo Gallery</label>
                             <span class="d-flex span-first">
@@ -479,7 +494,7 @@
       $(document).on('click', '.field-add-btn', function (event) {
         event.preventDefault();
 
-        var $originalRow = $(this).closest('.meta-description-second');
+        var $originalRow = $(this).closest('.meta-upload-second');
 
         if ($originalRow.hasClass('cloned')) {
           $originalRow.remove();
