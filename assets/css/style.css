@@ -182,14 +182,17 @@ td img {
 #myTable3.div.dt-container div.dt-layout-row {
   margin-top: 0px !important;
 }
-#myTable3.dataTable th.dt-type-numeric,
+/* #myTable3.dataTable th.dt-type-numeric,
 #myTable3.dataTable th.dt-type-date,
 #myTable3.dataTable td.dt-type-numeric,
 #myTable3.dataTable td.dt-type-date {
   text-align: left;
-}
+} */
 .address {
   width: 19%;
+}
+.packageB table.dataTable > tbody > tr > th > td{
+  background-color: #FFFFFF !important;
 }
 
 .dt-paging-button.current {
@@ -204,6 +207,9 @@ td img {
 
 #myTable3 div.dt-container select.dt-input {
   display: none;
+}
+.wokings-days{
+  text-align: center !important;
 }
 
 #myTable3
@@ -240,9 +246,9 @@ table.dataTable > tbody > tr > td {
   font-size: 12px;
   color: #1f2869;
 }
-#myTable3.dataTable th.dt-type-numeric {
+/* #myTable3.dataTable th.dt-type-numeric {
   text-align: left !important;
-}
+} */
 .dt-search {
   display: none;
 }
@@ -326,6 +332,12 @@ td {
   width: 25%;
 }
 table.dataTable td.dt-type-numeric {
+  text-align: center !important;
+}
+table.dataTable th.dt-type-numeric, 
+table.dataTable th.dt-type-date, 
+table.dataTable td.dt-type-numeric, 
+table.dataTable td.dt-type-date{
   text-align: center !important;
 }
 /* ====================================== */
@@ -745,7 +757,7 @@ table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order {
 }
 .forms {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 20px 13px;
   width: 100%;
   margin-top: 20px;
@@ -769,14 +781,14 @@ table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order {
   padding: 15px 13px;
   border-radius: 12px;
   width: 48%;
-  height: 480px;
+  height: 100%;
 }
 .form-cardA {
   background: #fff;
   padding: 15px 13px;
   border-radius: 12px;
   width: 48%;
-  height: 434px;
+  height: 100%;
 }
 .admin-form {
   display: flex;
@@ -1698,7 +1710,7 @@ textarea {
 table.dataTable th.dt-type-date,
 table.dataTable td.dt-type-numeric,
 table.dataTable td.dt-type-date {
-  text-align: left;
+  text-align: center;
 }
 
 .dt-paging-button.current {
@@ -1740,11 +1752,6 @@ table.dataTable thead > tr > th.dt-orderable-asc,
 table.dataTable thead > tr > th.dt-orderable-desc {
   padding-right: 15px;
 }
-
-table.dataTable td.dt-type-numeric {
-  text-align: left !important;
-}
-
 #car-name {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -3441,10 +3448,6 @@ div.dt-container div.dt-layout-row {
   margin-top: 10px;
 }
 
-table.dataTable th.dt-type-numeric {
-  text-align: left !important;
-}
-
 .table-blog-barA {
   display: flex;
   justify-content: space-between;
@@ -3629,9 +3632,6 @@ tbody {
 }
 #myTable-E tbody tr {
   border-radius: 10px !important;
-}
-table.dataTable td.dt-type-numeric {
-  text-align: left !important;
 }
 /* -------new-table------ */
 
@@ -3869,12 +3869,12 @@ td img {
   background-color: #f4f7fc;
 }
 
-.table.dataTable th.dt-type-numeric,
+/* .table.dataTable th.dt-type-numeric,
 table.dataTable th.dt-type-date,
 table.dataTable td.dt-type-numeric,
 table.dataTable td.dt-type-date {
   text-align: left;
-}
+} */
 
 .dt-paging-button.current {
   background-color: #13b9e1 !important;
@@ -3919,11 +3919,6 @@ table.dataTable thead > tr > th.dt-orderable-asc,
 table.dataTable thead > tr > th.dt-orderable-desc {
   padding-right: 15px !important;
 }
-
-table.dataTable td.dt-type-numeric {
-  text-align: left !important;
-}
-
 #car-name {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -4275,13 +4270,6 @@ div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
 .number {
   font-size: 12px;
   padding: 0px 6px;
-}
-
-table.dataTable th.dt-type-numeric,
-table.dataTable th.dt-type-date,
-table.dataTable td.dt-type-numeric,
-table.dataTable td.dt-type-date {
-  text-align: left !important;
 }
 
 .adminA,
