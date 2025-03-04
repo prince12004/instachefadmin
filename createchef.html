@@ -190,7 +190,7 @@
             <img src="assets/images/imageten.png" alt="" class="hover-img" />
             MANAGE CHEF
             <i class="fa fa-caret-down"></i>
-            <p> +2</p>
+            <p> +3</p>
           </a>
           <div class="user-select-input">
             <label for="user">
@@ -203,31 +203,65 @@
                 <input type="radio" placeholder=""> LIST OF CHEF DETAIL
               </a>
             </label>
+            <label for="user">
+              <a href="deletechef.html">
+                <input type="radio" placeholder=""> DELETE CHEF
+              </a>
+            </label>
           </div>
         </li>
-        <!--  Delete Chef Item -->
+        <!-- Manage Booking Item -->
         <li class="nav-item">
-          <a href="deletechef.html" class="nav-link text-white">
-            <img src="assets/images/image9.png" alt="" class="default-img" />
-            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-            DELETE CHEF
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            CAB DRIVER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./createdriver.html">
+                <input type="radio" placeholder=""> CREATE CAB DRIVER
+              </a>
+            </label>
+            <label for="user">
+              <a href="driverlists.html">
+                <input type="radio" placeholder=""> DRIVER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="cabdriverinfo.html">
+                <input type="radio" placeholder=""> CAB DRIVER DETAIL
+              </a>
+            </label>
+          </div>
         </li>
-        <!--  Driver Create Item -->
         <li class="nav-item">
-          <a href="./createdriver.html" class="nav-link text-white">
-            <img src="assets/images/image6.png" alt="" class="default-img" />
-            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-            CREATE DRIVER
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE ADMIN
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
-        </li>
-        <!--  Driver list Item -->
-        <li class="nav-item">
-          <a href="./driverlists.html" class="nav-link text-white">
-            <img src="assets/images/image5.png" alt="" class="default-img" />
-            <img src="assets/images/imagefive.png" alt="" class="hover-img" />
-            DIRVER LIST
-          </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./adminusers.html">
+                <input type="radio" placeholder=""> CREATE ADMIN USERS
+              </a>
+            </label>
+            <label for="user">
+              <a href="./adminuserlists.html">
+                <input type="radio" placeholder=""> ADMIN USERS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="managerole.html">
+                <input type="radio" placeholder=""> ROLE
+              </a>
+            </label>
+          </div>
         </li>
         <!-- Logout Item -->
         <li class="nav-item">
@@ -239,7 +273,6 @@
         </li>
       </ul>
     </nav>
-
     <!-----------------------------------------sidebar------------------------------------>
     <div class="main-content">
       <div class="admin-dashboard">
@@ -413,14 +446,14 @@
                 </div> -->
               </div>
               <button class="create-btn" id="createBooking">CREATE BOOKING</button>
-           </div>
+            </div>
           </div>
-          
-      </div>
-        </form>
-      </div>
 
+      </div>
+      </form>
     </div>
+
+  </div>
   </div>
   <!-- Modal for Validation Messages -->
   <div id="validationModal" class="modal">
@@ -486,7 +519,7 @@
     });
 
   </script>
- 
+
 </body>
 
 </html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create-Driver</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="instachef-admin">
+            <div class="instachef">
+                <a href="index.html">
+                    <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="middle-line">
+                <div class="toggle-bar">
+                    <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+                </div>
+            </div>
+            <div class="user-icons">
+                <a href="#">
+                    <img src="assets/images/home.png" alt="" />
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="assets/images/notification.png" alt="notification Icon" />
+                    <span class="counter wishlist-counter">2</span>
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="right-border" />
+                <div class="admin-section">
+                    <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
+                    <div class="admin-text">
+                        <h3>LOREM ISPUM</h3>
+                        <select id="super-admin">
+                            <option>super-admin</option>
+                            <option>admin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------------------------header------------------------- -->
+
+    <!-- ===========header============== -->
+    <div class="admin-panel">
+        <nav class="bg-dark text-white sidebar">
+            <ul class="nav flex-column">
+              <!-- Dashboard Item -->
+              <li class="nav-item dashboard">
+                <a href="index.html" class="nav-link text-white">
+                  <img src="assets/images/image1.png" alt="" class="default-img" />
+                  <img src="assets/images/icons.png" alt="" class="hover-img" />
+                  DASHBOARD
+                </a>
+              </li>
+      
+              <!-- Manage Profile Item -->
+              <li class="nav-item">
+                <a href="manageprofile.html" class="nav-link text-white">
+                  <img src="assets/images/image2.png" alt="" class="default-img" />
+                  <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+                  MANAGE PROFILE
+                </a>
+              </li>
+      
+              <!-- Manage Notification Item -->
+              <li class="nav-item">
+                <a href="Managenotification.html" class="nav-link text-white">
+                  <img src="assets/images/image3.png" alt="" class="default-img" />
+                  <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+                  MANAGE NOTIFICATION
+                </a>
+              </li>
+      
+              <!-- Contact Request Item -->
+              <li class="nav-item">
+                <a href="contactrequest.html" class="nav-link text-white">
+                  <img src="assets/images/image4.png" alt="" class="default-img" />
+                  <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+                  CONTACT REQUEST
+                </a>
+              </li>
+      
+              <!-- Manage Blogs Item -->
+              <li class="nav-item">
+                <a href="manageblog.html" class="nav-link text-white">
+                  <img src="assets/images/image5.png" alt="" class="default-img" />
+                  <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+                  MANAGE BLOGS
+                </a>
+              </li>
+      
+              <!-- Manage SEO Item -->
+              <li class="nav-item">
+                <a href="manageseo.html" class="nav-link text-white">
+                  <img src="assets/images/image6.png" alt="" class="default-img" />
+                  <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+                  MANAGE SEO
+                </a>
+              </li>
+      
+              <!-- Manage User Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image7.png" alt="" class="default-img" />
+                  <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+                  MANAGE USER
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createuser.html">
+                      <input type="radio" placeholder=""> CREATE USER
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="userlist.html">
+                      <input type="radio" placeholder=""> USER LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="inactiveuser.html">
+                      <input type="radio" placeholder=""> IN-ACTIVE USER
+                    </a>
+                  </label>
+                </div>
+              </li>
+      
+              <!-- Manage Booking Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  MANAGE BOOKING
+                  <i class="fa fa-caret-down"></i>
+                  <p> +4</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createbooking.html">
+                      <input type="radio" placeholder=""> CREATE BOOKING
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="chefbooking.html">
+                      <input type="radio" placeholder=""> BOOKINGS LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="inactivebooking.html">
+                      <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="Review.html">
+                      <input type="radio" placeholder=""> REVIEW LIST
+                    </a>
+                  </label>
+                </div>
+              </li>
+      
+              <!-- Manage Cuisine Item -->
+              <li class="nav-item">
+                <a href="managecuisine.html" class="nav-link text-white">
+                  <img src="assets/images/image9.png" alt="" class="default-img" />
+                  <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+                  MANAGE CUISINE
+                </a>
+              </li>
+      
+              <!-- Manage Package Item -->
+              <li class="nav-item">
+                <a href="mangepackage.html" class="nav-link text-white">
+                  <img src="assets/images/image10.png" alt="" class="default-img" />
+                  <img src="assets/images/imagten.png" alt="" class="hover-img" />
+                  MANAGE PACKAGE
+                </a>
+              </li>
+      
+              <!-- Manage Chef Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image11.png" alt="" class="default-img" />
+                  <img src="assets/images/imageten.png" alt="" class="hover-img" />
+                  MANAGE CHEF
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createchef.html">
+                      <input type="radio" placeholder=""> CREATE CHEF
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="chefdetails.html">
+                      <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="deletechef.html">
+                      <input type="radio" placeholder=""> DELETE CHEF
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <!-- Manage Booking Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  CAB DRIVER
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="./createdriver.html">
+                      <input type="radio" placeholder=""> CREATE CAB DRIVER
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="driverlists.html">
+                      <input type="radio" placeholder=""> DRIVER LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="cabdriverinfo.html">
+                      <input type="radio" placeholder=""> CAB DRIVER DETAIL
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  MANAGE ADMIN
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="./adminusers.html">
+                      <input type="radio" placeholder=""> CREATE ADMIN USERS
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="./adminuserlists.html">
+                      <input type="radio" placeholder=""> ADMIN USERS LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="managerole.html">
+                      <input type="radio" placeholder=""> ROLE
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <!-- Logout Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white last-li">
+                  <img src="assets/images/logout.png" alt="" class="default-img" />
+                  <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+                  LOGOUT
+                </a>
+              </li>
+            </ul>
+          </nav>
+        <!-- ===============left==================== -->
+        <div class="main-content">
+            <div class="admin-dashboard">
+                <div class="dashboard-time">
+                    <img src="assets/images/drivers.png" alt="">
+                    <p>CAB DRIVER</p>
+                </div>
+                <div class="time-piker">
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Date Range</p>
+                            <input type="date" name="daterange" class="dateA" id="dateRange" />
+                        </div>
+                    </div>
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Filter Range</p>
+                            <input type="date" name="daterange" class="dateA" id="filterRange">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================================== -->
+            <div class="main-cab-driver">
+                <div class="cab-drivers">
+                    <div class="cab-driver-left">
+                        <div class="cab-driver-left-top">
+                            <h2 class="">Cab Driver Info</h2>
+                        </div>
+                        <div class="cabs">
+                            <div class="profiles-cabs">
+                                <div style="display: flex; margin-bottom: 10px; justify-content: center;">
+                                    <span>P</span>
+                                </div>
+                                <h3>Chelsie Jhonson</h3>
+                                <p>Lorem Ipsum@gmail.com</p>
+                            </div>
+                            <div class="driver-details">
+                                <div class="input-groups">
+                                    <label>Phone Number</label>
+                                    <span>+ 12345 67890</span>
+                                </div>
+                                <div class="input-groups">
+                                    <label>Address</label>
+                                    <span>789 Pine Ln, City, Country</span>
+                                </div>
+                                <div class="input-groups">
+                                    <label>Created Date</label>
+                                    <span>2025-03-03</span>
+                                </div>
+                                <div class="input-groups">
+                                    <label>Created By</label>
+                                    <span>Admin</span>
+                                </div>
+                                <div class="input-groups">
+                                    <label>User ID</label>
+                                    <span>Mikej123</span>
+                                </div>
+                                <div class="input-groups">
+                                    <label>Working Days</label>
+                                    <span>20 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cab-driver-right chef-right">
+                        <h2>CHEF PICKUP & DROPS DETAIL</h2>
+                        <div class="heads-right-section">
+                            <div class="user-logins">
+                                <div class="form-toggless">
+                                    <div>
+                                        <h2>
+                                            CHEF BOOKING 01
+                                        </h2>
+                                    </div>
+                                    <div class="chef-details-head">
+                                        <span class="chefcalendar"> <img src="assets/images/chefcalendar.png" />
+                                            03-03-2025</span>
+                                        <span class="icons-toggles" onclick="toggleForm('form1')">
+                                            <img src="assets/images/chevrondown.png" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- First form visible by default -->
+                                <form id="form1" class="profileForm" style="display: block;">
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="username">Chef Name</label>
+                                            <span class="newtittle">
+                                                Prince
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="lastname">Email Address</label>
+                                            <span class="newtittle">
+                                                prince@gmail.com
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="contact">Phone</label>
+                                            <span class="newtittle">
+                                                +91 9876543210
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="createdDate"> Date</label>
+                                            <span class="newtittle">
+                                                03/03/2025
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="password">Pick Up Location</label>
+                                            <span class="newtittle">
+                                                789 Pine Ln, City, Country
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="address">Pick Up Time</label>
+                                            <span class="newtittle">
+                                                09:30 AM
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="workingHours">Drop Off Location</label>
+                                            <span class="newtittle">
+                                                Lorem Ln, City, Country
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="totalChefPickups">Drop Off Time</label>
+                                            <span class="newtittle">
+                                                10:00 AM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="heads-right-section">
+                            <div class="user-logins">
+                                <div class="form-toggless">
+                                    <div>
+                                        <h2>
+                                            CHEF BOOKING 02
+                                        </h2>
+                                    </div>
+                                    <div class="chef-details-head">
+                                        <span class="chefcalendar-new"> <img src="assets/images/chefcalendar.png" />
+                                            03-03-2025</span>
+                                        <span class="icons-toggles" onclick="toggleForm('form2')">
+                                            <img src="assets/images/chevrondown.png" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- Second form hidden by default -->
+                                <form id="form2" class="profileForm" style="display: none;">
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="username">Chef Name</label>
+                                            <span class="newtittle">
+                                                Prince
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="lastname">Email Address</label>
+                                            <span class="newtittle">
+                                                prince@gmail.com
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="contact">Phone</label>
+                                            <span class="newtittle">
+                                                +91 9876543210
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="createdDate"> Date</label>
+                                            <span class="newtittle">
+                                                03/03/2025
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="password">Pick Up Location</label>
+                                            <span class="newtittle">
+                                                789 Pine Ln, City, Country
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="address">Pick Up Time</label>
+                                            <span class="newtittle">
+                                                09:30 AM
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="user-name">
+                                        <div class="form-groupC">
+                                            <label for="workingHours">Drop Off Location</label>
+                                            <span class="newtittle">
+                                                Lorem Ln, City, Country
+                                            </span>
+                                        </div>
+                                        <div class="form-groupC">
+                                            <label for="totalChefPickups">Drop Off Time</label>
+                                            <span class="newtittle">
+                                                10:00 AM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- =================================================== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        // Function to toggle the form visibility
+        function toggleForm(formId) {
+            var form = document.getElementById(formId);
+            if (form.style.display === "none" || form.style.display === "") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

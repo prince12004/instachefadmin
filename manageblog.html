@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Blog</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -193,7 +193,7 @@
             <img src="assets/images/imageten.png" alt="" class="hover-img" />
             MANAGE CHEF
             <i class="fa fa-caret-down"></i>
-            <p> +2</p>
+            <p> +3</p>
           </a>
           <div class="user-select-input">
             <label for="user">
@@ -206,31 +206,65 @@
                 <input type="radio" placeholder=""> LIST OF CHEF DETAIL
               </a>
             </label>
+            <label for="user">
+              <a href="deletechef.html">
+                <input type="radio" placeholder=""> DELETE CHEF
+              </a>
+            </label>
           </div>
         </li>
-        <!--  Delete Chef Item -->
+        <!-- Manage Booking Item -->
         <li class="nav-item">
-          <a href="deletechef.html" class="nav-link text-white">
-            <img src="assets/images/image9.png" alt="" class="default-img" />
-            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-            DELETE CHEF
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            CAB DRIVER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./createdriver.html">
+                <input type="radio" placeholder=""> CREATE CAB DRIVER
+              </a>
+            </label>
+            <label for="user">
+              <a href="driverlists.html">
+                <input type="radio" placeholder=""> DRIVER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="cabdriverinfo.html">
+                <input type="radio" placeholder=""> CAB DRIVER DETAIL
+              </a>
+            </label>
+          </div>
         </li>
-        <!--  Driver Create Item -->
         <li class="nav-item">
-          <a href="./createdriver.html" class="nav-link text-white">
-            <img src="assets/images/image6.png" alt="" class="default-img" />
-            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-            CREATE DRIVER
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE ADMIN
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
-        </li>
-        <!--  Driver list Item -->
-        <li class="nav-item">
-          <a href="./driverlists.html" class="nav-link text-white">
-            <img src="assets/images/image5.png" alt="" class="default-img" />
-            <img src="assets/images/imagefive.png" alt="" class="hover-img" />
-            DIRVER LIST
-          </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./adminusers.html">
+                <input type="radio" placeholder=""> CREATE ADMIN USERS
+              </a>
+            </label>
+            <label for="user">
+              <a href="./adminuserlists.html">
+                <input type="radio" placeholder=""> ADMIN USERS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="managerole.html">
+                <input type="radio" placeholder=""> ROLE
+              </a>
+            </label>
+          </div>
         </li>
         <!-- Logout Item -->
         <li class="nav-item">
@@ -242,7 +276,6 @@
         </li>
       </ul>
     </nav>
-
     <!-- ===============left==================== -->
     <div class="main-content">
       <div class="admin-dashboard">
@@ -334,7 +367,7 @@
 
                       </div>
                       <div class="meta-upload-second" id="product-info-section">
-                        <div class="meta-description-second" >
+                        <div class="meta-description-second">
                           <div class="mains-uploads quantity-size-row">
                             <label for="" class="meta-label">Photo Gallery</label>
                             <span class="d-flex span-first">
@@ -474,6 +507,9 @@
   <!-- Delete Modal -->
   <div id="deleteModal" class="delete-modal">
     <div class="delete-modal-content">
+      <div class="modal-logo">
+        <img src="assets/images/logo.png" />
+      </div>
       <span class="delete-close" onclick="closeDeleteModal()">&times;</span>
       <h3>Are you sure you want to delete this item?</h3>
       <div class="delete-modal-buttons">
@@ -566,4 +602,5 @@
     }
   </script>
 </body>
+
 </html>

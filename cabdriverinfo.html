@@ -4,22 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage-SEO</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Create-Driver</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
-  <style>
-    .error-message {
-      color: red;
-      font-size: 14px;
-      font-weight: 500;
-      margin-top: 5px;
-    }
-  </style>
 </head>
 
 <body>
@@ -29,7 +18,7 @@
         <a href="index.html">
           <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
         </a>
-        <img src="assets/images/middleLine.png" alt="" class="middle-line" />
+        <img src="assets/images/middleLine.png" alt="" class="middle-line">
         <div class="toggle-bar">
           <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
         </div>
@@ -56,6 +45,8 @@
       </div>
     </div>
   </header>
+  <!-- -------------------------header------------------------- -->
+
   <!-- ===========header============== -->
   <div class="admin-panel">
     <nav class="bg-dark text-white sidebar">
@@ -287,8 +278,8 @@
     <div class="main-content">
       <div class="admin-dashboard">
         <div class="dashboard-time">
-          <img src="assets/images/manage-booking.png" alt="" />
-          <p>MANAGE BOOKING</p>
+          <img src="assets/images/drivers.png" alt="">
+          <p>CAB DRIVER</p>
         </div>
         <div class="time-piker">
           <div class="time">
@@ -307,268 +298,294 @@
           </div>
         </div>
       </div>
-      <!-- ======================= -->
-      <div class="forms">
-        <!-- Main Content -->
-        <main class="col-md-10 bg-light right-sidebar">
-          <!-- Notification Form -->
-          <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="notification-heading">ADD SEO DETAILS</h4>
-              <div class="row Both-container">
-                <div class="col-md-6">
-                  <div class="Add-blogs">
-                    <label for="title" class="form-label">Page Name</label>
-                    <input type="text" id="title" placeholder="Enter your page name" class="form-control" />
 
-                    <label for="title" class="form-label-category">Meta Tag</label>
-                    <div class="editor-container">
-                      <textarea placeholder="Enter your meta tag"></textarea>
-                    </div>
-                  </div>
+      <!-- =================================== -->
+      <div class="main-cab-driver">
+        <div class="cab-drivers">
+          <div class="cab-driver-left">
+            <div class="cab-driver-left-top">
+              <h2 class="">Cab Driver Info</h2>
+            </div>
+            <div class="cabs">
+              <div class="profiles-cabs">
+                <div style="display: flex; margin-bottom: 10px; justify-content: center;">
+                  <span>P</span>
                 </div>
-                <!--------- right-container ------->
-                <div class="col-md-6 meta-form">
-                  <form class="seo-form">
-                    <label for="title" class="form-label-category form-cate">Meta Description</label>
-                    <div class="editor-container" style="height: 131px">
-                      <textarea placeholder="Enter your meta description"></textarea>
-                    </div>
-                    <button type="submit" class="add-deatiles p-3">
-                      ADD META DEATILES
-                    </button>
-                  </form>
+                <h3>Chelsie Jhonson</h3>
+                <p>Lorem Ipsum@gmail.com</p>
+
+              </div>
+              <div class="driver-details">
+                <div class="input-groups">
+                  <label>Phone Number</label>
+                  <span>+ 12345 67890</span>
+                </div>
+                <div class="input-groups">
+                  <label>Address</label>
+                  <span>789 Pine Ln, City, Country</span>
+                </div>
+                <div class="input-groups">
+                  <label>Created Date</label>
+                  <span>2025-03-03</span>
+                </div>
+                <div class="input-groups">
+                  <label>Created By</label>
+                  <span>Admin</span>
+                </div>
+                <div class="input-groups">
+                  <label>User ID</label>
+                  <span>Mikej123</span>
+                </div>
+                <div class="input-groups">
+                  <label>Working Days</label>
+                  <span>20 Days</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--=====================table-section =======================-->
-          <div class="card mb-4">
-            <div class="table-blog-bar">
-              <h4>LIST OF SEO DETAILS</h4>
-              <div id="myTable_filterA" class="dataTables_-search-filter">
-                <label class="d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-magnifying-glass" id="notification-icon"></i>
-                  <input type="search" class="" id="searchs" placeholder="Search here" aria-controls="myTable"
-                    onkeyup="filterTable()" />
-                </label>
+          <div class="cab-driver-right right-readings">
+            <div class="readings">
+              <h2>TOTAL READING</h2>
+              <div class="mains-readings">
+                <div class="start-reads">
+                  <h4>Start Reading:</h4>
+                  <span>245Km.</span>
+                </div>
+                <div class="start-reads">
+                  <h4>Start Time:</h4>
+                  <span>09:30AM</span>
+                </div>
+                <div class="start-reads end-redings">
+                  <h4>End Reading:</h4>
+                  <span>490Km.</span>
+                </div>
+                <div class="start-reads">
+                  <h4>End Time:</h4>
+                  <span>01:30PM</span>
+                </div>
               </div>
-              </span>
             </div>
-            <div class="seo">
-              <table id="myTable-C" class="maintable main-dts-table" style="width: 100%">
+            <div class="table-container cabs-drive">
+              
+              <div class="user-listA">
+                <h1 class="headingC driver-headings">MY PICKUP & DROPS</h1>
+
+                <div>
+                  <div class="total-km cab-info-new">
+                    <img src="assets/images/Km.png" alt="" class="totalcars" />
+                    <p>Total Time:</p>
+                    <span>9hr 30min</span>
+                  </div>
+                  <div class="total-km-all cab-infos">
+                    <img src="assets/images/time.png" alt="" class="totalcars" />
+                    <p>Total Km:</p>
+                    <span>245 Km.</span>
+                  </div>
+                  <div class="calender-filter">
+                    <input type="date" value="03/04/3025" >
+                  </div>
+                </div>
+              </div>
+             
+              <table id="myTable-cabdrivers" class="maintable main-dts-table" style="width: 100%">
                 <thead>
-                  <tr class="header-table">
+                  <tr>
                     <th class="serial-number">S.No</th>
-                    <th>PageName</th>
-                    <th>Meta Tag</th>
-                    <th>Meta description</th>
+                    <th>Chef Name</th>
+                    <th>Email ID</th>
+                    <th>Phone</th>
+                    <th>Address</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>01.</td>
-                    <td>Our-story</td>
-                    <td>
-                      Chef Service in UAE|The Ultimate Destination for Home
-                      Cooked Meals-InstaChef
+                    <td>1</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
                     </td>
                     <td>
-                      Our experienced chefs use fresh ingredients to create
-                      tasty meals delivered right to your door. Order now and
-                      enjoy the ultimate home dining experience!
-                    </td>
-                    <td>
-                      <a href="manageseo.html">
-                        <img src="assets/images/custome-icon.png" alt="" />
-                      </a>
-
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>01.</td>
-                    <td>Our-story</td>
-                    <td>
-                      Chef Service in UAE|The Ultimate Destination for Home
-                      Cooked Meals-InstaChef
+                    <td>2</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
                     </td>
                     <td>
-                      Our experienced chefs use fresh ingredients to create
-                      tasty meals delivered right to your door. Order now and
-                      enjoy the ultimate home dining experience!
-                    </td>
-                    <td>
-                      <a href="manageseo.html">
-                        <img src="assets/images/custome-icon.png" alt="" />
-                      </a>
-
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>01.</td>
-                    <td>Our-story</td>
-                    <td>
-                      Chef Service in UAE|The Ultimate Destination for Home
-                      Cooked Meals-InstaChef
+                    <td>3</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
                     </td>
                     <td>
-                      Our experienced chefs use fresh ingredients to create
-                      tasty meals delivered right to your door. Order now and
-                      enjoy the ultimate home dining experience!
-                    </td>
-                    <td>
-                      <a href="manageseo.html">
-                        <img src="assets/images/custome-icon.png" alt="" />
-                      </a>
-
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>01.</td>
-                    <td>Our-story</td>
-                    <td>
-                      Chef Service in UAE|The Ultimate Destination for Home
-                      Cooked Meals-InstaChef
+                    <td>4</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
                     </td>
                     <td>
-                      Our experienced chefs use fresh ingredients to create
-                      tasty meals delivered right to your door. Order now and
-                      enjoy the ultimate home dining experience!
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
                     </td>
                     <td>
-                      <a href="manageseo.html">
-                        <img src="assets/images/custome-icon.png" alt="" />
-                      </a>
-
-                      <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
+                    </td>
+                    <td>
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
+                    </td>
+                    <td>
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
+                    </td>
+                    <td>
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
+                    </td>
+                    <td>
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Prince</td>
+                    <td>prince@gmail.com</td>
+                    <td>+1234567890</td>
+                    <td><span>Pick Up : </span> Pine Ln, City, Country<br>
+                      <span>Drop :</span> 789 Pine Ln, City, Country
+                    </td>
+                    </td>
+                    <td>
+                      <a href="driverview.html">
+                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                      <a href="#" onclick="openDeleteModal()"><img src="assets/images/delete.png" alt=""></a>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-        </main>
+        </div>
       </div>
+
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </div>
+    <!-- Delete Modal -->
+    <div id="deleteModal" class="delete-modal">
+      <div class="delete-modal-content">
+        <div class="modal-logo">
+          <img src="assets/images/logo.png" />
+        </div>
+        <span class="delete-close" onclick="closeDeleteModal()">&times;</span>
+        <h3>Are you sure you want to delete this item?</h3>
+        <div class="delete-modal-buttons">
+          <button class="delete-yes" onclick="deleteItem()">Yes</button>
+          <button class="delete-cancel" onclick="closeDeleteModal()">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  <!-- =================================================== -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
-
-  <script>
-    let table = new DataTable('#myTable-C');
-  </script>
   <script>
     $(document).ready(function () {
-      $('#myTable-C').DataTable({
-        paging: true,
-        searching: false,
-        info: true,
-        pageLength: 4,
-        destroy: true,
-        lengthChange: false,
+      let table = new DataTable('#myTable-cabdrivers', {
+        "paging": true,
       });
     });
   </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector(".seo-form");
-      const titleInput = document.getElementById("title");
-      const metaTag = document.querySelector(".Add-blogs textarea");
-      const metaDesc = document.querySelector(".meta-form textarea");
-      const submitButton = document.querySelector(".add-deatiles");
-
-      submitButton.addEventListener("click", function (event) {
-        let isValid = true;
-
-
-        if (titleInput.value.trim() === "") {
-          showError(titleInput, "Page Name is required!");
-          isValid = false;
-        } else {
-          removeError(titleInput);
-        }
-
-
-        if (metaTag.value.trim() === "") {
-          showError(metaTag, "Meta Tag is required!", true);
-          isValid = false;
-        } else {
-          removeError(metaTag);
-        }
-
-
-        if (metaDesc.value.trim() === "") {
-          showError(metaDesc, "Meta Description is required!", true);
-          isValid = false;
-        } else {
-          removeError(metaDesc);
-        }
-
-
-        if (!isValid) {
-          event.preventDefault();
-        }
-      });
-
-
-      function showError(input, message, isTextarea = false) {
-        removeError(input);
-
-        const error = document.createElement("span");
-        error.classList.add("error-message");
-        error.textContent = message;
-
-
-        if (isTextarea) {
-          input.parentElement.insertAdjacentElement("afterend", error);
-        } else {
-          input.insertAdjacentElement("afterend", error);
-        }
-      }
-
-
-      function removeError(input) {
-        const existingError = input.parentElement.nextElementSibling;
-        if (existingError && existingError.classList.contains("error-message")) {
-          existingError.remove();
-        }
-      }
-    });
-
-    // datatable searchs
-
-    function filterTable() {
-      let input = document.getElementById('searchs');
-      let filter = input.value.toLowerCase();
-      const tables = [
-        document.getElementById('myTable-C')
-      ];
-
-      tables.forEach(table => {
-        let rows = table.getElementsByTagName('tr');
-        for (let i = 1; i < rows.length; i++) {
-          let cells = rows[i].getElementsByTagName('td');
-          let titleCell = cells[1];
-          if (titleCell) {
-            let titleText = titleCell.textContent || titleCell.innerText;
-            if (titleText.toLowerCase().indexOf(filter) > -1) {
-              rows[i].style.display = "";
-            } else {
-              rows[i].style.display = "none";
-            }
-          }
-        }
-      });
-    }
-  </script>
-
-
 </body>
 
 </html>

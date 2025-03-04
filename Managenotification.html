@@ -5,16 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage-Notification</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
-   <link
-   rel="stylesheet"
-   href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css"
- />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
 </head>
+
 <body>
   <header>
     <div class="instachef-admin">
@@ -193,7 +191,7 @@
             <img src="assets/images/imageten.png" alt="" class="hover-img" />
             MANAGE CHEF
             <i class="fa fa-caret-down"></i>
-            <p> +2</p>
+            <p> +3</p>
           </a>
           <div class="user-select-input">
             <label for="user">
@@ -206,31 +204,65 @@
                 <input type="radio" placeholder=""> LIST OF CHEF DETAIL
               </a>
             </label>
+            <label for="user">
+              <a href="deletechef.html">
+                <input type="radio" placeholder=""> DELETE CHEF
+              </a>
+            </label>
           </div>
         </li>
-        <!--  Delete Chef Item -->
+        <!-- Manage Booking Item -->
         <li class="nav-item">
-          <a href="deletechef.html" class="nav-link text-white">
-            <img src="assets/images/image9.png" alt="" class="default-img" />
-            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-            DELETE CHEF
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            CAB DRIVER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./createdriver.html">
+                <input type="radio" placeholder=""> CREATE CAB DRIVER
+              </a>
+            </label>
+            <label for="user">
+              <a href="driverlists.html">
+                <input type="radio" placeholder=""> DRIVER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="cabdriverinfo.html">
+                <input type="radio" placeholder=""> CAB DRIVER DETAIL
+              </a>
+            </label>
+          </div>
         </li>
-        <!--  Driver Create Item -->
         <li class="nav-item">
-          <a href="./createdriver.html" class="nav-link text-white">
-            <img src="assets/images/image6.png" alt="" class="default-img" />
-            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-            CREATE DRIVER
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE ADMIN
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
-        </li>
-        <!--  Driver list Item -->
-        <li class="nav-item">
-          <a href="./driverlists.html" class="nav-link text-white">
-            <img src="assets/images/image5.png" alt="" class="default-img" />
-            <img src="assets/images/imagefive.png" alt="" class="hover-img" />
-            DIRVER LIST
-          </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./adminusers.html">
+                <input type="radio" placeholder=""> CREATE ADMIN USERS
+              </a>
+            </label>
+            <label for="user">
+              <a href="./adminuserlists.html">
+                <input type="radio" placeholder=""> ADMIN USERS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="managerole.html">
+                <input type="radio" placeholder=""> ROLE
+              </a>
+            </label>
+          </div>
         </li>
         <!-- Logout Item -->
         <li class="nav-item">
@@ -331,27 +363,29 @@
                 </div>
               </span>
             </div>
-            <table id="myTable-A" class="maintable details-heading main-dts-table" style="width:100%">              
+            <table id="myTable-A" class="maintable details-heading main-dts-table" style="width:100%">
               <thead>
                 <tr class="header-table">
                   <th class="serial-number">S.No</th>
                   <th></th>
                   <th id="title-seo">Tittle</th>
-                  <th>Body</th> 
+                  <th>Body</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>01.</td>
                   <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td >Catering service now available!</td>
-                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
+                  <td>Catering service now available!</td>
+                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified
+                    chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
                 </tr>
                 <tr>
                   <td>01.</td>
                   <td class="blog-SEOImg"> <img src="assets/images/user-one (1).png" alt=""></td>
-                  <td >Catering service now available!</td>
-                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
+                  <td>Catering service now available!</td>
+                  <td>Dear customer, we are introducing the catering service in dubai, with food cooked by our qualified
+                    chefs in our own kitchen. Please contact 0566922010 for any orders.</td>
                 </tr>
                 <tr>
                   <td>02.</td>
@@ -371,7 +405,7 @@
   </div>
   <!-- <script src="script.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- 
+
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <!-- -------------datatable-------------- -->
@@ -425,39 +459,39 @@
 
 
   </script>
-  
+
 </body>
 
-  <!-- ---------------------validation------------------- -->
-  <script>
-   document.getElementById('Notificationform')
-      .addEventListener('click', function (event) {
+<!-- ---------------------validation------------------- -->
+<script>
+  document.getElementById('Notificationform')
+    .addEventListener('click', function (event) {
       event.preventDefault();
-});
+    });
 
-document.getElementById('sendnotification')
-.addEventListener('click', function () {
-  let isValid = true;
+  document.getElementById('sendnotification')
+    .addEventListener('click', function () {
+      let isValid = true;
 
-  document.querySelectorAll('#Notificationform .error-message')
-    .forEach((el) => (el.textContent = ''));
+      document.querySelectorAll('#Notificationform .error-message')
+        .forEach((el) => (el.textContent = ''));
 
-  const title = document.getElementById('title');
-  const Addmessage = document.getElementById('Addmessage');
+      const title = document.getElementById('title');
+      const Addmessage = document.getElementById('Addmessage');
 
-  if (!title.value.trim()) {
-    showError(title, ' Please Enter your title.');
-    isValid = false;
-  }
+      if (!title.value.trim()) {
+        showError(title, ' Please Enter your title.');
+        isValid = false;
+      }
 
-  if (!Addmessage.value.trim() || !validateAddmessage(Addmessage.value)) {
-    showError(Addmessage, 'Please enter a message.');
-    isValid = false;
-  }
-  if (valid) {
+      if (!Addmessage.value.trim() || !validateAddmessage(Addmessage.value)) {
+        showError(Addmessage, 'Please enter a message.');
+        isValid = false;
+      }
+      if (valid) {
         alert("form is submited successfully!");
       }
-});
+    });
 
   function showError(input, message) {
     const errorSpan = input.nextElementSibling;

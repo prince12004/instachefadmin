@@ -193,7 +193,7 @@
             <img src="assets/images/imageten.png" alt="" class="hover-img" />
             MANAGE CHEF
             <i class="fa fa-caret-down"></i>
-            <p> +2</p>
+            <p> +3</p>
           </a>
           <div class="user-select-input">
             <label for="user">
@@ -206,31 +206,65 @@
                 <input type="radio" placeholder=""> LIST OF CHEF DETAIL
               </a>
             </label>
+            <label for="user">
+              <a href="deletechef.html">
+                <input type="radio" placeholder=""> DELETE CHEF
+              </a>
+            </label>
           </div>
         </li>
-        <!--  Delete Chef Item -->
+        <!-- Manage Booking Item -->
         <li class="nav-item">
-          <a href="deletechef.html" class="nav-link text-white">
-            <img src="assets/images/image9.png" alt="" class="default-img" />
-            <img src="assets/images/imagenine.png" alt="" class="hover-img" />
-            DELETE CHEF
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            CAB DRIVER
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./createdriver.html">
+                <input type="radio" placeholder=""> CREATE CAB DRIVER
+              </a>
+            </label>
+            <label for="user">
+              <a href="driverlists.html">
+                <input type="radio" placeholder=""> DRIVER LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="cabdriverinfo.html">
+                <input type="radio" placeholder=""> CAB DRIVER DETAIL
+              </a>
+            </label>
+          </div>
         </li>
-        <!--  Driver Create Item -->
         <li class="nav-item">
-          <a href="./createdriver.html" class="nav-link text-white">
-            <img src="assets/images/image6.png" alt="" class="default-img" />
-            <img src="assets/images/imagesix.png" alt="" class="hover-img" />
-            CREATE DRIVER
+          <a href="#" class="nav-link text-white select-manage">
+            <img src="assets/images/image8.png" alt="" class="default-img" />
+            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+            MANAGE ADMIN
+            <i class="fa fa-caret-down"></i>
+            <p> +3</p>
           </a>
-        </li>
-        <!--  Driver list Item -->
-        <li class="nav-item">
-          <a href="./driverlists.html" class="nav-link text-white">
-            <img src="assets/images/image5.png" alt="" class="default-img" />
-            <img src="assets/images/imagefive.png" alt="" class="hover-img" />
-            DIRVER LIST
-          </a>
+          <div class="user-select-input">
+            <label for="user">
+              <a href="./adminusers.html">
+                <input type="radio" placeholder=""> CREATE ADMIN USERS
+              </a>
+            </label>
+            <label for="user">
+              <a href="./adminuserlists.html">
+                <input type="radio" placeholder=""> ADMIN USERS LIST
+              </a>
+            </label>
+            <label for="user">
+              <a href="managerole.html">
+                <input type="radio" placeholder=""> ROLE
+              </a>
+            </label>
+          </div>
         </li>
         <!-- Logout Item -->
         <li class="nav-item">
@@ -276,22 +310,22 @@
                   <form id="createBookingA">
                     <label for="title" class="form-label form-bookingA">User Name</label>
                     <span id="title" class="newtittle">
-                        New Booking 
+                      New Booking
                     </span>
                     <label for="title" class="form-label form-booking">Booking Address</label>
                     <span id="title" class="newtittle">
-                         Address new 
+                      Address new
                     </span>
 
                     <label for="title" class="form-label form-booking">Booking Start</label>
                     <span id="title" class="newtittle">
-                         24/02/2025  
+                      24/02/2025
                     </span>
-                      <!-- <img src="assets/images/booking-start.png" alt=""> -->
+                    <!-- <img src="assets/images/booking-start.png" alt=""> -->
                     </span>
                     <label for="title" class="form-label form-booking" style="display: block;">Package</label>
                     <span id="title" class="newtittle">
-                        5 times a week (Total 20 visits per month)  
+                      5 times a week (Total 20 visits per month)
                     </span>
                     <label for="title" class="form-label form-booking">Select Chef</label>
                     <select id="title" class="newtittle mb-3">
@@ -303,12 +337,12 @@
                     </select>
                     <label for="title" class="form-label form-booking" style="display: block;">Discount</label>
                     <div id="title" class="newtittles mb-3">
-                        <select>
-                            <option>Discount Type</option>
-                            <option>Percentage</option>
-                            <option>Amount</option>
-                        </select>
-                    <input type="text" id="title" placeholder="Enter your Discount" />
+                      <select>
+                        <option>Discount Type</option>
+                        <option>Percentage</option>
+                        <option>Amount</option>
+                      </select>
+                      <input type="text" id="title" placeholder="Enter your Discount" />
                     </div>
 
                     <!-- </form>   -->
@@ -318,20 +352,20 @@
                   <div class="mb-3">
                     <label for="title" class="form-label form-bookingA">User Email</label>
                     <span id="title" class="newtittle">
-                        new@gmail.com  
+                      new@gmail.com
                     </span>
                     <span class="error-message"></span>
                     <label for="title" class="form-label form-booking">Booking Contact</label>
                     <span id="title" class="newtittle">
-                        Contact Number   
+                      Contact Number
                     </span>
                     <label for="title" class="form-label form-booking">Category</label>
                     <span id="title" class="newtittle">
-                        Continental  
+                      Continental
                     </span>
                     <label for="title" class="form-label form-booking">Base Price</label>
                     <span id="title" class="newtittle">
-                        TBD   
+                      TBD
                     </span>
                     <span class="error-message"></span>
                     <label for="title" class="form-label form-booking">Assign Date</label>

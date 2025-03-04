@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create-User</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="instachef-admin">
+            <div class="instachef">
+                <a href="index.html">
+                    <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="middle-line">
+                <div class="toggle-bar">
+                    <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+                </div>
+            </div>
+            <div class="user-icons">
+                <a href="#">
+                    <img src="assets/images/home.png" alt="" />
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="assets/images/notification.png" alt="notification Icon" />
+                    <span class="counter wishlist-counter">2</span>
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="right-border" />
+                <div class="admin-section">
+                    <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
+                    <div class="admin-text">
+                        <h3>LOREM ISPUM</h3>
+                        <select id="super-admin">
+                            <option>super-admin</option>
+                            <option>admin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------------------------header------------------------- -->
+
+    <!-- ===========header============== -->
+    <div class="admin-panel">
+        <nav class="bg-dark text-white sidebar">
+            <ul class="nav flex-column">
+              <!-- Dashboard Item -->
+              <li class="nav-item dashboard">
+                <a href="index.html" class="nav-link text-white">
+                  <img src="assets/images/image1.png" alt="" class="default-img" />
+                  <img src="assets/images/icons.png" alt="" class="hover-img" />
+                  DASHBOARD
+                </a>
+              </li>
+      
+              <!-- Manage Profile Item -->
+              <li class="nav-item">
+                <a href="manageprofile.html" class="nav-link text-white">
+                  <img src="assets/images/image2.png" alt="" class="default-img" />
+                  <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+                  MANAGE PROFILE
+                </a>
+              </li>
+      
+              <!-- Manage Notification Item -->
+              <li class="nav-item">
+                <a href="Managenotification.html" class="nav-link text-white">
+                  <img src="assets/images/image3.png" alt="" class="default-img" />
+                  <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+                  MANAGE NOTIFICATION
+                </a>
+              </li>
+      
+              <!-- Contact Request Item -->
+              <li class="nav-item">
+                <a href="contactrequest.html" class="nav-link text-white">
+                  <img src="assets/images/image4.png" alt="" class="default-img" />
+                  <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+                  CONTACT REQUEST
+                </a>
+              </li>
+      
+              <!-- Manage Blogs Item -->
+              <li class="nav-item">
+                <a href="manageblog.html" class="nav-link text-white">
+                  <img src="assets/images/image5.png" alt="" class="default-img" />
+                  <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+                  MANAGE BLOGS
+                </a>
+              </li>
+      
+              <!-- Manage SEO Item -->
+              <li class="nav-item">
+                <a href="manageseo.html" class="nav-link text-white">
+                  <img src="assets/images/image6.png" alt="" class="default-img" />
+                  <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+                  MANAGE SEO
+                </a>
+              </li>
+      
+              <!-- Manage User Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image7.png" alt="" class="default-img" />
+                  <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+                  MANAGE USER
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createuser.html">
+                      <input type="radio" placeholder=""> CREATE USER
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="userlist.html">
+                      <input type="radio" placeholder=""> USER LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="inactiveuser.html">
+                      <input type="radio" placeholder=""> IN-ACTIVE USER
+                    </a>
+                  </label>
+                </div>
+              </li>
+      
+              <!-- Manage Booking Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  MANAGE BOOKING
+                  <i class="fa fa-caret-down"></i>
+                  <p> +4</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createbooking.html">
+                      <input type="radio" placeholder=""> CREATE BOOKING
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="chefbooking.html">
+                      <input type="radio" placeholder=""> BOOKINGS LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="inactivebooking.html">
+                      <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="Review.html">
+                      <input type="radio" placeholder=""> REVIEW LIST
+                    </a>
+                  </label>
+                </div>
+              </li>
+      
+              <!-- Manage Cuisine Item -->
+              <li class="nav-item">
+                <a href="managecuisine.html" class="nav-link text-white">
+                  <img src="assets/images/image9.png" alt="" class="default-img" />
+                  <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+                  MANAGE CUISINE
+                </a>
+              </li>
+      
+              <!-- Manage Package Item -->
+              <li class="nav-item">
+                <a href="mangepackage.html" class="nav-link text-white">
+                  <img src="assets/images/image10.png" alt="" class="default-img" />
+                  <img src="assets/images/imagten.png" alt="" class="hover-img" />
+                  MANAGE PACKAGE
+                </a>
+              </li>
+      
+              <!-- Manage Chef Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image11.png" alt="" class="default-img" />
+                  <img src="assets/images/imageten.png" alt="" class="hover-img" />
+                  MANAGE CHEF
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="createchef.html">
+                      <input type="radio" placeholder=""> CREATE CHEF
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="chefdetails.html">
+                      <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="deletechef.html">
+                      <input type="radio" placeholder=""> DELETE CHEF
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <!-- Manage Booking Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  CAB DRIVER
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="./createdriver.html">
+                      <input type="radio" placeholder=""> CREATE CAB DRIVER
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="driverlists.html">
+                      <input type="radio" placeholder=""> DRIVER LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="cabdriverinfo.html">
+                      <input type="radio" placeholder=""> CAB DRIVER DETAIL
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white select-manage">
+                  <img src="assets/images/image8.png" alt="" class="default-img" />
+                  <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                  MANAGE ADMIN
+                  <i class="fa fa-caret-down"></i>
+                  <p> +3</p>
+                </a>
+                <div class="user-select-input">
+                  <label for="user">
+                    <a href="./adminusers.html">
+                      <input type="radio" placeholder=""> CREATE ADMIN USERS
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="./adminuserlists.html">
+                      <input type="radio" placeholder=""> ADMIN USERS LIST
+                    </a>
+                  </label>
+                  <label for="user">
+                    <a href="managerole.html">
+                      <input type="radio" placeholder=""> ROLE
+                    </a>
+                  </label>
+                </div>
+              </li>
+              <!-- Logout Item -->
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white last-li">
+                  <img src="assets/images/logout.png" alt="" class="default-img" />
+                  <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+                  LOGOUT
+                </a>
+              </li>
+            </ul>
+          </nav>
+        <!-- ===============left==================== -->
+        <div class="main-content">
+            <div class="admin-dashboard">
+                <div class="dashboard-time">
+                    <img src="assets/images/createUser.png" alt="">
+                    <p>Manage Admin Users</p>
+                </div>
+                <div class="time-piker">
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Date Range</p>
+                            <input type="date" name="daterange" class="dateA" id="dateRange" />
+                        </div>
+                    </div>
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Filter Range</p>
+                            <input type="date" name="daterange" class="dateA" id="filterRange">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================================== -->
+            <div class="form-cardB">
+                <div class="admin-form">
+                    <h2>CREATE ADMIN USER</h2>
+                </div>
+
+                <div class="user-login">
+                    <form id="profileForm">
+                        <div class="user-name">
+                            <div class="form-groupC">
+                                <label for="username">First Name</label>
+                                <input type="text" id="username" placeholder="Enter First Name">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-groupC">
+                                <label for="username">Last Name</label>
+                                <input type="text" id="lastname" placeholder="Enter Last Name">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="user-name">
+                            <div class="form-groupC">
+                                <label for="username">Email Address</label>
+                                <input type="text" id="email" placeholder="Enter Email Address">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-groupC">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Enter Password" required>
+                                <img src="assets/images/passicon.png" class="password-icon" id="togglePassword" />
+                            </div>
+
+                        </div>
+                        <div class="user-name">
+                            <div class="form-groupC">
+                                <label for="username">Contact Number</label>
+                                <input type="number" id="contact" class="newtittle" placeholder="Enter Contact Number">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-groupC">
+                                <label for="username">Address</label>
+                                <input type="text" id="state" class="stateA" placeholder="Enter Address">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="user-name">
+                            <div class="form-groupC">
+                                <label for="username">City</label>
+                                <select id="city" class="create-chefB">
+                                    <option value="">Select City</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Noida">Noida</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-groupC">
+                                <label for="username">Country</label>
+                                <select id="country" class="create-chefB">
+                                    <option value="">Select Country</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+
+                        </div>
+                        <div class="user-name">
+                            <div class="form-groupC">
+                                <label for="adminAccess">Admin Access</label>
+                                <select id="adminAccess" class="create-chefB newtittle" onchange="toggleSubcategories(this.value)">
+                                    <option value="">Select Access Level</option>
+                                    <option value="all">All Access</option>
+                                    <option value="custom">Custom Access</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div id="customAccess" style="display: none;">
+                            <div class="users-names">
+                              
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageProfile" onclick="toggleSubcategory('profileSubcategories')"> Manage Profile
+                                    </label>
+                                    <div id="profileSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="profileAccess" value="editProfile"> Edit Profile</label>
+                                        <label><input type="checkbox" name="profileAccess" value="deleteProfile"> Delete Profile</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageNotification" onclick="toggleSubcategory('notificationSubcategories')"> Manage Notification
+                                    </label>
+                                    <div id="notificationSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="notificationAccess" value="editNotification"> Edit Notification</label>
+                                        <label><input type="checkbox" name="notificationAccess" value="deleteNotification"> Delete Notification</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="contactRequest" onclick="toggleSubcategory('contactSubcategories')"> Contact Request
+                                    </label>
+                                    <div id="contactSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="contactAccess" value="editContact"> Edit Contact</label>
+                                        <label><input type="checkbox" name="contactAccess" value="deleteContact"> Delete Contact</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageBlogs" onclick="toggleSubcategory('blogsSubcategories')"> Manage Blogs
+                                    </label>
+                                    <div id="blogsSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="blogsAccess" value="editBlog"> Edit Blog</label>
+                                        <label><input type="checkbox" name="blogsAccess" value="deleteBlog"> Delete Blog</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageSEO" onclick="toggleSubcategory('seoSubcategories')"> Manage SEO
+                                    </label>
+                                    <div id="seoSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="seoAccess" value="editSEO"> Edit SEO</label>
+                                        <label><input type="checkbox" name="seoAccess" value="deleteSEO"> Delete SEO</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageUser" onclick="toggleSubcategory('userSubcategories')"> Manage User
+                                    </label>
+                                    <div id="userSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="userAccess" value="createUser"> Create User</label>
+                                        <label><input type="checkbox" name="userAccess" value="listUser"> User List</label>
+                                        <label><input type="checkbox" name="userAccess" value="inactiveUser"> Inactive User</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageBooking" onclick="toggleSubcategory('bookingSubcategories')"> Manage Booking
+                                    </label>
+                                    <div id="bookingSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="bookingAccess" value="createBooking"> Create Booking</label>
+                                        <label><input type="checkbox" name="bookingAccess" value="listBooking"> Booking List</label>
+                                        <label><input type="checkbox" name="bookingAccess" value="inactiveBooking"> Inactive Booking</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageCuisine" onclick="toggleSubcategory('cuisineSubcategories')"> Manage Cuisine
+                                    </label>
+                                    <div id="cuisineSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="cuisineAccess" value="editCuisine"> Edit Cuisine</label>
+                                        <label><input type="checkbox" name="cuisineAccess" value="deleteCuisine"> Delete Cuisine</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="managePackage" onclick="toggleSubcategory('packageSubcategories')"> Manage Package
+                                    </label>
+                                    <div id="packageSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="packageAccess" value="editPackage"> Edit Package</label>
+                                        <label><input type="checkbox" name="packageAccess" value="deletePackage"> Delete Package</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="manageChef" onclick="toggleSubcategory('chefSubcategories')"> Manage Chef
+                                    </label>
+                                    <div id="chefSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="chefAccess" value="createChef"> Create Chef</label>
+                                        <label><input type="checkbox" name="chefAccess" value="listChef"> List of Chef Detail</label>
+                                        <label><input type="checkbox" name="chefAccess" value="deleteChef"> Delete Chef</label>
+                                    </div>
+                                </div>
+                                <div class="form-groupC">
+                                    <label>
+                                        <input type="checkbox" name="access" value="cabDriver" onclick="toggleSubcategory('driverSubcategories')"> Cab Driver
+                                    </label>
+                                    <div id="driverSubcategories" class="subcategory" style="display: none;">
+                                        <label><input type="checkbox" name="driverAccess" value="createDriver"> Create Cab Driver</label>
+                                        <label><input type="checkbox" name="driverAccess" value="listDriver"> Driver List</label>
+                                        <label><input type="checkbox" name="driverAccess" value="driverDetail"> Cab Driver Detail</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="updateProfileBtnA" onclick="opencommonModal()">ADD ADMIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Modal (Common modal class used here) -->
+ <div id="thankYouModal" class="common-modal">
+    <div class="comman-contents">
+        <span class="close-btn-new" onclick="closecommonModal()">&times;</span>
+        <div class="modal-logo">
+          <img src="assets/images/logo.png" />
+        </div>
+        <h2>Admin User Created!</h2>
+        <p>Your admin user has been successfully created. The new admin now has the necessary permissions to manage the platform.</p>
+       <div class="common-modal-button">
+        <button class="modal-ok" onclick="closecommonModal()">OK</button>
+       </div>
+    </div>
+  </div>
+    <!-- =================================================== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        function toggleSubcategories(value) {
+            const customAccess = document.getElementById('customAccess');
+            if (value === 'custom') {
+                customAccess.style.display = 'block';
+            } else {
+                customAccess.style.display = 'none';
+            }
+        }
+
+        function toggleSubcategory(id) {
+            const subcategory = document.getElementById(id);
+            if (subcategory.style.display === 'none') {
+                subcategory.style.display = 'block';
+            } else {
+                subcategory.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        const passwordInput = document.getElementById('password');
+const passwordIcon = document.getElementById('togglePassword');
+
+passwordIcon.addEventListener('click', function () {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+
+    passwordIcon.src = type === 'password' ? 'assets/images/passicon.png' : 'assets/images/passiconvisible.png';
+});
+    </script>
+</body>
+
+</html>
