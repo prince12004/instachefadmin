@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create-Booking</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/comman.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="instachef-admin">
+            <div class="instachef">
+                <a href="index.html">
+                    <img src="assets/images/InstaCheflogo.png" alt="" class="logo" />
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="middle-line">
+                <div class="toggle-bar">
+                    <img src="assets/images/togglerBar.png" alt="Toggle Sidebar" id="toggle" />
+                </div>
+            </div>
+            <div class="user-icons">
+                <a href="#">
+                    <img src="assets/images/home.png" alt="" />
+                </a>
+                <a href="#" class="icon-item">
+                    <img src="assets/images/notification.png" alt="notification Icon" />
+                    <span class="counter wishlist-counter">2</span>
+                </a>
+                <img src="assets/images/middleLine.png" alt="" class="right-border" />
+                <div class="admin-section">
+                    <img src="assets/images/superAdmin.png" alt="" class="adminimg" />
+                    <div class="admin-text">
+                        <h3>LOREM ISPUM</h3>
+                        <select id="super-admin">
+                            <option>super-admin</option>
+                            <option>admin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===========header============== -->
+    <div class="admin-panel">
+        <nav class="bg-dark text-white sidebar">
+            <ul class="nav flex-column">
+                <!-- Dashboard Item -->
+                <li class="nav-item dashboard">
+                    <a href="index.html" class="nav-link text-white">
+                        <img src="assets/images/image1.png" alt="" class="default-img" />
+                        <img src="assets/images/icons.png" alt="" class="hover-img" />
+                        DASHBOARD
+                    </a>
+                </li>
+
+                <!-- Manage Profile Item -->
+                <li class="nav-item">
+                    <a href="manageprofile.html" class="nav-link text-white">
+                        <img src="assets/images/image2.png" alt="" class="default-img" />
+                        <img src="assets/images/imgaetwo.png" alt="" class="hover-img" />
+                        MANAGE PROFILE
+                    </a>
+                </li>
+
+                <!-- Manage Notification Item -->
+                <li class="nav-item">
+                    <a href="Managenotification.html" class="nav-link text-white">
+                        <img src="assets/images/image3.png" alt="" class="default-img" />
+                        <img src="assets/images/imagethree.png" alt="" class="hover-img" />
+                        MANAGE NOTIFICATION
+                    </a>
+                </li>
+
+                <!-- Contact Request Item -->
+                <li class="nav-item">
+                    <a href="contactrequest.html" class="nav-link text-white">
+                        <img src="assets/images/image4.png" alt="" class="default-img" />
+                        <img src="assets/images/imageFour.png" alt="" class="hover-img" />
+                        CONTACT REQUEST
+                    </a>
+                </li>
+
+                <!-- Manage Blogs Item -->
+                <li class="nav-item">
+                    <a href="manageblog.html" class="nav-link text-white">
+                        <img src="assets/images/image5.png" alt="" class="default-img" />
+                        <img src="assets/images/imageFive.png" alt="" class="hover-img" />
+                        MANAGE BLOGS
+                    </a>
+                </li>
+
+                <!-- Manage SEO Item -->
+                <li class="nav-item">
+                    <a href="manageseo.html" class="nav-link text-white">
+                        <img src="assets/images/image6.png" alt="" class="default-img" />
+                        <img src="assets/images/imagesix.png" alt="" class="hover-img" />
+                        MANAGE SEO
+                    </a>
+                </li>
+
+                <!-- Manage User Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image7.png" alt="" class="default-img" />
+                        <img src="assets/images/imageseven.png" alt="" class="hover-img" />
+                        MANAGE USER
+                        <i class="fa fa-caret-down"></i>
+                        <p> +3</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user">
+                            <a href="createuser.html">
+                                <input type="radio" placeholder=""> CREATE USER
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="userlist.html">
+                                <input type="radio" placeholder=""> USER LIST
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="inactiveuser.html">
+                                <input type="radio" placeholder=""> IN-ACTIVE USER
+                            </a>
+                        </label>
+                    </div>
+                </li>
+
+                <!-- Manage Booking Item -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/images/image8.png" alt="" class="default-img" />
+              <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+              MANAGE BOOKING
+              <i class="fa fa-caret-down"></i>
+              <p> +5</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="createbooking.html">
+                  <input type="radio" placeholder=""> CREATE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="chefbooking.html">
+                  <input type="radio" placeholder=""> BOOKINGS LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="inactivebooking.html">
+                  <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="Review.html">
+                  <input type="radio" placeholder=""> REVIEW LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="completebooking.html">
+                  <input type="radio" placeholder=""> COMPLETE BOOKINGS
+                </a>
+              </label>
+            </div>
+          </li>
+
+                <!-- Manage Cuisine Item -->
+                <li class="nav-item">
+                    <a href="managecuisine.html" class="nav-link text-white">
+                        <img src="assets/images/image9.png" alt="" class="default-img" />
+                        <img src="assets/images/imagenine.png" alt="" class="hover-img" />
+                        MANAGE CUISINE
+                    </a>
+                </li>
+
+                <!-- Manage Package Item -->
+                <li class="nav-item">
+                    <a href="mangepackage.html" class="nav-link text-white">
+                        <img src="assets/images/image10.png" alt="" class="default-img" />
+                        <img src="assets/images/imagten.png" alt="" class="hover-img" />
+                        MANAGE PACKAGE
+                    </a>
+                </li>
+
+                <!-- Manage Chef Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image11.png" alt="" class="default-img" />
+                        <img src="assets/images/imageten.png" alt="" class="hover-img" />
+                        MANAGE CHEF
+                        <i class="fa fa-caret-down"></i>
+                        <p> +3</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user">
+                            <a href="createchef.html">
+                                <input type="radio" placeholder=""> CREATE CHEF
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="chefdetails.html">
+                                <input type="radio" placeholder=""> LIST OF CHEF DETAIL
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="deletechef.html">
+                                <input type="radio" placeholder=""> DELETE CHEF
+                            </a>
+                        </label>
+                    </div>
+                </li>
+                <!-- Manage Booking Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image8.png" alt="" class="default-img" />
+                        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                        CAB DRIVER
+                        <i class="fa fa-caret-down"></i>
+                        <p> +3</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user">
+                            <a href="./createdriver.html">
+                                <input type="radio" placeholder=""> CREATE CAB DRIVER
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="driverlists.html">
+                                <input type="radio" placeholder=""> DRIVER LIST
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="cabdriverinfo.html">
+                                <input type="radio" placeholder=""> CAB DRIVER DETAIL
+                            </a>
+                        </label>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white select-manage">
+                        <img src="assets/images/image8.png" alt="" class="default-img" />
+                        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+                        MANAGE ADMIN
+                        <i class="fa fa-caret-down"></i>
+                        <p> +3</p>
+                    </a>
+                    <div class="user-select-input">
+                        <label for="user">
+                            <a href="./adminusers.html">
+                                <input type="radio" placeholder=""> CREATE ADMIN USERS
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="./adminuserlists.html">
+                                <input type="radio" placeholder=""> ADMIN USERS LIST
+                            </a>
+                        </label>
+                        <label for="user">
+                            <a href="managerole.html">
+                                <input type="radio" placeholder=""> ROLE
+                            </a>
+                        </label>
+                    </div>
+                </li>
+                <!-- Logout Item -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white last-li">
+                        <img src="assets/images/logout.png" alt="" class="default-img" />
+                        <img src="assets/images/Logouthover.png" alt="" class="hover-img" />
+                        LOGOUT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- ===============left==================== -->
+        <div class="main-content">
+            <div class="admin-dashboard">
+                <div class="dashboard-time">
+                    <img src="assets/images/manage-booking.png" alt="" />
+                    <p>COMPLETED BOOKING DETAILS</p>
+                </div>
+                <div class="time-piker">
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Date Range</p>
+                            <input type="date" name="daterange" class="dateA" id="dateRange" />
+                        </div>
+                    </div>
+                    <div class="time">
+                        <img src="assets/images/calender.png" alt="">
+                        <div class="time-pikerA">
+                            <p>Filter Range</p>
+                            <input type="date" name="daterange" class="dateA" id="filterRange">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forms">
+                <main class="col-md-10 bg-light right-sidebar assisgn">
+                    <div class="card mb-4">
+                        <div class="card-body ">
+                            <h4 class="notification-heading"> DETAILS</h4>
+                            <div class="row Both-container">
+                                <div class="col-md-6 manage-notification-left">
+                                    <form id="createBookingA">
+                                        <div class="assigns">
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-bookingA">User Name</label>
+                                                <span id="title" class="newtittle">
+                                                    New Booking
+                                                </span>
+                                            </div>
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-bookingA">Cuisine</label>
+                                                <span id="title" class="newtittle">
+                                                    Indian
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="assigns">
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-booking">Booking
+                                                    Address</label>
+                                                <span id="title" class="newtittle">
+                                                    Lorem ipsum dolor sit
+                                                </span>
+                                            </div>
+                                            <!-- <img src="assets/images/booking-start.png" alt=""> -->
+                                            </span>
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-booking"
+                                                    style="display: block;">Package</label>
+                                                <span id="title" class="newtittle"
+                                                    style="font-size: 13px; padding: 14px;">
+                                                    5 times a week (Total 20 visits per month)
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="assigns">
+                                            <div class="new-assi">
+                                                <label for="title" class="form-label form-booking" style="margin-bottom: 0px;">Dish Prepared</label>
+                                                <span id="title" class="newtittle dishes">
+                                                    <div class="dish-item">
+                                                        <div class="dish-name">Schezwan</div>
+                                                        <img src="assets/images/footer-image-one.png" alt="Dish 1" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-one.png" alt="Dish 2" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-one.png" alt="Dish 3" class="dish-image">
+                                                    </div>
+                                                </span>
+                                                <span id="title" class="newtittle dishes">
+                                                    <div class="dish-item">
+                                                        <div class="dish-name">Poha</div>
+                                                        <img src="assets/images/footer-image-four.png" alt="Dish 1" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-four.png" alt="Dish 2" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-four.png" alt="Dish 3" class="dish-image">
+                                                    </div>
+                                                </span>
+                                                <span id="title" class="newtittle dishes">
+                                                    <div class="dish-item">
+                                                        <div class="dish-name">Rajma</div>
+                                                        <img src="assets/images/footer-image-five.png" alt="Dish 1" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-five.png" alt="Dish 2" class="dish-image">
+                                                    </div>
+                                                    <div class="dish-item">
+                                                        <div class="dish-name"></div>
+                                                        <img src="assets/images/footer-image-five.png" alt="Dish 3" class="dish-image">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+
+
+
+                                        <!-- </form>   -->
+                                </div>
+                                <div class="col-md-6 right-form-deatiles">
+                                    <!-- <form id="createBookingA"> -->
+                                    <div class="mb-3">
+                                        <div class="assigns">
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-bookingA">Chef</label>
+                                                <span id="title" class="newtittle">
+                                                    Abdelrhman Hafez
+                                                </span>
+                                            </div>
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-bookingA">Contact
+                                                    Number</label>
+                                                <span id="title" class="newtittle">
+                                                    1234567890
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="assigns">
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-booking">Booking Start
+                                                    Date/Time</label>
+                                                <span id="title" class="newtittle">
+                                                    18/03/2025 19:00
+                                                </span>
+                                            </div>
+                                            <div class="new-assign">
+                                                <label for="title" class="form-label form-booking">Booking End
+                                                    Date/Time</label>
+                                                <span id="title" class="newtittle">
+                                                    18/03/2025 22:00
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="assigns">
+                                            <div class="complete-review">
+                                                <label for="title" class="form-label form-booking">Review</label>
+                                                <span id="title" class="review-details">
+                                                    <div class="review-header">
+                                                        <span class="reviewer-name">John Doe</span>
+                                                        <span class="rating-stars">
+                                                            ★★★★☆ <!-- 4 stars out of 5 -->
+                                                        </span>
+                                                    </div>
+                                                    <div class="review-description">
+                                                        "The dish was absolutely delicious! I loved the flavors and the
+                                                        presentation was perfect."
+                                                    </div>
+                                                    <div class="review-image">
+                                                        <img src="assets/images/footer-image-six.png" alt="Review Image"
+                                                            class="review-img">
+                                                        <img src="assets/images/footer-image-six.png" alt="Review Image"
+                                                            class="review-img">
+                                                        <img src="assets/images/footer-image-six.png" alt="Review Image"
+                                                            class="review-img"> <img
+                                                            src="assets/images/footer-image-six.png" alt="Review Image"
+                                                            class="review-img">
+                                                    </div>
+                                                </span>
+
+                                                <div class="revioe-hold">
+                                                    <button type="button" class="holdings">Hold</button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- </form> -->
+                                    </div>
+
+                                </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal (Common modal class used here) -->
+    <div id="thankYouModal" class="common-modal">
+        <div class="comman-contents">
+            <!-- Close button -->
+            <span class="close-btn-new" onclick="closecommonModal()">&times;</span>
+            <div class="modal-logo">
+                <img src="assets/images/logo.png" alt="Logo" />
+            </div>
+            <h2></h2>
+            <p id="modal-message"></p>
+            <div class="common-modal-button">
+                <button class="modal-ok" onclick="closecommonModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="assets/js/index.js"></script>
+
+
+</body>
+
+</html>

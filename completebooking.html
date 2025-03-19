@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Active-User</title>
+  <title>Chef-Booking</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/comman.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -48,7 +48,7 @@
       </div>
     </div>
   </header>
-  <!-- -----------------------header------------------ -->
+  <!-- ---------------------header------------------------------- -->
   <div class="admin-panel">
     <nav class="bg-dark text-white sidebar">
       <ul class="nav flex-column">
@@ -134,43 +134,43 @@
           </div>
         </li>
 
-     <!-- Manage Booking Item -->
-     <li class="nav-item">
-      <a href="#" class="nav-link text-white select-manage">
-        <img src="assets/images/image8.png" alt="" class="default-img" />
-        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-        MANAGE BOOKING
-        <i class="fa fa-caret-down"></i>
-        <p> +5</p>
-      </a>
-      <div class="user-select-input">
-        <label for="user">
-          <a href="createbooking.html">
-            <input type="radio" placeholder=""> CREATE BOOKING
-          </a>
-        </label>
-        <label for="user">
-          <a href="chefbooking.html">
-            <input type="radio" placeholder=""> BOOKINGS LIST
-          </a>
-        </label>
-        <label for="user">
-          <a href="inactivebooking.html">
-            <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-          </a>
-        </label>
-        <label for="user">
-          <a href="Review.html">
-            <input type="radio" placeholder=""> REVIEW LIST
-          </a>
-        </label>
-        <label for="user">
-          <a href="completebooking.html">
-            <input type="radio" placeholder=""> COMPLETE BOOKINGS
-          </a>
-        </label>
-      </div>
-    </li>
+        <!-- Manage Booking Item -->
+        <li class="nav-item">
+            <a href="#" class="nav-link text-white select-manage">
+              <img src="assets/images/image8.png" alt="" class="default-img" />
+              <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+              MANAGE BOOKING
+              <i class="fa fa-caret-down"></i>
+              <p> +5</p>
+            </a>
+            <div class="user-select-input">
+              <label for="user">
+                <a href="createbooking.html">
+                  <input type="radio" placeholder=""> CREATE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="chefbooking.html">
+                  <input type="radio" placeholder=""> BOOKINGS LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="inactivebooking.html">
+                  <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+                </a>
+              </label>
+              <label for="user">
+                <a href="Review.html">
+                  <input type="radio" placeholder=""> REVIEW LIST
+                </a>
+              </label>
+              <label for="user">
+                <a href="completebooking.html">
+                  <input type="radio" placeholder=""> COMPLETE BOOKINGS
+                </a>
+              </label>
+            </div>
+          </li>
 
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
@@ -280,13 +280,16 @@
         </li>
       </ul>
     </nav>
-    <!-- ================================ -->
+
+    <!-- ============================================= -->
+
     <div id="main-content" class="main-content">
       <div class="admin-dashboard">
         <div class="dashboard-time">
-          <img src="assets/images/createUser.png" alt="" />
-          <p>Manage User</p>
+          <img src="assets/images/manageBooking.png" alt="" />
+          <p>COMPLETED BOOKING</p>
         </div>
+
         <div class="time-piker">
           <div class="time">
             <img src="assets/images/calender.png" alt="" />
@@ -304,25 +307,39 @@
           </div>
         </div>
       </div>
-      <!-- ----------------------------------------------------------- -->
+      <!---------------------------------------------------->
       <div class="table-container">
         <div class="user-listA">
-          <h1 class="heading">IN-ACTIVE USER LIST</h1>
+          <h1 class="heading">COMPLETED BOOKING</h1>
+          <!-- <div class="filter-bookings">
+            <select>
+              <option>
+                Select Chefs
+              </option>
+              <option>
+                Assign Chef
+              </option>
+              <option>New Assign Chef</option>
+            </select>
+          </div> -->
           <div id="search-here">
             <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
             <input type="search" placeholder="Search here..." id="iconSearch" onkeyup="filterTable()" />
           </div>
         </div>
-        <table id="myTable-4" class="maintable main-dts-table" style="width: 100%">
-          <!-- <h1 class="heading">IN-ACTIVE USER LIST</h1> -->
+        <table id="myTable-5" class="maintable main-dts-table" style="width: 100%">
           <thead>
             <tr>
               <th class="serial-number">S.No</th>
               <th>User Name</th>
-              <th>Email ID</th>
-              <th>Phone</th>
-              <th id="adress-C">Address</th>
-              <th id="address-new">Action</th>
+              <th>Cuisine</th>
+              <!-- <th id="package">Package</th> -->
+              <th>Chef</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <!-- <th>Phone</th> -->
+              <th id="addr">Address</th>
+              <th >Action</th>
             </tr>
           </thead>
           <tbody>
@@ -332,256 +349,183 @@
                 <img src="assets/images/profile-photo.png" alt="car" /> Tanja
                 Vinther
               </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
+              <td id="model">Indian</td>
+              <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+              <td>lorem Ipsum</td>
+              <td>18/03/2025</td>
+              <td>18/03/2025</td>
               <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
+                104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                Dubai Landmark: One at Palm Jumeirah
               </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
+              
+              <td>
+                <div class="assign-action">
+               
+                     <a href="completedview.html">
+                    <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                 
+                </div>
               </td>
+              <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
             </tr>
             <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
-            <tr>
-              <td class="number">1.</td>
-              <td id="car-name">
-                <img src="assets/images/profile-photo.png" alt="car" /> Tanja
-                Vinther
-              </td>
-              <td id="model">Tanjabruun@hotmail.com</td>
-              <td>0558400708</td>
-              <td>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum has been the industry's
-                standard dummy text
-              </td>
-              <td class="button-recover">
-                <a href="#"><button type="submit" onclick="openrecovermodal()">
-                    <img src="assets/images/recoverImg.png" alt="" /> RECOVER
-                  </button></a>
-              </td>
-            </tr>
+                <td class="number">2.</td>
+                <td id="car-name">
+                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                  Vinther
+                </td>
+                <td id="model">Indian</td>
+                <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+                <td>lorem Ipsum</td>
+                <td>18/03/2025</td>
+                <td>18/03/2025</td>
+                <td>
+                  104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                  Dubai Landmark: One at Palm Jumeirah
+                </td>
+                
+                <td>
+                  <div class="assign-action">
+                 
+                       <a href="completedview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                   
+                  </div>
+                </td>
+                <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              </tr>
+              <tr>
+                <td class="number">3.</td>
+                <td id="car-name">
+                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                  Vinther
+                </td>
+                <td id="model">Indian</td>
+                <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+                <td>lorem Ipsum</td>
+                <td>18/03/2025</td>
+                <td>18/03/2025</td>
+                <td>
+                  104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                  Dubai Landmark: One at Palm Jumeirah
+                </td>
+                
+                <td>
+                  <div class="assign-action">
+                 
+                       <a href="completedview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                   
+                  </div>
+                </td>
+                <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              </tr>
+              <tr>
+                <td class="number">4.</td>
+                <td id="car-name">
+                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                  Vinther
+                </td>
+                <td id="model">Indian</td>
+                <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+                <td>lorem Ipsum</td>
+                <td>18/03/2025</td>
+                <td>18/03/2025</td>
+                <td>
+                  104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                  Dubai Landmark: One at Palm Jumeirah
+                </td>
+                
+                <td>
+                  <div class="assign-action">
+                 
+                       <a href="completedview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                   
+                  </div>
+                </td>
+                <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              </tr>
+              <tr>
+                <td class="number">5.</td>
+                <td id="car-name">
+                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                  Vinther
+                </td>
+                <td id="model">Indian</td>
+                <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+                <td>lorem Ipsum</td>
+                <td>18/03/2025</td>
+                <td>18/03/2025</td>
+                <td>
+                  104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                  Dubai Landmark: One at Palm Jumeirah
+                </td>
+                
+                <td>
+                  <div class="assign-action">
+                 
+                       <a href="completedview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                   
+                  </div>
+                </td>
+                <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              </tr>
+              <tr>
+                <td class="number">6.</td>
+                <td id="car-name">
+                  <img src="assets/images/profile-photo.png" alt="car" /> Tanja
+                  Vinther
+                </td>
+                <td id="model">Indian</td>
+                <!-- <td>5 times a week (Total 20 visits per month)</td> -->
+                <td>lorem Ipsum</td>
+                <td>18/03/2025</td>
+                <td>18/03/2025</td>
+                <td>
+                  104 One at Palm Jumeirah Palm Jumeirah, Palm Jumeirah State:
+                  Dubai Landmark: One at Palm Jumeirah
+                </td>
+                
+                <td>
+                  <div class="assign-action">
+                 
+                       <a href="completedview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" style="text-align: center;" /></a>
+                   
+                  </div>
+                </td>
+                <!-- <img src="assets/Combined Shape (2).png" alt=""> -->
+              </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
-
-  <!-- Recover Modal -->
-  <div id="recovermoal" class="delete-modal">
+  <!-- Delete Modal -->
+  <div id="deleteModal" class="delete-modal">
     <div class="delete-modal-content">
       <div class="modal-logo">
         <img src="assets/images/logo.png" />
       </div>
-      <span class="delete-close" onclick="closerecovermodal()">&times;</span>
-      <h3>Are you sure you want to recover this User ?</h3>
+      <span class="delete-close" onclick="closeDeleteModal()">&times;</span>
+      <h3>Are you sure you want to delete this item?</h3>
       <div class="delete-modal-buttons">
-        <button class="delete-yes" onclick="recoverAction()">Yes</button>
-        <button class="delete-cancel" onclick="closerecovermodal()">
+        <button class="delete-yes" onclick="deleteItem()">Yes</button>
+        <button class="delete-cancel" onclick="closeDeleteModal()">
           Cancel
         </button>
       </div>
     </div>
   </div>
-
+  <!-- =================script=============== -->
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
   <script>
-    let table = new DataTable('#myTable-4');
+    let table = new DataTable('#myTable-5');
   </script>
   <script>
     // datatable searchs
@@ -589,7 +533,7 @@
     function filterTable() {
       let input = document.getElementById('iconSearch');
       let filter = input.value.toLowerCase();
-      const tables = [document.getElementById('myTable-4')];
+      const tables = [document.getElementById('myTable-5')];
 
       tables.forEach((table) => {
         let rows = table.getElementsByTagName('tr');

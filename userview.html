@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create-Driver</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Create-Booking</title>
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="//cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css" />
 </head>
 
 <body>
@@ -45,8 +49,6 @@
       </div>
     </div>
   </header>
-  <!-- -------------------------header------------------------- -->
-
   <!-- ===========header============== -->
   <div class="admin-panel">
     <nav class="bg-dark text-white sidebar">
@@ -135,41 +137,41 @@
 
      <!-- Manage Booking Item -->
      <li class="nav-item">
-      <a href="#" class="nav-link text-white select-manage">
-        <img src="assets/images/image8.png" alt="" class="default-img" />
-        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-        MANAGE BOOKING
-        <i class="fa fa-caret-down"></i>
-        <p> +5</p>
-      </a>
-      <div class="user-select-input">
-        <label for="user">
-          <a href="createbooking.html">
-            <input type="radio" placeholder=""> CREATE BOOKING
-          </a>
-        </label>
-        <label for="user">
-          <a href="chefbooking.html">
-            <input type="radio" placeholder=""> BOOKINGS LIST
-          </a>
-        </label>
-        <label for="user">
-          <a href="inactivebooking.html">
-            <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-          </a>
-        </label>
-        <label for="user">
-          <a href="Review.html">
-            <input type="radio" placeholder=""> REVIEW LIST
-          </a>
-        </label>
-        <label for="user">
-          <a href="completebooking.html">
-            <input type="radio" placeholder=""> COMPLETE BOOKINGS
-          </a>
-        </label>
-      </div>
-    </li>
+        <a href="#" class="nav-link text-white select-manage">
+          <img src="assets/images/image8.png" alt="" class="default-img" />
+          <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+          MANAGE BOOKING
+          <i class="fa fa-caret-down"></i>
+          <p> +5</p>
+        </a>
+        <div class="user-select-input">
+          <label for="user">
+            <a href="createbooking.html">
+              <input type="radio" placeholder=""> CREATE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="chefbooking.html">
+              <input type="radio" placeholder=""> BOOKINGS LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="inactivebooking.html">
+              <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="Review.html">
+              <input type="radio" placeholder=""> REVIEW LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="completebooking.html">
+              <input type="radio" placeholder=""> COMPLETE BOOKINGS
+            </a>
+          </label>
+        </div>
+      </li>
 
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
@@ -283,8 +285,8 @@
     <div class="main-content">
       <div class="admin-dashboard">
         <div class="dashboard-time">
-          <img src="assets/images/drivers.png" alt="">
-          <p>CAB DRIVER</p>
+          <img src="assets/images/manage-booking.png" alt="" />
+          <p>USER  DETAILS</p>
         </div>
         <div class="time-piker">
           <div class="time">
@@ -303,148 +305,34 @@
           </div>
         </div>
       </div>
-
-      <!-- =================================== -->
-      <div class="form-cardB">
-        <div class="admin-form">
-          <h2>ADD CAB DRIVER</h2>
-        </div>
-
-        <div class="user-login">
-          <div class="profile-section driver-profie">
-            <div class="profile-image">
-              <img src="assets/images/userProfile.png" alt="" class="user-profile">
-              <span class="edit-icon">
-                <form id="uploadDocument" class="documentA" action="#">
-                  <img src="assets/images/userLogin.png" alt="" class="login-img">
-                  <input id="file1" type="file" class="account-input" hidden>
-                </form>
-              </span>
-            </div>
-          </div>
-          <form id="profileForm">
-            <div class="user-name">
-              <!-- First Name -->
-              <div class="form-groupC">
-                <label for="username">First Name</label>
-                <input type="text" id="firstname" placeholder="Enter First Name">
-                <span class="error-message"></span>
-              </div>
-
-              <!-- Last Name -->
-              <div class="form-groupC">
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" placeholder="Enter Last Name">
-                <span class="error-message"></span>
-              </div>
-            </div>
-            <div class="user-name">
-              <!-- Email ID -->
-              <div class="form-groupC">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter Email Address">
-                <span class="error-message"></span>
-              </div>
-
-              <!-- Contact Number -->
-              <div class="form-groupC">
-                <label for="contact">Contact Number</label>
-                <input type="number" class="form-control" placeholder="Enter Contact Number">
-                <span class="error-message"></span>
-              </div>
-
-            </div>
-
-            <div class="user-name">
-              <!-- User ID -->
-              <div class="form-groupC">
-                <label for="userid">User ID</label>
-                <input type="text" id="userid" placeholder="Enter User ID">
-                <span class="error-message"></span>
-              </div>
-
-              <!-- Password -->
-              <div class="form-groupC">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Password">
-                <span class="error-message"></span>
-              </div>
-            </div>
-            <div class="user-name">
-              <!-- Created Date -->
-              <div class="form-groupC">
-                <label for="createdDate">Created Date</label>
-                <input type="date" id="createdDate" class="cretaedDate">
-                <span class="error-message"></span>
-              </div>
-              <!-- Created By -->
-              <div class="form-groupC">
-                <label for="createdBy">Created By</label>
-                <input type="text" id="createdBy" placeholder="Enter Created By">
-                <span class="error-message"></span>
-              </div>
-            </div>
-
-            <div class="user-name">
-              <!-- Address -->
-              <div class="form-groupC">
-                <label for="address">Address</label>
-                <input type="text" placeholder="Enter Address">
-                <span class="error-message"></span>
-              </div>
-              <!-- Address -->
-              <div class="form-groupC">
-                <label for="address">Working Area</label>
-                <input type="text" placeholder="Enter Working Area">
-                <span class="error-message"></span>
-              </div>
-            </div>
-
-            <div class="user-name">
-              <!-- Address -->
-              <div class="form-groupC">
-                <label for="address">City</label>
-                <input type="text" placeholder="Enter Address">
-                <span class="error-message"></span>
-              </div>
-              <!-- cOUNTRY -->
-              <div class="form-groupC">
-                <label for="username">Country</label>
-                <select id="country" class="create-chefB">
-                  <option value="">Select Country</option>
-                  <option value="India">Dubai</option>
-                </select>
-                <span class="error-message"></span>
-              </div>
-            </div>
-            <button type="button" id="updateProfileBtnA" onclick="opencommonModal()">ADD CAB DRIVER</button>
-        </div>
-
-        </form>
+      <div class="chefs-assigns">
+        <h4>CHEF NOT ASSIGN</h4>
       </div>
-
     </div>
   </div>
   </div>
 
-
- <!-- Modal (Common modal class used here) -->
- <div id="thankYouModal" class="common-modal">
-  <div class="comman-contents">
+  <!-- Modal (Common modal class used here) -->
+  <div id="thankYouModal" class="common-modal">
+    <div class="comman-contents">
+      <!-- Close button -->
       <span class="close-btn-new" onclick="closecommonModal()">&times;</span>
       <div class="modal-logo">
-        <img src="assets/images/logo.png" />
+        <img src="assets/images/logo.png" alt="Logo" />
       </div>
-      <h2>Thank You!</h2>
-      <p>Your cab driver has been successfully added. We appreciate your commitment to making the experience better.</p>
-     <div class="common-modal-button">
-      <button class="modal-ok" onclick="closecommonModal()">OK</button>
-     </div>
+      <h2></h2>
+      <p id="modal-message"></p>
+      <div class="common-modal-button">
+        <button class="modal-ok" onclick="closecommonModal()">OK</button>
+      </div>
+    </div>
   </div>
-</div>
-  <!-- =================================================== -->
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
+
+
 </body>
 
 </html>

@@ -132,38 +132,43 @@
           </div>
         </li>
 
-        <!-- Manage Booking Item -->
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white select-manage">
-            <img src="assets/images/image8.png" alt="" class="default-img" />
-            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-            MANAGE BOOKING
-            <i class="fa fa-caret-down"></i>
-            <p> +4</p>
+     <!-- Manage Booking Item -->
+     <li class="nav-item">
+      <a href="#" class="nav-link text-white select-manage">
+        <img src="assets/images/image8.png" alt="" class="default-img" />
+        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+        MANAGE BOOKING
+        <i class="fa fa-caret-down"></i>
+        <p> +5</p>
+      </a>
+      <div class="user-select-input">
+        <label for="user">
+          <a href="createbooking.html">
+            <input type="radio" placeholder=""> CREATE BOOKING
           </a>
-          <div class="user-select-input">
-            <label for="user">
-              <a href="createbooking.html">
-                <input type="radio" placeholder=""> CREATE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="chefbooking.html">
-                <input type="radio" placeholder=""> BOOKINGS LIST
-              </a>
-            </label>
-            <label for="user">
-              <a href="inactivebooking.html">
-                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="Review.html">
-                <input type="radio" placeholder=""> REVIEW LIST
-              </a>
-            </label>
-          </div>
-        </li>
+        </label>
+        <label for="user">
+          <a href="chefbooking.html">
+            <input type="radio" placeholder=""> BOOKINGS LIST
+          </a>
+        </label>
+        <label for="user">
+          <a href="inactivebooking.html">
+            <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+          </a>
+        </label>
+        <label for="user">
+          <a href="Review.html">
+            <input type="radio" placeholder=""> REVIEW LIST
+          </a>
+        </label>
+        <label for="user">
+          <a href="completebooking.html">
+            <input type="radio" placeholder=""> COMPLETE BOOKINGS
+          </a>
+        </label>
+      </div>
+    </li>
 
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
@@ -301,7 +306,7 @@
       <!-------------------------topbar----------------------------->
       <div class="create-chef mt-4">
         <div class="admin-form">
-          <h2>CREATE CHEF</h2>
+          <h2 class="creates-chefs">CREATE CHEF</h2>
         </div>
         <form id="createchef">
           <div class="user-nameB new-B">
@@ -334,7 +339,7 @@
             </div>
             <div class="form-groupA">
               <label for="joinDate" class="create-chefA">Joining Date</label>
-              <input type="text" id="joinDate" class="user-email" placeholder="DD-MM-YYYY">
+              <input type="date" id="joinDate" class="user-email newtittle" placeholder="DD-MM-YYYY">
               <span class="error-message"></span>
             </div>
             <div class="form-groupA">
@@ -375,6 +380,27 @@
             </div>
             <div class="form-groupA">
               <label for="country" class="create-chefA">Cuisines Known</label>
+          
+          
+              <!-- Custom dropdown with checkboxes -->
+              <div class="dropdown-container">
+                  <button class="dropdown-btn">Select Cuisines</button>
+                  <div class="dropdown-list">
+                      <label><input type="checkbox" value="India" class="checkbox-option"> India</label>
+                      <label><input type="checkbox" value="USA" class="checkbox-option"> USA</label>
+                      <label><input type="checkbox" value="Italy" class="checkbox-option"> Italy</label>
+                      <label><input type="checkbox" value="Mexico" class="checkbox-option"> Mexico</label>
+                  </div>
+              </div>
+          
+              <span class="error-message"></span>
+          
+              <div class="chef-textA">
+                  <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
+              </div>
+          </div>
+            <!-- <div class="form-groupA">
+              <label for="country" class="create-chefA">Cuisines Known</label>
               <select id="country" class="create-chefB">
                 <option value="">Cuisines Known</option>
                 <option value="India">new</option>
@@ -384,7 +410,7 @@
               <div class="chef-textA">
                 <span class="cuisine">(SELECT MULTIPLE BY HOLDING CTRL BUTTON ON YOUR KEYBOARD)</span>
               </div>
-            </div>
+            </div> -->
 
             <div class="form-groupA">
               <label for="username" class="create-chefA">Ratings</label>
@@ -516,6 +542,46 @@
       $(document).on('click', '.close-modal', function () {
         $('#validationModal').css('display', 'none');
       });
+    });
+
+    const dropdownBtn = document.querySelector('.dropdown-btn');
+    const dropdownList = document.querySelector('.dropdown-list');
+    const checkboxes = document.querySelectorAll('.checkbox-option');
+    const hiddenSelect = document.getElementById('country');
+
+    // Toggle dropdown visibility
+    dropdownBtn.addEventListener('click', function () {
+        const isOpen = dropdownList.style.display === 'block';
+        dropdownList.style.display = isOpen ? 'none' : 'block';
+    });
+
+    // Update the selected cuisines list and synchronize with hidden select
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            const selectedValues = [];
+            checkboxes.forEach(item => {
+                if (item.checked) {
+                    selectedValues.push(item.value);
+                }
+            });
+
+            // Update the displayed selected cuisines
+            selectedCuisinesDiv.textContent = selectedValues.length
+                ? `Selected Cuisines: ${selectedValues.join(', ')}`
+                : 'Selected Cuisines: None';
+
+            // Update the hidden select element to include selected values
+            Array.from(hiddenSelect.options).forEach(option => {
+                option.selected = selectedValues.includes(option.value);
+            });
+        });
+    });
+
+    // Close the dropdown if clicked outside
+    document.addEventListener('click', function (e) {
+        if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
+            dropdownList.style.display = 'none';
+        }
     });
 
   </script>

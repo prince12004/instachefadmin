@@ -134,38 +134,43 @@
           </div>
         </li>
 
-        <!-- Manage Booking Item -->
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white select-manage">
-            <img src="assets/images/image8.png" alt="" class="default-img" />
-            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-            MANAGE BOOKING
-            <i class="fa fa-caret-down"></i>
-            <p> +4</p>
-          </a>
-          <div class="user-select-input">
-            <label for="user">
-              <a href="createbooking.html">
-                <input type="radio" placeholder=""> CREATE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="chefbooking.html">
-                <input type="radio" placeholder=""> BOOKINGS LIST
-              </a>
-            </label>
-            <label for="user">
-              <a href="inactivebooking.html">
-                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="Review.html">
-                <input type="radio" placeholder=""> REVIEW LIST
-              </a>
-            </label>
-          </div>
-        </li>
+      <!-- Manage Booking Item -->
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white select-manage">
+          <img src="assets/images/image8.png" alt="" class="default-img" />
+          <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+          MANAGE BOOKING
+          <i class="fa fa-caret-down"></i>
+          <p> +5</p>
+        </a>
+        <div class="user-select-input">
+          <label for="user">
+            <a href="createbooking.html">
+              <input type="radio" placeholder=""> CREATE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="chefbooking.html">
+              <input type="radio" placeholder=""> BOOKINGS LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="inactivebooking.html">
+              <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="Review.html">
+              <input type="radio" placeholder=""> REVIEW LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="completebooking.html">
+              <input type="radio" placeholder=""> COMPLETE BOOKINGS
+            </a>
+          </label>
+        </div>
+      </li>
 
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
@@ -282,7 +287,7 @@
       <div class="admin-dashboard">
         <div class="dashboard-time">
           <img src="assets/images/manageBooking.png" alt="" />
-          <p>CHEF BOOKING</p>
+          <p> BOOKING LIST</p>
         </div>
 
         <div class="time-piker">
@@ -305,7 +310,18 @@
       <!---------------------------------------------------->
       <div class="table-container">
         <div class="user-listA">
-          <h1 class="heading">CHEF BOOKING</h1>
+          <h1 class="heading"> BOOKING LIST</h1>
+          <div class="filter-bookings">
+            <select>
+              <option>
+                Select Chefs
+              </option>
+              <option>
+                Assign Chef
+              </option>
+              <option>New Assign Chef</option>
+            </select>
+          </div>
           <div id="search-here">
             <label class="search"><img src="assets/images/iconSearch.png" alt="" /></label>
             <input type="search" placeholder="Search here..." id="iconSearch" onkeyup="filterTable()" />
@@ -322,7 +338,7 @@
               <th>Phone</th>
               <th>Start</th>
               <th id="address">Address</th>
-              <th>Action</th>
+              <th id="actions">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -347,6 +363,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                     <a href="chefview.html">
+                    <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -374,6 +392,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -404,6 +424,8 @@
                         <p>ASSIGN CHEF</p>
                       </div>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -431,6 +453,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -458,6 +482,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -488,6 +514,8 @@
                         <p>ASSIGN CHEF</p>
                       </div>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -515,6 +543,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -542,6 +572,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -572,6 +604,8 @@
                         <p>ASSIGN CHEF</p>
                       </div>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -599,6 +633,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -626,6 +662,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -656,6 +694,8 @@
                         <p>ASSIGN CHEF</p>
                       </div>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -683,6 +723,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -710,6 +752,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -740,6 +784,8 @@
                         <p>ASSIGN CHEF</p>
                       </div>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -767,6 +813,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>
@@ -794,6 +842,8 @@
                       <img src="assets/images/assignchef.png" class="assign-Img" alt="" />
                       <p>ASSIGN CHEF</p>
                     </button></a>
+                    <a href="chefview.html">
+                      <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
                   <a href="#" onclick="openDeleteModal()"><img src="assets/images/Trashicon.png" alt=""
                       class="material-iconsB" /></a>
                 </div>

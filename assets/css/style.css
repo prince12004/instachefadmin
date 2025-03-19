@@ -1921,7 +1921,7 @@ table.dataTable td.dt-type-date {
 }
 
 .material-iconsB {
-  margin-left: 12px;
+  margin-left: 2px;
 }
 
 #heading-B {
@@ -2343,8 +2343,22 @@ div.dt-container {
   border: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.holdings{
+  background-color: #1f2869;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.revioe-hold{
+  margin: 10px 0px;
 }
 
 /*----------------- create-cuisine --------------*/
@@ -3604,6 +3618,7 @@ div.dt-container div.dt-layout-row {
   font-size: 20px;
   color: #43424b;
   margin-top: 20px;
+  z-index: -1;
 }
 
 table.dataTable thead th,
@@ -3616,7 +3631,8 @@ table.dataTable tfoot th {
 
 #myTable-B_wrapper,
 #myTable-C_wrapper,
-#myTable-package_wrapper {
+#myTable-package_wrapper,
+#myTable-chefs_wrapper {
   padding: 0px 34px !important;
 }
 
@@ -3628,7 +3644,8 @@ table.dataTable tfoot th {
 
 #myTable-B_wrapper,
 #myTable-C_wrapper,
-#myTable-package_wrapper {
+#myTable-package_wrapper
+#myTable-chefs_wrapper {
   padding: 4px 34px !important;
   border-radius: 10px;
   box-shadow: none !important;
@@ -3638,9 +3655,13 @@ tbody {
   background-color: #f5f6fa;
 }
 
+#myTable-chefs>tbody>tr>td{
+  padding: 14px 20px !important;
+}
 #myTable-B>thead>tr,
 #myTable-C>thead>tr,
-#myTable-package>thead>tr {
+#myTable-package>thead>tr
+ {
   /* background-color: #fff !important;
   border: 1px solid #dbdfff !important; */
   box-shadow: 0px 2px 4px 0px #0000001a;
@@ -3969,7 +3990,7 @@ tbody {
 }
 
 .newtittles select {
-  width: 35%;
+  width: 40%;
   outline: none;
   padding: 0.7rem 0.7rem;
   font-size: 1rem;
@@ -3984,10 +4005,10 @@ tbody {
 }
 
 .newtittles input {
-  width: 60%;
+  width: 58%;
   padding: 0.7rem 0.7rem;
   outline: none;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   background-color: var(--bs-body-bg);
@@ -4124,6 +4145,7 @@ td img {
 .assign-action {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
 .assign-chefA p {
@@ -4189,7 +4211,7 @@ table.dataTable td.dt-type-date {
 }
 
 .material-iconsB {
-  margin-left: 12px;
+  margin-left: 2px;
 }
 
 #heading-B {
@@ -4334,9 +4356,11 @@ div.dt-container {
 }
 
 #address {
-  width: 20%;
+  width: 17%;
 }
-
+#actions{
+  width: 16%;
+}
 .hold-inactive {
   background-color: #ffe1b0;
   color: rgb(107, 79, 28) !important;
@@ -5112,4 +5136,317 @@ input:checked+.sliders:before {
 }
 .admin-searchs{
   left: -2% !important;
+}
+.assigns{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.new-assign{
+  width: 50%;
+}
+.creates-chefs{
+  margin-bottom: 15px !important;
+  margin-left: 5px !important;
+}
+.slots{
+  display: flex;
+  flex-direction: column;
+}
+.fields-main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 49%;
+  margin-bottom: 4px !important;
+}
+.slot-minus{
+  background-color: #dba8a8;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slot-plus img{
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.add-slot{
+  display: flex;
+  gap: 10px;
+}
+.slot-headings h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px !important;
+}
+.booking-slots{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slots-fields{
+  width: 40.5%;
+}
+.already-book span{
+  background-color: #1F2869;
+  color: #FFFFFF;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.slot-mains{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0px;
+}
+.booking-shows{
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 50%;
+}
+.section-clone-mains{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.slots-fields input{
+  border: 1px solid #CCC;
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+.assisgn{
+  margin: 0px 20px 10px 15px;
+}
+.slots-name{
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  margin: 10px 0px;
+  align-items: center;
+}
+.slots-name h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+.slots-times{
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-checks{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.chefss{
+  display: flex;
+  gap: 10px;
+}
+.buttons-changes{
+  width: 50%;
+}
+.newtittl{
+  width: 100%;
+}
+.changess{
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 0px !important;
+  padding: 11px;
+}
+.abouts{
+  display: flex;
+  width: 97% !important;
+  margin: 0px auto;
+}
+.filter-bookings select{
+  position: absolute;
+    top: 56px;
+    right: 24%;
+    z-index: 1;
+    background-color: #f5f6fa;
+    width: 20%;
+    padding: 7px 10px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+.new-assi{
+  width: 100%;
+}
+.create-chefB {
+  display: none; 
+}
+
+.dropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+  color: #a6a9b7 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-btn:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 0px 0px 5px 5px;
+  z-index: 1000;
+}
+
+.dropdown-list label {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.dropdown-list label:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.dropdown-container.open .dropdown-list {
+  display: block;
+}
+
+.chef-textA {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.selected-cuisines {
+  margin-top: 10px;
+}
+#addr{
+  width: 22%;
+}
+.newtittle {
+  display: flex;
+  gap: 10px;
+}
+
+.dish-image {
+  width: 90px;
+  /* height: 70px; */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.dish-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.dish-image:hover {
+  transform: scale(1.1);
+}
+
+.complete-review {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  width: 100%;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dishes{
+  margin: 10px 0px;
+  align-items: end;
+}
+.reviewer-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.rating-stars {
+  color: #ffbc00; 
+  font-size: 18px;
+}
+
+.review-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.review-image {
+  margin-top: 10px;
+}
+
+.review-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.chefs-assigns{
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+.chefs-assigns h4{
+  margin: 0px auto;
 }

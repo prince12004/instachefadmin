@@ -135,43 +135,43 @@
           </div>
         </li>
 
-        <!-- Manage Booking Item -->
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white select-manage">
-            <img src="assets/images/image8.png" alt="" class="default-img" />
-            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-            MANAGE BOOKING
-            <i class="fa fa-caret-down"></i>
-            <p> +5</p>
-          </a>
-          <div class="user-select-input">
-            <label for="user">
-              <a href="createbooking.html">
-                <input type="radio" placeholder=""> CREATE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="chefbooking.html">
-                <input type="radio" placeholder=""> BOOKINGS LIST
-              </a>
-            </label>
-            <label for="user">
-              <a href="inactivebooking.html">
-                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="Review.html">
-                <input type="radio" placeholder=""> REVIEW LIST
-              </a>
-            </label>
-            <label for="user">
-              <a href="completebooking.html">
-                <input type="radio" placeholder=""> COMPLETE BOOKINGS
-              </a>
-            </label>
-          </div>
-        </li>
+       <!-- Manage Booking Item -->
+       <li class="nav-item">
+        <a href="#" class="nav-link text-white select-manage">
+          <img src="assets/images/image8.png" alt="" class="default-img" />
+          <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+          MANAGE BOOKING
+          <i class="fa fa-caret-down"></i>
+          <p> +5</p>
+        </a>
+        <div class="user-select-input">
+          <label for="user">
+            <a href="createbooking.html">
+              <input type="radio" placeholder=""> CREATE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="chefbooking.html">
+              <input type="radio" placeholder=""> BOOKINGS LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="inactivebooking.html">
+              <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+            </a>
+          </label>
+          <label for="user">
+            <a href="Review.html">
+              <input type="radio" placeholder=""> REVIEW LIST
+            </a>
+          </label>
+          <label for="user">
+            <a href="completebooking.html">
+              <input type="radio" placeholder=""> COMPLETE BOOKINGS
+            </a>
+          </label>
+        </div>
+      </li>
 
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
@@ -286,7 +286,7 @@
       <div class="admin-dashboard">
         <div class="dashboard-time">
           <img src="assets/images/manage-booking.png" alt="" />
-          <p>ASSIGN CHEF</p>
+          <p>CHANGE CHEF</p>
         </div>
         <div class="time-piker">
           <div class="time">
@@ -309,7 +309,7 @@
         <main class="col-md-10 bg-light right-sidebar assisgn">
           <div class="card mb-4">
             <div class="card-body ">
-              <h4 class="notification-heading">ASSIGN CHEF</h4>
+              <h4 class="notification-heading">CHANGE CHEF</h4>
               <div class="row Both-container">
                 <div class="col-md-6 manage-notification-left">
                   <form id="createBookingA">
@@ -360,12 +360,14 @@
                       <div class="new-assign">
                         <label for="title" class="form-label form-booking" style="display: block;">Discount</label>
                         <div id="title" class="newtittles mb-3">
-                          <select>
-                            <option>Discount Type</option>
-                            <option>Percentage</option>
-                            <option>Amount</option>
-                          </select>
-                          <input type="text" id="title" placeholder="Enter your Discount" />
+                           <div class="changess">
+                            <span id="title" class="newtittl">
+                                Percentage
+                               </span>
+                               <span id="title" class="newtittl">
+                                20
+                               </span>
+                           </div>
                         </div>
                       </div>
                     </div>
@@ -406,16 +408,16 @@
                     <div class="assigns">
                       <div class="new-assign">
                         <label for="title" class="form-label form-booking">Assign Date</label>
-                        <span class="booking-input">
-                            <!-- Input with date and dynamic min attribute -->
-                            <input type="date" id="title" class="form-control" placeholder="04-03-2024" />
-                        </span>
-                    </div>
-                    
+                        <span id="title" class="newtittle">
+                            18/03/2025
+                          </span>
+                      </div>
                       <div class="new-assign">
                         <label for="title" class="form-label form-booking" style="display: block;">Set your
                           price</label>
-                        <input type="text" id="title" class="form-control" placeholder="Enter your price" />
+                          <span id="title" class="newtittle">
+                            30000
+                          </span>
                       </div>
                     </div>
                   </div>
@@ -423,17 +425,15 @@
                   <!-- </form> -->
                 </div>
                 <label for="title" class="form-label form-booking" style="padding-left: 23px;">Any Comment</label>
-                <textarea id="message" class="form-control form-textarea" rows="4" placeholder="Add Comment"></textarea>
+                <span id="title" class="newtittle abouts">
+                    new chefs 
+                  </span>
                 <span class="error-message"></span>
              <div class="chefss">
               <button type="submit" class="creating-booking w-90" id="createBooking">
                 ASSIGN CHEF
               </button>
-            <a href="/changechef.html" class="buttons-changes">
-              <span type="submit" class="creating-booking w-90" id="createBooking">
-                CHANGE CHEF
-              </span>
-            </a>
+        
              </div>
                 </form>
                 <div class="booking-slots" id="bookingSlots" style="display: none;">
@@ -798,16 +798,6 @@
 
 
   </script>
-<script>
-  // Get today's date
-  const today = new Date();
-  
-  // Format today's date to YYYY-MM-DD
-  const formattedDate = today.toISOString().split('T')[0];
-  
-  // Set the min attribute of the input element dynamically
-  document.getElementById("title").setAttribute("min", formattedDate);
-</script>
 
 </body>
 

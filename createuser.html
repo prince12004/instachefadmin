@@ -132,40 +132,43 @@
             </label>
           </div>
         </li>
-
-        <!-- Manage Booking Item -->
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white select-manage">
-            <img src="assets/images/image8.png" alt="" class="default-img" />
-            <img src="assets/images/imageeight.png" alt="" class="hover-img" />
-            MANAGE BOOKING
-            <i class="fa fa-caret-down"></i>
-            <p> +4</p>
+     <!-- Manage Booking Item -->
+     <li class="nav-item">
+      <a href="#" class="nav-link text-white select-manage">
+        <img src="assets/images/image8.png" alt="" class="default-img" />
+        <img src="assets/images/imageeight.png" alt="" class="hover-img" />
+        MANAGE BOOKING
+        <i class="fa fa-caret-down"></i>
+        <p> +5</p>
+      </a>
+      <div class="user-select-input">
+        <label for="user">
+          <a href="createbooking.html">
+            <input type="radio" placeholder=""> CREATE BOOKING
           </a>
-          <div class="user-select-input">
-            <label for="user">
-              <a href="createbooking.html">
-                <input type="radio" placeholder=""> CREATE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="chefbooking.html">
-                <input type="radio" placeholder=""> BOOKINGS LIST
-              </a>
-            </label>
-            <label for="user">
-              <a href="inactivebooking.html">
-                <input type="radio" placeholder=""> IN-ACTIVE BOOKING
-              </a>
-            </label>
-            <label for="user">
-              <a href="Review.html">
-                <input type="radio" placeholder=""> REVIEW LIST
-              </a>
-            </label>
-          </div>
-        </li>
-
+        </label>
+        <label for="user">
+          <a href="chefbooking.html">
+            <input type="radio" placeholder=""> BOOKINGS LIST
+          </a>
+        </label>
+        <label for="user">
+          <a href="inactivebooking.html">
+            <input type="radio" placeholder=""> IN-ACTIVE BOOKING
+          </a>
+        </label>
+        <label for="user">
+          <a href="Review.html">
+            <input type="radio" placeholder=""> REVIEW LIST
+          </a>
+        </label>
+        <label for="user">
+          <a href="completebooking.html">
+            <input type="radio" placeholder=""> COMPLETE BOOKINGS
+          </a>
+        </label>
+      </div>
+    </li>
         <!-- Manage Cuisine Item -->
         <li class="nav-item">
           <a href="managecuisine.html" class="nav-link text-white">
@@ -399,6 +402,79 @@
   <!-- =================================================== -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+    
+// create user validation 
+
+document.getElementById('profileForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+  });
+
+document.getElementById('updateProfileBtnA')
+  .addEventListener('click', function () {
+    let isValid = true;
+
+    document.querySelectorAll('#profileForm .error-message')
+      .forEach((el) => (el.textContent = ''));
+
+    const username = document.getElementById('username');
+    const email = document.getElementById('email');
+
+    if (!username.value.trim()) {
+      showError(username, ' Please Enter your name.');
+      isValid = false;
+    }
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    if (!email.value.trim() || !validateEmail(email.value)) {
+      showError(email, 'Please enter a valid email.');
+      isValid = false;
+    }
+
+    if (!lastname.value.trim() || !validateEmail(email.value)) {
+      showError(lastname, 'Please enter your last name.');
+      isValid = false;
+    }
+
+    if (!contact.value.trim()) {
+      showError(contact, 'Please enter your your phone number.');
+      isValid = false;
+    }
+
+    if (!address.value.trim()) {
+      showError(address, 'Please enter your address');
+      isValid = false;
+    }
+
+    if (!building.value.trim()) {
+      showError(building, 'Please enter your building.');
+      isValid = false;
+    }
+    if (!area.value.trim()) {
+      showError(area, 'Please enter your area');
+      isValid = flase;
+    }
+    if (!usernameA.value.trim()) {
+      showError(usernameA, 'Fill the latitude.');
+      isValid = false;
+    }
+    if (!usernameA.value.trim()) {
+      showError(usernameA, 'Fill the section.');
+      isValid = false;
+    }
+  });
+
+function showError(input, message) {
+  const errorSpan = input.nextElementSibling;
+  if (errorSpan) {
+    errorSpan.textContent = message;
+    errorSpan.style.color = 'red';
+  }
+}
+  </script>
 </body>
 
 </html>
