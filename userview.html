@@ -286,7 +286,7 @@
       <div class="admin-dashboard">
         <div class="dashboard-time">
           <img src="assets/images/manage-booking.png" alt="" />
-          <p>USER  DETAILS</p>
+          <p>Package Status</p>
         </div>
         <div class="time-piker">
           <div class="time">
@@ -305,9 +305,158 @@
           </div>
         </div>
       </div>
-      <div class="chefs-assigns">
-        <h4>CHEF NOT ASSIGN</h4>
+      <div class="blog-seo" style="width: 93%; margin: 22px;">
+        <div class="table-blog-bar">
+          <h4>Status
+        </h4>
+       
+          </span>
+        </div>
+        <table id="myTable-chefs" class="maintable main-dts-table chef-cuisine" style="width: 100%">
+          <thead>
+            <tr class="header-table">
+              <th class="serial-number">S.No</th>
+              <th>Date</th>
+              <th>Chief Name</th>
+              <th>Cuisine</th>
+              <th>Cooking Start Time</th>
+              <th>Cooking End Time</th>
+              <!-- <th>End Cooking</th> -->
+              <!-- <th> Complete Cooking</th> -->
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01.</td>
+              <td>
+                19-03-2025	
+              </td>
+              <td>Vaibhav</td>
+              <td>Italian</td>
+              <!-- <td>Not Started	</td> -->
+              <!-- <td>Not Finish	</td> -->
+              <td>
+                HH-MM-SS
+              </td>
+              <td>
+                HH-MM-SS	
+              </td>
+              <td>
+                <a href="#" class="status-completed">Completed</a> 
+              </td>
+              <td> 
+                <a href="#" onclick="showReviewContainer(event)">
+                  <img src="assets/images/view.png" alt="" class="material-iconsA" />
+              </a>
+              </td>
+            </tr>
+
+            <tr>
+                <td>02.</td>
+                <td>
+                  19-03-2025	
+                </td>
+                <td>Vaibhav</td>
+                <td>Italian</td>
+                <td>
+                  HH-MM-SS
+                </td>
+                <td>
+                  HH-MM-SS	
+                </td>
+                <td> 
+                  <a href="#" class="status-pending">Pending</a>
+                </td>
+                <td> 
+                  <!-- <a href="#" onclick="showReviewContainer(event)">
+                    <img src="assets/images/view.png" alt="" class="material-iconsA" />
+                </a> -->
+                  </td>
+              </tr>
+            
+          </tbody>
+        </table>
       </div>
+
+                                  <div class="review-completed" id="reviewContainer" style="display: none; gap: 20px; padding: 30px;">
+                                    <!-- Close Button (Red Cross) -->
+                                      <span class="close-btn" onclick="hideReviewContainer()">&#10060;</span>
+
+                                    <div class="assigns" style="width: 50%;">
+                                        <div class="new-assi">
+                                            <label for="title" class="form-label form-booking" style="margin-bottom: 0px;">Prepared Dishes</label>
+                                            <span class="newtittle dishes">
+                                              <div class="dish-item">
+                                                <div class="dish-name">Schezwan</div>
+                                                <img src="assets/images/footer-image-one.png" alt="Dish 1" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-one.png" alt="Dish 2" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-one.png" alt="Dish 3" class="dish-image">
+                                            </div>
+                                        </span>
+                                        <span id="title" class="newtittle dishes">
+                                            <div class="dish-item">
+                                                <div class="dish-name">Poha</div>
+                                                <img src="assets/images/footer-image-four.png" alt="Dish 1" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-four.png" alt="Dish 2" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-four.png" alt="Dish 3" class="dish-image">
+                                            </div>
+                                        </span>
+                                        <span id="title" class="newtittle dishes">
+                                            <div class="dish-item">
+                                                <div class="dish-name">Rajma</div>
+                                                <img src="assets/images/footer-image-five.png" alt="Dish 1" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-five.png" alt="Dish 2" class="dish-image">
+                                            </div>
+                                            <div class="dish-item">
+                                                <div class="dish-name"></div>
+                                                <img src="assets/images/footer-image-five.png" alt="Dish 3" class="dish-image">
+                                            </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="assigns" style="width: 45%;">
+                                        <div class="complete-review">
+                                            <label for="title" class="form-label form-booking">Review</label>
+                                            <span class="review-details">
+                                                <div class="review-header">
+                                                    <span class="reviewer-name">John Doe</span>
+                                                    <span class="rating-stars">★★★★☆</span>
+                                                </div>
+                                                <div class="review-description">
+                                                    "The dish was absolutely delicious! I loved the flavors and the presentation was perfect."
+                                                </div>
+                                                <div class="review-image">
+                                                    <img src="assets/images/footer-image-six.png" alt="Review Image" class="review-img">
+                                                    <img src="assets/images/footer-image-six.png" alt="Review Image" class="review-img">
+                                                    <img src="assets/images/footer-image-six.png" alt="Review Image" class="review-img">
+                                                    <img src="assets/images/footer-image-six.png" alt="Review Image" class="review-img">
+                                                </div>
+                                            </span>
+                                            <div class="revioe-hold">
+                                                <button type="button" class="holdings">Hold</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
     </div>
   </div>
   </div>
@@ -331,7 +480,30 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#myTable-chefs').DataTable({
+        paging: true,
+        searching: false,
+        info: true,
+        pageLength: 4,
+        destroy: true,
+        lengthChange: false,
+      });
+    });
+  </script>
 
+
+<script>
+  function showReviewContainer(event) {
+      event.preventDefault();
+      document.getElementById("reviewContainer").style.display = "flex";
+  }
+  
+  function hideReviewContainer() {
+      document.getElementById("reviewContainer").style.display = "none";
+  }
+  </script>
 
 </body>
 

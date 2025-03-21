@@ -337,6 +337,7 @@
                                                 <span id="title" class="newtittle">
                                                     Lorem ipsum dolor sit
                                                 </span>
+                                                <button></button>
                                             </div>
                                             <!-- <img src="assets/images/booking-start.png" alt=""> -->
                                             </span>
@@ -350,9 +351,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="assigns">
+                                        <!-- <div class="assigns">
                                             <div class="new-assi">
-                                                <label for="title" class="form-label form-booking" style="margin-bottom: 0px;">Dish Prepared</label>
+                                                <label for="title" class="form-label form-booking" style="margin-bottom: 0px;">Slot Timing</label>
                                                 <span id="title" class="newtittle dishes">
                                                     <div class="dish-item">
                                                         <div class="dish-name">Schezwan</div>
@@ -396,12 +397,12 @@
                                                     </div>
                                                 </span>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         
 
 
 
-                                        <!-- </form>   -->
+                                        </form>  
                                 </div>
                                 <div class="col-md-6 right-form-deatiles">
                                     <!-- <form id="createBookingA"> -->
@@ -439,14 +440,14 @@
                                         </div>
 
 
-                                        <div class="assigns">
+                                        <!-- <div class="assigns">
                                             <div class="complete-review">
                                                 <label for="title" class="form-label form-booking">Review</label>
                                                 <span id="title" class="review-details">
                                                     <div class="review-header">
                                                         <span class="reviewer-name">John Doe</span>
                                                         <span class="rating-stars">
-                                                            ★★★★☆ <!-- 4 stars out of 5 -->
+                                                            ★★★★☆ <!-- 4 stars out of 5
                                                         </span>
                                                     </div>
                                                     <div class="review-description">
@@ -468,10 +469,10 @@
                                                 <div class="revioe-hold">
                                                     <button type="button" class="holdings">Hold</button>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
 
-                                        </div>
+                                        <!-- </div> -->
                                         <!-- </form> -->
                                     </div>
 
@@ -481,7 +482,55 @@
                             </div>
 
                         </div>
+                        <div class="blog-seo">
+                            <div class="table-blog-bar">
+                              <h4>SLOT TIMING
+                            </h4>
+                           
+                              </span>
+                            </div>
+                            <table id="myTable-chefs" class="maintable main-dts-table chef-cuisine" style="width: 100%">
+                              <thead>
+                                <tr class="header-table">
+                                  <th class="serial-number">S.No</th>
+                                  <th>Date</th>
+                                  <th>Chief Name</th>
+                                  <th>Cuisine</th>
+                                  <th>Cooking Start Time</th>
+                                  <th>Cooking End Time</th>
+                                  <!-- <th>End Cooking</th> -->
+                                  <!-- <th> Complete Cooking</th> -->
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>01.</td>
+                                  <td>
+                                    19-03-2025	
+                                  </td>
+                                  <td>Vaibhav</td>
+                                  <td>Italian</td>
+                                  <!-- <td>Not Started	</td> -->
+                                  <!-- <td>Not Finish	</td> -->
+                                  <td>
+                                    HH-MM-SS
+                                  </td>
+                                  <td>
+                                    HH-MM-SS	
+                                  </td>
+                                  <td> 
+                                    <a href="completedbooking.html">
+                                        <img src="assets/images/view.png" alt="" class="material-iconsA" /></a>
+                                    <!-- <img src="assets/images/three-dot icon.png" alt="" /> -->
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
                     </div>
+                    
             </div>
             </main>
         </div>
@@ -507,7 +556,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <script src="assets/js/index.js"></script>
-
+    <script>
+        $(document).ready(function () {
+          $('#myTable-chefs').DataTable({
+            paging: true,
+            searching: false,
+            info: true,
+            pageLength: 4,
+            destroy: true,
+            lengthChange: false,
+          });
+        });
+      </script>
 
 </body>
 

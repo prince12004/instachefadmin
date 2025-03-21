@@ -5410,6 +5410,7 @@ input:checked+.sliders:before {
   align-items: center;
 }
 .dishes{
+  margin-bottom: 0px;
   margin: 10px 0px;
   align-items: end;
 }
@@ -5449,4 +5450,54 @@ input:checked+.sliders:before {
 }
 .chefs-assigns h4{
   margin: 0px auto;
+}
+
+
+
+/* ======================================= 19-03-2025 ================================= */
+.chef-cuisine>tbody>tr>td{
+  text-align: center !important;
+}
+
+/* .chef-cuisine table.dataTable thead>tr>th.dt-orderable-asc, table.dataTable thead>tr>th.dt-orderable-desc, table.dataTable thead>tr>td.dt-orderable-asc, table.dataTable thead>tr>td.dt-orderable-desc{
+  text-align: center;
+} */
+
+.status-pending{
+  background-color: red !important;
+  padding: 6px 15px;
+  border-radius: 40px;
+  color: #FFFFFF !important;
+}
+
+.status-completed{
+  background-color: green !important;
+  padding: 6px 12px;
+  border-radius: 40px;
+  color: #FFFFFF !important;
+}
+
+.review-completed{
+  width: 93%;
+  margin: 22px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px !important;
+  right: 50px;
+  z-index: 2;
+  font-size: 12px !important;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  border: 3px solid red;
+  border-radius: 50px;
+  padding: 5px;
+}
+.close-btn:hover {
+  color: darkred;
 }
